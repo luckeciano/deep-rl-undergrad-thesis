@@ -1,0 +1,23 @@
+\section {Preliminary Conclusions and Future Works}
+
+In this work, we presented a method for learning humanoid robot movements using datasets composed of joint values at each time instant. The provided learning framework was capable to learn several types of motion, including walk and kick, without any change in network architecture or hyperparameters.
+
+Moreover, the learned motions had similar performance to the original ones. Furthermore, this framework was able to learn from other teams motions, without any knowledge about the underlying implementation -- only by using the joints values provided by a modified version of the server. This was a huge improvement, in terms of getting improved motions, as our agent was able to mimic other teams motions, by using this machine learning technique.
+
+As future works, we plan to apply Deep Reinforcement Learning algorithms to obtain faster and more robust kicks, by using as a "seed" the neural network obtained from this work.
+
+Another track to be followed is to transfer the learning of this obtained network to a new network that represents the motion policy itself (i.e a network which has as inputs the current state of the robot, by including joint and link states, besides the current time instant), optimizing this motion policy, in order to get a closed-loop walking and kicking motion that can correct itself.
+
+Finally, as a long term goal, we intend to create some model-free walking and kicking engines.
+
+\section{The Activities Plan}
+
+As next steps of this work, we plan to:
+
+\begin{enumerate}
+\item Import our supervised policy model into Deep Reinforcement Learning algorithms -- Expected to be finished until the end of \textbf{June, 2018};
+\item Iterate over objective function construction and optimization, in order to improve the kick motion -- Expected to be finished until mid \textbf{August, 2018};
+\item Execute the same test scenarios previously applied to compare results -- Expected to be finished until the end of \textbf{August, 2018}; 
+\item Test in 11 x 11 game to compare team performance -- Expected to be finished until the end of \textbf{August, 2018}; and
+\item Complement this work with some novel background, methodology, results, and conclusions -- Expected to be finished until \textbf{November, 2018}.
+\end{enumerate}

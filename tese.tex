@@ -1,0 +1,239 @@
+%%% Exemplo de utilização da classe ITA
+%%%
+%%%   por        Fábio Fagundes Silveira   -  ffs [at] ita [dot] br
+%%%              Benedito C. O. Maciel     -  bcmaciel [at] ita [dot] br
+%%%              Giovani Volnei Meinertz   -  giovani [at] ita [dot] br
+%%%    	         Hudson Alberto Bode       -  bode [at] ita [dot]br
+%%%    	         P. I. Braga de Queiroz    -  pi [at] ita [dot] br
+%%%    	         Jorge A. B. Gripp         -  gripp [at] ita [dot] br
+%%%    	         Juliano Monte-Mor         -  jamontemor [at] yahoo [dot] com [dot] br
+%%%    	         Tarcisio A. B. Gripp      -  tarcisio.gripp [at] gmail [dot] com
+%%%    	         
+%%%
+%%%  IMPORTANTE: O texto contido neste exemplo nao significa absolutamente nada.  :-)
+%%%              O intuito aqui eh demonstrar os comandos criados na classe e suas
+%%%              respectivas utilizacoes.
+%%%
+%%%  Tese.tex  2016-08-25
+%%%  $HeadURL: http://www.apgita.org.br/apgita/teses-e-latex.php $
+%%%
+%%% ITALUS
+%%% Instituto Tecnológico de Aeronáutica --- ITA, Sao Jose dos Campos, Brasil
+%%%                   http://groups.yahoo.com/group/italus/
+%%% Discussion list: italus {at} yahoogroups.com
+%%%
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+% Para alterar o TIPO DE DOCUMENTO, preencher a linha abaixo \documentclass[?]{?}
+%   \documentclass[tg]{ita}			= Trabalho de Graduacao
+%   \documentclass[tgfem]{ita}	= Para Engenheiras
+%   								msc     		= Dissertacao de Mestrado
+%   								mscfem   		= Para Mestras
+%   								dsc      		= Tese de Doutorado
+%   								dscfem   		= Para Doutoras
+%   								quali    		= Exame de Qualificacao
+%   								qualifem 		= Exame de Qualificacao para Doutoras
+% Para 'Draft Version'/'Versao Preliminar' com data no rodape, adicionar 'dv':
+%   \documentclass[dsc, dv]{ita} 
+% Para trabalhos em Inglês, adicionar 'eng':
+%   \documentclass[dsc, eng]{ita}
+%		\documentclass[dsc, eng, dv]{ita}
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+\documentclass[tg, eng, dv]{ita}    % ITA.cls based on standard book.cls 
+% Quando alterar a classe, por exemplo de [msc] para [msc, eng]) rode mais uma vez o botão BUILD OUTPUT caso haja erro
+\usepackage{ae}
+\usepackage{graphicx}
+\usepackage{epsfig}
+\usepackage{amsmath}
+\usepackage{amssymb} 
+\usepackage{subfig}
+\usepackage{multirow}
+\usepackage{float}
+
+\newtheorem{definition}{Definition}    
+    
+\newcommand{\bvec}[1]{\mathrm{\mathbf{#1}}}    
+        
+    
+
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+% Espaçamento padrão de todo o documento
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+\onehalfspacing
+
+%singlespacing Para um espaçamento simples
+%onehalfspacing Para um espaçamento de 1,5
+%doublespacing Para um espaçamento duplo
+
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+% Identificacoes (se o trabalho for em inglês, insira os dados em inglês)
+% Para entradas abreviadas de Professora (Profa.) em português escreva: Prof$^\textnormal{a}$.
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+\course{Computer Engineering} % Programa de PG ou Curso de Graduação
+
+% Autor do trabalho: Nome Sobrenome
+\authorgender{masc}                     %sexo: masc ou fem
+\author{Luckeciano}{Carvalho Melo}
+\itaauthoraddress{H8A St., 113}{12.228-460}{São José dos Campos--SP}
+
+% Titulo da Tese/Dissertação
+\title{A Deep Reinforcement Learning Method for Humanoid Kick Motion}
+
+% Orientador
+\advisorgender{masc}                    % masc ou fem
+\advisor{Prof.~Dr.}{Adilson Marques da Cunha}{ITA}
+
+% Coorientador (Caso não haja coorientador, colocar ambas as variáveis \coadvisorgender e \coadvisor comentadas, com um % na frente)
+\coadvisorgender{fem}									% masc ou fem
+\coadvisor{Prof. Dr.}{Marcos R. O. de A. Máximo}{ITA}
+
+% Pró-reitor da Pós-graduação
+%\bossgender{masc}												% masc ou fem
+%boss{Prof.~Dr.}{John von Neumann}
+
+%Coordenador do curso no caso de TG
+\bosscoursegender{fem}									% masc ou fem
+\bosscourse{Prof$^\textnormal{a}$.Dr$^\textnormal{a}$.}{Cecília César}
+
+% Palavras-Chaves informadas pela Biblioteca -> utilizada na CIP
+\kwcip{Deep Reinforcement Learning}
+\kwcip{Robotics}
+\kwcip{Artificial Intelligence}
+
+% membros da banca examinadora
+
+\examiner{Prof. Dr.}{Adilson Marques da Cunha}{}{ITA}
+\examiner{Prof. Dr.}{Marcos R. O. de A. Máxim}{}{ITA}
+\examiner{Prof. Dr.}{Paulo André L. de Castro}{}{ITA}
+
+% Data da defesa (mês em maiúsculo, se trabalho em inglês, e minúsculo se trabalho em português) 
+\date{12}{JUNE}{2018}
+
+% Número CDU - (somente para TG)
+\cdu{621.38}
+
+% Glossario
+\makeglossary
+\frontmatter
+
+\begin{document}
+% Folha de Rosto e Capa para o caso do TG
+\maketitle
+% * <luckeciano@hotmail.com> 2018-08-08T03:26:41.936Z:
+%
+% ^.
+% * <luckeciano@hotmail.com> 2018-08-08T03:26:40.755Z:
+%
+% ^.
+% Dedicatoria: Nao esqueca essa secao  ... :-)
+%\begin{itadedication}
+
+ 
+%\end{itadedication}
+
+% Agradecimentos
+%\begin{itathanks}
+%\input{Cap0/agradecimentos}
+%\end{itathanks}
+
+% Epígrafe
+%\thispagestyle{empty}
+%\ifhyperref\pdfbookmark[0]{\nameepigraphe}{epigrafe}\fi
+%\begin{flushright}
+%\begin{spacing}{1}
+%\mbox{}\vfill
+%{\sffamily\itshape
+%``If I have seen farther than others,\\
+%it is because I stood on the shoulders of giants.''\\}
+%--- \textsc{Sir~Isaac Newton}
+%\end{spacing}
+%\end{flushright}
+
+% Resumo
+%\begin{abstract}
+%\noindent
+%\input{Cap0/resumo}
+%\end{abstract}
+
+% Abstract
+\begin{englishabstract}
+\noindent
+\input{Cap0/abstract}
+\end{englishabstract}
+
+% Lista de figuras
+\listoffigures %opcional
+
+% Lista de tabelas
+\listoftables %opcional
+
+% Lista de abreviaturas
+%\listofabbreviations
+%\input{Cap0/listaabreviaturas} %opcional
+
+% Lista de simbolos
+%\listofsymbols
+%\input{Cap0/listasimbolos} %opcional
+
+% Sumario
+\tableofcontents
+
+\mainmatter
+% Os capitulos comecam aqui
+
+\chapter{Introduction}\label{ch:intro}
+\input{Cap1/cap1}
+
+\chapter{Literature Review}\label{ch:soccer3d}
+\input{Cap2/cap2}
+
+\chapter{Deep Learning}\label{ch:deeplearning}
+\input{Cap3/cap3}
+
+\chapter{Methodology}\label{ch:methodology}
+\input{Cap5/cap5}
+
+\chapter{Results' Analysis and Discussion}\label{ch:results}
+\input{Cap6/cap6}
+
+\chapter{Conclusions, Recommendations, and Future Works}\label{ch:conclusion}
+\input{Cap7/cap7}
+
+% REFERENCIAS BIBLIOGRAFICAS
+\renewcommand\bibname{\itareferencesnamebabel} %renomear título do capítulo referências
+\bibliography{Referencias/referencias}
+
+% Apendices
+%\appendix
+%\chapter{Topicos de Dilema Linear} %opcional
+%\input{ApeA/apendiceA}
+
+% Anexos
+%\annex
+%\chapter{Exemplo de um Primeiro Anexo} %opcional
+%\input{AneA/anexoA}
+
+% Glossario
+%\itaglossary
+%\printglossary
+
+% Folha de Registro do Documento
+% Valores dos campos do formulario
+\FRDitadata{June 12th, 2018}
+\FRDitadocnro{DCTA/ITA/DM-018/2015} %(o número de registro você solicita a biblioteca)
+\FRDitaorgaointerno{Aeronautics Institute of Technology -- ITA}
+%Exemplo no caso de pós-graduação: Instituto Tecnol{\'o}gico de Aeron{\'a}utica -- ITA
+\FRDitapalavrasautor{Deep Reinforcement Learning; Robotics; Artificial Intelligence}
+\FRDitapalavrasresult{Deep Reinforcement Learning; Robotics; Artificial Intelligence}
+%Exemplo no caso de graduação (TG):
+%\FRDitapalavraapresentacao{Trabalho de Graduação, ITA, São José dos Campos, 2015. \NumPenultimaPagina\ páginas.}
+%Exemplo no caso de pós-graduação (msc, dsc):
+\FRDitapalavraapresentacao{ITA, São José dos Campos, 2018. Trabalho de Graduação.}
+\FRDitaresumo{\input{Cap0/resumo}}
+%  Primeiro Parametro: Nacional ou Internacional -- N/I
+%  Segundo parametro: Ostensivo, Reservado, Confidencial ou Secreto -- O/R/C/S
+\FRDitaOpcoes{N}{O}
+% Cria o formulario
+\itaFRD
+
+\end{document}
+% Fim do Documento. O massacre acabou!!! :-)

@@ -10,11 +10,15 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces An artificial neuron within a feed forward artificial neural network \cite {dejan12}. \relax }}{19}{figure.caption.11}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces The architecture of a neural network designed to learn motions.\relax }}{23}{figure.caption.12}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces In the hybrid model, we can ensure the starting point is near of the optimal solution (orange arrow); otherwise, the starting point can be bad and harder to optimize (red arrow).\relax }}{23}{figure.caption.12}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces The architecture of a neural network designed to learn motions.\relax }}{25}{figure.caption.13}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Intuition behind input normalization\relax }}{27}{figure.caption.15}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Architecture used by pure Reinforcement Learning models.\relax }}{28}{figure.caption.16}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Gaussian noise applied to action space to ensure better exploration in continuous environments. \cite {parameternoiseblog} \relax }}{28}{figure.caption.18}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Plots of mean squared error and mean absolute error, during training.\relax }}{25}{figure.caption.14}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces The kick motion. The first row of figures shows the original kick motion. The second row shows the learned kick motion. Both motions are visually indistinguishable.\relax }}{26}{figure.caption.15}
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Joint values for comparing original and learned kicks. The neural network was able to fit the joint trajectories with small errors.\relax }}{27}{figure.caption.16}
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Joints positions, during a period of the walking motion for the original walk, and the learned walk and the joints positions effectively attained, during the learned walking motion.\relax }}{28}{figure.caption.18}
-\contentsline {figure}{\numberline {5.5}{\ignorespaces The walking motions comparison. Figure (a) shows our agent in its regular walk, Figure (b) shows the same agent mimicking UT Austin Villa walk, and Figure (c) shows the UT Austin Villa agent itself performing his own walking motion.\relax }}{29}{figure.caption.20}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Plots of mean squared error and mean absolute error, during training.\relax }}{29}{figure.caption.19}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces The kick motion. The first row of figures shows the original kick motion. The second row shows the learned kick motion. Both motions are visually indistinguishable.\relax }}{30}{figure.caption.20}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Joint values for comparing original and learned kicks. The neural network was able to fit the joint trajectories with small errors.\relax }}{31}{figure.caption.21}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Joints positions, during a period of the walking motion for the original walk, and the learned walk and the joints positions effectively attained, during the learned walking motion.\relax }}{32}{figure.caption.23}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces The walking motions comparison. Figure (a) shows our agent in its regular walk, Figure (b) shows the same agent mimicking UT Austin Villa walk, and Figure (c) shows the UT Austin Villa agent itself performing his own walking motion.\relax }}{33}{figure.caption.25}
 \addvspace {10\p@ }

@@ -221,6 +221,13 @@ Dispon{\'\i}vel em:
 \textbf{ACM Transactions on Graphics (Proc. SIGGRAPH 2018 - to appear)}, v.~37,
   n.~4, 2018.}
 
+\bibitem[PLAPPERT \textit{et al.} 2017]{parameternoiseblog}
+\abntrefinfo{PLAPPERT \textit{et al.}}{PLAPPERT \textit{et al.}}{2017}
+{PLAPPERT, M.; HOUTHOOFT, R.; DHARIWAL, P.; SIDOR, S.; ABBEEL, P.;
+  ANDRYCHOWICZ, M.; CHEN, R.; CHEN, X.; ASFOUR, T. Better exploration with
+  parameter noise. In:  . [s.n.], 2017. Dispon{\'\i}vel em:
+  $<$https:\-/\-/blog\-.openai\-.com\-/better-exploration-with-parameter-noise\-/$>$.}
+
 \bibitem[Rumelhart \textit{et al.} 1988]{hinton88}
 \abntrefinfo{Rumelhart \textit{et al.}}{RUMELHART \textit{et al.}}{1988}
 {RUMELHART, D.~E.; HINTON, G.~E.; WILLIAMS, R.~J. Learning representations by

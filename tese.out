@@ -36,13 +36,18 @@
 \BOOKMARK [1][]{section.4.3}{4.3 Reinforcement Learning Setup}{chapter.4}% 36
 \BOOKMARK [2][]{subsection.4.3.1}{4.3.1 Policy Representation}{section.4.3}% 37
 \BOOKMARK [2][]{subsection.4.3.2}{4.3.2 Task Description}{section.4.3}% 38
-\BOOKMARK [0][]{chapter.5}{5 Results' Analysis and Discussion}{}% 39
-\BOOKMARK [1][]{section.5.1}{5.1 Training Results}{chapter.5}% 40
-\BOOKMARK [1][]{section.5.2}{5.2 The Learned Kick Motion}{chapter.5}% 41
-\BOOKMARK [1][]{section.5.3}{5.3 The Learned Walk Motion}{chapter.5}% 42
-\BOOKMARK [1][]{section.5.4}{5.4 Other motions}{chapter.5}% 43
-\BOOKMARK [0][]{chapter.6}{6 Conclusions, Recommendations, and Future Works}{}% 44
-\BOOKMARK [1][]{section.6.1}{6.1 Preliminary Conclusions and Future Works}{chapter.6}% 45
-\BOOKMARK [1][]{section.6.2}{6.2 The Activities Plan}{chapter.6}% 46
-\BOOKMARK [0][]{chapter.7}{Bibliography}{}% 47
-\BOOKMARK [0][]{bla.0}{Folha de Registro do Documento}{}% 48
+\BOOKMARK [1][]{section.4.4}{4.4 Infrastructure}{chapter.4}% 39
+\BOOKMARK [2][]{subsection.4.4.1}{4.4.1 Reinforcement Learning Server}{section.4.4}% 40
+\BOOKMARK [2][]{subsection.4.4.2}{4.4.2 Neural Network Deployment}{section.4.4}% 41
+\BOOKMARK [2][]{subsection.4.4.3}{4.4.3 Distributed Training}{section.4.4}% 42
+\BOOKMARK [2][]{subsection.4.4.4}{4.4.4 Monitoring via Tensorboard}{section.4.4}% 43
+\BOOKMARK [0][]{chapter.5}{5 Results' Analysis and Discussion}{}% 44
+\BOOKMARK [1][]{section.5.1}{5.1 Training Results}{chapter.5}% 45
+\BOOKMARK [1][]{section.5.2}{5.2 The Learned Kick Motion}{chapter.5}% 46
+\BOOKMARK [1][]{section.5.3}{5.3 The Learned Walk Motion}{chapter.5}% 47
+\BOOKMARK [1][]{section.5.4}{5.4 Other motions}{chapter.5}% 48
+\BOOKMARK [0][]{chapter.6}{6 Conclusions, Recommendations, and Future Works}{}% 49
+\BOOKMARK [1][]{section.6.1}{6.1 Preliminary Conclusions and Future Works}{chapter.6}% 50
+\BOOKMARK [1][]{section.6.2}{6.2 The Activities Plan}{chapter.6}% 51
+\BOOKMARK [0][]{chapter.7}{Bibliography}{}% 52
+\BOOKMARK [0][]{bla.0}{Folha de Registro do Documento}{}% 53

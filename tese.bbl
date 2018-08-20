@@ -54,6 +54,13 @@ Https://keras.io.}
   on Passive Dynamic Walkers}.
 \textbf{{Science Magazine}}, v.~307, p. {1082--1085}, February 2005.}
 
+\bibitem[Dhariwal \textit{et al.} 2017]{baselines}
+\abntrefinfo{Dhariwal \textit{et al.}}{DHARIWAL \textit{et al.}}{2017}
+{DHARIWAL, P.; HESSE, C.; KLIMOV, O.; NICHOL, A.; PLAPPERT, M.; RADFORD, A.;
+  SCHULMAN, J.; SIDOR, S.; WU, Y. \textbf{OpenAI Baselines}. [S.l.]: GitHub,
+  2017.
+\url{https://github.com/openai/baselines}.}
+
 \bibitem[Goodfellow \textit{et al.} 2016]{Goodfellow-et-al-2016}
 \abntrefinfo{Goodfellow \textit{et al.}}{GOODFELLOW \textit{et al.}}{2016}
 {GOODFELLOW, I.; BENGIO, Y.; COURVILLE, A. \textbf{Deep Learning}.
@@ -66,6 +73,12 @@ Https://keras.io.}
   humanoid. In:  \textbf{2009 IEEE International Conference on Robotics and
   Automation}. Kobe, Japan: IEEE, 2009. p. 769--774.
 ISSN 1050-4729.}
+
+\bibitem[gRPC 2018]{grpc}
+\abntrefinfo{gRPC}{GRPC}{2018}
+{GRPC. 2018.
+\url{https://grpc.io/}.
+Accessed: 2018-08-20.}
 
 \bibitem[Hansen 2016]{cmaes}
 \abntrefinfo{Hansen}{HANSEN}{2016}
@@ -208,6 +221,12 @@ Dispon{\'\i}vel em:
   Brazilian Robotics Symposium (LARS/SBR)}. Recife, Brazil: IEEE, 2016. p.
   79--84.}
 
+\bibitem[Muzio 2017]{tgmuzio}
+\abntrefinfo{Muzio}{MUZIO}{2017}
+{MUZIO, A. F.~V.
+\textbf{Deep Reinforcement Learning Applied to Humanoid Robots}.
+Tese (Doutorado) --- ITA, 2017.}
+
 \bibitem[Obst e Rollman 2005]{simspark2005}
 \abntrefinfo{Obst e Rollman}{OBST; ROLLMAN}{2005}
 {OBST, O.; ROLLMAN, M. Spark – a generic simulator for physical multiagent
@@ -314,6 +333,12 @@ ISBN 978-1-4673-1737-5.}
   \textbf{Proc. of 10th Int. Conf. on Autonomous Agents and Multiagent Systems
   (AAMAS)}. [S.l.]: IFAAMAS, 2011. v.~2, p. 769--776.
 ISBN 978-0-9826571-5-7.}
+
+\bibitem[Varda 2008]{protocolbuffers}
+\abntrefinfo{Varda}{VARDA}{2008}
+{VARDA, K. \textbf{Protocol Buffers: Google's Data Interchange Format}.
+[S.l.], 6 2008. Dispon{\'\i}vel em:
+  \htmladdnormallink{$<$http:\-/\-/google-opensource\-.blogspot\-.com\-/2008\-/07\-/protocol-buffers-googles-data\-.html$>$}{http://google-opensource.blogspot.com/2008/07/protocol-buffers-googles-data.html}.}
 
 \bibitem[Wang \textit{et al.} 2016]{acer}
 \abntrefinfo{Wang \textit{et al.}}{WANG \textit{et al.}}{2016}

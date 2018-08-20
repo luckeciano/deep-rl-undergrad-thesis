@@ -41,7 +41,7 @@ The intuition behind this weight parameters is because we have some joints more 
 Lastly, the reference motion used was the keyframe kick previously mentioned and also used in HLM.
 
 
-\subsection{Reinforcement with Initial State Distribution - RISD}
+\subsection{Reinforcement with Initial State Distribution - RISD}\label{risd}
 
 The Initial State Distribution is a technique related to where the episode starts to collect data to use in the learning. Without this technique, all episodes start in the beginning of the motion. However, the problem of this strategy is because the policy is forced to learn the motion in a sequential manner, first learning the early phases of the motion, and then incrementally progressing towards the later phases. This can be problematic for the kick motion. Another disadvantage of a fixed initial state is the resulting exploration challenge. The policy only receives reward retrospectively, once it has visited a state. Therefore, until a high-reward state has been visited, the policy has no way of learning that this state is favorable \cite{peng2018}.
 
@@ -192,6 +192,58 @@ The last idea explored in this policy representation is the Gaussian action spac
 \end{figure}
 
 \subsection{Task Description}
-Image from roboviz executing the task.
+The learning task consists in the activity the agent will execute in order to achieve the expected behavior through the policy. In this experimentation, we would like to learn the kick motion. Therefore, is straightforward that the scenario is based on kick the ball.
+
+The agent is started in a fixed position of the soccer field. The ball, on the other hand, starts in a position $\alpha_{ball}$ meters from the agent, in front of him. The parameter $\alpha_{ball}$ can be optimized in order to decide the best position the agent have to stop to kick the ball better. However, for this experimentation, we fixed its value.
+
+We repeat the following flow: in the beginning of the episode, all the joints are initialized in a certain value that correspond to the joints the robot assume when it stops to walk and will start the kick motion. Then, we start the learning steps, applying the joints from the neural network to the robot. When we use RISD, there's a intermediate phase executing the reference motion, as described in \ref{risd}.
+
+After the execution of those steps, we finalize the episode turning all the joints to zero. When there's no Early Termination, this happens after a fixed number of steps that we can ensure the motion has over. Otherwise, this occurs when the early termination condition is reached.
+
+Figure \ref{taskdescription} shows the initial setup from the task.
+
+
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[width=0.3\textwidth]{Cap5/gaussiannoise.eps}
+	\caption{Initial setup from the task used to learning kick motion.}
+	\label{taskdescription}
+\end{figure}
 
 \section{Infrastructure}
+\subsection{Reinforcement Learning Server}
+
+Figure \ref{rlserver} shows the architecture used to integrate the learning algorithm, agent and simulation environment. The simulation server exposes a state to the soccer agent, which model this information and passes to the learning algorithm that chooses a action accordingly and returns to the agent. Then, it applies this action in the environment, modifying its state, completing the cycle.
+
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[width=0.3\textwidth]{Cap5/rlserver.eps}
+	\caption{Reinforcement Learning Server Architecture.
+		\cite{tgmuzio}
+	}
+	\label{rlserver}
+\end{figure}
+
+\subsubsection{Simulation Server}
+
+The simulation environment used, as mentioned before, is Simpark. It uses a TCP Socket to communicate with the agent and exposes a interface for querying the ground truth state for many features from the agent - which can be helpful to state evaluation and avoids to use agent's perceived data that has noise. 
+
+\subsubsection{Soccer Agent}
+The agent used is from ITAndroids Soccer 3D team and it leads with the perception information sent from the server, model the world with this information and make decisions accordingly. Additionally, there's a entity, called Wizard, whose purpose is query the ground truth state. All this code is written in C++ and the task described in \ref{taskdescription} was implemented in the agent itself.
+
+Other tool that worth mention is RoboViz, a publicly available visualization tool that allows a few improvements over the default visualization tool. We used it to verify if the task was implemented successfully.
+
+\subsubsection{Learning Agent}
+
+We created another interface to integrate the Soccer Agent with the algorithms used in this experimentation. These were implemented by OpenAI Baselines \cite{baselines}, a repository of high-quality implementations of reinforcement learning algorithms whose purpose is make easier for the research community to replicate, refine, and identify new ideas, and create good baselines to build research on top of. The community developed those algorithms using Python language with the Tensorflow \cite{tensorflow2015-whitepaper} framework.
+
+This integration was done using gRPC \cite{grpc}, an open source remote procedure call (RPC) system that generates cross-platform client and server bindings. It uses HTTP/2 for transport and Protocol Buffers \cite{protocolbuffers} as the interface description language, serializing structured data.
+
+
+
+
+\subsection{Neural Network Deployment}
+
+\subsection{Distributed Training}
+
+\subsection{Monitoring via Tensorboard}

@@ -168,6 +168,7 @@
 \citation{Watkins:1989}
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.3.1}Policy Representation}{27}{subsection.4.3.1}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {4.3.1.1}Input Normalization Filter}{27}{subsubsection.4.3.1.1}}
+\newlabel{sec:inputnorm}{{4.3.1.1}{27}{Input Normalization Filter}{subsubsection.4.3.1.1}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {4.3}{\ignorespaces Intuition behind input normalization\relax }}{27}{figure.caption.15}}
 \newlabel{inputnormfig}{{4.3}{27}{Intuition behind input normalization\relax }{figure.caption.15}{}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {4.3.1.2}Neural Network}{27}{subsubsection.4.3.1.2}}
@@ -190,6 +191,7 @@
 \citation{tensorflow2015-whitepaper}
 \@writefile{toc}{\contentsline {section}{\numberline {4.4}Infrastructure}{30}{section.4.4}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.4.1}Reinforcement Learning Server}{30}{subsection.4.4.1}}
+\newlabel{rlarchitecture}{{4.4.1}{30}{Reinforcement Learning Server}{subsection.4.4.1}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {4.7}{\ignorespaces Reinforcement Learning Server Architecture. \cite  {tgmuzio} \relax }}{30}{figure.caption.20}}
 \newlabel{rlserver}{{4.7}{30}{Reinforcement Learning Server Architecture. \cite {tgmuzio} \relax }{figure.caption.20}{}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {4.4.1.1}Simulation Server}{30}{subsubsection.4.4.1.1}}
@@ -197,42 +199,47 @@
 \citation{grpc}
 \citation{protocolbuffers}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {4.4.1.3}Learning Agent}{31}{subsubsection.4.4.1.3}}
+\newlabel{learningagent}{{4.4.1.3}{31}{Learning Agent}{subsubsection.4.4.1.3}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.4.2}Neural Network Deployment}{31}{subsection.4.4.2}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.4.3}Distributed Training}{31}{subsection.4.4.3}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.4.4}Monitoring via Tensorboard}{31}{subsection.4.4.4}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {5}Results' Analysis and Discussion}{32}{chapter.5}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.4.2.1}Import Supervised Model into OpenAI Baselines}{31}{subsubsection.4.4.2.1}}
+\@writefile{loa}{\contentsline {algorithm}{\numberline {1}{\ignorespaces Import Keras model into Tensorflow\relax }}{32}{algorithm.1}}
+\newlabel{importnetworkpseudocode}{{1}{32}{Import Keras model into Tensorflow\relax }{ALC@unique.4}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.4.2.2}Export OpenAI Baselines onto Soccer Agent}{32}{subsubsection.4.4.2.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4.3}Distributed Training}{32}{subsection.4.4.3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4.4}Monitoring via Tensorboard}{32}{subsection.4.4.4}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {5}Results' Analysis and Discussion}{33}{chapter.5}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{ch:results}{{5}{32}{Results' Analysis and Discussion}{chapter.5}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {5.1}Training Results}{32}{section.5.1}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.1}{\ignorespaces Plots of mean squared error and mean absolute error, during training.\relax }}{32}{figure.caption.21}}
-\newlabel{fig:errors}{{5.1}{32}{Plots of mean squared error and mean absolute error, during training.\relax }{figure.caption.21}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {5.2}The Learned Kick Motion}{33}{section.5.2}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.2}{\ignorespaces The kick motion. The first row of figures shows the original kick motion. The second row shows the learned kick motion. Both motions are visually indistinguishable.\relax }}{33}{figure.caption.22}}
-\newlabel{fig:motions}{{5.2}{33}{The kick motion. The first row of figures shows the original kick motion. The second row shows the learned kick motion. Both motions are visually indistinguishable.\relax }{figure.caption.22}{}}
-\newlabel{footnote_walk}{{1}{33}{}{Hfootnote.1}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.3}{\ignorespaces Joint values for comparing original and learned kicks. The neural network was able to fit the joint trajectories with small errors.\relax }}{34}{figure.caption.23}}
-\newlabel{fig:kick_joints_curves}{{5.3}{34}{Joint values for comparing original and learned kicks. The neural network was able to fit the joint trajectories with small errors.\relax }{figure.caption.23}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {5.1}{\ignorespaces The Kick Comparison\relax }}{34}{table.caption.24}}
-\newlabel{tab_kicks_statistics}{{5.1}{34}{The Kick Comparison\relax }{table.caption.24}{}}
+\newlabel{ch:results}{{5}{33}{Results' Analysis and Discussion}{chapter.5}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.1}Training Results}{33}{section.5.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.1}{\ignorespaces Plots of mean squared error and mean absolute error, during training.\relax }}{33}{figure.caption.21}}
+\newlabel{fig:errors}{{5.1}{33}{Plots of mean squared error and mean absolute error, during training.\relax }{figure.caption.21}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.2}The Learned Kick Motion}{34}{section.5.2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.2}{\ignorespaces The kick motion. The first row of figures shows the original kick motion. The second row shows the learned kick motion. Both motions are visually indistinguishable.\relax }}{34}{figure.caption.22}}
+\newlabel{fig:motions}{{5.2}{34}{The kick motion. The first row of figures shows the original kick motion. The second row shows the learned kick motion. Both motions are visually indistinguishable.\relax }{figure.caption.22}{}}
+\newlabel{footnote_walk}{{1}{34}{}{Hfootnote.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.3}{\ignorespaces Joint values for comparing original and learned kicks. The neural network was able to fit the joint trajectories with small errors.\relax }}{35}{figure.caption.23}}
+\newlabel{fig:kick_joints_curves}{{5.3}{35}{Joint values for comparing original and learned kicks. The neural network was able to fit the joint trajectories with small errors.\relax }{figure.caption.23}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {5.1}{\ignorespaces The Kick Comparison\relax }}{35}{table.caption.24}}
+\newlabel{tab_kicks_statistics}{{5.1}{35}{The Kick Comparison\relax }{table.caption.24}{}}
 \citation{macalpine2013}
 \citation{macalpine2017}
-\@writefile{toc}{\contentsline {section}{\numberline {5.3}The Learned Walk Motion}{35}{section.5.3}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.4}{\ignorespaces Joints positions, during a period of the walking motion for the original walk, and the learned walk and the joints positions effectively attained, during the learned walking motion.\relax }}{35}{figure.caption.25}}
-\newlabel{fig:walk_joints_curves}{{5.4}{35}{Joints positions, during a period of the walking motion for the original walk, and the learned walk and the joints positions effectively attained, during the learned walking motion.\relax }{figure.caption.25}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {5.2}{\ignorespaces Walk Comparison - Forward Walk\relax }}{36}{table.caption.26}}
-\newlabel{tab_walk}{{5.2}{36}{Walk Comparison - Forward Walk\relax }{table.caption.26}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.5}{\ignorespaces The walking motions comparison. Figure (a) shows our agent in its regular walk, Figure (b) shows the same agent mimicking UT Austin Villa walk, and Figure (c) shows the UT Austin Villa agent itself performing his own walking motion.\relax }}{36}{figure.caption.27}}
-\newlabel{fig:walkings}{{5.5}{36}{The walking motions comparison. Figure (a) shows our agent in its regular walk, Figure (b) shows the same agent mimicking UT Austin Villa walk, and Figure (c) shows the UT Austin Villa agent itself performing his own walking motion.\relax }{figure.caption.27}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {5.4}Other motions}{36}{section.5.4}}
-\newlabel{footnote_walk}{{2}{36}{}{Hfootnote.2}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.3}The Learned Walk Motion}{36}{section.5.3}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.4}{\ignorespaces Joints positions, during a period of the walking motion for the original walk, and the learned walk and the joints positions effectively attained, during the learned walking motion.\relax }}{36}{figure.caption.25}}
+\newlabel{fig:walk_joints_curves}{{5.4}{36}{Joints positions, during a period of the walking motion for the original walk, and the learned walk and the joints positions effectively attained, during the learned walking motion.\relax }{figure.caption.25}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {5.2}{\ignorespaces Walk Comparison - Forward Walk\relax }}{37}{table.caption.26}}
+\newlabel{tab_walk}{{5.2}{37}{Walk Comparison - Forward Walk\relax }{table.caption.26}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.5}{\ignorespaces The walking motions comparison. Figure (a) shows our agent in its regular walk, Figure (b) shows the same agent mimicking UT Austin Villa walk, and Figure (c) shows the UT Austin Villa agent itself performing his own walking motion.\relax }}{37}{figure.caption.27}}
+\newlabel{fig:walkings}{{5.5}{37}{The walking motions comparison. Figure (a) shows our agent in its regular walk, Figure (b) shows the same agent mimicking UT Austin Villa walk, and Figure (c) shows the UT Austin Villa agent itself performing his own walking motion.\relax }{figure.caption.27}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.4}Other motions}{37}{section.5.4}}
+\newlabel{footnote_walk}{{2}{37}{}{Hfootnote.2}{}}
 \citation{mcalpine2017}
-\@writefile{toc}{\contentsline {chapter}{\numberline {6}Conclusions, Recommendations, and Future Works}{38}{chapter.6}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {6}Conclusions, Recommendations, and Future Works}{39}{chapter.6}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{ch:conclusion}{{6}{38}{Conclusions, Recommendations, and Future Works}{chapter.6}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {6.1}Preliminary Conclusions and Future Works}{38}{section.6.1}}
-\@writefile{toc}{\contentsline {section}{\numberline {6.2}The Activities Plan}{38}{section.6.2}}
+\newlabel{ch:conclusion}{{6}{39}{Conclusions, Recommendations, and Future Works}{chapter.6}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.1}Preliminary Conclusions and Future Works}{39}{section.6.1}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.2}The Activities Plan}{39}{section.6.2}}
 \bibdata{abnt-options,Referencias/referencias}
 \bibcite{tensorflow2015-whitepaper}{Abadi \textit  {et al.} 2015}
 \bibciteEXPL{tensorflow2015-whitepaper}{Abadi \textit  {et al.}}
@@ -270,7 +277,7 @@
 \bibciteEXPL{gouaillier2009}{Gouaillier \textit  {et al.}}
 \bibciteIMPL{gouaillier2009}{GOUAILLIER \textit  {et al.}}
 \bibciteYEAR{gouaillier2009}{2009}
-\@writefile{toc}{\contentsline {chapter}{Bibliography}{40}{chapter.7}}
+\@writefile{toc}{\contentsline {chapter}{Bibliography}{41}{chapter.7}}
 \bibcite{grpc}{gRPC 2018}
 \bibciteEXPL{grpc}{gRPC}
 \bibciteIMPL{grpc}{GRPC}
@@ -431,7 +438,7 @@
 \bibciteEXPL{simspark}{Xu e Vatankhah}
 \bibciteIMPL{simspark}{XU; VATANKHAH}
 \bibciteYEAR{simspark}{2014}
-\newlabel{LastPage}{{}{45}{}{page.45}{}}
-\xdef\lastpage@lastpage{45}
-\xdef\lastpage@lastpageHy{45}
+\newlabel{LastPage}{{}{46}{}{page.46}{}}
+\xdef\lastpage@lastpage{46}
+\xdef\lastpage@lastpageHy{46}
 \bibstyle{abnt-alf}

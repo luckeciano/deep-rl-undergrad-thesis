@@ -131,7 +131,7 @@ The policy is represented by a neural network similar to the supervised learning
 
 In HLM, the architecture from both value function and policy networks is that described by section \ref{supervised_learning_setup}. On the other cases, the network is composed by three building blocks: an input normalization Filter, the neural networks themselves and a Gaussian action space noise.
 
-\subsubsection{Input Normalization Filter}
+\subsubsection{Input Normalization Filter}\label{sec:inputnorm}
 The input normalization filter, also know as feature scaling, has the objective of normalize the input to avoid the problem of vanishing and exploding gradients by applying updates through all dimensions in equal proportions, as illustrated in Figure \ref{inputnormfig}. This normalization happens at each pass in the network, re-calculating mean and standard deviation using the new examples. Hence, this method helps during the convergence.
 
 \begin{figure}[!htbp]
@@ -211,7 +211,7 @@ Figure \ref{taskdescription} shows the initial setup from the task.
 \end{figure}
 
 \section{Infrastructure}
-\subsection{Reinforcement Learning Server}
+\subsection{Reinforcement Learning Server}\label{rlarchitecture}
 
 Figure \ref{rlserver} shows the architecture used to integrate the learning algorithm, agent and simulation environment. The simulation server exposes a state to the soccer agent, which model this information and passes to the learning algorithm that chooses a action accordingly and returns to the agent. Then, it applies this action in the environment, modifying its state, completing the cycle.
 
@@ -233,7 +233,7 @@ The agent used is from ITAndroids Soccer 3D team and it leads with the perceptio
 
 Other tool that worth mention is RoboViz, a publicly available visualization tool that allows a few improvements over the default visualization tool. We used it to verify if the task was implemented successfully.
 
-\subsubsection{Learning Agent}
+\subsubsection{Learning Agent}\label{learningagent}
 
 We created another interface to integrate the Soccer Agent with the algorithms used in this experimentation. These were implemented by OpenAI Baselines \cite{baselines}, a repository of high-quality implementations of reinforcement learning algorithms whose purpose is make easier for the research community to replicate, refine, and identify new ideas, and create good baselines to build research on top of. The community developed those algorithms using Python language with the Tensorflow \cite{tensorflow2015-whitepaper} framework.
 
@@ -243,6 +243,41 @@ This integration was done using gRPC \cite{grpc}, an open source remote procedur
 
 
 \subsection{Neural Network Deployment}
+
+When we use the architecture from \ref{rlarchitecture}, two problems related to the neural network deployment arise.
+
+The first one is related to the HLM. We have a supervised learning model trained using the framework Keras outside the environment and with no relation to OpenAI Baselines. Therefore, we need a way to import this model from Keras model into the learning algorithms.
+
+The second problem is to deploy the network from learning algorithm to the soccer agent. When the network is trained using OpenAI Baselines, there's no contact between the soccer agent and the model. As described in \ref{learningagent}, there's a interface to communicate the actions between them. All calculations happens in only one side. However, during a game, it's not possible to maintain this dependency, so we need a way to run the network inside soccer agent and without the whole training structure.
+
+\subsubsection{Import Supervised Model into OpenAI Baselines}
+
+To solve this problem, it's important to understand how Keras works and what's the challenge behind this import. 
+
+Keras works on top of lower level machine learning frameworks. Its purpose is make easier to prototype and train models with few lines of code. With Keras, developers don't need to understand in deep how computational graphs works and some math behind the models. Actually, this framework wraps code from the lower level ones. Therefore, even being easier to use, all the computation and data structures remains the same.
+
+As back-end framework that Keras runs on top of, we used Tensorflow. As described previously, it creates a computational graph with math tensors as inputs that "flow" inside and returns the expected result.
+
+Given that context, the idea is straightforward: we create a "Kick Policy" class, that creates the model using Keras, load its weights, gets the output tensor and injects in the rest of Tensorflow's computational graph related to the learning algorithm. The Algorithm \ref{importnetworkpseudocode} explains sequentially this idea.
+
+\begin{algorithm}
+	\caption{Import Keras model into Tensorflow}
+	\begin{algorithmic} 
+		\REQUIRE Keras output model
+		\STATE $model \leftarrow createKerasModelStructure()$
+		\STATE $model.load\_weights(keras\_output\_model)$
+		\STATE $outputTensor \leftarrow model.output$
+		\STATE Inject $outputTensor$ in the rest of computational graph
+	\end{algorithmic}
+	\label{importnetworkpseudocode}
+\end{algorithm}
+
+It's important to mention that the $load\_weights$ operation already initializes the graph variables and if we initialize them again, we lose the pre-trained weights.
+
+The biggest problem of this integration is we can't use Input Normalization Filter and Gaussian Action Space Noise, described in \ref{sec:inputnorm} and \ref{gasp}, respectively. Therefore, we can face gradient and exploration problems during learning.
+
+\subsubsection{Export OpenAI Baselines onto Soccer Agent}
+
 
 \subsection{Distributed Training}
 

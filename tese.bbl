@@ -87,8 +87,15 @@ Accessed: 2018-08-20.}
 Dispon{\'\i}vel em:
   \htmladdnormallink{$<$http:\-/\-/arxiv\-.org\-/abs\-/1604\-.00772$>$}{http://arxiv.org/abs/1604.00772}.}
 
+\bibitem[Heess \textit{et al.} 2017]{heess2017}
+\abntrefinfo{Heess \textit{et al.}}{HEESS \textit{et al.}}{2017a}
+{HEESS, N.; TB, D.; S, S.; LEMMON, J.; MEREL, J.; WAYNE, G.; TASSA, Y.; EREZ,
+  T.; WANG, Z.; ESLAMI, S. M.~A.; RIEDMILLER, M.; SILVER, D. Emergence of
+  locomotion behaviours in rich environments.
+\textbf{arXiv}, Jul 2017.}
+
 \bibitem[Heess \textit{et al.} 2017]{DBLP:journals/corr/HeessTSLMWTEWER17}
-\abntrefinfo{Heess \textit{et al.}}{HEESS \textit{et al.}}{2017}
+\abntrefinfo{Heess \textit{et al.}}{HEESS \textit{et al.}}{2017b}
 {HEESS, N.; TB, D.; SRIRAM, S.; LEMMON, J.; MEREL, J.; WAYNE, G.; TASSA, Y.;
   EREZ, T.; WANG, Z.; ESLAMI, S. M.~A.; RIEDMILLER, M.~A.; SILVER, D. Emergence
   of locomotion behaviours in rich environments.
@@ -356,6 +363,14 @@ Tese (Doutorado) --- King's College, Cambridge, UK, May 1989.
 Dispon{\'\i}vel em:
   \htmladdnormallink{$<$http:\-/\-/www\-.cs\-.rhul\-.ac\-.uk\-/\~{}chrisw\-/new\underline{\
   }thesis\-.pdf$>$}{http://www.cs.rhul.ac.uk/~chrisw/new_thesis.pdf}.}
+
+\bibitem[Wongsuphasawat \textit{et al.} 2017]{tensorboard}
+\abntrefinfo{Wongsuphasawat \textit{et al.}}{WONGSUPHASAWAT \textit{et
+  al.}}{2017}
+{WONGSUPHASAWAT, K.; SMILKOV, D.; WEXLER, J.; WILSON, J.; MANE, D.; FRITZ, D.;
+  KRISHNAN, D.; VIEGAS, F.; WATTENVERG, M. Visualizing dataflow graphs of deep
+  learning models in tensorflow. In:  . [s.n.], 2017. Dispon{\'\i}vel em:
+  \htmladdnormallink{$<$http:\-/\-/idl\-.cs\-.washington\-.edu\-/files\-/2018-TensorFlowGraph-VAST\-.pdf$>$}{http://idl.cs.washington.edu/files/2018-TensorFlowGraph-VAST.pdf}.}
 
 \bibitem[Xiong \textit{et al.} 2016]{DBLP:journals/corr/XiongDHSSSYZ16a}
 \abntrefinfo{Xiong \textit{et al.}}{XIONG \textit{et al.}}{2016}

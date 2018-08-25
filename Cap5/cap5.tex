@@ -1,4 +1,4 @@
-\section{Experimentation Setup}
+\section{Experimentation Setup}\label{sec:experimentation_setup}
 In order to find the best method for learn the Kick Motion, we tested several techniques to compare them and find out that one which converges faster and results in the better and more robust kick. In the next subsections, we will describe each of the methods evaluated in this work.
 
 \subsection{Hybrid Learning Model -- HLM}
@@ -278,7 +278,102 @@ The biggest problem of this integration is we can't use Input Normalization Filt
 
 \subsubsection{Export OpenAI Baselines onto Soccer Agent}
 
+As mentioned earlier, Tensorflow creates a data flow graph with all operations executed during the algorithm. Figure \ref{fig:dataflowgraph} shows the whole graph for PPO used in this experimentation. However, we need to export only the policy network itself.
+
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[width=1.1\textwidth]{Cap5/dataflowgraph.eps}
+	\caption{Data flow graph for PPO algorithm.
+	}
+	\label{fig:dataflowgraph}
+\end{figure}
+
+It is important to mention that ``policy network" mean only the neural network that maps state to actions, and not the whole policy node ``pi" in Figure \ref{fig:dataflowgraph}. The ``pi" node also have the value function network and gaussian noise in action space, only needed during the learning process. Figure \ref{fig:pigraph} shows the whole ``pi" node.
+
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[width=1.1\textwidth]{Cap5/pigraph.eps}
+	\caption{ ``Pi" data flow node from PPO.
+	}
+	\label{fig:pigraph}
+\end{figure}
+
+Therefore, to export this policy network, we need to add a new "identity" node in the output from that. This node has the same resultant tensor, but it is possible to label it and we can freeze the subgraph whose output is the labeled node itself. Internally, Tensorflow will start freezing the output node and its dependencies, recursing until input nodes. Then, we save this data structure in a proto file that we read using the C++ API in the soccer agent. Figure \ref{fig:policygraph1} and \ref{fig:policygraph2} show the policy data flow graphs from Figures \ref{rlnetwork} and \ref{fig:model_plot}, respectively.
+
+
+
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[width=1.1\textwidth]{Cap5/policygraph1.eps}
+	\caption{ Policy data flow graph from Figure \ref{rlnetwork}
+	}
+	\label{fig:policygraph1}
+\end{figure}
+
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[width=1.1\textwidth]{Cap5/policygraph2.eps}
+	\caption{ Policy data flow graph from Figure \ref{fig:model_plot}
+	}
+	\label{fig:policygraph2}
+\end{figure}
+
 
 \subsection{Distributed Training}
+Reinforcement Learning training is much more costly computationally when compared to the supervised one described in \ref{supervised_learning_setup}. Additionally to the costs of applying gradients in the network, we need to gather all the data from agent simulations. Furthermore, since the data distribution changes during the learning, it's harder to converge, se it is needed a large amount of data.
+
+In this context, use a single agent to get all the data and train the algorithm takes too long time to converge and, depending of the problem, it is not viable. We need a way to get more data faster and accelerate the training.
+
+\subsubsection{Data Parallelism}
+
+The solution for this challenge is distribute the training using several agents. Each agent interacts with its own environment, but the results are applied to the same network. This technique is called Data Parallelism, because the parallelization happens in data gathering. It opposes the idea of Model Parallelism, where the learning model itself is distributed, but this technique is not interesting in reinforcement learning training.
+
+In Data Parallelism, we applied a master-workers architecture, as shown in Figure \ref{fig:master-worker}. It has several worker nodes, whose job is gather data by simulating the agent, and a master node, which controls the learning algorithm. This architecture works very well in this experiment because the computation from workers are very similar so we can conduct several independent processes in those. It can also be fault tolerant: if one worker dies, the learning process can keep running.
+
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[width=1.1\textwidth]{Cap5/master-worker.eps}
+	\caption{ Master-workers architecture for data parallelism.
+	}
+	\label{fig:master-worker}
+\end{figure}
+
+\subsubsection{Synchronous vs. Asynchronous Distributed Training}
+
+There are two ways to apply updates from a master-workers architecture in the learning algorithm. Both ways are illustrated in Figure \ref{fig:distributedtraining}.
+
+In asynchronous training, each worker executes the task, gathers data, calculate the gradient and apply it in the neural network. There's no interaction between workers so the learning updates can occur freely and, therefore, faster. However, the downside is that each worker has its own version of the network which can cause a discrepancy between them and slows the convergence.
+
+On the other side, in the synchronous training, each worker executes the same job as the asynchronous one. However, the master node collects the gradients and applies an average from them. In this way, the updates occurs in the same frequency, but they are much more precise (and therefore we can use large learning rates). 
+
+\cite{heess2017} implemented a variation of PPO called Distributed PPO (DPPO) and their experiments shows that synchronous updates worked better in practice. Hence, in this experimentation we also used this type of distributed training.
+
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[width=0.8\textwidth]{Cap5/distributedtraining.eps}
+	\caption{ Synchronous and Asynchornous Distributed Training.
+	}
+	\label{fig:distributedtraining}
+\end{figure}
+
+\subsection{Metrics}
+
+We need evaluation metrics to compare the techniques in section \ref{sec:experimentation_setup}. Several of them were collected and described below:
+
+\begin{itemize}
+	\item \textbf{Episode Reward Mean}: This metric is the mean of cumulate reward during the whole episode. It's directly related to the motion performance. Then, it's the main metric in the comparison.
+	\item \textbf{Value Function Loss}: Says how good is the prediction of value function by the network.
+	\item \textbf{Timesteps So Far}: It means how many cycles (observation-action-reward) have been executed. This metric was used to compare the speedup from distributed training.
+	\item \textbf{Episode Length Mean}: In the case of models with no fixed length, this metric will allow us to understand how the learning worked.
+\end{itemize} 
 
 \subsection{Monitoring via Tensorboard}
+Lastly, we need a tool whose purpose is monitor the metrics collected during the training. We used Tensorboard \cite{tensorboard}, a graphic visualizer tool from Tensorflow. Figure \ref{fig:tensorboard} shows the GUI with some metrics. Using that, we can compare several models and their metrics, visualize computational graphs and debug the learning process.
+
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[width=1.0\textwidth]{Cap5/tensorboard.eps}
+	\caption{ Monitoring training metrics with Tensorboard.
+	}
+	\label{fig:tensorboard}
+\end{figure}

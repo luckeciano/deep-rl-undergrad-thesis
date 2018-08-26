@@ -18,9 +18,12 @@ Repeated entry---line 1691 of file Referencias/referencias.bib
 I'm skipping whatever remains of this entry
 A bad cross reference---entry "mujoco"
 refers to entry "conf/iros/2012", which doesn't exist
+A bad cross reference---entry "glorot2011a"
+refers to entry "conf/aistats/2011", which doesn't exist
 Warning--I didn't find a database entry for "tgmmaximo"
 Warning--I didn't find a database entry for "crossentropy"
 Warning--I didn't find a database entry for "conf/iros/2012"
+Warning--I didn't find a database entry for "conf/aistats/2011"
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
@@ -31,45 +34,45 @@ Reallocated glb_str_end (elt_size=4) to 20 items from 10.
 | Em caso de dúvidas ou problemas com este estilo procure |
 | http://abntex.codigolivre.org.br                        |
 +---------------------------------------------------------+
-You've used 56 entries,
+You've used 62 entries,
             6480 wiz_defined-function locations,
-            1484 strings with 21976 characters,
-and the built_in function-call counts, 88688 in all, are:
-= -- 9305
-> -- 2862
-< -- 1610
-+ -- 2832
-- -- 799
-* -- 6199
-:= -- 10178
-add.period$ -- 217
-call.type$ -- 58
-change.case$ -- 900
-chr.to.int$ -- 124
-cite$ -- 51
-duplicate$ -- 8041
-empty$ -- 3442
-format.name$ -- 4482
-if$ -- 18567
+            1519 strings with 23295 characters,
+and the built_in function-call counts, 105681 in all, are:
+= -- 11958
+> -- 3043
+< -- 2034
++ -- 3321
+- -- 853
+* -- 6995
+:= -- 11690
+add.period$ -- 244
+call.type$ -- 64
+change.case$ -- 961
+chr.to.int$ -- 133
+cite$ -- 57
+duplicate$ -- 10509
+empty$ -- 3847
+format.name$ -- 4756
+if$ -- 22043
 int.to.chr$ -- 7
 int.to.str$ -- 3
-missing$ -- 1179
-newline$ -- 274
-num.names$ -- 256
-pop$ -- 1593
+missing$ -- 1285
+newline$ -- 306
+num.names$ -- 287
+pop$ -- 1746
 preamble$ -- 1
-purify$ -- 247
+purify$ -- 270
 quote$ -- 0
-skip$ -- 8587
+skip$ -- 11086
 stack$ -- 1
-substring$ -- 2774
-swap$ -- 2818
-text.length$ -- 63
+substring$ -- 3399
+swap$ -- 3346
+text.length$ -- 71
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 25
+type$ -- 29
 warning$ -- 0
-while$ -- 375
+while$ -- 422
 width$ -- 0
-write$ -- 818
-(There were 2 error messages)
+write$ -- 914
+(There were 3 error messages)

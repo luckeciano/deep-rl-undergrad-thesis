@@ -21,34 +21,53 @@
 \BOOKMARK [1][]{section.2.2}{2.2 Reinforcement Learning for Control}{chapter.2}% 21
 \BOOKMARK [0][]{chapter.3}{3 Deep Learning}{}% 22
 \BOOKMARK [1][]{section.3.1}{3.1 Neural Networks}{chapter.3}% 23
-\BOOKMARK [0][]{chapter.4}{4 Methodology}{}% 24
-\BOOKMARK [1][]{section.4.1}{4.1 Experimentation Setup}{chapter.4}% 25
-\BOOKMARK [2][]{subsection.4.1.1}{4.1.1 Hybrid Learning Model \205 HLM}{section.4.1}% 26
-\BOOKMARK [2][]{subsection.4.1.2}{4.1.2 Reinforcement with Naive Reward - RNR }{section.4.1}% 27
-\BOOKMARK [2][]{subsection.4.1.3}{4.1.3 Reinforcement with Reference Reward - RRR }{section.4.1}% 28
-\BOOKMARK [2][]{subsection.4.1.4}{4.1.4 Reinforcement with Initial State Distribution - RISD}{section.4.1}% 29
-\BOOKMARK [2][]{subsection.4.1.5}{4.1.5 Reinforcement with Early Termination - RET}{section.4.1}% 30
-\BOOKMARK [1][]{section.4.2}{4.2 Supervised Learning Setup}{chapter.4}% 31
-\BOOKMARK [2][]{subsection.4.2.1}{4.2.1 The Dataset}{section.4.2}% 32
-\BOOKMARK [2][]{subsection.4.2.2}{4.2.2 Neural Network Architecture and Hyperparameters}{section.4.2}% 33
-\BOOKMARK [2][]{subsection.4.2.3}{4.2.3 The Training Procedure}{section.4.2}% 34
-\BOOKMARK [2][]{subsection.4.2.4}{4.2.4 The Deployment in the Soccer 3D Environment}{section.4.2}% 35
-\BOOKMARK [1][]{section.4.3}{4.3 Reinforcement Learning Setup}{chapter.4}% 36
-\BOOKMARK [2][]{subsection.4.3.1}{4.3.1 Policy Representation}{section.4.3}% 37
-\BOOKMARK [2][]{subsection.4.3.2}{4.3.2 Task Description}{section.4.3}% 38
-\BOOKMARK [1][]{section.4.4}{4.4 Infrastructure}{chapter.4}% 39
-\BOOKMARK [2][]{subsection.4.4.1}{4.4.1 Reinforcement Learning Server}{section.4.4}% 40
-\BOOKMARK [2][]{subsection.4.4.2}{4.4.2 Neural Network Deployment}{section.4.4}% 41
-\BOOKMARK [2][]{subsection.4.4.3}{4.4.3 Distributed Training}{section.4.4}% 42
-\BOOKMARK [2][]{subsection.4.4.4}{4.4.4 Metrics}{section.4.4}% 43
-\BOOKMARK [2][]{subsection.4.4.5}{4.4.5 Monitoring via Tensorboard}{section.4.4}% 44
-\BOOKMARK [0][]{chapter.5}{5 Results' Analysis and Discussion}{}% 45
-\BOOKMARK [1][]{section.5.1}{5.1 Training Results}{chapter.5}% 46
-\BOOKMARK [1][]{section.5.2}{5.2 The Learned Kick Motion}{chapter.5}% 47
-\BOOKMARK [1][]{section.5.3}{5.3 The Learned Walk Motion}{chapter.5}% 48
-\BOOKMARK [1][]{section.5.4}{5.4 Other motions}{chapter.5}% 49
-\BOOKMARK [0][]{chapter.6}{6 Conclusions, Recommendations, and Future Works}{}% 50
-\BOOKMARK [1][]{section.6.1}{6.1 Preliminary Conclusions and Future Works}{chapter.6}% 51
-\BOOKMARK [1][]{section.6.2}{6.2 The Activities Plan}{chapter.6}% 52
-\BOOKMARK [0][]{chapter.7}{Bibliography}{}% 53
-\BOOKMARK [0][]{bla.0}{Folha de Registro do Documento}{}% 54
+\BOOKMARK [2][]{subsection.3.1.1}{3.1.1 A Neuron}{section.3.1}% 24
+\BOOKMARK [2][]{subsection.3.1.2}{3.1.2 Neural Network Representation}{section.3.1}% 25
+\BOOKMARK [2][]{subsection.3.1.3}{3.1.3 Vectorization}{section.3.1}% 26
+\BOOKMARK [1][]{section.3.2}{3.2 Activation Functions}{chapter.3}% 27
+\BOOKMARK [2][]{subsection.3.2.1}{3.2.1 Logistic Sigmoid}{section.3.2}% 28
+\BOOKMARK [2][]{subsection.3.2.2}{3.2.2 Hyperbolic Tangent}{section.3.2}% 29
+\BOOKMARK [2][]{subsection.3.2.3}{3.2.3 Rectified Linear Unit - ReLU}{section.3.2}% 30
+\BOOKMARK [2][]{subsection.3.2.4}{3.2.4 Leaky ReLU}{section.3.2}% 31
+\BOOKMARK [1][]{section.3.3}{3.3 Cost Function}{chapter.3}% 32
+\BOOKMARK [1][]{section.3.4}{3.4 Gradient Descent}{chapter.3}% 33
+\BOOKMARK [1][]{section.3.5}{3.5 Backpropagation}{chapter.3}% 34
+\BOOKMARK [1][]{section.3.6}{3.6 Optimization Algorithms}{chapter.3}% 35
+\BOOKMARK [2][]{subsection.3.6.1}{3.6.1 Batch, Mini-batch and Stochastic Gradient Descent}{section.3.6}% 36
+\BOOKMARK [2][]{subsection.3.6.2}{3.6.2 Momentum}{section.3.6}% 37
+\BOOKMARK [2][]{subsection.3.6.3}{3.6.3 RMSProp}{section.3.6}% 38
+\BOOKMARK [2][]{subsection.3.6.4}{3.6.4 Adam}{section.3.6}% 39
+\BOOKMARK [1][]{section.3.7}{3.7 Random Initialization}{chapter.3}% 40
+\BOOKMARK [2][]{subsection.3.7.1}{3.7.1 Xavier Initialization}{section.3.7}% 41
+\BOOKMARK [1][]{section.3.8}{3.8 Learning Rate Decay}{chapter.3}% 42
+\BOOKMARK [0][]{chapter.4}{4 Methodology}{}% 43
+\BOOKMARK [1][]{section.4.1}{4.1 Experimentation Setup}{chapter.4}% 44
+\BOOKMARK [2][]{subsection.4.1.1}{4.1.1 Hybrid Learning Model \205 HLM}{section.4.1}% 45
+\BOOKMARK [2][]{subsection.4.1.2}{4.1.2 Reinforcement with Naive Reward - RNR }{section.4.1}% 46
+\BOOKMARK [2][]{subsection.4.1.3}{4.1.3 Reinforcement with Reference Reward - RRR }{section.4.1}% 47
+\BOOKMARK [2][]{subsection.4.1.4}{4.1.4 Reinforcement with Initial State Distribution - RISD}{section.4.1}% 48
+\BOOKMARK [2][]{subsection.4.1.5}{4.1.5 Reinforcement with Early Termination - RET}{section.4.1}% 49
+\BOOKMARK [1][]{section.4.2}{4.2 Supervised Learning Setup}{chapter.4}% 50
+\BOOKMARK [2][]{subsection.4.2.1}{4.2.1 The Dataset}{section.4.2}% 51
+\BOOKMARK [2][]{subsection.4.2.2}{4.2.2 Neural Network Architecture and Hyperparameters}{section.4.2}% 52
+\BOOKMARK [2][]{subsection.4.2.3}{4.2.3 The Training Procedure}{section.4.2}% 53
+\BOOKMARK [2][]{subsection.4.2.4}{4.2.4 The Deployment in the Soccer 3D Environment}{section.4.2}% 54
+\BOOKMARK [1][]{section.4.3}{4.3 Reinforcement Learning Setup}{chapter.4}% 55
+\BOOKMARK [2][]{subsection.4.3.1}{4.3.1 Policy Representation}{section.4.3}% 56
+\BOOKMARK [2][]{subsection.4.3.2}{4.3.2 Task Description}{section.4.3}% 57
+\BOOKMARK [1][]{section.4.4}{4.4 Infrastructure}{chapter.4}% 58
+\BOOKMARK [2][]{subsection.4.4.1}{4.4.1 Reinforcement Learning Server}{section.4.4}% 59
+\BOOKMARK [2][]{subsection.4.4.2}{4.4.2 Neural Network Deployment}{section.4.4}% 60
+\BOOKMARK [2][]{subsection.4.4.3}{4.4.3 Distributed Training}{section.4.4}% 61
+\BOOKMARK [2][]{subsection.4.4.4}{4.4.4 Metrics}{section.4.4}% 62
+\BOOKMARK [2][]{subsection.4.4.5}{4.4.5 Monitoring via Tensorboard}{section.4.4}% 63
+\BOOKMARK [0][]{chapter.5}{5 Results' Analysis and Discussion}{}% 64
+\BOOKMARK [1][]{section.5.1}{5.1 Training Results}{chapter.5}% 65
+\BOOKMARK [1][]{section.5.2}{5.2 The Learned Kick Motion}{chapter.5}% 66
+\BOOKMARK [1][]{section.5.3}{5.3 The Learned Walk Motion}{chapter.5}% 67
+\BOOKMARK [1][]{section.5.4}{5.4 Other motions}{chapter.5}% 68
+\BOOKMARK [0][]{chapter.6}{6 Conclusions, Recommendations, and Future Works}{}% 69
+\BOOKMARK [1][]{section.6.1}{6.1 Preliminary Conclusions and Future Works}{chapter.6}% 70
+\BOOKMARK [1][]{section.6.2}{6.2 The Activities Plan}{chapter.6}% 71
+\BOOKMARK [0][]{chapter.7}{Bibliography}{}% 72
+\BOOKMARK [0][]{bla.0}{Folha de Registro do Documento}{}% 73

@@ -1,56 +1,75 @@
 \select@language {english}
-\contentsline {chapter}{\numberline {1}Introduction}{10}{chapter.1}
-\contentsline {section}{\numberline {1.1}Motivation}{10}{section.1.1}
-\contentsline {section}{\numberline {1.2}Contextualization}{10}{section.1.2}
-\contentsline {section}{\numberline {1.3}Objective}{12}{section.1.3}
-\contentsline {section}{\numberline {1.4}Scope}{12}{section.1.4}
-\contentsline {section}{\numberline {1.5}Organization of this work}{12}{section.1.5}
-\contentsline {chapter}{\numberline {2}Literature Review}{13}{chapter.2}
-\contentsline {section}{\numberline {2.1}The RoboCup Soccer3D Simulation League}{13}{section.2.1}
-\contentsline {subsection}{\numberline {2.1.1}Domain Description}{13}{subsection.2.1.1}
-\contentsline {subsection}{\numberline {2.1.2} Kick Motion }{13}{subsection.2.1.2}
-\contentsline {subsection}{\numberline {2.1.3}Keyframe Movements}{14}{subsection.2.1.3}
-\contentsline {subsection}{\numberline {2.1.4}Optimization Techniques}{15}{subsection.2.1.4}
-\contentsline {section}{\numberline {2.2}Reinforcement Learning for Control}{16}{section.2.2}
-\contentsline {chapter}{\numberline {3}Deep Learning}{19}{chapter.3}
-\contentsline {section}{\numberline {3.1}Neural Networks}{19}{section.3.1}
-\contentsline {chapter}{\numberline {4}Methodology}{22}{chapter.4}
-\contentsline {section}{\numberline {4.1}Experimentation Setup}{22}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Hybrid Learning Model -- HLM}{22}{subsection.4.1.1}
-\contentsline {subsection}{\numberline {4.1.2}Reinforcement with Naive Reward - RNR }{22}{subsection.4.1.2}
-\contentsline {subsection}{\numberline {4.1.3}Reinforcement with Reference Reward - RRR }{23}{subsection.4.1.3}
-\contentsline {subsection}{\numberline {4.1.4}Reinforcement with Initial State Distribution - RISD}{24}{subsection.4.1.4}
-\contentsline {subsection}{\numberline {4.1.5}Reinforcement with Early Termination - RET}{24}{subsection.4.1.5}
-\contentsline {section}{\numberline {4.2}Supervised Learning Setup}{24}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}The Dataset}{24}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}Neural Network Architecture and Hyperparameters}{25}{subsection.4.2.2}
-\contentsline {subsection}{\numberline {4.2.3}The Training Procedure}{26}{subsection.4.2.3}
-\contentsline {subsection}{\numberline {4.2.4}The Deployment in the Soccer 3D Environment}{26}{subsection.4.2.4}
-\contentsline {section}{\numberline {4.3}Reinforcement Learning Setup}{26}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}Policy Representation}{27}{subsection.4.3.1}
-\contentsline {subsubsection}{\numberline {4.3.1.1}Input Normalization Filter}{27}{subsubsection.4.3.1.1}
-\contentsline {subsubsection}{\numberline {4.3.1.2}Neural Network}{27}{subsubsection.4.3.1.2}
-\contentsline {subsubsection}{\numberline {4.3.1.3}Gaussian Action Space Noise}{27}{subsubsection.4.3.1.3}
-\contentsline {subsection}{\numberline {4.3.2}Task Description}{29}{subsection.4.3.2}
-\contentsline {section}{\numberline {4.4}Infrastructure}{30}{section.4.4}
-\contentsline {subsection}{\numberline {4.4.1}Reinforcement Learning Server}{30}{subsection.4.4.1}
-\contentsline {subsubsection}{\numberline {4.4.1.1}Simulation Server}{30}{subsubsection.4.4.1.1}
-\contentsline {subsubsection}{\numberline {4.4.1.2}Soccer Agent}{30}{subsubsection.4.4.1.2}
-\contentsline {subsubsection}{\numberline {4.4.1.3}Learning Agent}{31}{subsubsection.4.4.1.3}
-\contentsline {subsection}{\numberline {4.4.2}Neural Network Deployment}{31}{subsection.4.4.2}
-\contentsline {subsubsection}{\numberline {4.4.2.1}Import Supervised Model into OpenAI Baselines}{31}{subsubsection.4.4.2.1}
-\contentsline {subsubsection}{\numberline {4.4.2.2}Export OpenAI Baselines onto Soccer Agent}{32}{subsubsection.4.4.2.2}
-\contentsline {subsection}{\numberline {4.4.3}Distributed Training}{34}{subsection.4.4.3}
-\contentsline {subsubsection}{\numberline {4.4.3.1}Data Parallelism}{34}{subsubsection.4.4.3.1}
-\contentsline {subsubsection}{\numberline {4.4.3.2}Synchronous vs. Asynchronous Distributed Training}{35}{subsubsection.4.4.3.2}
-\contentsline {subsection}{\numberline {4.4.4}Metrics}{36}{subsection.4.4.4}
-\contentsline {subsection}{\numberline {4.4.5}Monitoring via Tensorboard}{37}{subsection.4.4.5}
-\contentsline {chapter}{\numberline {5}Results' Analysis and Discussion}{38}{chapter.5}
-\contentsline {section}{\numberline {5.1}Training Results}{38}{section.5.1}
-\contentsline {section}{\numberline {5.2}The Learned Kick Motion}{39}{section.5.2}
-\contentsline {section}{\numberline {5.3}The Learned Walk Motion}{41}{section.5.3}
-\contentsline {section}{\numberline {5.4}Other motions}{42}{section.5.4}
-\contentsline {chapter}{\numberline {6}Conclusions, Recommendations, and Future Works}{44}{chapter.6}
-\contentsline {section}{\numberline {6.1}Preliminary Conclusions and Future Works}{44}{section.6.1}
-\contentsline {section}{\numberline {6.2}The Activities Plan}{44}{section.6.2}
-\contentsline {chapter}{Bibliography}{46}{chapter.7}
+\contentsline {chapter}{\numberline {1}Introduction}{12}{chapter.1}
+\contentsline {section}{\numberline {1.1}Motivation}{12}{section.1.1}
+\contentsline {section}{\numberline {1.2}Contextualization}{12}{section.1.2}
+\contentsline {section}{\numberline {1.3}Objective}{14}{section.1.3}
+\contentsline {section}{\numberline {1.4}Scope}{14}{section.1.4}
+\contentsline {section}{\numberline {1.5}Organization of this work}{14}{section.1.5}
+\contentsline {chapter}{\numberline {2}Literature Review}{15}{chapter.2}
+\contentsline {section}{\numberline {2.1}The RoboCup Soccer3D Simulation League}{15}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Domain Description}{15}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2} Kick Motion }{15}{subsection.2.1.2}
+\contentsline {subsection}{\numberline {2.1.3}Keyframe Movements}{16}{subsection.2.1.3}
+\contentsline {subsection}{\numberline {2.1.4}Optimization Techniques}{17}{subsection.2.1.4}
+\contentsline {section}{\numberline {2.2}Reinforcement Learning for Control}{18}{section.2.2}
+\contentsline {chapter}{\numberline {3}Deep Learning}{21}{chapter.3}
+\contentsline {section}{\numberline {3.1}Neural Networks}{21}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}A Neuron}{22}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}Neural Network Representation}{23}{subsection.3.1.2}
+\contentsline {subsection}{\numberline {3.1.3}Vectorization}{24}{subsection.3.1.3}
+\contentsline {section}{\numberline {3.2}Activation Functions}{25}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Logistic Sigmoid}{25}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Hyperbolic Tangent}{25}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}Rectified Linear Unit - ReLU}{27}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.4}Leaky ReLU}{28}{subsection.3.2.4}
+\contentsline {section}{\numberline {3.3}Cost Function}{28}{section.3.3}
+\contentsline {section}{\numberline {3.4}Gradient Descent}{29}{section.3.4}
+\contentsline {section}{\numberline {3.5}Backpropagation}{31}{section.3.5}
+\contentsline {section}{\numberline {3.6}Optimization Algorithms}{31}{section.3.6}
+\contentsline {subsection}{\numberline {3.6.1}Batch, Mini-batch and Stochastic Gradient Descent}{32}{subsection.3.6.1}
+\contentsline {subsection}{\numberline {3.6.2}Momentum}{34}{subsection.3.6.2}
+\contentsline {subsection}{\numberline {3.6.3}RMSProp}{36}{subsection.3.6.3}
+\contentsline {subsection}{\numberline {3.6.4}Adam}{36}{subsection.3.6.4}
+\contentsline {section}{\numberline {3.7}Random Initialization}{36}{section.3.7}
+\contentsline {subsection}{\numberline {3.7.1}Xavier Initialization}{36}{subsection.3.7.1}
+\contentsline {section}{\numberline {3.8}Learning Rate Decay}{36}{section.3.8}
+\contentsline {chapter}{\numberline {4}Methodology}{37}{chapter.4}
+\contentsline {section}{\numberline {4.1}Experimentation Setup}{37}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Hybrid Learning Model -- HLM}{37}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Reinforcement with Naive Reward - RNR }{37}{subsection.4.1.2}
+\contentsline {subsection}{\numberline {4.1.3}Reinforcement with Reference Reward - RRR }{38}{subsection.4.1.3}
+\contentsline {subsection}{\numberline {4.1.4}Reinforcement with Initial State Distribution - RISD}{39}{subsection.4.1.4}
+\contentsline {subsection}{\numberline {4.1.5}Reinforcement with Early Termination - RET}{39}{subsection.4.1.5}
+\contentsline {section}{\numberline {4.2}Supervised Learning Setup}{39}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}The Dataset}{39}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Neural Network Architecture and Hyperparameters}{40}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.3}The Training Procedure}{41}{subsection.4.2.3}
+\contentsline {subsection}{\numberline {4.2.4}The Deployment in the Soccer 3D Environment}{41}{subsection.4.2.4}
+\contentsline {section}{\numberline {4.3}Reinforcement Learning Setup}{41}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Policy Representation}{42}{subsection.4.3.1}
+\contentsline {subsubsection}{\numberline {4.3.1.1}Input Normalization Filter}{42}{subsubsection.4.3.1.1}
+\contentsline {subsubsection}{\numberline {4.3.1.2}Neural Network}{42}{subsubsection.4.3.1.2}
+\contentsline {subsubsection}{\numberline {4.3.1.3}Gaussian Action Space Noise}{42}{subsubsection.4.3.1.3}
+\contentsline {subsection}{\numberline {4.3.2}Task Description}{44}{subsection.4.3.2}
+\contentsline {section}{\numberline {4.4}Infrastructure}{45}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Reinforcement Learning Server}{45}{subsection.4.4.1}
+\contentsline {subsubsection}{\numberline {4.4.1.1}Simulation Server}{45}{subsubsection.4.4.1.1}
+\contentsline {subsubsection}{\numberline {4.4.1.2}Soccer Agent}{45}{subsubsection.4.4.1.2}
+\contentsline {subsubsection}{\numberline {4.4.1.3}Learning Agent}{46}{subsubsection.4.4.1.3}
+\contentsline {subsection}{\numberline {4.4.2}Neural Network Deployment}{46}{subsection.4.4.2}
+\contentsline {subsubsection}{\numberline {4.4.2.1}Import Supervised Model into OpenAI Baselines}{46}{subsubsection.4.4.2.1}
+\contentsline {subsubsection}{\numberline {4.4.2.2}Export OpenAI Baselines onto Soccer Agent}{47}{subsubsection.4.4.2.2}
+\contentsline {subsection}{\numberline {4.4.3}Distributed Training}{49}{subsection.4.4.3}
+\contentsline {subsubsection}{\numberline {4.4.3.1}Data Parallelism}{49}{subsubsection.4.4.3.1}
+\contentsline {subsubsection}{\numberline {4.4.3.2}Synchronous vs. Asynchronous Distributed Training}{50}{subsubsection.4.4.3.2}
+\contentsline {subsection}{\numberline {4.4.4}Metrics}{51}{subsection.4.4.4}
+\contentsline {subsection}{\numberline {4.4.5}Monitoring via Tensorboard}{52}{subsection.4.4.5}
+\contentsline {chapter}{\numberline {5}Results' Analysis and Discussion}{53}{chapter.5}
+\contentsline {section}{\numberline {5.1}Training Results}{53}{section.5.1}
+\contentsline {section}{\numberline {5.2}The Learned Kick Motion}{54}{section.5.2}
+\contentsline {section}{\numberline {5.3}The Learned Walk Motion}{56}{section.5.3}
+\contentsline {section}{\numberline {5.4}Other motions}{57}{section.5.4}
+\contentsline {chapter}{\numberline {6}Conclusions, Recommendations, and Future Works}{59}{chapter.6}
+\contentsline {section}{\numberline {6.1}Preliminary Conclusions and Future Works}{59}{section.6.1}
+\contentsline {section}{\numberline {6.2}The Activities Plan}{59}{section.6.2}
+\contentsline {chapter}{Bibliography}{61}{chapter.7}

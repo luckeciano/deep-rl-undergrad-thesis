@@ -442,10 +442,121 @@ v_{db} = \beta v_{db} + (1 - \beta)db^2
 \label{eq:rmsprop_b}
 \end{align}
 
+And the learning update changes to normalize the gradient:
+
+\begin{align}\label{eq:rmspropupdate}
+W = W - \alpha \frac{dW}{\sqrt{v_{dW}}}\\
+b = b - \alpha \frac{db}{\sqrt{v_{db}}}\\
+\label{eq:rmspropupdate_b}
+\end{align}
+
+This normalization improves the learning stability -- all gradient terms will affect with the same scale. Empirically, RMSProp has been shown to be an effective and practical optimization algorithm for deep neural networks. Algorithm \ref{alg:rmsprop} shows RMSProp idea \cite{Goodfellow-et-al-2016}.
+
+
+\begin{algorithm}[!htbp]
+	\caption{RMSProp Algorithm}
+	\begin{algorithmic}
+		\REQUIRE Learning rate $\alpha$, decay rate $\beta$
+		\REQUIRE Parameters $W$, $b$
+		\REQUIRE $\epsilon$ correction for numeric stability 
+		\STATE Initialize $v_{dW}$ = $v_{db}$ = 0
+		\STATE \textbf{while} stopping criteria not met \textbf{do}
+		\STATE \hspace{5mm} Sample a mini-batch of $m$ examples from training set \{$\boldsymbol{x}^{(1)}, \dots, \boldsymbol{x}^{(m)} \}$ with corresponding targets $\boldsymbol{y}^{(i)}$
+		\STATE \hspace{5mm} Compute gradient: 
+		 $\boldsymbol{g} \leftarrow \nabla_{\boldsymbol{\hat{y}}}J = \frac{1}{m} \nabla_{\boldsymbol{\hat{y}}}\sum_{i = 1}^{m}\mathcal{L}(\boldsymbol{\hat{y}^{(i)}},y^{(i)})$
+		 \STATE \hspace{5mm} Accumulate squared gradient: \STATE \hspace{10mm} $v_{dW} = \beta v_{dW} + (1-\beta) g \odot g$ 
+		 \STATE \hspace{10mm} $v_{db} = \beta v_{db} + (1-\beta) g \odot g$
+		 \STATE \hspace{5mm} Apply updates:
+		 \STATE \hspace{10mm} $W = W - \alpha \odot \frac{g}{\sqrt{v_{dW} + \epsilon}}$ 
+		 \STATE \hspace{10mm} $b = b - \alpha \odot \frac{g}{\sqrt{v_{db} + \epsilon}}$ 
+		\STATE \textbf{end while}
+	\end{algorithmic}
+	\label{alg:rmsprop}
+\end{algorithm}
+
 \subsection{Adam}
 
-\section{Random Initialization}
+The last optimization algorithm idea explored here - and used in experimentations - is Adam \cite{adam2014}. It means "Adaptive Moments" and combines the idea from Momentum and RMSProp in the following way: it computes the first order momentum of the gradient and rescale with the second order momentum, as shown in Equations \ref{eq:adam_1} and \ref{eq:adam_2}. The use of momentum in combination with rescaling does not have a clear theoretical motivation. 
+
+\begin{align}\label{eq:adam_1}
+v_{dW} = \beta_{1} v_{dW} + (1 - \beta_{1})dW\\
+u_{dW} = \beta_{2} u_{dW} + (1 - \beta_{2})dW^2
+\label{eq:adam_2}
+\end{align}
+
+Adam also incorporates a bias correction for both momentum estimates, resulting in lower bias early in training when compared to RMSProp:
+
+\begin{align}
+v_{dW} = \frac{v_{dW}}{(1 - \beta_{1}^{t})}\\
+u_{dW} = \frac{u_{dW}}{(1 - \beta_{2}^{t})}
+\end{align}
+
+Finally, the learning update changes as well:
+
+\begin{align}
+W = W - \alpha  \frac{v_{dW}}{\sqrt{u_{dW} + \epsilon}} \\
+b = b - \alpha \frac{v_{db}}{\sqrt{u_{db} + \epsilon}}
+\end{align}
+
+Therefore, Adam is generally regarded as being fairly robust to the choice of hyperparameters, though sometimes learning rate needs to be changed from the suggested default.  Algorithm \ref{alg:adam} shows Adam idea \cite{Goodfellow-et-al-2016}.
+
+
+\begin{algorithm}[!htbp]
+	\caption{Adam Algorithm}
+	\begin{algorithmic}
+		\REQUIRE Learning rate $\alpha$ (Suggested default: 0.001)
+		\REQUIRE Exponential decay rates for moment estimates, $\beta_{1}$ and $\beta_{2}$
+		\REQUIRE Parameters $W$, $b$
+		\REQUIRE $\epsilon$ correction for numeric stabilization 
+		\STATE Initialize $v_{dW}$ = $v_{db}$ = $u_{dW}$ = $u_{db}$
+		\STATE Initialize time step $t$ = 0
+		\STATE \textbf{while} stopping criteria not met \textbf{do}
+		\STATE \hspace{5mm} Sample a mini-batch of $m$ examples from training set \{$\boldsymbol{x}^{(1)}, \dots, \boldsymbol{x}^{(m)} \}$ with corresponding targets $\boldsymbol{y}^{(i)}$
+		\STATE \hspace{5mm} Compute gradient: 
+		$\boldsymbol{g} \leftarrow \nabla_{\boldsymbol{\hat{y}}}J = \frac{1}{m} \nabla_{\boldsymbol{\hat{y}}}\sum_{i = 1}^{m}\mathcal{L}(\boldsymbol{\hat{y}^{(i)}},y^{(i)})$
+		\STATE \hspace{5mm} $t = t + 1$
+		\STATE \hspace{5mm} Update biased first momentum estimate: 
+		\STATE \hspace{10mm} $v_{dW} = \beta_{1} v_{dW} + (1-\beta_{1}) g$ 
+		\STATE \hspace{10mm} $v_{db} = \beta_{1} v_{db} + (1-\beta_{1}) g$
+		\STATE \hspace{5mm} Update biased second momentum estimate:
+		\STATE \hspace{10mm} $v_{dW} = \beta_{2} v_{dW} + (1-\beta_{2}) g \odot g$
+		\STATE \hspace{10mm} $v_{db} = \beta_{2} v_{db} + (1-\beta_{2}) g \odot g$
+		\STATE \hspace{5mm} Correct bias in first moment:
+		\STATE \hspace{10mm} $v_{dW} = \frac{v_{dW}}{1-\beta_{1}^{t}} $
+		\STATE \hspace{10mm} $v_{db} = \frac{v_{db}}{1-\beta_{1}^{t}} $
+		\STATE \hspace{5mm} Correct bias in second moment:
+		\STATE \hspace{10mm} $u_{dW} = \frac{u_{dW}}{1-\beta_{2}^{t}} $
+		\STATE \hspace{10mm} $u_{db} = \frac{u_{db}}{1-\beta_{2}^{t}} $
+		\STATE \hspace{5mm} Apply updates:
+		\STATE \hspace{10mm} $W = W - \alpha \odot \frac{v_{dW}}{\sqrt{u_{dW} + \epsilon}}$ 
+		\STATE \hspace{10mm} $b = b - \alpha \odot \frac{v_{db}}{\sqrt{u_{db} + \epsilon}}$ 
+		\STATE \textbf{end while}
+	\end{algorithmic}
+	\label{alg:adam}
+\end{algorithm}
+
+\section{Weights Random Initialization}
+In order to start the learning, it is needed a way to initialize weight parameters. The way these are initialized can affect the convergence and even make it inviable.
+Suppose weights are all initialized by zero. No matter what was the input, if all weights are the same, all units in the same hidden layer will receive the same signal, either from the input in forward propagation or from the gradient in backpropagation. 
+
+Therefore, it needs a way for breaking the symmetry. For that, the rule is initialize all weights randomly. It will also break symmetry and increase the entropy in system in way it can gather more information to find local or global minimums.
+
+There are several ways to initialize weights randomly. In this work, we will explore and use Xavier Initialization.
+
+
 \subsection{Xavier Initialization}
+
+Xavier Initialization \cite{Glorot10} is a method for initialize weights accordingly to the network architecture. 
+
+There are two main problems that arises from bad weight initialization. First, if weights are too small, the signal shrinks as it passes through layers. Second, if they are too large, the signal grows as it passes through layers. Specifically during learning, it will result in vanishing and exploding gradients, respectively.
+
+Xavier Initialization makes sure weights are started in a reasonable range by using a Gaussian distribution with variance given by Equation \ref{eq:xavierinitialization}.
+
+\begin{equation}\label{eq:xavierinitialization}
+	\sigma^{2}(W) = \frac{2}{n_{in} + n_{out}}
+\end{equation}
+
+Where $n_{in}$ and $n_{out}$ are the number of neurons feeding into it and the result is fed to, respectively. \cite{Glorot10} shows the mathematical development for this equation.
 
 \section{Learning Rate Decay}
 

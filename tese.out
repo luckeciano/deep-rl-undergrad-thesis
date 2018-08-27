@@ -37,7 +37,7 @@
 \BOOKMARK [2][]{subsection.3.6.2}{3.6.2 Momentum}{section.3.6}% 37
 \BOOKMARK [2][]{subsection.3.6.3}{3.6.3 RMSProp}{section.3.6}% 38
 \BOOKMARK [2][]{subsection.3.6.4}{3.6.4 Adam}{section.3.6}% 39
-\BOOKMARK [1][]{section.3.7}{3.7 Random Initialization}{chapter.3}% 40
+\BOOKMARK [1][]{section.3.7}{3.7 Weights Random Initialization}{chapter.3}% 40
 \BOOKMARK [2][]{subsection.3.7.1}{3.7.1 Xavier Initialization}{section.3.7}% 41
 \BOOKMARK [1][]{section.3.8}{3.8 Learning Rate Decay}{chapter.3}% 42
 \BOOKMARK [0][]{chapter.4}{4 Methodology}{}% 43

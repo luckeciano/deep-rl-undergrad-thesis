@@ -76,6 +76,13 @@ Dispon{\'\i}vel em:
   2017.
 \url{https://github.com/openai/baselines}.}
 
+\bibitem[Glorot e Bengio 2010]{Glorot10}
+\abntrefinfo{Glorot e Bengio}{GLOROT; BENGIO}{2010}
+{GLOROT, X.; BENGIO, Y. Understanding the difficulty of training deep
+  feedforward neural networks. In:  \textbf{In Proceedings of the International
+  Conference on Artificial Intelligence and Statistics (AISTATS’10). Society
+  for Artificial Intelligence and Statistics}. [S.l.: s.n.], 2010.}
+
 \bibitem[Glorot \textit{et al.} 2011]{glorot2011a}
 \abntrefinfo{Glorot \textit{et al.}}{GLOROT \textit{et al.}}{2011}
 {GLOROT, X.; BORDES, A.; BENGIO, Y. Deep sparse rectifier neural networks. In:

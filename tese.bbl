@@ -331,6 +331,14 @@ Dispon{\'\i}vel em:
   International Conference on Humanoid Robots (Humanoids}. Tsukuba, Japan:
   [s.n.], 2005.}
 
+\bibitem[Silver 2015]{davidsilverlec2}
+\abntrefinfo{Silver}{SILVER}{2015}
+{SILVER, D.
+Lecture, \textbf{Markov Decision Processes}. 2015.
+Dispon{\'\i}vel em:
+  \htmladdnormallink{$<$http:\-/\-/www0\-.cs\-.ucl\-.ac\-.uk\-/staff\-/d\-.silver\-/web\-/Teaching\underline{\
+  }files\-/MDP\-.pdf$>$}{http://www0.cs.ucl.ac.uk/staff/d.silver/web/Teaching_files/MDP.pdf}.}
+
 \bibitem[Silver \textit{et al.} 2017]{DBLP:journals/corr/abs-1712-01815}
 \abntrefinfo{Silver \textit{et al.}}{SILVER \textit{et al.}}{2017a}
 {SILVER, D.; HUBERT, T.; SCHRITTWIESER, J.; ANTONOGLOU, I.; LAI, M.; GUEZ, A.;
@@ -362,6 +370,13 @@ Dispon{\'\i}vel em:
 Dispon{\'\i}vel em:
   \htmladdnormallink{$<$http:\-/\-/dx\-.doi\-.org\-/10\-.1038\-/nature24270$>$}{http://dx.doi.org/10.1038/nature24270}.}
 
+\bibitem[Skinner 1953]{skinner1953science}
+\abntrefinfo{Skinner}{SKINNER}{1953}
+{SKINNER, B. \textbf{Science And Human Behavior}. Free Press, 1953.  (A Free
+  Press paperback).
+ISBN 9780029290408. Dispon{\'\i}vel em:
+  $<$https:\-/\-/books\-.google\-.com\-.br\-/books?id=Pjjknd1HREIC$>$.}
+
 \bibitem[Sutskever \textit{et al.} 2013]{Sutskever:2013:IIM:3042817.3043064}
 \abntrefinfo{Sutskever \textit{et al.}}{SUTSKEVER \textit{et al.}}{2013}
 {SUTSKEVER, I.; MARTENS, J.; DAHL, G.; HINTON, G. On the importance of
@@ -371,11 +386,33 @@ Dispon{\'\i}vel em:
   Dispon{\'\i}vel em:
   \htmladdnormallink{$<$http:\-/\-/dl\-.acm\-.org\-/citation\-.cfm?id=3042817\-.3043064$>$}{http://dl.acm.org/citation.cfm?id=3042817.3043064}.}
 
+\bibitem[Sutton e Barto 1998]{sutton1998rli}
+\abntrefinfo{Sutton e Barto}{SUTTON; BARTO}{1998}
+{SUTTON, R.~S.; BARTO, A.~G. \textbf{Reinforcement Learning: An Introduction}.
+  MIT Press, 1998. Dispon{\'\i}vel em:
+  \htmladdnormallink{$<$http:\-/\-/www\-.cs\-.ualberta\-.ca\-/\~{}sutton\-/book\-/the-book\-.html$>$}{http://www.cs.ualberta.ca/~sutton/book/the-book.html}.}
+
 \bibitem[Tanikic e Despotovic 2012]{dejan12}
 \abntrefinfo{Tanikic e Despotovic}{TANIKIC; DESPOTOVIC}{2012}
 {TANIKIC, D.; DESPOTOVIC, V. Artificial intelligence techniques for modelling
   of temperature in the metal cutting process.
 \textbf{IntechOpen}, September 2012.}
+
+\bibitem[Thorndike 1933]{Thorndike173}
+\abntrefinfo{Thorndike}{THORNDIKE}{1933}
+{THORNDIKE, E.~L. A proof of the law of effect.
+\textbf{Science}, American Association for the Advancement of Science, v.~77,
+  n.~1989, p. 173--175, 1933.
+ISSN 0036-8075.
+Dispon{\'\i}vel em:
+  \htmladdnormallink{$<$http:\-/\-/science\-.sciencemag\-.org\-/content\-/77\-/1989\-/173\-.2$>$}{http://science.sciencemag.org/content/77/1989/173.2}.}
+
+\bibitem[Tibshirani 2013]{tibshirani2013}
+\abntrefinfo{Tibshirani}{TIBSHIRANI}{2013}
+{TIBSHIRANI, R.
+Lecture, \textbf{Gradient Descent: Convergence Analysis}. 2013.
+Dispon{\'\i}vel em:
+  \htmladdnormallink{$<$http:\-/\-/www\-.stat\-.cmu\-.edu\-/\~{}ryantibs\-/convexopt-F13\-/scribes\-/lec6\-.pdf$>$}{http://www.stat.cmu.edu/~ryantibs/convexopt-F13/scribes/lec6.pdf}.}
 
 \bibitem[Todorov \textit{et al.} 2012]{mujoco}
 \abntrefinfo{Todorov \textit{et al.}}{TODOROV \textit{et al.}}{2012}

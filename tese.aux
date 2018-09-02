@@ -34,6 +34,8 @@
 \citation{tgilharco}
 \citation{dabbura2017}
 \citation{tgilharco}
+\citation{tgilharco}
+\citation{sutton1998rli}
 \citation{parameternoiseblog}
 \citation{tgmuzio}
 \citation{DBLP:journals/corr/LuT14}
@@ -119,10 +121,10 @@
 \citation{dejan12}
 \citation{dejan12}
 \citation{Goodfellow-et-al-2016}
-\@writefile{toc}{\contentsline {chapter}{\numberline {3}Deep Learning}{21}{chapter.3}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {3}Deep Learning Background}{21}{chapter.3}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{ch:deeplearning}{{3}{21}{Deep Learning}{chapter.3}{}}
+\newlabel{ch:deeplearning}{{3}{21}{Deep Learning Background}{chapter.3}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {3.1}Neural Networks}{21}{section.3.1}}
 \newlabel{sec:neural_networks}{{3.1}{21}{Neural Networks}{section.3.1}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {3.1}{\ignorespaces An artificial neuron within a feed forward artificial neural network \cite  {dejan12}. \relax }}{21}{figure.caption.11}}
@@ -222,139 +224,184 @@
 \citation{Glorot10}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.7.1}Xavier Initialization}{39}{subsection.3.7.1}}
 \newlabel{eq:xavierinitialization}{{3.50}{39}{Xavier Initialization}{equation.3.7.50}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.8}Learning Rate Decay}{39}{section.3.8}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {4}Methodology}{40}{chapter.4}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.8}Gradient Descent convergence and learning rate decay}{39}{section.3.8}}
+\newlabel{proof:gdconv}{{3.8}{39}{Gradient Descent convergence and learning rate decay}{section.3.8}{}}
+\citation{tibshirani2013}
+\citation{tgilharco}
+\citation{tgilharco}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.13}{\ignorespaces  Illustration Gradient Descent divergence for a one variable optimization. \cite  {tgilharco}. \relax }}{40}{figure.caption.23}}
+\newlabel{fig:gddivergence}{{3.13}{40}{Illustration Gradient Descent divergence for a one variable optimization. \cite {tgilharco}. \relax }{figure.caption.23}{}}
+\citation{sutton1998rli}
+\citation{skinner1953science}
+\citation{Thorndike173}
+\@writefile{toc}{\contentsline {chapter}{\numberline {4}Reinforcement Learning Background}{42}{chapter.4}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{ch:methodology}{{4}{40}{Methodology}{chapter.4}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.1}Experimentation Setup}{40}{section.4.1}}
-\newlabel{sec:experimentation_setup}{{4.1}{40}{Experimentation Setup}{section.4.1}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.1}Hybrid Learning Model -- HLM}{40}{subsection.4.1.1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.2}Reinforcement with Naive Reward - RNR }{40}{subsection.4.1.2}}
+\newlabel{ch:deeplearning}{{4}{42}{Reinforcement Learning Background}{chapter.4}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.1}Concepts of a Reinforcement Learning System}{42}{section.4.1}}
+\newlabel{sec:rlconcepts}{{4.1}{42}{Concepts of a Reinforcement Learning System}{section.4.1}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.2}Reinforcement Learning System}{43}{section.4.2}}
+\newlabel{sec:rlsystem}{{4.2}{43}{Reinforcement Learning System}{section.4.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.1}Reward}{43}{subsection.4.2.1}}
+\newlabel{sec:reward}{{4.2.1}{43}{Reward}{subsection.4.2.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.1}{\ignorespaces Reinforcement Learning System.\relax }}{44}{figure.caption.24}}
+\newlabel{fig:rlsystem}{{4.1}{44}{Reinforcement Learning System.\relax }{figure.caption.24}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.2}State}{44}{subsection.4.2.2}}
+\citation{sutton1998rli}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.3}Policy}{45}{subsection.4.2.3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.4}Value Function}{45}{subsection.4.2.4}}
+\newlabel{eq:valuefunction}{{4.3}{45}{Value Function}{equation.4.2.3}{}}
+\citation{sutton1998rli}
+\citation{sutton1998rli}
+\citation{davidsilverlec2}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.5}Model}{46}{subsection.4.2.5}}
+\newlabel{eq:modelrl}{{4.4}{46}{Model}{equation.4.2.4}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.3}Markov Decision Process}{46}{section.4.3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.1}Markov State}{46}{subsection.4.3.1}}
+\newlabel{sec:markovstate}{{4.3.1}{46}{Markov State}{subsection.4.3.1}{}}
+\newlabel{eq:markovstate}{{4.5}{46}{Markov State}{equation.4.3.5}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.2}State Transition Matrix}{47}{subsection.4.3.2}}
+\newlabel{sec:statetransition}{{4.3.2}{47}{State Transition Matrix}{subsection.4.3.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.3}Markov Decision Process}{47}{subsection.4.3.3}}
+\citation{davidsilverlec2}
+\citation{sutton1998rli}
+\citation{sutton1998rli}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.2}{\ignorespaces The agent\IeC {\textendash }environment interaction in a Markov decision process \cite  {sutton1998rli}.\relax }}{49}{figure.caption.25}}
+\newlabel{fig:mdprlsystem}{{4.2}{49}{The agent–environment interaction in a Markov decision process \cite {sutton1998rli}.\relax }{figure.caption.25}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.4}Value Function and Policy}{49}{subsection.4.3.4}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {5}Methodology}{50}{chapter.5}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\newlabel{ch:methodology}{{5}{50}{Methodology}{chapter.5}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.1}The Kick Motion Problem}{50}{section.5.1}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.2}Experimentation Setup}{50}{section.5.2}}
+\newlabel{sec:experimentation_setup}{{5.2}{50}{Experimentation Setup}{section.5.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.1}Hybrid Learning Model -- HLM}{51}{subsection.5.2.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.1}{\ignorespaces In the hybrid model, we can ensure the starting point is near of the optimal solution (orange arrow); otherwise, the starting point can be bad and harder to optimize (red arrow).\relax }}{51}{figure.caption.26}}
+\newlabel{optimization_intuition}{{5.1}{51}{In the hybrid model, we can ensure the starting point is near of the optimal solution (orange arrow); otherwise, the starting point can be bad and harder to optimize (red arrow).\relax }{figure.caption.26}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.2}Reinforcement with Naive Reward - RNR }{51}{subsection.5.2.2}}
+\newlabel{naive_reward}{{5.1}{51}{Reinforcement with Naive Reward - RNR}{equation.5.2.1}{}}
 \citation{peng2018}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.1}{\ignorespaces In the hybrid model, we can ensure the starting point is near of the optimal solution (orange arrow); otherwise, the starting point can be bad and harder to optimize (red arrow).\relax }}{41}{figure.caption.23}}
-\newlabel{optimization_intuition}{{4.1}{41}{In the hybrid model, we can ensure the starting point is near of the optimal solution (orange arrow); otherwise, the starting point can be bad and harder to optimize (red arrow).\relax }{figure.caption.23}{}}
-\newlabel{naive_reward}{{4.1}{41}{Reinforcement with Naive Reward - RNR}{equation.4.1.1}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.3}Reinforcement with Reference Reward - RRR }{41}{subsection.4.1.3}}
-\newlabel{complete_reward}{{4.2}{41}{Reinforcement with Reference Reward - RRR}{equation.4.1.2}{}}
-\newlabel{diffjoints}{{4.3}{41}{Reinforcement with Reference Reward - RRR}{equation.4.1.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.3}Reinforcement with Reference Reward - RRR }{52}{subsection.5.2.3}}
+\newlabel{complete_reward}{{5.2}{52}{Reinforcement with Reference Reward - RRR}{equation.5.2.2}{}}
+\newlabel{diffjoints}{{5.3}{52}{Reinforcement with Reference Reward - RRR}{equation.5.2.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.4}Reinforcement with Initial State Distribution - RISD}{52}{subsection.5.2.4}}
+\newlabel{risd}{{5.2.4}{52}{Reinforcement with Initial State Distribution - RISD}{subsection.5.2.4}{}}
 \citation{muniz2016}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.4}Reinforcement with Initial State Distribution - RISD}{42}{subsection.4.1.4}}
-\newlabel{risd}{{4.1.4}{42}{Reinforcement with Initial State Distribution - RISD}{subsection.4.1.4}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.5}Reinforcement with Early Termination - RET}{42}{subsection.4.1.5}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.2}Supervised Learning Setup}{42}{section.4.2}}
-\newlabel{supervised_learning_setup}{{4.2}{42}{Supervised Learning Setup}{section.4.2}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.1}The Dataset}{42}{subsection.4.2.1}}
-\newlabel{AA}{{4.2.1}{42}{The Dataset}{subsection.4.2.1}{}}
 \citation{macalpine2013}
 \citation{AAAI12-MacAlpine}
 \citation{leakyrelu}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.5}Reinforcement with Early Termination - RET}{53}{subsection.5.2.5}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.3}Supervised Learning Setup}{53}{section.5.3}}
+\newlabel{supervised_learning_setup}{{5.3}{53}{Supervised Learning Setup}{section.5.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3.1}The Dataset}{53}{subsection.5.3.1}}
+\newlabel{AA}{{5.3.1}{53}{The Dataset}{subsection.5.3.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3.2}Neural Network Architecture and Hyperparameters}{53}{subsection.5.3.2}}
 \citation{AAAI12-MacAlpine}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.2}Neural Network Architecture and Hyperparameters}{43}{subsection.4.2.2}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.2}{\ignorespaces The architecture of a neural network designed to learn motions.\relax }}{43}{figure.caption.24}}
-\newlabel{fig:model_plot}{{4.2}{43}{The architecture of a neural network designed to learn motions.\relax }{figure.caption.24}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.2}{\ignorespaces The architecture of a neural network designed to learn motions.\relax }}{54}{figure.caption.27}}
+\newlabel{fig:model_plot}{{5.2}{54}{The architecture of a neural network designed to learn motions.\relax }{figure.caption.27}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {5.1}{\ignorespaces The Network Summary\relax }}{54}{table.caption.28}}
+\newlabel{tab:network_summary}{{5.1}{54}{The Network Summary\relax }{table.caption.28}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3.3}The Training Procedure}{54}{subsection.5.3.3}}
 \citation{adam2014}
 \citation{chollet2015keras}
 \citation{tensorflow2015-whitepaper}
-\@writefile{lot}{\contentsline {table}{\numberline {4.1}{\ignorespaces The Network Summary\relax }}{44}{table.caption.25}}
-\newlabel{tab:network_summary}{{4.1}{44}{The Network Summary\relax }{table.caption.25}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.3}The Training Procedure}{44}{subsection.4.2.3}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.4}The Deployment in the Soccer 3D Environment}{44}{subsection.4.2.4}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.3}Reinforcement Learning Setup}{44}{section.4.3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3.4}The Deployment in the Soccer 3D Environment}{55}{subsection.5.3.4}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.4}Reinforcement Learning Setup}{55}{section.5.4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.4.1}Policy Representation}{55}{subsection.5.4.1}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.4.1.1}Input Normalization Filter}{55}{subsubsection.5.4.1.1}}
+\newlabel{sec:inputnorm}{{5.4.1.1}{55}{Input Normalization Filter}{subsubsection.5.4.1.1}{}}
 \citation{Watkins:1989}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.1}Policy Representation}{45}{subsection.4.3.1}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.3.1.1}Input Normalization Filter}{45}{subsubsection.4.3.1.1}}
-\newlabel{sec:inputnorm}{{4.3.1.1}{45}{Input Normalization Filter}{subsubsection.4.3.1.1}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.3}{\ignorespaces Intuition behind input normalization\relax }}{45}{figure.caption.26}}
-\newlabel{inputnormfig}{{4.3}{45}{Intuition behind input normalization\relax }{figure.caption.26}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.3.1.2}Neural Network}{45}{subsubsection.4.3.1.2}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.3.1.3}Gaussian Action Space Noise}{45}{subsubsection.4.3.1.3}}
-\newlabel{gasp}{{4.3.1.3}{45}{Gaussian Action Space Noise}{subsubsection.4.3.1.3}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.3}{\ignorespaces Intuition behind input normalization\relax }}{56}{figure.caption.29}}
+\newlabel{inputnormfig}{{5.3}{56}{Intuition behind input normalization\relax }{figure.caption.29}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.4.1.2}Neural Network}{56}{subsubsection.5.4.1.2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.4}{\ignorespaces Architecture used by pure Reinforcement Learning models.\relax }}{56}{figure.caption.30}}
+\newlabel{rlnetwork}{{5.4}{56}{Architecture used by pure Reinforcement Learning models.\relax }{figure.caption.30}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {5.2}{\ignorespaces The Reinforcement Learning Network Summary\relax }}{56}{table.caption.31}}
+\newlabel{tab:rl_network_summary}{{5.2}{56}{The Reinforcement Learning Network Summary\relax }{table.caption.31}{}}
 \citation{parameternoiseblog}
 \citation{parameternoiseblog}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.4}{\ignorespaces Architecture used by pure Reinforcement Learning models.\relax }}{46}{figure.caption.27}}
-\newlabel{rlnetwork}{{4.4}{46}{Architecture used by pure Reinforcement Learning models.\relax }{figure.caption.27}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {4.2}{\ignorespaces The Reinforcement Learning Network Summary\relax }}{46}{table.caption.28}}
-\newlabel{tab:rl_network_summary}{{4.2}{46}{The Reinforcement Learning Network Summary\relax }{table.caption.28}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.5}{\ignorespaces Gaussian noise applied to action space to ensure better exploration in continuous environments. \cite  {parameternoiseblog} \relax }}{46}{figure.caption.29}}
-\newlabel{gaussiannoise}{{4.5}{46}{Gaussian noise applied to action space to ensure better exploration in continuous environments. \cite {parameternoiseblog} \relax }{figure.caption.29}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.2}Task Description}{47}{subsection.4.3.2}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.6}{\ignorespaces Initial setup from the task used to learning kick motion.\relax }}{47}{figure.caption.30}}
-\newlabel{taskdescription}{{4.6}{47}{Initial setup from the task used to learning kick motion.\relax }{figure.caption.30}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.4.1.3}Gaussian Action Space Noise}{57}{subsubsection.5.4.1.3}}
+\newlabel{gasp}{{5.4.1.3}{57}{Gaussian Action Space Noise}{subsubsection.5.4.1.3}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.5}{\ignorespaces Gaussian noise applied to action space to ensure better exploration in continuous environments. \cite  {parameternoiseblog} \relax }}{57}{figure.caption.32}}
+\newlabel{gaussiannoise}{{5.5}{57}{Gaussian noise applied to action space to ensure better exploration in continuous environments. \cite {parameternoiseblog} \relax }{figure.caption.32}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.4.2}Task Description}{57}{subsection.5.4.2}}
 \citation{tgmuzio}
 \citation{tgmuzio}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.6}{\ignorespaces Initial setup from the task used to learning kick motion.\relax }}{58}{figure.caption.33}}
+\newlabel{taskdescription}{{5.6}{58}{Initial setup from the task used to learning kick motion.\relax }{figure.caption.33}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.5}Infrastructure}{58}{section.5.5}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.5.1}Reinforcement Learning Server}{58}{subsection.5.5.1}}
+\newlabel{rlarchitecture}{{5.5.1}{58}{Reinforcement Learning Server}{subsection.5.5.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.7}{\ignorespaces Reinforcement Learning Server Architecture. \cite  {tgmuzio} \relax }}{58}{figure.caption.34}}
+\newlabel{rlserver}{{5.7}{58}{Reinforcement Learning Server Architecture. \cite {tgmuzio} \relax }{figure.caption.34}{}}
 \citation{baselines}
 \citation{tensorflow2015-whitepaper}
-\@writefile{toc}{\contentsline {section}{\numberline {4.4}Infrastructure}{48}{section.4.4}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.4.1}Reinforcement Learning Server}{48}{subsection.4.4.1}}
-\newlabel{rlarchitecture}{{4.4.1}{48}{Reinforcement Learning Server}{subsection.4.4.1}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.7}{\ignorespaces Reinforcement Learning Server Architecture. \cite  {tgmuzio} \relax }}{48}{figure.caption.31}}
-\newlabel{rlserver}{{4.7}{48}{Reinforcement Learning Server Architecture. \cite {tgmuzio} \relax }{figure.caption.31}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.4.1.1}Simulation Server}{48}{subsubsection.4.4.1.1}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.4.1.2}Soccer Agent}{48}{subsubsection.4.4.1.2}}
 \citation{grpc}
 \citation{protocolbuffers}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.4.1.3}Learning Agent}{49}{subsubsection.4.4.1.3}}
-\newlabel{learningagent}{{4.4.1.3}{49}{Learning Agent}{subsubsection.4.4.1.3}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.4.2}Neural Network Deployment}{49}{subsection.4.4.2}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.4.2.1}Import Supervised Model into OpenAI Baselines}{49}{subsubsection.4.4.2.1}}
-\@writefile{loa}{\contentsline {algorithm}{\numberline {4}{\ignorespaces Import Keras model into Tensorflow\relax }}{50}{algorithm.4}}
-\newlabel{importnetworkpseudocode}{{4}{50}{Import Keras model into Tensorflow\relax }{ALC@unique.48}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.4.2.2}Export OpenAI Baselines onto Soccer Agent}{50}{subsubsection.4.4.2.2}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.8}{\ignorespaces Data flow graph for PPO algorithm. \relax }}{50}{figure.caption.32}}
-\newlabel{fig:dataflowgraph}{{4.8}{50}{Data flow graph for PPO algorithm. \relax }{figure.caption.32}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.9}{\ignorespaces  ``Pi" data flow node from PPO. \relax }}{51}{figure.caption.33}}
-\newlabel{fig:pigraph}{{4.9}{51}{``Pi" data flow node from PPO. \relax }{figure.caption.33}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.10}{\ignorespaces  Policy data flow graph from Figure \ref  {rlnetwork} \relax }}{51}{figure.caption.34}}
-\newlabel{fig:policygraph1}{{4.10}{51}{Policy data flow graph from Figure \ref {rlnetwork} \relax }{figure.caption.34}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.11}{\ignorespaces  Policy data flow graph from Figure \ref  {fig:model_plot} \relax }}{52}{figure.caption.35}}
-\newlabel{fig:policygraph2}{{4.11}{52}{Policy data flow graph from Figure \ref {fig:model_plot} \relax }{figure.caption.35}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.4.3}Distributed Training}{52}{subsection.4.4.3}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.4.3.1}Data Parallelism}{52}{subsubsection.4.4.3.1}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.5.1.1}Simulation Server}{59}{subsubsection.5.5.1.1}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.5.1.2}Soccer Agent}{59}{subsubsection.5.5.1.2}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.5.1.3}Learning Agent}{59}{subsubsection.5.5.1.3}}
+\newlabel{learningagent}{{5.5.1.3}{59}{Learning Agent}{subsubsection.5.5.1.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.5.2}Neural Network Deployment}{59}{subsection.5.5.2}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.5.2.1}Import Supervised Model into OpenAI Baselines}{60}{subsubsection.5.5.2.1}}
+\@writefile{loa}{\contentsline {algorithm}{\numberline {4}{\ignorespaces Import Keras model into Tensorflow\relax }}{60}{algorithm.4}}
+\newlabel{importnetworkpseudocode}{{4}{60}{Import Keras model into Tensorflow\relax }{ALC@unique.48}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.5.2.2}Export OpenAI Baselines onto Soccer Agent}{61}{subsubsection.5.5.2.2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.8}{\ignorespaces Data flow graph for PPO algorithm. \relax }}{61}{figure.caption.35}}
+\newlabel{fig:dataflowgraph}{{5.8}{61}{Data flow graph for PPO algorithm. \relax }{figure.caption.35}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.9}{\ignorespaces  ``Pi" data flow node from PPO. \relax }}{61}{figure.caption.36}}
+\newlabel{fig:pigraph}{{5.9}{61}{``Pi" data flow node from PPO. \relax }{figure.caption.36}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.10}{\ignorespaces  Policy data flow graph from Figure \ref  {rlnetwork} \relax }}{62}{figure.caption.37}}
+\newlabel{fig:policygraph1}{{5.10}{62}{Policy data flow graph from Figure \ref {rlnetwork} \relax }{figure.caption.37}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.11}{\ignorespaces  Policy data flow graph from Figure \ref  {fig:model_plot} \relax }}{62}{figure.caption.38}}
+\newlabel{fig:policygraph2}{{5.11}{62}{Policy data flow graph from Figure \ref {fig:model_plot} \relax }{figure.caption.38}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.5.3}Distributed Training}{63}{subsection.5.5.3}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.5.3.1}Data Parallelism}{63}{subsubsection.5.5.3.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.12}{\ignorespaces  Master-workers architecture for data parallelism. \relax }}{63}{figure.caption.39}}
+\newlabel{fig:master-worker}{{5.12}{63}{Master-workers architecture for data parallelism. \relax }{figure.caption.39}{}}
 \citation{heess2017}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.12}{\ignorespaces  Master-workers architecture for data parallelism. \relax }}{53}{figure.caption.36}}
-\newlabel{fig:master-worker}{{4.12}{53}{Master-workers architecture for data parallelism. \relax }{figure.caption.36}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.4.3.2}Synchronous vs. Asynchronous Distributed Training}{53}{subsubsection.4.4.3.2}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.5.3.2}Synchronous vs. Asynchronous Distributed Training}{64}{subsubsection.5.5.3.2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.13}{\ignorespaces  Synchronous and Asynchornous Distributed Training. \relax }}{64}{figure.caption.40}}
+\newlabel{fig:distributedtraining}{{5.13}{64}{Synchronous and Asynchornous Distributed Training. \relax }{figure.caption.40}{}}
 \citation{tensorboard}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.13}{\ignorespaces  Synchronous and Asynchornous Distributed Training. \relax }}{54}{figure.caption.37}}
-\newlabel{fig:distributedtraining}{{4.13}{54}{Synchronous and Asynchornous Distributed Training. \relax }{figure.caption.37}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.4.4}Metrics}{54}{subsection.4.4.4}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.4.5}Monitoring via Tensorboard}{55}{subsection.4.4.5}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.14}{\ignorespaces  Monitoring training metrics with Tensorboard. \relax }}{55}{figure.caption.38}}
-\newlabel{fig:tensorboard}{{4.14}{55}{Monitoring training metrics with Tensorboard. \relax }{figure.caption.38}{}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {5}Results' Analysis and Discussion}{56}{chapter.5}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.5.4}Metrics}{65}{subsection.5.5.4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.5.5}Monitoring via Tensorboard}{65}{subsection.5.5.5}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.14}{\ignorespaces  Monitoring training metrics with Tensorboard. \relax }}{65}{figure.caption.41}}
+\newlabel{fig:tensorboard}{{5.14}{65}{Monitoring training metrics with Tensorboard. \relax }{figure.caption.41}{}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {6}Results' Analysis and Discussion}{66}{chapter.6}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{ch:results}{{5}{56}{Results' Analysis and Discussion}{chapter.5}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {5.1}Training Results}{56}{section.5.1}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.1}{\ignorespaces Plots of mean squared error and mean absolute error, during training.\relax }}{56}{figure.caption.39}}
-\newlabel{fig:errors}{{5.1}{56}{Plots of mean squared error and mean absolute error, during training.\relax }{figure.caption.39}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {5.2}The Learned Kick Motion}{57}{section.5.2}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.2}{\ignorespaces The kick motion. The first row of figures shows the original kick motion. The second row shows the learned kick motion. Both motions are visually indistinguishable.\relax }}{57}{figure.caption.40}}
-\newlabel{fig:motions}{{5.2}{57}{The kick motion. The first row of figures shows the original kick motion. The second row shows the learned kick motion. Both motions are visually indistinguishable.\relax }{figure.caption.40}{}}
-\newlabel{footnote_walk}{{1}{57}{}{Hfootnote.1}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.3}{\ignorespaces Joint values for comparing original and learned kicks. The neural network was able to fit the joint trajectories with small errors.\relax }}{58}{figure.caption.41}}
-\newlabel{fig:kick_joints_curves}{{5.3}{58}{Joint values for comparing original and learned kicks. The neural network was able to fit the joint trajectories with small errors.\relax }{figure.caption.41}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {5.1}{\ignorespaces The Kick Comparison\relax }}{58}{table.caption.42}}
-\newlabel{tab_kicks_statistics}{{5.1}{58}{The Kick Comparison\relax }{table.caption.42}{}}
+\newlabel{ch:results}{{6}{66}{Results' Analysis and Discussion}{chapter.6}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.1}Training Results}{66}{section.6.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6.1}{\ignorespaces Plots of mean squared error and mean absolute error, during training.\relax }}{66}{figure.caption.42}}
+\newlabel{fig:errors}{{6.1}{66}{Plots of mean squared error and mean absolute error, during training.\relax }{figure.caption.42}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.2}The Learned Kick Motion}{67}{section.6.2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6.2}{\ignorespaces The kick motion. The first row of figures shows the original kick motion. The second row shows the learned kick motion. Both motions are visually indistinguishable.\relax }}{67}{figure.caption.43}}
+\newlabel{fig:motions}{{6.2}{67}{The kick motion. The first row of figures shows the original kick motion. The second row shows the learned kick motion. Both motions are visually indistinguishable.\relax }{figure.caption.43}{}}
+\newlabel{footnote_walk}{{1}{67}{}{Hfootnote.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6.3}{\ignorespaces Joint values for comparing original and learned kicks. The neural network was able to fit the joint trajectories with small errors.\relax }}{68}{figure.caption.44}}
+\newlabel{fig:kick_joints_curves}{{6.3}{68}{Joint values for comparing original and learned kicks. The neural network was able to fit the joint trajectories with small errors.\relax }{figure.caption.44}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {6.1}{\ignorespaces The Kick Comparison\relax }}{68}{table.caption.45}}
+\newlabel{tab_kicks_statistics}{{6.1}{68}{The Kick Comparison\relax }{table.caption.45}{}}
 \citation{macalpine2013}
 \citation{macalpine2017}
-\@writefile{toc}{\contentsline {section}{\numberline {5.3}The Learned Walk Motion}{59}{section.5.3}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.4}{\ignorespaces Joints positions, during a period of the walking motion for the original walk, and the learned walk and the joints positions effectively attained, during the learned walking motion.\relax }}{59}{figure.caption.43}}
-\newlabel{fig:walk_joints_curves}{{5.4}{59}{Joints positions, during a period of the walking motion for the original walk, and the learned walk and the joints positions effectively attained, during the learned walking motion.\relax }{figure.caption.43}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {5.2}{\ignorespaces Walk Comparison - Forward Walk\relax }}{60}{table.caption.44}}
-\newlabel{tab_walk}{{5.2}{60}{Walk Comparison - Forward Walk\relax }{table.caption.44}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.5}{\ignorespaces The walking motions comparison. Figure (a) shows our agent in its regular walk, Figure (b) shows the same agent mimicking UT Austin Villa walk, and Figure (c) shows the UT Austin Villa agent itself performing his own walking motion.\relax }}{60}{figure.caption.45}}
-\newlabel{fig:walkings}{{5.5}{60}{The walking motions comparison. Figure (a) shows our agent in its regular walk, Figure (b) shows the same agent mimicking UT Austin Villa walk, and Figure (c) shows the UT Austin Villa agent itself performing his own walking motion.\relax }{figure.caption.45}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {5.4}Other motions}{60}{section.5.4}}
-\newlabel{footnote_walk}{{2}{60}{}{Hfootnote.2}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.3}The Learned Walk Motion}{69}{section.6.3}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6.4}{\ignorespaces Joints positions, during a period of the walking motion for the original walk, and the learned walk and the joints positions effectively attained, during the learned walking motion.\relax }}{69}{figure.caption.46}}
+\newlabel{fig:walk_joints_curves}{{6.4}{69}{Joints positions, during a period of the walking motion for the original walk, and the learned walk and the joints positions effectively attained, during the learned walking motion.\relax }{figure.caption.46}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {6.2}{\ignorespaces Walk Comparison - Forward Walk\relax }}{70}{table.caption.47}}
+\newlabel{tab_walk}{{6.2}{70}{Walk Comparison - Forward Walk\relax }{table.caption.47}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6.5}{\ignorespaces The walking motions comparison. Figure (a) shows our agent in its regular walk, Figure (b) shows the same agent mimicking UT Austin Villa walk, and Figure (c) shows the UT Austin Villa agent itself performing his own walking motion.\relax }}{70}{figure.caption.48}}
+\newlabel{fig:walkings}{{6.5}{70}{The walking motions comparison. Figure (a) shows our agent in its regular walk, Figure (b) shows the same agent mimicking UT Austin Villa walk, and Figure (c) shows the UT Austin Villa agent itself performing his own walking motion.\relax }{figure.caption.48}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.4}Other motions}{70}{section.6.4}}
+\newlabel{footnote_walk}{{2}{70}{}{Hfootnote.2}{}}
 \citation{mcalpine2017}
-\@writefile{toc}{\contentsline {chapter}{\numberline {6}Conclusions, Recommendations, and Future Works}{62}{chapter.6}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {7}Conclusions, Recommendations, and Future Works}{72}{chapter.7}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{ch:conclusion}{{6}{62}{Conclusions, Recommendations, and Future Works}{chapter.6}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {6.1}Preliminary Conclusions and Future Works}{62}{section.6.1}}
-\@writefile{toc}{\contentsline {section}{\numberline {6.2}The Activities Plan}{62}{section.6.2}}
+\newlabel{ch:conclusion}{{7}{72}{Conclusions, Recommendations, and Future Works}{chapter.7}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {7.1}Preliminary Conclusions and Future Works}{72}{section.7.1}}
+\@writefile{toc}{\contentsline {section}{\numberline {7.2}The Activities Plan}{72}{section.7.2}}
 \bibdata{abnt-options,Referencias/referencias}
 \bibcite{tensorflow2015-whitepaper}{Abadi \textit  {et al.} 2015}
 \bibciteEXPL{tensorflow2015-whitepaper}{Abadi \textit  {et al.}}
@@ -388,7 +435,7 @@
 \bibciteEXPL{dabbura2017}{Dabbura}
 \bibciteIMPL{dabbura2017}{DABBURA}
 \bibciteYEAR{dabbura2017}{2017}
-\@writefile{toc}{\contentsline {chapter}{Bibliography}{64}{chapter.7}}
+\@writefile{toc}{\contentsline {chapter}{Bibliography}{74}{chapter.8}}
 \bibcite{baselines}{Dhariwal \textit  {et al.} 2017}
 \bibciteEXPL{baselines}{Dhariwal \textit  {et al.}}
 \bibciteIMPL{baselines}{DHARIWAL \textit  {et al.}}
@@ -533,6 +580,10 @@
 \bibciteEXPL{shon2005}{Shon \textit  {et al.}}
 \bibciteIMPL{shon2005}{SHON \textit  {et al.}}
 \bibciteYEAR{shon2005}{2005}
+\bibcite{davidsilverlec2}{Silver 2015}
+\bibciteEXPL{davidsilverlec2}{Silver}
+\bibciteIMPL{davidsilverlec2}{SILVER}
+\bibciteYEAR{davidsilverlec2}{2015}
 \bibcite{DBLP:journals/corr/abs-1712-01815}{Silver \textit  {et al.} 2017}
 \bibciteEXPL{DBLP:journals/corr/abs-1712-01815}{Silver \textit  {et al.}}
 \bibciteIMPL{DBLP:journals/corr/abs-1712-01815}{SILVER \textit  {et al.}}
@@ -545,14 +596,30 @@
 \bibciteEXPL{alphago}{Silver \textit  {et al.}}
 \bibciteIMPL{alphago}{SILVER \textit  {et al.}}
 \bibciteYEAR{alphago}{2017c}
+\bibcite{skinner1953science}{Skinner 1953}
+\bibciteEXPL{skinner1953science}{Skinner}
+\bibciteIMPL{skinner1953science}{SKINNER}
+\bibciteYEAR{skinner1953science}{1953}
 \bibcite{Sutskever:2013:IIM:3042817.3043064}{Sutskever \textit  {et al.} 2013}
 \bibciteEXPL{Sutskever:2013:IIM:3042817.3043064}{Sutskever \textit  {et al.}}
 \bibciteIMPL{Sutskever:2013:IIM:3042817.3043064}{SUTSKEVER \textit  {et al.}}
 \bibciteYEAR{Sutskever:2013:IIM:3042817.3043064}{2013}
+\bibcite{sutton1998rli}{Sutton e Barto 1998}
+\bibciteEXPL{sutton1998rli}{Sutton e Barto}
+\bibciteIMPL{sutton1998rli}{SUTTON; BARTO}
+\bibciteYEAR{sutton1998rli}{1998}
 \bibcite{dejan12}{Tanikic e Despotovic 2012}
 \bibciteEXPL{dejan12}{Tanikic e Despotovic}
 \bibciteIMPL{dejan12}{TANIKIC; DESPOTOVIC}
 \bibciteYEAR{dejan12}{2012}
+\bibcite{Thorndike173}{Thorndike 1933}
+\bibciteEXPL{Thorndike173}{Thorndike}
+\bibciteIMPL{Thorndike173}{THORNDIKE}
+\bibciteYEAR{Thorndike173}{1933}
+\bibcite{tibshirani2013}{Tibshirani 2013}
+\bibciteEXPL{tibshirani2013}{Tibshirani}
+\bibciteIMPL{tibshirani2013}{TIBSHIRANI}
+\bibciteYEAR{tibshirani2013}{2013}
 \bibcite{mujoco}{Todorov \textit  {et al.} 2012}
 \bibciteEXPL{mujoco}{Todorov \textit  {et al.}}
 \bibciteIMPL{mujoco}{TODOROV \textit  {et al.}}
@@ -589,7 +656,7 @@
 \bibciteEXPL{simspark}{Xu e Vatankhah}
 \bibciteIMPL{simspark}{XU; VATANKHAH}
 \bibciteYEAR{simspark}{2014}
-\newlabel{LastPage}{{}{70}{}{page.70}{}}
-\xdef\lastpage@lastpage{70}
-\xdef\lastpage@lastpageHy{70}
+\newlabel{LastPage}{{}{80}{}{page.80}{}}
+\xdef\lastpage@lastpage{80}
+\xdef\lastpage@lastpageHy{80}
 \bibstyle{abnt-alf}

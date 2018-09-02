@@ -558,12 +558,50 @@ Xavier Initialization makes sure weights are started in a reasonable range by us
 
 Where $n_{in}$ and $n_{out}$ are the number of neurons feeding into it and the result is fed to, respectively. \cite{Glorot10} shows the mathematical development for this equation.
 
-\section{Learning Rate Decay}
+\section{Gradient Descent convergence and learning rate decay}
 
-Utilizando um valor fixo de , n ao h a garantias da convergencia do
-algoritmo, que em geral ocorre para valores grandes de . A figura 3.19 ilustra um caso
-onde o algoritmo diverge para uma fun c ao de uma u
-ica vari vel. Existem alternativas
-que garantem a convergencia do algoritmo (embora frequentemente acompanhadas de um
-1
-aprendizado mais lento), sendo uma das mais populares  = na t- esima itera c ao.
+
+It is possible to prove the convergence of gradient descent for a specific set of functions.
+
+\newtheorem{gdconv}{Theorem}\label{proof:gdconv}
+\begin{gdconv}
+	Suppose the function $f : \mathbb{R}^{n} \rightarrow \mathbb{R}$ is convex and differentiable, and that its gradient is Lipschitz continuous with constant $L > 0$, i.e, we have that $\lVert \nabla f(x) - \nabla f(y) \rVert_{2} \leq L\lVert x - y \rVert_{2}$, for any x, y. Then if we run gradient descent for k iterations with a fixed step $t \leq \frac{1}{L}$, it will yield a solution $f^{(k)}$ which satisfies
+	
+	\begin{equation}
+		f(x^{(k)}) - f(x^{(*)}) \leq \frac{\lVert x^{(0)} - x^{*} \rVert^{2}_{2}}{2tk} 
+	\end{equation}
+	
+	where $f(x^{(*)})$ is the optimal value.
+\end{gdconv}
+
+The proof of this theorem can be found in \cite{tibshirani2013}. Therefore, using a fixed value for the learning rate, it converges with the rate $O(1/k)$. However, if a large learning rate is chosen, there are no guarantees of convergence. Figure \ref{fig:gddivergence} shows a case of divergence in a one variable optimization.
+
+
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[width=0.8\textwidth]{Cap3/gddivergence.eps}
+	\caption{ Illustration Gradient Descent divergence for a one variable optimization.
+		\cite{tgilharco}.
+	}
+	\label{fig:gddivergence}
+\end{figure}
+
+In practice, learning works well even when some of these requirements are not met. In the context of Deep Learning, it is difficult to analyze if a function is convex because it depends on thousands or millions of parameters. Furthermore, there are activation functions themselves that are not differentiable in the whole interval it acts. Finally, the learning rate that the theorem guarantee convergence is too small. Therefore, it is common to search for a learning rate that converges faster. 
+
+Adaptive learning rate is another technique used for make convergence faster.
+
+
+\begin{gdconv}
+	Suppose the function $f : \mathbb{R}^{n} \rightarrow \mathbb{R}$ is convex and differentiable, and that its gradient is Lipschitz continuous with constant $L > 0$, i.e, we have that $\lVert \nabla f(x) - \nabla f(y) \rVert_{2} \leq L\lVert x - y \rVert_{2}$, for any x, y. Then if we run gradient descent for k iterations with a adaptive step $t_{i}$, chosen using backtracking line search on each iteration $i$, it will yield a solution $f^{(k)}$ which satisfies
+	
+	\begin{equation}
+	f(x^{(k)}) - f(x^{(*)}) \leq \frac{\lVert x^{(0)} - x^{*} \rVert^{2}_{2}}{2t_{min}k} 
+	\end{equation}
+	
+	where $t_{min} = \min({1, \beta / L})$.
+\end{gdconv}
+
+
+Intuitively, using an adaptive learning rate, we can use larger initial values and then speedup learning. The most common method is learning rate decay, which could be linear, exponential.
+
+In this work, we will use linear learning rate decay.

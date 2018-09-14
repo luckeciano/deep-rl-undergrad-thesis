@@ -18,6 +18,14 @@
 Software available from tensorflow.org.
 Dispon{\'\i}vel em: $<$https:\-/\-/www\-.tensorflow\-.org\-/$>$.}
 
+\bibitem[Abbeel \textit{et al.} 2017]{deeprlbootcamplec4}
+\abntrefinfo{Abbeel \textit{et al.}}{ABBEEL \textit{et al.}}{2017}
+{ABBEEL, P.; SCHULMAN, J.; CHEN, X.~P.
+Lecture, \textbf{Policy Gradients}. 2017.
+Dispon{\'\i}vel em:
+  $<$https:\-/\-/drive\-.google\-.com\-/file\-/d\-/0BxXI\underline{\
+  }RttTZAhY216RTMtanBpUnc\-/view$>$.}
+
 \bibitem[Andrychowicz \textit{et al.} 2017]{her}
 \abntrefinfo{Andrychowicz \textit{et al.}}{ANDRYCHOWICZ \textit{et al.}}{2017}
 {ANDRYCHOWICZ, M.; WOLSKI, F.; RAY, A.; SCHNEIDER, J.; FONG, R.; WELINDER, P.;
@@ -131,6 +139,13 @@ Dispon{\'\i}vel em:
 Dispon{\'\i}vel em:
   \htmladdnormallink{$<$http:\-/\-/arxiv\-.org\-/abs\-/1707\-.02286$>$}{http://arxiv.org/abs/1707.02286}.}
 
+\bibitem[Hestenes e Stiefel 1952]{Hestenes&Stiefel:1952}
+\abntrefinfo{Hestenes e Stiefel}{HESTENES; STIEFEL}{1952}
+{HESTENES, M.~R.; STIEFEL, E. Methods of conjugate gradients for solving linear
+  systems.
+\textbf{Journal of research of the National Bureau of Standards}, v.~49, p.
+  409--436, 1952.}
+
 \bibitem[Hinton e Tieleman 2017]{hinton2012}
 \abntrefinfo{Hinton e Tieleman}{HINTON; TIELEMAN}{2017}
 {HINTON, G.; TIELEMAN, T.
@@ -146,12 +161,28 @@ Dispon{\'\i}vel em:
 Dispon{\'\i}vel em:
   \htmladdnormallink{$<$http:\-/\-/arxiv\-.org\-/abs\-/1606\-.03476$>$}{http://arxiv.org/abs/1606.03476}.}
 
+\bibitem[Jie e Abbeel 2010]{NIPS2010_3922}
+\abntrefinfo{Jie e Abbeel}{JIE; ABBEEL}{2010}
+{JIE, T.; ABBEEL, P. On a connection between importance sampling and the
+  likelihood ratio policy gradient. In:  LAFFERTY, J.~D.; WILLIAMS, C. K.~I.;
+  SHAWE-TAYLOR, J.; ZEMEL, R.~S.; CULOTTA, A. (Ed.). \textbf{Advances in Neural
+  Information Processing Systems 23}. Curran Associates, Inc., 2010. p.
+  1000--1008.
+Dispon{\'\i}vel em:
+  \htmladdnormallink{$<$http:\-/\-/papers\-.nips\-.cc\-/paper\-/3922-on-a-connection-between-importance-sampling-and-the-likelihood-ratio-policy-gradient\-.pdf$>$}{http://papers.nips.cc/paper/3922-on-a-connection-between-importance-sampling-and-the-likelihood-ratio-policy-gradient.pdf}.}
+
 \bibitem[Kajita \textit{et al.} 2001]{kajita2001}
 \abntrefinfo{Kajita \textit{et al.}}{KAJITA \textit{et al.}}{2001}
 {KAJITA, S.; KANEHIRO, F.; KANEKO, K.; YOKOI, K.; HIRUKAWA, H. {The 3D Linear
   Inverted Pendulum Mode: A simple modeling for a biped walking pattern
   generation}. In:  \textbf{In Proceedings of the 2001 IEEE/RSJ International
   Conference on Intelligent Robots and Systems}. Hawaii, USA: IEEE, 2001.}
+
+\bibitem[Kakade e Langford 2002]{Kakade02approximatelyoptimal}
+\abntrefinfo{Kakade e Langford}{KAKADE; LANGFORD}{2002}
+{KAKADE, S.; LANGFORD, J. Approximately optimal approximate reinforcement
+  learning. In:  \textbf{IN PROC. 19TH INTERNATIONAL CONFERENCE ON MACHINE
+  LEARNING}. [S.l.: s.n.], 2002. p. 267--274.}
 
 \bibitem[Khan 2018]{cmaesfig}
 \abntrefinfo{Khan}{KHAN}{2018}
@@ -238,7 +269,13 @@ Austin, Texas, December 2011.}
 \abntrefinfo{Magalhaes}{MAGALHAES}{2017}
 {MAGALHAES, G.~I.
 \textbf{Reconhecimento de gestos da Linguagem Brasileira de Sinais}.
-Tese (Doutorado) --- ITA, 2017.}
+Bachelor's Thesis --- ITA, 2017.}
+
+\bibitem[Maximo 2012]{tgmaximo}
+\abntrefinfo{Maximo}{MAXIMO}{2012}
+{MAXIMO, M. R.~O. de A.
+\textbf{Otimizacao de Caminhada de Robos Humanoides}.
+Bachelor's Thesis --- ITA, 2012.}
 
 \bibitem[Mnih \textit{et al.} 2016]{a2c}
 \abntrefinfo{Mnih \textit{et al.}}{MNIH \textit{et al.}}{2016}
@@ -274,7 +311,7 @@ Dispon{\'\i}vel em:
 \abntrefinfo{Muzio}{MUZIO}{2017}
 {MUZIO, A. F.~V.
 \textbf{Deep Reinforcement Learning Applied to Humanoid Robots}.
-Tese (Doutorado) --- ITA, 2017.}
+Bachelor's Thesis --- ITA, 2017.}
 
 \bibitem[Obst e Rollman 2005]{simspark2005}
 \abntrefinfo{Obst e Rollman}{OBST; ROLLMAN}{2005}
@@ -296,6 +333,13 @@ Tese (Doutorado) --- ITA, 2017.}
   parameter noise. In:  . [s.n.], 2017. Dispon{\'\i}vel em:
   $<$https:\-/\-/blog\-.openai\-.com\-/better-exploration-with-parameter-noise\-/$>$.}
 
+\bibitem[Rubinstein e Kroese 2004]{Rubinstein:2004:CEM:1014902}
+\abntrefinfo{Rubinstein e Kroese}{RUBINSTEIN; KROESE}{2004}
+{RUBINSTEIN, R.~Y.; KROESE, D.~P. \textbf{The Cross Entropy Method: A Unified
+  Approach To Combinatorial Optimization, Monte-carlo Simulation (Information
+  Science and Statistics)}. Berlin, Heidelberg: Springer-Verlag, 2004.
+ISBN 038721240X.}
+
 \bibitem[Rumelhart \textit{et al.} 1988]{hinton88}
 \abntrefinfo{Rumelhart \textit{et al.}}{RUMELHART \textit{et al.}}{1988}
 {RUMELHART, D.~E.; HINTON, G.~E.; WILLIAMS, R.~J. Learning representations by
@@ -308,15 +352,32 @@ Tese (Doutorado) --- ITA, 2017.}
   Systems}.
 [S.l.], 1994.}
 
+\bibitem[Schulman 2017]{deeprlbootcamplec5}
+\abntrefinfo{Schulman}{SCHULMAN}{2017}
+{SCHULMAN, J.
+Lecture, \textbf{Advanced Policy Gradient Methods: Natural Gradient, TRPO and
+  More}. 2017.
+Dispon{\'\i}vel em:
+  $<$https:\-/\-/drive\-.google\-.com\-/file\-/d\-/0BxXI\underline{\
+  }RttTZAhMVhsNk5VSXU0U3c\-/view$>$.}
+
 \bibitem[Schulman \textit{et al.} 2015]{trpo}
-\abntrefinfo{Schulman \textit{et al.}}{SCHULMAN \textit{et al.}}{2015}
+\abntrefinfo{Schulman \textit{et al.}}{SCHULMAN \textit{et al.}}{2015a}
 {SCHULMAN, J.; LEVINE, S.; MORITZ, P.; JORDAN, M.~I.; ABBEEL, P. Trust region
   policy optimization.
 \textbf{CoRR}, abs/1502.05477, 2015.
 Dispon{\'\i}vel em:
   \htmladdnormallink{$<$http:\-/\-/arxiv\-.org\-/abs\-/1502\-.05477$>$}{http://arxiv.org/abs/1502.05477}.}
 
-\bibitem[Schulman \textit{et al.} 2017]{PPO}
+\bibitem[Schulman \textit{et al.} 2015]{DBLP:journals/corr/SchulmanMLJA15}
+\abntrefinfo{Schulman \textit{et al.}}{SCHULMAN \textit{et al.}}{2015b}
+{SCHULMAN, J.; MORITZ, P.; LEVINE, S.; JORDAN, M.~I.; ABBEEL, P.
+  High-dimensional continuous control using generalized advantage estimation.
+\textbf{CoRR}, abs/1506.02438, 2015.
+Dispon{\'\i}vel em:
+  \htmladdnormallink{$<$http:\-/\-/arxiv\-.org\-/abs\-/1506\-.02438$>$}{http://arxiv.org/abs/1506.02438}.}
+
+\bibitem[Schulman \textit{et al.} 2017]{ppoalgorithm}
 \abntrefinfo{Schulman \textit{et al.}}{SCHULMAN \textit{et al.}}{2017}
 {SCHULMAN, J.; WOLSKI, F.; DHARIWAL, P.; RADFORD, A.; KLIMOV, O. Proximal
   policy optimization algorithms.
@@ -332,12 +393,36 @@ Dispon{\'\i}vel em:
   [s.n.], 2005.}
 
 \bibitem[Silver 2015]{davidsilverlec2}
-\abntrefinfo{Silver}{SILVER}{2015}
+\abntrefinfo{Silver}{SILVER}{2015a}
 {SILVER, D.
 Lecture, \textbf{Markov Decision Processes}. 2015.
 Dispon{\'\i}vel em:
   \htmladdnormallink{$<$http:\-/\-/www0\-.cs\-.ucl\-.ac\-.uk\-/staff\-/d\-.silver\-/web\-/Teaching\underline{\
   }files\-/MDP\-.pdf$>$}{http://www0.cs.ucl.ac.uk/staff/d.silver/web/Teaching_files/MDP.pdf}.}
+
+\bibitem[Silver 2015]{davidsilverlec3}
+\abntrefinfo{Silver}{SILVER}{2015b}
+{SILVER, D.
+Lecture, \textbf{Planning by Dynamic Programming}. 2015.
+Dispon{\'\i}vel em:
+  \htmladdnormallink{$<$http:\-/\-/www0\-.cs\-.ucl\-.ac\-.uk\-/staff\-/d\-.silver\-/web\-/Teaching\underline{\
+  }files\-/DP\-.pdf$>$}{http://www0.cs.ucl.ac.uk/staff/d.silver/web/Teaching_files/DP.pdf}.}
+
+\bibitem[Silver 2015]{davidsilverlec7}
+\abntrefinfo{Silver}{SILVER}{2015c}
+{SILVER, D.
+Lecture, \textbf{Policy Gradients}. 2015.
+Dispon{\'\i}vel em:
+  \htmladdnormallink{$<$http:\-/\-/www0\-.cs\-.ucl\-.ac\-.uk\-/staff\-/d\-.silver\-/web\-/Teaching\underline{\
+  }files\-/pg\-.pdf$>$}{http://www0.cs.ucl.ac.uk/staff/d.silver/web/Teaching_files/pg.pdf}.}
+
+\bibitem[Silver 2015]{davidsilverlec6}
+\abntrefinfo{Silver}{SILVER}{2015d}
+{SILVER, D.
+Lecture, \textbf{Value Function Approximation}. 2015.
+Dispon{\'\i}vel em:
+  \htmladdnormallink{$<$http:\-/\-/www0\-.cs\-.ucl\-.ac\-.uk\-/staff\-/d\-.silver\-/web\-/Teaching\underline{\
+  }files\-/FA\-.pdf$>$}{http://www0.cs.ucl.ac.uk/staff/d.silver/web/Teaching_files/FA.pdf}.}
 
 \bibitem[Silver \textit{et al.} 2017]{DBLP:journals/corr/abs-1712-01815}
 \abntrefinfo{Silver \textit{et al.}}{SILVER \textit{et al.}}{2017a}
@@ -462,7 +547,7 @@ Dispon{\'\i}vel em:
 
 \bibitem[Xiong \textit{et al.} 2016]{DBLP:journals/corr/XiongDHSSSYZ16a}
 \abntrefinfo{Xiong \textit{et al.}}{XIONG \textit{et al.}}{2016}
-{XIONG, W.; DROPPO, J.; HUANG, X.; SEIDE, F.; SELTZER, M.; STOLCKE, A.; YU, D.;
+{XIONG, W.; DRO, J.; HUANG, X.; SEIDE, F.; SELTZER, M.; STOLCKE, A.; YU, D.;
   ZWEIG, G. Achieving human parity in conversational speech recognition.
 \textbf{CoRR}, abs/1610.05256, 2016.
 Dispon{\'\i}vel em:
@@ -473,6 +558,12 @@ Dispon{\'\i}vel em:
 {XU, B.; WANG, N.; CHEN, T.; LI, M. Empirical evaluation of rectified
   activations in convolutional network.
 \textbf{arXiv}, Nov 2015.}
+
+\bibitem[Xu \textit{et al.} 2007]{actorcritic}
+\abntrefinfo{Xu \textit{et al.}}{XU \textit{et al.}}{2007}
+{XU, X.; HU, D.; LU, X. Kernel-based least squares policy iteration for
+  reinforcement learning.
+v.~18, p. 973--92, 08 2007.}
 
 \bibitem[Xu e Vatankhah 2014]{simspark}
 \abntrefinfo{Xu e Vatankhah}{XU; VATANKHAH}{2014}

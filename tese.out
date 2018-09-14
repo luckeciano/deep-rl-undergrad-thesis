@@ -52,36 +52,51 @@
 \BOOKMARK [2][]{subsection.4.3.1}{4.3.1 Markov State}{section.4.3}% 52
 \BOOKMARK [2][]{subsection.4.3.2}{4.3.2 State Transition Matrix}{section.4.3}% 53
 \BOOKMARK [2][]{subsection.4.3.3}{4.3.3 Markov Decision Process}{section.4.3}% 54
-\BOOKMARK [2][]{subsection.4.3.4}{4.3.4 Value Function and Policy}{section.4.3}% 55
-\BOOKMARK [0][]{chapter.5}{5 Methodology}{}% 56
-\BOOKMARK [1][]{section.5.1}{5.1 The Kick Motion Problem}{chapter.5}% 57
-\BOOKMARK [1][]{section.5.2}{5.2 Experimentation Setup}{chapter.5}% 58
-\BOOKMARK [2][]{subsection.5.2.1}{5.2.1 Hybrid Learning Model \205 HLM}{section.5.2}% 59
-\BOOKMARK [2][]{subsection.5.2.2}{5.2.2 Reinforcement with Naive Reward - RNR }{section.5.2}% 60
-\BOOKMARK [2][]{subsection.5.2.3}{5.2.3 Reinforcement with Reference Reward - RRR }{section.5.2}% 61
-\BOOKMARK [2][]{subsection.5.2.4}{5.2.4 Reinforcement with Initial State Distribution - RISD}{section.5.2}% 62
-\BOOKMARK [2][]{subsection.5.2.5}{5.2.5 Reinforcement with Early Termination - RET}{section.5.2}% 63
-\BOOKMARK [1][]{section.5.3}{5.3 Supervised Learning Setup}{chapter.5}% 64
-\BOOKMARK [2][]{subsection.5.3.1}{5.3.1 The Dataset}{section.5.3}% 65
-\BOOKMARK [2][]{subsection.5.3.2}{5.3.2 Neural Network Architecture and Hyperparameters}{section.5.3}% 66
-\BOOKMARK [2][]{subsection.5.3.3}{5.3.3 The Training Procedure}{section.5.3}% 67
-\BOOKMARK [2][]{subsection.5.3.4}{5.3.4 The Deployment in the Soccer 3D Environment}{section.5.3}% 68
-\BOOKMARK [1][]{section.5.4}{5.4 Reinforcement Learning Setup}{chapter.5}% 69
-\BOOKMARK [2][]{subsection.5.4.1}{5.4.1 Policy Representation}{section.5.4}% 70
-\BOOKMARK [2][]{subsection.5.4.2}{5.4.2 Task Description}{section.5.4}% 71
-\BOOKMARK [1][]{section.5.5}{5.5 Infrastructure}{chapter.5}% 72
-\BOOKMARK [2][]{subsection.5.5.1}{5.5.1 Reinforcement Learning Server}{section.5.5}% 73
-\BOOKMARK [2][]{subsection.5.5.2}{5.5.2 Neural Network Deployment}{section.5.5}% 74
-\BOOKMARK [2][]{subsection.5.5.3}{5.5.3 Distributed Training}{section.5.5}% 75
-\BOOKMARK [2][]{subsection.5.5.4}{5.5.4 Metrics}{section.5.5}% 76
-\BOOKMARK [2][]{subsection.5.5.5}{5.5.5 Monitoring via Tensorboard}{section.5.5}% 77
-\BOOKMARK [0][]{chapter.6}{6 Results' Analysis and Discussion}{}% 78
-\BOOKMARK [1][]{section.6.1}{6.1 Training Results}{chapter.6}% 79
-\BOOKMARK [1][]{section.6.2}{6.2 The Learned Kick Motion}{chapter.6}% 80
-\BOOKMARK [1][]{section.6.3}{6.3 The Learned Walk Motion}{chapter.6}% 81
-\BOOKMARK [1][]{section.6.4}{6.4 Other motions}{chapter.6}% 82
-\BOOKMARK [0][]{chapter.7}{7 Conclusions, Recommendations, and Future Works}{}% 83
-\BOOKMARK [1][]{section.7.1}{7.1 Preliminary Conclusions and Future Works}{chapter.7}% 84
-\BOOKMARK [1][]{section.7.2}{7.2 The Activities Plan}{chapter.7}% 85
-\BOOKMARK [0][]{chapter.8}{Bibliography}{}% 86
-\BOOKMARK [0][]{bla.0}{Folha de Registro do Documento}{}% 87
+\BOOKMARK [2][]{subsection.4.3.4}{4.3.4 State-Value and Action-Value Function}{section.4.3}% 55
+\BOOKMARK [1][]{section.4.4}{4.4 Bellman Equation}{chapter.4}% 56
+\BOOKMARK [2][]{subsection.4.4.1}{4.4.1 Bellman Expectation Equation}{section.4.4}% 57
+\BOOKMARK [2][]{subsection.4.4.2}{4.4.2 Bellman Optimality Equation}{section.4.4}% 58
+\BOOKMARK [1][]{section.4.5}{4.5 Exact Solution Methods}{chapter.4}% 59
+\BOOKMARK [2][]{subsection.4.5.1}{4.5.1 Policy Iteration}{section.4.5}% 60
+\BOOKMARK [2][]{subsection.4.5.2}{4.5.2 Value Iteration}{section.4.5}% 61
+\BOOKMARK [2][]{subsection.4.5.3}{4.5.3 Limitations of Exact Solution Methods}{section.4.5}% 62
+\BOOKMARK [1][]{section.4.6}{4.6 Policy Gradient Methods}{chapter.4}% 63
+\BOOKMARK [2][]{subsection.4.6.1}{4.6.1 Policy Gradient Theorem}{section.4.6}% 64
+\BOOKMARK [2][]{subsection.4.6.2}{4.6.2 Actor-Critic Models}{section.4.6}% 65
+\BOOKMARK [2][]{subsection.4.6.3}{4.6.3 Advantage Function and GAE Algorithm}{section.4.6}% 66
+\BOOKMARK [1][]{section.4.7}{4.7 Advanced Policy Gradient Methods}{chapter.4}% 67
+\BOOKMARK [2][]{subsection.4.7.1}{4.7.1 Optimization Loss}{section.4.7}% 68
+\BOOKMARK [2][]{subsection.4.7.2}{4.7.2 Trust Region Policy Optimization \205 TRPO}{section.4.7}% 69
+\BOOKMARK [2][]{subsection.4.7.3}{4.7.3 Proximal Policy Optimization \205 PPO}{section.4.7}% 70
+\BOOKMARK [0][]{chapter.5}{5 Methodology}{}% 71
+\BOOKMARK [1][]{section.5.1}{5.1 The Kick Motion Problem}{chapter.5}% 72
+\BOOKMARK [1][]{section.5.2}{5.2 Experimentation Setup}{chapter.5}% 73
+\BOOKMARK [2][]{subsection.5.2.1}{5.2.1 Hybrid Learning Model \205 HLM}{section.5.2}% 74
+\BOOKMARK [2][]{subsection.5.2.2}{5.2.2 Reinforcement with Naive Reward - RNR }{section.5.2}% 75
+\BOOKMARK [2][]{subsection.5.2.3}{5.2.3 Reinforcement with Reference Reward - RRR }{section.5.2}% 76
+\BOOKMARK [2][]{subsection.5.2.4}{5.2.4 Reinforcement with Initial State Distribution - RISD}{section.5.2}% 77
+\BOOKMARK [2][]{subsection.5.2.5}{5.2.5 Reinforcement with Early Termination - RET}{section.5.2}% 78
+\BOOKMARK [1][]{section.5.3}{5.3 Supervised Learning Setup}{chapter.5}% 79
+\BOOKMARK [2][]{subsection.5.3.1}{5.3.1 The Dataset}{section.5.3}% 80
+\BOOKMARK [2][]{subsection.5.3.2}{5.3.2 Neural Network Architecture and Hyperparameters}{section.5.3}% 81
+\BOOKMARK [2][]{subsection.5.3.3}{5.3.3 The Training Procedure}{section.5.3}% 82
+\BOOKMARK [2][]{subsection.5.3.4}{5.3.4 The Deployment in the Soccer 3D Environment}{section.5.3}% 83
+\BOOKMARK [1][]{section.5.4}{5.4 Reinforcement Learning Setup}{chapter.5}% 84
+\BOOKMARK [2][]{subsection.5.4.1}{5.4.1 Policy Representation}{section.5.4}% 85
+\BOOKMARK [2][]{subsection.5.4.2}{5.4.2 Task Description}{section.5.4}% 86
+\BOOKMARK [1][]{section.5.5}{5.5 Infrastructure}{chapter.5}% 87
+\BOOKMARK [2][]{subsection.5.5.1}{5.5.1 Reinforcement Learning Server}{section.5.5}% 88
+\BOOKMARK [2][]{subsection.5.5.2}{5.5.2 Neural Network Deployment}{section.5.5}% 89
+\BOOKMARK [2][]{subsection.5.5.3}{5.5.3 Distributed Training}{section.5.5}% 90
+\BOOKMARK [2][]{subsection.5.5.4}{5.5.4 Metrics}{section.5.5}% 91
+\BOOKMARK [2][]{subsection.5.5.5}{5.5.5 Monitoring via Tensorboard}{section.5.5}% 92
+\BOOKMARK [0][]{chapter.6}{6 Results' Analysis and Discussion}{}% 93
+\BOOKMARK [1][]{section.6.1}{6.1 Training Results}{chapter.6}% 94
+\BOOKMARK [1][]{section.6.2}{6.2 The Learned Kick Motion}{chapter.6}% 95
+\BOOKMARK [1][]{section.6.3}{6.3 The Learned Walk Motion}{chapter.6}% 96
+\BOOKMARK [1][]{section.6.4}{6.4 Other motions}{chapter.6}% 97
+\BOOKMARK [0][]{chapter.7}{7 Conclusions, Recommendations, and Future Works}{}% 98
+\BOOKMARK [1][]{section.7.1}{7.1 Preliminary Conclusions and Future Works}{chapter.7}% 99
+\BOOKMARK [1][]{section.7.2}{7.2 The Activities Plan}{chapter.7}% 100
+\BOOKMARK [0][]{chapter.8}{Bibliography}{}% 101
+\BOOKMARK [0][]{bla.0}{Folha de Registro do Documento}{}% 102

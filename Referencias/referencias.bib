@@ -17,7 +17,7 @@
 
 @article{DBLP:journals/corr/XiongDHSSSYZ16a,
   author    = {Wayne Xiong and
-               Jasha Droppo and
+               Jasha Dro and
                Xuedong Huang and
                Frank Seide and
                Mike Seltzer and
@@ -1157,7 +1157,7 @@ publisher = {IEEE},
 address = {Chicago, USA},
 }
 
-@INPROCEEDINGS{muzio2016, 
+@INPROCEEDINGS{2016, 
 author={A. Muzio and L. Aguiar and M. R. O. A. Maximo and S. C. Pinto}, 
 booktitle={2016 XIII Latin American Robotics Symposium and IV Brazilian Robotics Symposium (LARS/SBR)}, 
 title={Monte Carlo Localization with Field Lines Observations for Simulated Humanoid Robotic Soccer}, 
@@ -1963,7 +1963,7 @@ author={
 	bibsource = {dblp computer science bibliography, https://dblp.org}
 }
 
-@article{ppo,
+@article{ppoalgorithm,
 	author    = {John Schulman and
 	Filip Wolski and
 	Prafulla Dhariwal and
@@ -2109,20 +2109,39 @@ author={
 	url = {https://blog.openai.com/better-exploration-with-parameter-noise/}
 }
 
-@phdthesis{tgmuzio,
+@thesis{tgmuzio,
 	author = {Alexandre Ferreira Velho Muzio},
 	title = {Deep Reinforcement Learning Applied to Humanoid Robots},
 	year = {2017},
+	type={Bachelor's Thesis},
 	school = {ITA}
 }
 
-@phdthesis{tgilharco,
+@thesis{tgmaximo,
+	author = {Marcos Ricardo Omena de Albuquerque Maximo},
+	title = {Otimizacao de Caminhada de Robos Humanoides},
+	type={Bachelor's Thesis},
+	year = {2012},
+	school = {ITA}
+}
+
+@thesis{tgilharco,
 	author = {Gabriel Ilharco Magalhaes},
 	title = {Reconhecimento de gestos da Linguagem Brasileira de Sinais},
+	type={Bachelor's Thesis},
 	year = {2017},
 	school = {ITA}
 
 }
+
+@book{Rubinstein:2004:CEM:1014902,
+	author = {Rubinstein, Reuven Y. and Kroese, Dirk P.},
+	title = {The Cross Entropy Method: A Unified Approach To Combinatorial Optimization, Monte-carlo Simulation (Information Science and Statistics)},
+	year = {2004},
+	isbn = {038721240X},
+	publisher = {Springer-Verlag},
+	address = {Berlin, Heidelberg},
+} 
 
 @misc{baselines,
 	author = {Dhariwal, Prafulla and Hesse, Christopher and Klimov, Oleg and Nichol, Alex and Plappert, Matthias and Radford, Alec and Schulman, John and Sidor, Szymon and Wu, Yuhuai},
@@ -2283,6 +2302,111 @@ author={
 	type = {Lecture},
 	year = {2015},
 	url = {http://www0.cs.ucl.ac.uk/staff/d.silver/web/Teaching_files/MDP.pdf}
+}
+
+@misc{davidsilverlec3,
+	author = {David Silver},
+	title = {Planning by Dynamic Programming},
+	type = {Lecture},
+	year = {2015},
+	url = {http://www0.cs.ucl.ac.uk/staff/d.silver/web/Teaching_files/DP.pdf}
+}
+
+
+@misc{davidsilverlec6,
+	author = {David Silver},
+	title = {Value Function Approximation},
+	type = {Lecture},
+	year = {2015},
+	url = {http://www0.cs.ucl.ac.uk/staff/d.silver/web/Teaching_files/FA.pdf}
+}
+
+
+@misc{davidsilverlec7,
+	author = {David Silver},
+	title = {Policy Gradients},
+	type = {Lecture},
+	year = {2015},
+	url = {http://www0.cs.ucl.ac.uk/staff/d.silver/web/Teaching_files/pg.pdf}
+}
+
+@misc{deeprlbootcamplec4,
+	author = {Pieter Abbeel and John Schulman and Xi Peter Chen},
+	title = {Policy Gradients},
+	type = {Lecture},
+	year = {2017},
+	url = {https://drive.google.com/file/d/0BxXI_RttTZAhY216RTMtanBpUnc/view}
+}
+
+@misc{deeprlbootcamplec5,
+	author = {John Schulman},
+	title = {Advanced Policy Gradient Methods: Natural Gradient, TRPO and More},
+	type = {Lecture},
+	year = {2017},
+	url = {https://drive.google.com/file/d/0BxXI_RttTZAhMVhsNk5VSXU0U3c/view}
+}
+
+@INPROCEEDINGS{Kakade02approximatelyoptimal,
+	author = {Sham Kakade and John Langford},
+	title = {Approximately Optimal Approximate Reinforcement Learning},
+	booktitle = {IN PROC. 19TH INTERNATIONAL CONFERENCE ON MACHINE LEARNING},
+	year = {2002},
+	pages = {267--274},
+	publisher = {}
+}
+
+@incollection{NIPS2010_3922,
+	title = {On a Connection between Importance Sampling and the Likelihood Ratio Policy Gradient},
+	author = {Tang Jie and Abbeel, Pieter},
+	booktitle = {Advances in Neural Information Processing Systems 23},
+	editor = {J. D. Lafferty and C. K. I. Williams and J. Shawe-Taylor and R. S. Zemel and A. Culotta},
+	pages = {1000--1008},
+	year = {2010},
+	publisher = {Curran Associates, Inc.},
+	url = {http://papers.nips.cc/paper/3922-on-a-connection-between-importance-sampling-and-the-likelihood-ratio-policy-gradient.pdf}
+}
+
+@article{actorcritic,
+	author = {Xu, Xin and Hu, Dewen and Lu, Xicheng},
+	year = {2007},
+	month = {08},
+	pages = {973-92},
+	title = {Kernel-Based Least Squares Policy Iteration for Reinforcement Learning},
+	volume = {18},
+	booktitle = {IEEE transactions on neural networks / a publication of the IEEE Neural Networks Council}
+}
+
+@article{DBLP:journals/corr/SchulmanMLJA15,
+	author    = {John Schulman and
+	Philipp Moritz and
+	Sergey Levine and
+	Michael I. Jordan and
+	Pieter Abbeel},
+	title     = {High-Dimensional Continuous Control Using Generalized Advantage Estimation},
+	journal   = {CoRR},
+	volume    = {abs/1506.02438},
+	year      = {2015},
+	url       = {http://arxiv.org/abs/1506.02438},
+	archivePrefix = {arXiv},
+	eprint    = {1506.02438},
+	timestamp = {Mon, 13 Aug 2018 16:46:51 +0200},
+	biburl    = {https://dblp.org/rec/bib/journals/corr/SchulmanMLJA15},
+	bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@article{Hestenes&Stiefel:1952,
+	added-at = {2008-10-07T16:03:39.000+0200},
+	author = {Hestenes, M. R. and Stiefel, E.},
+	biburl = {https://www.bibsonomy.org/bibtex/2362a03244482b96f9f9ee4af6eb7f80c/brefeld},
+	interhash = {bcb34a6f8b9fb2f2371e92430116a8ad},
+	intrahash = {362a03244482b96f9f9ee4af6eb7f80c},
+	journal = {Journal of research of the National Bureau of Standards},
+	keywords = {imported},
+	pages = {409--436},
+	timestamp = {2008-10-07T16:03:39.000+0200},
+	title = {Methods of conjugate gradients for solving linear systems},
+	volume = 49,
+	year = 1952
 }
 
 

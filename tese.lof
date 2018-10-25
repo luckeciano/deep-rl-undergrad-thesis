@@ -1,52 +1,67 @@
 \select@language {english}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1.1}{\ignorespaces AlphaGo Zero, learning model that beat the best players of Go, Chess and Shogi, learning to play without previous human knowledge \cite {DBLP:journals/corr/abs-1712-01815}.\relax }}{14}{figure.caption.5}
-\contentsline {figure}{\numberline {1.2}{\ignorespaces Locomotion of Agent via Deep Reinforcement Learning \cite {DBLP:journals/corr/HeessTSLMWTEWER17}.\relax }}{14}{figure.caption.6}
-\contentsline {figure}{\numberline {1.3}{\ignorespaces A Snapshot from the RoboCup Soccer 3D Simulation League.\relax }}{14}{figure.caption.7}
+\contentsline {figure}{\numberline {1.1}{\ignorespaces AlphaGo Zero, learning model that beat the best players of Go, Chess and Shogi, learning to play without previous human knowledge \cite {DBLP:journals/corr/abs-1712-01815}.\relax }}{20}{figure.caption.7}
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Locomotion of Agent via Deep Reinforcement Learning \cite {DBLP:journals/corr/HeessTSLMWTEWER17}.\relax }}{20}{figure.caption.8}
+\contentsline {figure}{\numberline {1.3}{\ignorespaces A Snapshot from the RoboCup Soccer 3D Simulation League.\relax }}{20}{figure.caption.9}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Illustration of an actual optimization run with covariance matrix adaptation on a simple two-dimensional problem \cite {cmaesfig}.\relax }}{20}{figure.caption.8}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Human level control through deep reinforcement learning in atari games \cite {mnih2015humanlevel}.\relax }}{21}{figure.caption.9}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces OpenAI Five network architecture \cite {openaifive}.\relax }}{22}{figure.caption.10}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Illustration of an actual optimization run with covariance matrix adaptation on a simple two-dimensional problem \cite {cmaesfig}.\relax }}{26}{figure.caption.10}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Human level control through deep reinforcement learning in atari games \cite {mnih2015humanlevel}.\relax }}{27}{figure.caption.11}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces OpenAI Five network architecture \cite {openaifive}.\relax }}{28}{figure.caption.12}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces An artificial neuron within a feed forward artificial neural network \cite {dejan12}. \relax }}{23}{figure.caption.11}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces An artificial neuron in detail.\relax }}{24}{figure.caption.12}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Function representation: in (a), we have a sigmoid function where weights vary. In (b), the same sigmoid but only bias varies.\relax }}{25}{figure.caption.13}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Neural Network representation.\relax }}{25}{figure.caption.14}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Illustration of Sigmoid function.\relax }}{28}{figure.caption.15}
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Illustration of $tanh$ function.\relax }}{28}{figure.caption.16}
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Illustration of ReLU function.\relax }}{29}{figure.caption.17}
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Illustration of leaky ReLU function.\relax }}{30}{figure.caption.18}
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Illustration of gradient descent in a two variables optimization \cite {tgilharco}. \relax }}{32}{figure.caption.19}
-\contentsline {figure}{\numberline {3.10}{\ignorespaces Illustration of Stochastic Gradient Descent optimization. \relax }}{35}{figure.caption.20}
-\contentsline {figure}{\numberline {3.11}{\ignorespaces Illustration of how each variation of Gradient Descent commonly behaves. \cite {dabbura2017}. \relax }}{35}{figure.caption.21}
-\contentsline {figure}{\numberline {3.12}{\ignorespaces Illustration of how Gradient Descent with Momentum (blue arrows) and without it (black arrows) \cite {tgilharco}. \relax }}{37}{figure.caption.22}
-\contentsline {figure}{\numberline {3.13}{\ignorespaces Illustration Gradient Descent divergence for a one variable optimization. \cite {tgilharco}. \relax }}{42}{figure.caption.23}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces An artificial neuron within a feed forward artificial neural network \cite {dejan12}. \relax }}{29}{figure.caption.13}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces An artificial neuron in detail.\relax }}{30}{figure.caption.14}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Function representation: in (a), we have a sigmoid function where weights vary. In (b), the same sigmoid but only bias varies.\relax }}{31}{figure.caption.15}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Neural Network representation.\relax }}{31}{figure.caption.16}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Illustration of Sigmoid function.\relax }}{34}{figure.caption.17}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Illustration of $tanh$ function.\relax }}{34}{figure.caption.18}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Illustration of ReLU function.\relax }}{35}{figure.caption.19}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Illustration of leaky ReLU function.\relax }}{36}{figure.caption.20}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Illustration of gradient descent in a two variables optimization \cite {tgilharco}. \relax }}{38}{figure.caption.21}
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Illustration of Stochastic Gradient Descent optimization. \relax }}{41}{figure.caption.22}
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Illustration of how each variation of Gradient Descent commonly behaves. \cite {dabbura2017}. \relax }}{41}{figure.caption.23}
+\contentsline {figure}{\numberline {3.12}{\ignorespaces Illustration of how Gradient Descent with Momentum (blue arrows) and without it (black arrows) \cite {tgilharco}. \relax }}{43}{figure.caption.24}
+\contentsline {figure}{\numberline {3.13}{\ignorespaces Illustration Gradient Descent divergence for a one variable optimization. \cite {tgilharco}. \relax }}{48}{figure.caption.25}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Reinforcement Learning System.\relax }}{46}{figure.caption.24}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces The agent\IeC {\textendash }environment interaction in a Markov decision process \cite {sutton1998rli}.\relax }}{51}{figure.caption.25}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Backup diagram for $v_{\pi }$. The white nodes are states, while the black ones are possible actions. Bellman equation average over the actions in a recursive way. \cite {sutton1998rli}.\relax }}{52}{figure.caption.26}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Backup diagram in Bellman Optimality Equation for $v_{\pi }$ and $q_{\pi }$. \cite {sutton1998rli}.\relax }}{54}{figure.caption.27}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Policy Iteration algorithm. \cite {davidsilverlec3}.\relax }}{55}{figure.caption.28}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Actor-Critic model. \cite {actorcritic}.\relax }}{62}{figure.caption.29}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Reinforcement Learning System.\relax }}{52}{figure.caption.26}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces The agent\IeC {\textendash }environment interaction in a Markov decision process \cite {sutton1998rli}.\relax }}{57}{figure.caption.27}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Backup diagram for $v_{\pi }$. The white nodes are states, while the black ones are possible actions. Bellman equation average over the actions in a recursive way. \cite {sutton1998rli}.\relax }}{58}{figure.caption.28}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Backup diagram in Bellman Optimality Equation for $v_{\pi }$ and $q_{\pi }$. \cite {sutton1998rli}.\relax }}{60}{figure.caption.29}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Policy Iteration algorithm. \cite {davidsilverlec3}.\relax }}{61}{figure.caption.30}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Actor-Critic model. \cite {actorcritic}.\relax }}{68}{figure.caption.31}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces In the hybrid model, we can ensure the starting point is near of the optimal solution (orange arrow); otherwise, the starting point can be bad and harder to optimize (red arrow).\relax }}{70}{figure.caption.30}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces The architecture of a neural network designed to learn motions.\relax }}{73}{figure.caption.31}
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Intuition behind input normalization\relax }}{75}{figure.caption.33}
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Architecture used by pure Reinforcement Learning models.\relax }}{75}{figure.caption.34}
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Gaussian noise applied to action space to ensure better exploration in continuous environments. \cite {parameternoiseblog} \relax }}{76}{figure.caption.36}
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Task used to learning kick motion.\relax }}{77}{figure.caption.37}
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Reinforcement Learning Server Architecture. \cite {tgmuzio} \relax }}{78}{figure.caption.38}
-\contentsline {figure}{\numberline {5.8}{\ignorespaces Data flow graph for PPO algorithm. \relax }}{80}{figure.caption.39}
-\contentsline {figure}{\numberline {5.9}{\ignorespaces ``Pi" data flow node from PPO. \relax }}{81}{figure.caption.40}
-\contentsline {figure}{\numberline {5.10}{\ignorespaces Policy data flow graph from Figure \ref {rlnetwork} \relax }}{81}{figure.caption.41}
-\contentsline {figure}{\numberline {5.11}{\ignorespaces Policy data flow graph from Figure \ref {fig:model_plot} \relax }}{82}{figure.caption.42}
-\contentsline {figure}{\numberline {5.12}{\ignorespaces Master-workers architecture for data parallelism. \relax }}{83}{figure.caption.43}
-\contentsline {figure}{\numberline {5.13}{\ignorespaces Synchronous and Asynchornous Distributed Training. \relax }}{84}{figure.caption.44}
-\contentsline {figure}{\numberline {5.14}{\ignorespaces Monitoring training metrics with Tensorboard. \relax }}{85}{figure.caption.45}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces In the hybrid model, we can ensure the starting point is near of the optimal solution (orange arrow); otherwise, the starting point can be bad and harder to optimize (red arrow).\relax }}{78}{figure.caption.32}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces The architecture of a neural network designed to learn motions.\relax }}{79}{figure.caption.33}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Intuition behind input normalization\relax }}{81}{figure.caption.35}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Architecture used by pure Reinforcement Learning models.\relax }}{81}{figure.caption.36}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Gaussian noise applied to action space to ensure better exploration in continuous environments. \cite {parameternoiseblog} \relax }}{82}{figure.caption.38}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Task used to learning kick motion.\relax }}{83}{figure.caption.39}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Reinforcement Learning Server Architecture. \cite {tgmuzio} \relax }}{84}{figure.caption.40}
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Data flow graph for PPO algorithm. \relax }}{86}{figure.caption.41}
+\contentsline {figure}{\numberline {5.9}{\ignorespaces ``Pi" data flow node from PPO. \relax }}{87}{figure.caption.42}
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Policy data flow graph from Figure \ref {rlnetwork} \relax }}{87}{figure.caption.43}
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Policy data flow graph from Figure \ref {fig:model_plot} \relax }}{88}{figure.caption.44}
+\contentsline {figure}{\numberline {5.12}{\ignorespaces Master-workers architecture for data parallelism. \relax }}{89}{figure.caption.45}
+\contentsline {figure}{\numberline {5.13}{\ignorespaces Synchronous and Asynchornous Distributed Training. \relax }}{90}{figure.caption.46}
+\contentsline {figure}{\numberline {5.14}{\ignorespaces Monitoring training metrics with Tensorboard. \relax }}{91}{figure.caption.47}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Plots of mean squared error and mean absolute error, during training.\relax }}{86}{figure.caption.46}
-\contentsline {figure}{\numberline {6.2}{\ignorespaces The kick motion. The first row of figures shows the original kick motion. The second row shows the learned kick motion. Both motions are visually indistinguishable.\relax }}{87}{figure.caption.47}
-\contentsline {figure}{\numberline {6.3}{\ignorespaces Joint values for comparing original and learned kicks. The neural network was able to fit the joint trajectories with small errors.\relax }}{88}{figure.caption.48}
-\contentsline {figure}{\numberline {6.4}{\ignorespaces Joints positions, during a period of the walking motion for the original walk, and the learned walk and the joints positions effectively attained, during the learned walking motion.\relax }}{89}{figure.caption.50}
-\contentsline {figure}{\numberline {6.5}{\ignorespaces The walking motions comparison. Figure (a) shows our agent in its regular walk, Figure (b) shows the same agent mimicking UT Austin Villa walk, and Figure (c) shows the UT Austin Villa agent itself performing his own walking motion.\relax }}{90}{figure.caption.52}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Data collection in best scenario\relax }}{93}{figure.caption.48}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces RNR Reward Curve by learning update\relax }}{94}{figure.caption.49}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces RNR kick motion sequence.\relax }}{94}{figure.caption.50}
+\contentsline {figure}{\numberline {6.4}{\ignorespaces RRR Reward Curve by learning update\relax }}{95}{figure.caption.51}
+\contentsline {figure}{\numberline {6.5}{\ignorespaces RNR+RRR Reward Curves by learning update. We trained in two sessions. The blue curve shows the first session and the gray one the second session.\relax }}{96}{figure.caption.52}
+\contentsline {figure}{\numberline {6.6}{\ignorespaces RNR+RRR Motion Sequence. In this model, the agent learns to kick with the left leg, as in reference.\relax }}{96}{figure.caption.53}
+\contentsline {figure}{\numberline {6.7}{\ignorespaces Tradeoff between RNR and RRR models: when RRR is much greater, the models collpases to its model.\relax }}{97}{figure.caption.54}
+\contentsline {figure}{\numberline {6.8}{\ignorespaces RNR+RRR+RISD learning curve in two sessions of training. The blue curve was the first session and the red one was the second.\relax }}{98}{figure.caption.55}
+\contentsline {figure}{\numberline {6.9}{\ignorespaces RNR+RRR+RISD motion sequence.\relax }}{98}{figure.caption.56}
+\contentsline {figure}{\numberline {6.10}{\ignorespaces First session of training for reinforcement supervised model.\relax }}{99}{figure.caption.57}
+\contentsline {figure}{\numberline {6.11}{\ignorespaces Motion sequence from reinforcement supervised learning agent.\relax }}{100}{figure.caption.58}
+\contentsline {figure}{\numberline {6.12}{\ignorespaces Plots of mean squared error and mean absolute error, during training.\relax }}{101}{figure.caption.59}
+\contentsline {figure}{\numberline {6.13}{\ignorespaces The kick motion. The first row of figures shows the original kick motion. The second row shows the learned kick motion. Both motions are visually indistinguishable.\relax }}{102}{figure.caption.60}
+\contentsline {figure}{\numberline {6.14}{\ignorespaces Joint values for comparing original and learned kicks. The neural network was able to fit the joint trajectories with small errors.\relax }}{103}{figure.caption.61}
+\contentsline {figure}{\numberline {6.15}{\ignorespaces Joints positions, during a period of the walking motion for the original walk, and the learned walk and the joints positions effectively attained, during the learned walking motion.\relax }}{104}{figure.caption.63}
+\contentsline {figure}{\numberline {6.16}{\ignorespaces The walking motions comparison. Figure (a) shows our agent in its regular walk, Figure (b) shows the same agent mimicking UT Austin Villa walk, and Figure (c) shows the UT Austin Villa agent itself performing his own walking motion.\relax }}{105}{figure.caption.65}
+\contentsline {figure}{\numberline {6.17}{\ignorespaces The reward curve from the first session of HLM+RNR+RET model.\relax }}{107}{figure.caption.66}
+\contentsline {figure}{\numberline {6.18}{\ignorespaces HLM+RNR+RET motion sequence after first session of training.\relax }}{107}{figure.caption.67}
+\contentsline {figure}{\numberline {6.19}{\ignorespaces The reward curve from the second session of HLM+RNR+RET model.\relax }}{108}{figure.caption.68}
+\contentsline {figure}{\numberline {6.20}{\ignorespaces HLM+RNR+RET motion sequence after second training session.\relax }}{108}{figure.caption.69}
 \addvspace {10\p@ }

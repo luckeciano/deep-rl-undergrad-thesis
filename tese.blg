@@ -10,18 +10,19 @@ Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated field_info (elt_size=4) to 10589 items from 5000.
+Reallocated field_info (elt_size=4) to 10658 items from 5000.
 Database file #1: abnt-options.bib
 Database file #2: Referencias/referencias.bib
 Repeated entry---line 1691 of file Referencias/referencias.bib
  : @techreport{AI1110-macalpine
  :                             ,
 I'm skipping whatever remains of this entry
+Warning--entry type for "inteldevcloud" isn't style-file defined
+--line 2412 of file Referencias/referencias.bib
 A bad cross reference---entry "mujoco"
 refers to entry "conf/iros/2012", which doesn't exist
 A bad cross reference---entry "glorot2011a"
 refers to entry "conf/aistats/2011", which doesn't exist
-Warning--I didn't find a database entry for "PPO"
 Warning--I didn't find a database entry for "conf/iros/2012"
 Warning--I didn't find a database entry for "conf/aistats/2011"
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
@@ -34,45 +35,45 @@ Reallocated glb_str_end (elt_size=4) to 20 items from 10.
 | Em caso de dúvidas ou problemas com este estilo procure |
 | http://abntex.codigolivre.org.br                        |
 +---------------------------------------------------------+
-You've used 80 entries,
+You've used 82 entries,
             6480 wiz_defined-function locations,
-            1621 strings with 26632 characters,
-and the built_in function-call counts, 149713 in all, are:
-= -- 18211
-> -- 3531
-< -- 3407
-+ -- 4867
-- -- 1002
-* -- 9334
-:= -- 16304
-add.period$ -- 320
-call.type$ -- 82
-change.case$ -- 1129
-chr.to.int$ -- 159
-cite$ -- 75
-duplicate$ -- 16299
-empty$ -- 4957
-format.name$ -- 5485
-if$ -- 30548
+            1628 strings with 26960 characters,
+and the built_in function-call counts, 154250 in all, are:
+= -- 18854
+> -- 3604
+< -- 3525
++ -- 5013
+- -- 1023
+* -- 9574
+:= -- 16758
+add.period$ -- 328
+call.type$ -- 84
+change.case$ -- 1153
+chr.to.int$ -- 164
+cite$ -- 77
+duplicate$ -- 16895
+empty$ -- 5065
+format.name$ -- 5597
+if$ -- 31454
 int.to.chr$ -- 11
 int.to.str$ -- 3
-missing$ -- 1596
-newline$ -- 404
-num.names$ -- 378
-pop$ -- 2260
+missing$ -- 1632
+newline$ -- 415
+num.names$ -- 388
+pop$ -- 2321
 preamble$ -- 1
-purify$ -- 336
+purify$ -- 344
 quote$ -- 0
-skip$ -- 16894
+skip$ -- 17503
 stack$ -- 1
-substring$ -- 5223
-swap$ -- 4993
-text.length$ -- 101
+substring$ -- 5378
+swap$ -- 5134
+text.length$ -- 104
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 40
 warning$ -- 0
-while$ -- 565
+while$ -- 580
 width$ -- 0
-write$ -- 1197
+write$ -- 1227
 (There were 3 error messages)

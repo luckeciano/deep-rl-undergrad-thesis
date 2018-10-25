@@ -5,98 +5,110 @@
 \BOOKMARK [0][]{abstract.0}{Abstract}{}% 5
 \BOOKMARK [0][]{listafiguras.0}{List of Figures}{}% 6
 \BOOKMARK [0][]{listatabelas.0}{List of Tables}{}% 7
-\BOOKMARK [0][]{contents.0}{Contents}{}% 8
-\BOOKMARK [0][]{chapter.1}{1 Introduction}{}% 9
-\BOOKMARK [1][]{section.1.1}{1.1 Motivation}{chapter.1}% 10
-\BOOKMARK [1][]{section.1.2}{1.2 Contextualization}{chapter.1}% 11
-\BOOKMARK [1][]{section.1.3}{1.3 Objective}{chapter.1}% 12
-\BOOKMARK [1][]{section.1.4}{1.4 Scope}{chapter.1}% 13
-\BOOKMARK [1][]{section.1.5}{1.5 Organization of this work}{chapter.1}% 14
-\BOOKMARK [0][]{chapter.2}{2 Literature Review}{}% 15
-\BOOKMARK [1][]{section.2.1}{2.1 The RoboCup Soccer3D Simulation League}{chapter.2}% 16
-\BOOKMARK [2][]{subsection.2.1.1}{2.1.1 Domain Description}{section.2.1}% 17
-\BOOKMARK [2][]{subsection.2.1.2}{2.1.2 \040Kick Motion }{section.2.1}% 18
-\BOOKMARK [2][]{subsection.2.1.3}{2.1.3 Keyframe Movements}{section.2.1}% 19
-\BOOKMARK [2][]{subsection.2.1.4}{2.1.4 Optimization Techniques}{section.2.1}% 20
-\BOOKMARK [1][]{section.2.2}{2.2 Reinforcement Learning for Control}{chapter.2}% 21
-\BOOKMARK [0][]{chapter.3}{3 Deep Learning Background}{}% 22
-\BOOKMARK [1][]{section.3.1}{3.1 Neural Networks}{chapter.3}% 23
-\BOOKMARK [2][]{subsection.3.1.1}{3.1.1 A Neuron}{section.3.1}% 24
-\BOOKMARK [2][]{subsection.3.1.2}{3.1.2 Neural Network Representation}{section.3.1}% 25
-\BOOKMARK [2][]{subsection.3.1.3}{3.1.3 Vectorization}{section.3.1}% 26
-\BOOKMARK [1][]{section.3.2}{3.2 Activation Functions}{chapter.3}% 27
-\BOOKMARK [2][]{subsection.3.2.1}{3.2.1 Logistic Sigmoid}{section.3.2}% 28
-\BOOKMARK [2][]{subsection.3.2.2}{3.2.2 Hyperbolic Tangent}{section.3.2}% 29
-\BOOKMARK [2][]{subsection.3.2.3}{3.2.3 Rectified Linear Unit - ReLU}{section.3.2}% 30
-\BOOKMARK [2][]{subsection.3.2.4}{3.2.4 Leaky ReLU}{section.3.2}% 31
-\BOOKMARK [1][]{section.3.3}{3.3 Cost Function}{chapter.3}% 32
-\BOOKMARK [1][]{section.3.4}{3.4 Gradient Descent}{chapter.3}% 33
-\BOOKMARK [1][]{section.3.5}{3.5 Backpropagation}{chapter.3}% 34
-\BOOKMARK [1][]{section.3.6}{3.6 Optimization Algorithms}{chapter.3}% 35
-\BOOKMARK [2][]{subsection.3.6.1}{3.6.1 Batch, Mini-batch and Stochastic Gradient Descent}{section.3.6}% 36
-\BOOKMARK [2][]{subsection.3.6.2}{3.6.2 Momentum}{section.3.6}% 37
-\BOOKMARK [2][]{subsection.3.6.3}{3.6.3 RMSProp}{section.3.6}% 38
-\BOOKMARK [2][]{subsection.3.6.4}{3.6.4 Adam}{section.3.6}% 39
-\BOOKMARK [1][]{section.3.7}{3.7 Weights Random Initialization}{chapter.3}% 40
-\BOOKMARK [2][]{subsection.3.7.1}{3.7.1 Xavier Initialization}{section.3.7}% 41
-\BOOKMARK [1][]{section.3.8}{3.8 Gradient Descent convergence and learning rate decay}{chapter.3}% 42
-\BOOKMARK [0][]{chapter.4}{4 Reinforcement Learning Background}{}% 43
-\BOOKMARK [1][]{section.4.1}{4.1 Concepts of a Reinforcement Learning System}{chapter.4}% 44
-\BOOKMARK [1][]{section.4.2}{4.2 Reinforcement Learning System}{chapter.4}% 45
-\BOOKMARK [2][]{subsection.4.2.1}{4.2.1 Reward}{section.4.2}% 46
-\BOOKMARK [2][]{subsection.4.2.2}{4.2.2 State}{section.4.2}% 47
-\BOOKMARK [2][]{subsection.4.2.3}{4.2.3 Policy}{section.4.2}% 48
-\BOOKMARK [2][]{subsection.4.2.4}{4.2.4 Value Function}{section.4.2}% 49
-\BOOKMARK [2][]{subsection.4.2.5}{4.2.5 Model}{section.4.2}% 50
-\BOOKMARK [1][]{section.4.3}{4.3 Markov Decision Process}{chapter.4}% 51
-\BOOKMARK [2][]{subsection.4.3.1}{4.3.1 Markov State}{section.4.3}% 52
-\BOOKMARK [2][]{subsection.4.3.2}{4.3.2 State Transition Matrix}{section.4.3}% 53
-\BOOKMARK [2][]{subsection.4.3.3}{4.3.3 Markov Decision Process}{section.4.3}% 54
-\BOOKMARK [2][]{subsection.4.3.4}{4.3.4 State-Value and Action-Value Function}{section.4.3}% 55
-\BOOKMARK [1][]{section.4.4}{4.4 Bellman Equation}{chapter.4}% 56
-\BOOKMARK [2][]{subsection.4.4.1}{4.4.1 Bellman Expectation Equation}{section.4.4}% 57
-\BOOKMARK [2][]{subsection.4.4.2}{4.4.2 Bellman Optimality Equation}{section.4.4}% 58
-\BOOKMARK [1][]{section.4.5}{4.5 Exact Solution Methods}{chapter.4}% 59
-\BOOKMARK [2][]{subsection.4.5.1}{4.5.1 Policy Iteration}{section.4.5}% 60
-\BOOKMARK [2][]{subsection.4.5.2}{4.5.2 Value Iteration}{section.4.5}% 61
-\BOOKMARK [2][]{subsection.4.5.3}{4.5.3 Limitations of Exact Solution Methods}{section.4.5}% 62
-\BOOKMARK [1][]{section.4.6}{4.6 Policy Gradient Methods}{chapter.4}% 63
-\BOOKMARK [2][]{subsection.4.6.1}{4.6.1 Policy Gradient Theorem}{section.4.6}% 64
-\BOOKMARK [2][]{subsection.4.6.2}{4.6.2 Actor-Critic Models}{section.4.6}% 65
-\BOOKMARK [2][]{subsection.4.6.3}{4.6.3 Advantage Function and GAE Algorithm}{section.4.6}% 66
-\BOOKMARK [1][]{section.4.7}{4.7 Advanced Policy Gradient Methods}{chapter.4}% 67
-\BOOKMARK [2][]{subsection.4.7.1}{4.7.1 Optimization Loss}{section.4.7}% 68
-\BOOKMARK [2][]{subsection.4.7.2}{4.7.2 Trust Region Policy Optimization \205 TRPO}{section.4.7}% 69
-\BOOKMARK [2][]{subsection.4.7.3}{4.7.3 Proximal Policy Optimization \205 PPO}{section.4.7}% 70
-\BOOKMARK [0][]{chapter.5}{5 Methodology}{}% 71
-\BOOKMARK [1][]{section.5.1}{5.1 The Kick Motion Problem}{chapter.5}% 72
-\BOOKMARK [1][]{section.5.2}{5.2 Experimentation Setup}{chapter.5}% 73
-\BOOKMARK [2][]{subsection.5.2.1}{5.2.1 Hybrid Learning Model \205 HLM}{section.5.2}% 74
-\BOOKMARK [2][]{subsection.5.2.2}{5.2.2 Reinforcement with Naive Reward - RNR }{section.5.2}% 75
-\BOOKMARK [2][]{subsection.5.2.3}{5.2.3 Reinforcement with Reference Reward - RRR }{section.5.2}% 76
-\BOOKMARK [2][]{subsection.5.2.4}{5.2.4 Reinforcement with Initial State Distribution - RISD}{section.5.2}% 77
-\BOOKMARK [2][]{subsection.5.2.5}{5.2.5 Reinforcement with Early Termination - RET}{section.5.2}% 78
-\BOOKMARK [1][]{section.5.3}{5.3 Supervised Learning Setup}{chapter.5}% 79
-\BOOKMARK [2][]{subsection.5.3.1}{5.3.1 The Dataset}{section.5.3}% 80
-\BOOKMARK [2][]{subsection.5.3.2}{5.3.2 Neural Network Architecture and Hyperparameters}{section.5.3}% 81
-\BOOKMARK [2][]{subsection.5.3.3}{5.3.3 The Training Procedure}{section.5.3}% 82
-\BOOKMARK [2][]{subsection.5.3.4}{5.3.4 The Deployment in the Soccer 3D Environment}{section.5.3}% 83
-\BOOKMARK [1][]{section.5.4}{5.4 Reinforcement Learning Setup}{chapter.5}% 84
-\BOOKMARK [2][]{subsection.5.4.1}{5.4.1 Policy Representation}{section.5.4}% 85
-\BOOKMARK [2][]{subsection.5.4.2}{5.4.2 Task Description}{section.5.4}% 86
-\BOOKMARK [1][]{section.5.5}{5.5 Infrastructure}{chapter.5}% 87
-\BOOKMARK [2][]{subsection.5.5.1}{5.5.1 Reinforcement Learning Server}{section.5.5}% 88
-\BOOKMARK [2][]{subsection.5.5.2}{5.5.2 Neural Network Deployment}{section.5.5}% 89
-\BOOKMARK [2][]{subsection.5.5.3}{5.5.3 Distributed Training}{section.5.5}% 90
-\BOOKMARK [2][]{subsection.5.5.4}{5.5.4 Metrics}{section.5.5}% 91
-\BOOKMARK [2][]{subsection.5.5.5}{5.5.5 Monitoring via Tensorboard}{section.5.5}% 92
-\BOOKMARK [0][]{chapter.6}{6 Results' Analysis and Discussion}{}% 93
-\BOOKMARK [1][]{section.6.1}{6.1 Training Results}{chapter.6}% 94
-\BOOKMARK [1][]{section.6.2}{6.2 The Learned Kick Motion}{chapter.6}% 95
-\BOOKMARK [1][]{section.6.3}{6.3 The Learned Walk Motion}{chapter.6}% 96
-\BOOKMARK [1][]{section.6.4}{6.4 Other motions}{chapter.6}% 97
-\BOOKMARK [0][]{chapter.7}{7 Conclusions, Recommendations, and Future Works}{}% 98
-\BOOKMARK [1][]{section.7.1}{7.1 Preliminary Conclusions and Future Works}{chapter.7}% 99
-\BOOKMARK [1][]{section.7.2}{7.2 The Activities Plan}{chapter.7}% 100
-\BOOKMARK [0][]{chapter.8}{Bibliography}{}% 101
-\BOOKMARK [0][]{bla.0}{Folha de Registro do Documento}{}% 102
+\BOOKMARK [0][]{listaabreviaturas.0}{List of Abbreviations and Acronyms}{}% 8
+\BOOKMARK [0][]{listasimbolos.0}{List of Symbols}{}% 9
+\BOOKMARK [0][]{contents.0}{Contents}{}% 10
+\BOOKMARK [0][]{chapter.1}{1 Introduction}{}% 11
+\BOOKMARK [1][]{section.1.1}{1.1 Motivation}{chapter.1}% 12
+\BOOKMARK [1][]{section.1.2}{1.2 Contextualization}{chapter.1}% 13
+\BOOKMARK [1][]{section.1.3}{1.3 Objective}{chapter.1}% 14
+\BOOKMARK [1][]{section.1.4}{1.4 Scope}{chapter.1}% 15
+\BOOKMARK [1][]{section.1.5}{1.5 Organization of this work}{chapter.1}% 16
+\BOOKMARK [0][]{chapter.2}{2 Literature Review}{}% 17
+\BOOKMARK [1][]{section.2.1}{2.1 The RoboCup Soccer3D Simulation League}{chapter.2}% 18
+\BOOKMARK [2][]{subsection.2.1.1}{2.1.1 Domain Description}{section.2.1}% 19
+\BOOKMARK [2][]{subsection.2.1.2}{2.1.2 \040Kick Motion }{section.2.1}% 20
+\BOOKMARK [2][]{subsection.2.1.3}{2.1.3 Keyframe Movements}{section.2.1}% 21
+\BOOKMARK [2][]{subsection.2.1.4}{2.1.4 Optimization Techniques}{section.2.1}% 22
+\BOOKMARK [1][]{section.2.2}{2.2 Reinforcement Learning for Control}{chapter.2}% 23
+\BOOKMARK [0][]{chapter.3}{3 Deep Learning Background}{}% 24
+\BOOKMARK [1][]{section.3.1}{3.1 Neural Networks}{chapter.3}% 25
+\BOOKMARK [2][]{subsection.3.1.1}{3.1.1 A Neuron}{section.3.1}% 26
+\BOOKMARK [2][]{subsection.3.1.2}{3.1.2 Neural Network Representation}{section.3.1}% 27
+\BOOKMARK [2][]{subsection.3.1.3}{3.1.3 Vectorization}{section.3.1}% 28
+\BOOKMARK [1][]{section.3.2}{3.2 Activation Functions}{chapter.3}% 29
+\BOOKMARK [2][]{subsection.3.2.1}{3.2.1 Logistic Sigmoid}{section.3.2}% 30
+\BOOKMARK [2][]{subsection.3.2.2}{3.2.2 Hyperbolic Tangent}{section.3.2}% 31
+\BOOKMARK [2][]{subsection.3.2.3}{3.2.3 Rectified Linear Unit - ReLU}{section.3.2}% 32
+\BOOKMARK [2][]{subsection.3.2.4}{3.2.4 Leaky ReLU}{section.3.2}% 33
+\BOOKMARK [1][]{section.3.3}{3.3 Cost Function}{chapter.3}% 34
+\BOOKMARK [1][]{section.3.4}{3.4 Gradient Descent}{chapter.3}% 35
+\BOOKMARK [1][]{section.3.5}{3.5 Backpropagation}{chapter.3}% 36
+\BOOKMARK [1][]{section.3.6}{3.6 Optimization Algorithms}{chapter.3}% 37
+\BOOKMARK [2][]{subsection.3.6.1}{3.6.1 Batch, Mini-batch and Stochastic Gradient Descent}{section.3.6}% 38
+\BOOKMARK [2][]{subsection.3.6.2}{3.6.2 Momentum}{section.3.6}% 39
+\BOOKMARK [2][]{subsection.3.6.3}{3.6.3 RMSProp}{section.3.6}% 40
+\BOOKMARK [2][]{subsection.3.6.4}{3.6.4 Adam}{section.3.6}% 41
+\BOOKMARK [1][]{section.3.7}{3.7 Weights Random Initialization}{chapter.3}% 42
+\BOOKMARK [2][]{subsection.3.7.1}{3.7.1 Xavier Initialization}{section.3.7}% 43
+\BOOKMARK [1][]{section.3.8}{3.8 Gradient Descent convergence and learning rate decay}{chapter.3}% 44
+\BOOKMARK [0][]{chapter.4}{4 Reinforcement Learning Background}{}% 45
+\BOOKMARK [1][]{section.4.1}{4.1 Concepts of a Reinforcement Learning System}{chapter.4}% 46
+\BOOKMARK [1][]{section.4.2}{4.2 Reinforcement Learning System}{chapter.4}% 47
+\BOOKMARK [2][]{subsection.4.2.1}{4.2.1 Reward}{section.4.2}% 48
+\BOOKMARK [2][]{subsection.4.2.2}{4.2.2 State}{section.4.2}% 49
+\BOOKMARK [2][]{subsection.4.2.3}{4.2.3 Policy}{section.4.2}% 50
+\BOOKMARK [2][]{subsection.4.2.4}{4.2.4 Value Function}{section.4.2}% 51
+\BOOKMARK [2][]{subsection.4.2.5}{4.2.5 Model}{section.4.2}% 52
+\BOOKMARK [1][]{section.4.3}{4.3 Markov Decision Process}{chapter.4}% 53
+\BOOKMARK [2][]{subsection.4.3.1}{4.3.1 Markov State}{section.4.3}% 54
+\BOOKMARK [2][]{subsection.4.3.2}{4.3.2 State Transition Matrix}{section.4.3}% 55
+\BOOKMARK [2][]{subsection.4.3.3}{4.3.3 Markov Decision Process}{section.4.3}% 56
+\BOOKMARK [2][]{subsection.4.3.4}{4.3.4 State-Value and Action-Value Function}{section.4.3}% 57
+\BOOKMARK [1][]{section.4.4}{4.4 Bellman Equation}{chapter.4}% 58
+\BOOKMARK [2][]{subsection.4.4.1}{4.4.1 Bellman Expectation Equation}{section.4.4}% 59
+\BOOKMARK [2][]{subsection.4.4.2}{4.4.2 Bellman Optimality Equation}{section.4.4}% 60
+\BOOKMARK [1][]{section.4.5}{4.5 Exact Solution Methods}{chapter.4}% 61
+\BOOKMARK [2][]{subsection.4.5.1}{4.5.1 Policy Iteration}{section.4.5}% 62
+\BOOKMARK [2][]{subsection.4.5.2}{4.5.2 Value Iteration}{section.4.5}% 63
+\BOOKMARK [2][]{subsection.4.5.3}{4.5.3 Limitations of Exact Solution Methods}{section.4.5}% 64
+\BOOKMARK [1][]{section.4.6}{4.6 Policy Gradient Methods}{chapter.4}% 65
+\BOOKMARK [2][]{subsection.4.6.1}{4.6.1 Policy Gradient Theorem}{section.4.6}% 66
+\BOOKMARK [2][]{subsection.4.6.2}{4.6.2 Actor-Critic Models}{section.4.6}% 67
+\BOOKMARK [2][]{subsection.4.6.3}{4.6.3 Advantage Function and GAE Algorithm}{section.4.6}% 68
+\BOOKMARK [1][]{section.4.7}{4.7 Advanced Policy Gradient Methods}{chapter.4}% 69
+\BOOKMARK [2][]{subsection.4.7.1}{4.7.1 Optimization Loss}{section.4.7}% 70
+\BOOKMARK [2][]{subsection.4.7.2}{4.7.2 Trust Region Policy Optimization \205 TRPO}{section.4.7}% 71
+\BOOKMARK [2][]{subsection.4.7.3}{4.7.3 Proximal Policy Optimization \205 PPO}{section.4.7}% 72
+\BOOKMARK [0][]{chapter.5}{5 Methodology}{}% 73
+\BOOKMARK [1][]{section.5.1}{5.1 The Kick Motion Problem}{chapter.5}% 74
+\BOOKMARK [1][]{section.5.2}{5.2 Experimentation Setup}{chapter.5}% 75
+\BOOKMARK [2][]{subsection.5.2.1}{5.2.1 Reinforcement with Naive Reward - RNR }{section.5.2}% 76
+\BOOKMARK [2][]{subsection.5.2.2}{5.2.2 Reinforcement with Reference Reward - RRR }{section.5.2}% 77
+\BOOKMARK [2][]{subsection.5.2.3}{5.2.3 Reinforcement with Initial State Distribution - RISD}{section.5.2}% 78
+\BOOKMARK [2][]{subsection.5.2.4}{5.2.4 Reinforcement with Early Termination - RET}{section.5.2}% 79
+\BOOKMARK [2][]{subsection.5.2.5}{5.2.5 Hybrid Learning Model \205 HLM}{section.5.2}% 80
+\BOOKMARK [1][]{section.5.3}{5.3 Supervised Learning Setup}{chapter.5}% 81
+\BOOKMARK [2][]{subsection.5.3.1}{5.3.1 The Dataset}{section.5.3}% 82
+\BOOKMARK [2][]{subsection.5.3.2}{5.3.2 Neural Network Architecture and Hyperparameters}{section.5.3}% 83
+\BOOKMARK [2][]{subsection.5.3.3}{5.3.3 The Training Procedure}{section.5.3}% 84
+\BOOKMARK [2][]{subsection.5.3.4}{5.3.4 The Deployment in the Soccer 3D Environment}{section.5.3}% 85
+\BOOKMARK [1][]{section.5.4}{5.4 Reinforcement Learning Setup}{chapter.5}% 86
+\BOOKMARK [2][]{subsection.5.4.1}{5.4.1 Policy Representation}{section.5.4}% 87
+\BOOKMARK [2][]{subsection.5.4.2}{5.4.2 Task Description}{section.5.4}% 88
+\BOOKMARK [1][]{section.5.5}{5.5 Infrastructure}{chapter.5}% 89
+\BOOKMARK [2][]{subsection.5.5.1}{5.5.1 Reinforcement Learning Server}{section.5.5}% 90
+\BOOKMARK [2][]{subsection.5.5.2}{5.5.2 Neural Network Deployment}{section.5.5}% 91
+\BOOKMARK [2][]{subsection.5.5.3}{5.5.3 Distributed Training}{section.5.5}% 92
+\BOOKMARK [2][]{subsection.5.5.4}{5.5.4 Metrics}{section.5.5}% 93
+\BOOKMARK [2][]{subsection.5.5.5}{5.5.5 Monitoring via Tensorboard}{section.5.5}% 94
+\BOOKMARK [0][]{chapter.6}{6 Results' Analysis and Discussion}{}% 95
+\BOOKMARK [1][]{section.6.1}{6.1 Distributed Training}{chapter.6}% 96
+\BOOKMARK [1][]{section.6.2}{6.2 Pure Reinforcement Learning methods results}{chapter.6}% 97
+\BOOKMARK [2][]{subsection.6.2.1}{6.2.1 RNR}{section.6.2}% 98
+\BOOKMARK [2][]{subsection.6.2.2}{6.2.2 RRR}{section.6.2}% 99
+\BOOKMARK [2][]{subsection.6.2.3}{6.2.3 RNR+RRR}{section.6.2}% 100
+\BOOKMARK [2][]{subsection.6.2.4}{6.2.4 RNR+RRR+RISD}{section.6.2}% 101
+\BOOKMARK [2][]{subsection.6.2.5}{6.2.5 RNR+RRR+RISD+RET}{section.6.2}% 102
+\BOOKMARK [2][]{subsection.6.2.6}{6.2.6 Reinforcement ``supervised"}{section.6.2}% 103
+\BOOKMARK [2][]{subsection.6.2.7}{6.2.7 Other ideas for pure RL techniques}{section.6.2}% 104
+\BOOKMARK [1][]{section.6.3}{6.3 Hybrid Learning Models}{chapter.6}% 105
+\BOOKMARK [2][]{subsection.6.3.1}{6.3.1 Supervised Learning Results}{section.6.3}% 106
+\BOOKMARK [2][]{subsection.6.3.2}{6.3.2 HLM+RNR}{section.6.3}% 107
+\BOOKMARK [2][]{subsection.6.3.3}{6.3.3 Final Model: HLM+RNR+RET}{section.6.3}% 108
+\BOOKMARK [2][]{subsection.6.3.4}{6.3.4 Kick Behavior: Numerical Results}{section.6.3}% 109
+\BOOKMARK [0][]{chapter.7}{7 Conclusions, Recommendations, and Future Works}{}% 110
+\BOOKMARK [1][]{section.7.1}{7.1 Conclusions}{chapter.7}% 111
+\BOOKMARK [1][]{section.7.2}{7.2 Future Work}{chapter.7}% 112
+\BOOKMARK [0][]{chapter.8}{Bibliography}{}% 113
+\BOOKMARK [0][]{bla.0}{Folha de Registro do Documento}{}% 114

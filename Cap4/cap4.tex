@@ -6,9 +6,9 @@ which actions yield the most reward by trying them. In the most interesting and 
 actions may affect not only the immediate reward but also the next situation and, through that, all
 subsequent rewards \cite{sutton1998rli}.
 
-This learning process happens by interacting with the environment where the agent lives and therefore choose its actions. It is basically a "trial and error" approach as humans or other animals do, but in this case using a computational approach and mathematical modeling.
+This learning process happens by interacting with the environment where the agent lives and therefore choose its actions. It is basically a ``trial and error" approach as humans or other animals do, but in this case using a computational approach and mathematical modeling.
 
-The origin of modern Reinforcement Learning has two main threads developed outside Artificial Intelligence research. One concerns about trial and error search inside psychology of animal learning, based on Behaviorism theory \cite{skinner1953science} and "The Law of Effect" \cite{Thorndike173}. The other thread concerns the problem of optimal control and its solution using value functions
+The origin of modern Reinforcement Learning has two main threads developed outside Artificial Intelligence research. One concerns about trial and error search inside psychology of animal learning, based on Behaviorism theory \cite{skinner1953science} and ``The Law of Effect" \cite{Thorndike173}. The other thread concerns the problem of optimal control and its solution using value functions
 and dynamic programming. Both of them contributed for the modern ideas in reinforcement learning, either with the abstractions of learning or mathematical modeling for this problem.
 
 Reinforcement Learning is different from other kinds of Machine Learning, for several reasons:
@@ -553,7 +553,7 @@ J(\boldsymbol{\theta})  = v_{\pi_{\boldsymbol{\theta}}}(s)
  = \mathbb{E}_{\pi_{\boldsymbol{\theta}}}\Bigg[ \sum_{t = 0}^{H}R_{t}(s, a) \Bigg] = \sum_{\tau} p(\tau, \boldsymbol{\theta}) R(\tau)
 \end{align}
 
-For estimate this value, we can use \textbf{importance sampling method} \cite{NIPS2010_3922} from statistics as "surrogate loss". This technique works as a variance reduction method where we pick samples from a parameter distribution (denoted here as $\boldsymbol{\theta}_{old}$), but computes the performance measure within respect to a distribution $\theta$ applying a "importance correction" to the reward:
+For estimate this value, we can use \textbf{importance sampling method} \cite{NIPS2010_3922} from statistics as ``surrogate loss". This technique works as a variance reduction method where we pick samples from a parameter distribution (denoted here as $\boldsymbol{\theta}_{old}$), but computes the performance measure within respect to a distribution $\theta$ applying a ``importance correction" to the reward:
 
 \begin{equation}\label{eq:optloss1}
 J(\boldsymbol{\theta}) = \mathbb{E}_{\tau \sim \boldsymbol{\theta}_{old}} \Bigg[\frac{p(\tau \mid \boldsymbol{\theta})}{p(\tau \mid \boldsymbol{\theta}_{old})}R(\tau) \Bigg]

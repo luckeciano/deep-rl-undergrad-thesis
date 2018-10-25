@@ -12,18 +12,8 @@ First of all, we need to understand why kick motion is a hard task for learning 
 \section{Experimentation Setup}\label{sec:experimentation_setup}
 In order to find the best method for learn the Kick Motion, we tested several techniques to compare them and find out that one which converges faster and results in the better and more robust kick. In the next subsections, we will describe each of the methods evaluated in this work.
 
-\subsection{Hybrid Learning Model -- HLM}
-In the Hybrid Learning Model (HLM), the training process occurs in two phases. The first one, a supervised learning phase, we learn the keyframe used by using a neural network, reproducing almost the same motion that we already had previously. The intuition behind this is if the agent starts from a good initial point in the optimization problem, it could be easier to get better results applying the gradient in the neighborhood of that point. The reward starts with a good value and the starting motion is well defined. Otherwise, if the optimization starts in a random point, it could be impossible to reach a good motion and probably the agent will get stuck in a local optima. This idea is shown in Figure \ref{optimization_intuition}.
-
-\begin{figure}[!htbp]
-	\centering
-	\includegraphics[width=0.5\textwidth]{Cap5/optimization_final.eps}
-	\caption{In the hybrid model, we can ensure the starting point is near of the optimal solution (orange arrow); otherwise, the starting point can be bad and harder to optimize (red arrow).}
-	\label{optimization_intuition}
-\end{figure}
-
 \subsection{Reinforcement with Naive Reward - RNR }
-In this learning model, we just use reinforcement learning with a simple and directly reward. As our task is related to kick the ball, the "naive" reward is composed by its velocities after the kick motion, as shown in \ref{naive_reward}, where $s$, $v$ and $u$ are actual state, the vector of velocity and weight parameters, respectively. We call it naive because we don't pass to the learning model any idea of how the motion have to be performed - just what we expect to have as final objective. 
+In this learning model, we just use reinforcement learning with a simple and directly reward. As our task is related to kick the ball, the ``naive" reward is composed by its velocities after the kick motion, as shown in \ref{naive_reward}, where $s$, $v$ and $u$ are actual state, the vector of velocity and weight parameters, respectively. We call it naive because we don't pass to the learning model any idea of how the motion have to be performed - just what we expect to have as final objective. 
 
 It is important to highlight that the techniques described could be used jointly as building blocks of a more labored model.
 
@@ -64,6 +54,15 @@ The Early Termination technique is related to where the episode ends. Without ea
 
 In the kick motion task, the early termination will be triggered when the robot falls during the motion. This behavior will ensure two things: first, that we don't collect wrong data, as mentioned before; and second, to gain more reward and have longer episodes, the agent will be forced to learn a kick motion that doesn't fall -- which will be very good in game situation.
 
+\subsection{Hybrid Learning Model -- HLM}
+In the Hybrid Learning Model (HLM), the training process occurs in two phases. The first one, a supervised learning phase, we learn the keyframe used by using a neural network, reproducing almost the same motion that we already had previously. The intuition behind this is if the agent starts from a good initial point in the optimization problem, it could be easier to get better results applying the gradient in the neighborhood of that point. The reward starts with a good value and the starting motion is well defined. Otherwise, if the optimization starts in a random point, it could be impossible to reach a good motion and probably the agent will get stuck in a local optima. This idea is shown in Figure \ref{optimization_intuition}.
+
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[width=0.5\textwidth]{Cap5/optimization_final.eps}
+	\caption{In the hybrid model, we can ensure the starting point is near of the optimal solution (orange arrow); otherwise, the starting point can be bad and harder to optimize (red arrow).}
+	\label{optimization_intuition}
+\end{figure}
 
 
 \section{Supervised Learning Setup}\label{supervised_learning_setup}
@@ -140,7 +139,7 @@ To use a Reinforcement Learning model, we need to define a policy representation
 
 The policy is represented by a neural network similar to the supervised learning model. A state is described as the stage of kick motion. An action is a set of joint values that has to be applied by the agent in that state.
 
-In HLM, the architecture from both value function and policy networks is that described by section \ref{supervised_learning_setup}. On the other cases, the network is composed by three building blocks: an input normalization Filter, the neural networks themselves and a Gaussian action space noise.
+In the Supervised Learning stage of HLM, the architecture from both value function and policy networks is that described by section \ref{supervised_learning_setup}. In the Reinforcement Learning stage we add a Gaussian action space noise. On the other cases, we also add an input normalization Filter.
 
 \subsubsection{Input Normalization Filter}\label{sec:inputnorm}
 The input normalization filter, also know as feature scaling, has the objective of normalize the input to avoid the problem of vanishing and exploding gradients by applying updates through all dimensions in equal proportions, as illustrated in Figure \ref{inputnormfig}. This normalization happens at each pass in the network, re-calculating mean and standard deviation using the new examples. Hence, this method helps during the convergence.
@@ -267,9 +266,9 @@ To solve this problem, it's important to understand how Keras works and what's t
 
 Keras works on top of lower level machine learning frameworks. Its purpose is make easier to prototype and train models with few lines of code. With Keras, developers don't need to understand in deep how computational graphs works and some math behind the models. Actually, this framework wraps code from the lower level ones. Therefore, even being easier to use, all the computation and data structures remains the same.
 
-As back-end framework that Keras runs on top of, we used Tensorflow. As described previously, it creates a computational graph with math tensors as inputs that "flow" inside and returns the expected result.
+As back-end framework that Keras runs on top of, we used Tensorflow. As described previously, it creates a computational graph with math tensors as inputs that ``flow" inside and returns the expected result.
 
-Given that context, the idea is straightforward: we create a "Kick Policy" class, that creates the model using Keras, load its weights, gets the output tensor and injects in the rest of Tensorflow's computational graph related to the learning algorithm. The Algorithm \ref{importnetworkpseudocode} explains sequentially this idea.
+Given that context, the idea is straightforward: we create a `    ``Kick Policy" class, that creates the model using Keras, load its weights, gets the output tensor and injects in the rest of Tensorflow's computational graph related to the learning algorithm. The Algorithm \ref{importnetworkpseudocode} explains sequentially this idea.
 
 \begin{algorithm}
 	\caption{Import Keras model into Tensorflow}
@@ -309,7 +308,7 @@ It is important to mention that ``policy network" mean only the neural network t
 	\label{fig:pigraph}
 \end{figure}
 
-Therefore, to export this policy network, we need to add a new "identity" node in the output from that. This node has the same resultant tensor, but it is possible to label it and we can freeze the subgraph whose output is the labeled node itself. Internally, Tensorflow will start freezing the output node and its dependencies, recursing until input nodes. Then, we save this data structure in a proto file that we read using the C++ API in the soccer agent. Figure \ref{fig:policygraph1} and \ref{fig:policygraph2} show the policy data flow graphs from Figures \ref{rlnetwork} and \ref{fig:model_plot}, respectively.
+Therefore, to export this policy network, we need to add a new ``identity" node in the output from that. This node has the same resultant tensor, but it is possible to label it and we can freeze the subgraph whose output is the labeled node itself. Internally, Tensorflow will start freezing the output node and its dependencies, recursing until input nodes. Then, we save this data structure in a proto file that we read using the C++ API in the soccer agent. Figure \ref{fig:policygraph1} and \ref{fig:policygraph2} show the policy data flow graphs from Figures \ref{rlnetwork} and \ref{fig:model_plot}, respectively.
 
 
 
@@ -330,7 +329,7 @@ Therefore, to export this policy network, we need to add a new "identity" node i
 \end{figure}
 
 
-\subsection{Distributed Training}
+\subsection{Distributed Training}\label{sec:distributedtraining}
 Reinforcement Learning training is much more costly computationally when compared to the supervised one described in \ref{supervised_learning_setup}. Additionally to the costs of applying gradients in the network, we need to gather all the data from agent simulations. Furthermore, since the data distribution changes during the learning, it's harder to converge, se it is needed a large amount of data.
 
 In this context, use a single agent to get all the data and train the algorithm takes too long time to converge and, depending of the problem, it is not viable. We need a way to get more data faster and accelerate the training.

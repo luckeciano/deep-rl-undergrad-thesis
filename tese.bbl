@@ -84,6 +84,15 @@ Dispon{\'\i}vel em:
   2017.
 \url{https://github.com/openai/baselines}.}
 
+\bibitem[Duan \textit{et al.} 2016]{metalearning}
+\abntrefinfo{Duan \textit{et al.}}{DUAN \textit{et al.}}{2016}
+{DUAN, Y.; SCHULMAN, J.; CHEN, X.; BARTLETT, P.~L.; SUTSKEVER, I.; ABBEEL, P.
+  Rl{\textdollar}{\^{}}2{\textdollar}: Fast reinforcement learning via slow
+  reinforcement learning.
+\textbf{CoRR}, abs/1611.02779, 2016.
+Dispon{\'\i}vel em:
+  \htmladdnormallink{$<$http:\-/\-/arxiv\-.org\-/abs\-/1611\-.02779$>$}{http://arxiv.org/abs/1611.02779}.}
+
 \bibitem[Glorot e Bengio 2010]{Glorot10}
 \abntrefinfo{Glorot e Bengio}{GLOROT; BENGIO}{2010}
 {GLOROT, X.; BENGIO, Y. Understanding the difficulty of training deep
@@ -160,6 +169,12 @@ Dispon{\'\i}vel em:
 \textbf{CoRR}, abs/1606.03476, 2016.
 Dispon{\'\i}vel em:
   \htmladdnormallink{$<$http:\-/\-/arxiv\-.org\-/abs\-/1606\-.03476$>$}{http://arxiv.org/abs/1606.03476}.}
+
+\bibitem[Intel 2018]{inteldevcloud}
+\abntrefinfo{Intel}{INTEL}{2018}
+{INTEL. \textbf{Intel DevCloud}. 2018.
+Dispon{\'\i}vel em:
+  $<$https:\-/\-/software\-.intel\-.com\-/en-us\-/ai-academy\-/devcloud$>$.}
 
 \bibitem[Jie e Abbeel 2010]{NIPS2010_3922}
 \abntrefinfo{Jie e Abbeel}{JIE; ABBEEL}{2010}

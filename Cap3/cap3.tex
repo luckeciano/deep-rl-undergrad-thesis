@@ -476,7 +476,7 @@ This normalization improves the learning stability -- all gradient terms will af
 
 \subsection{Adam}
 
-The last optimization algorithm idea explored here - and used in experimentations - is Adam \cite{adam2014}. It means "Adaptive Moments" and combines the idea from Momentum and RMSProp in the following way: it computes the first order momentum of the gradient and rescale with the second order momentum, as shown in Equations \ref{eq:adam_1} and \ref{eq:adam_2}. The use of momentum in combination with rescaling does not have a clear theoretical motivation. 
+The last optimization algorithm idea explored here - and used in experimentations - is Adam \cite{adam2014}. It means ``Adaptive Moments" and combines the idea from Momentum and RMSProp in the following way: it computes the first order momentum of the gradient and rescale with the second order momentum, as shown in Equations \ref{eq:adam_1} and \ref{eq:adam_2}. The use of momentum in combination with rescaling does not have a clear theoretical motivation. 
 
 \begin{align}\label{eq:adam_1}
 v_{dW} = \beta_{1} v_{dW} + (1 - \beta_{1})dW\\

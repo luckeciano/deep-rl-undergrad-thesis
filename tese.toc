@@ -102,22 +102,24 @@
 \contentsline {section}{\numberline {6.1}Distributed Training}{92}{section.6.1}
 \contentsline {section}{\numberline {6.2}Pure Reinforcement Learning methods results}{93}{section.6.2}
 \contentsline {subsection}{\numberline {6.2.1}RNR}{93}{subsection.6.2.1}
-\contentsline {subsection}{\numberline {6.2.2}RRR}{94}{subsection.6.2.2}
+\contentsline {subsection}{\numberline {6.2.2}RRR}{95}{subsection.6.2.2}
 \contentsline {subsection}{\numberline {6.2.3}RNR+RRR}{95}{subsection.6.2.3}
 \contentsline {subsection}{\numberline {6.2.4}RNR+RRR+RISD}{97}{subsection.6.2.4}
-\contentsline {subsection}{\numberline {6.2.5}RNR+RRR+RISD+RET}{98}{subsection.6.2.5}
-\contentsline {subsection}{\numberline {6.2.6}Reinforcement ``supervised"}{99}{subsection.6.2.6}
-\contentsline {subsection}{\numberline {6.2.7}Other ideas for pure RL techniques}{100}{subsection.6.2.7}
-\contentsline {section}{\numberline {6.3}Hybrid Learning Models}{101}{section.6.3}
-\contentsline {subsection}{\numberline {6.3.1}Supervised Learning Results}{101}{subsection.6.3.1}
-\contentsline {subsubsection}{\numberline {6.3.1.1}Training Results}{101}{subsubsection.6.3.1.1}
-\contentsline {subsubsection}{\numberline {6.3.1.2}The Learned Kick Motion}{102}{subsubsection.6.3.1.2}
-\contentsline {subsubsection}{\numberline {6.3.1.3}The Learned Walk Motion}{104}{subsubsection.6.3.1.3}
-\contentsline {subsubsection}{\numberline {6.3.1.4}Other motions}{105}{subsubsection.6.3.1.4}
-\contentsline {subsection}{\numberline {6.3.2}HLM+RNR}{106}{subsection.6.3.2}
-\contentsline {subsection}{\numberline {6.3.3}Final Model: HLM+RNR+RET}{106}{subsection.6.3.3}
-\contentsline {subsection}{\numberline {6.3.4}Kick Behavior: Numerical Results}{108}{subsection.6.3.4}
-\contentsline {chapter}{\numberline {7}Conclusions, Recommendations, and Future Works}{110}{chapter.7}
-\contentsline {section}{\numberline {7.1}Conclusions}{110}{section.7.1}
-\contentsline {section}{\numberline {7.2}Future Work}{111}{section.7.2}
-\contentsline {chapter}{Bibliography}{112}{chapter.8}
+\contentsline {subsection}{\numberline {6.2.5}RNR+RRR+RISD+RET}{99}{subsection.6.2.5}
+\contentsline {subsection}{\numberline {6.2.6}Reinforcement ``supervised"}{100}{subsection.6.2.6}
+\contentsline {subsection}{\numberline {6.2.7}Other ideas for pure RL techniques}{101}{subsection.6.2.7}
+\contentsline {section}{\numberline {6.3}Hybrid Learning Models}{102}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}Supervised Learning Results}{102}{subsection.6.3.1}
+\contentsline {subsubsection}{\numberline {6.3.1.1}Training Results}{102}{subsubsection.6.3.1.1}
+\contentsline {subsubsection}{\numberline {6.3.1.2}The Learned Kick Motion}{103}{subsubsection.6.3.1.2}
+\contentsline {subsubsection}{\numberline {6.3.1.3}The Learned Walk Motion}{105}{subsubsection.6.3.1.3}
+\contentsline {subsubsection}{\numberline {6.3.1.4}Other motions}{106}{subsubsection.6.3.1.4}
+\contentsline {subsection}{\numberline {6.3.2}HLM+RNR}{107}{subsection.6.3.2}
+\contentsline {subsection}{\numberline {6.3.3}Final Model: HLM+RNR+RET}{107}{subsection.6.3.3}
+\contentsline {subsection}{\numberline {6.3.4}Kick Behavior: Numerical Results}{110}{subsection.6.3.4}
+\contentsline {chapter}{\numberline {7}Conclusions, Recommendations, and Future Works}{112}{chapter.7}
+\contentsline {section}{\numberline {7.1}Conclusions}{112}{section.7.1}
+\contentsline {section}{\numberline {7.2}Future Work}{113}{section.7.2}
+\contentsline {chapter}{Bibliography}{114}{chapter.8}
+\SetAppendixTocName {Appendix}
+\contentsline {chapter}{\numberline {A}Hyperparameters}{121}{appendix.A}

@@ -2,15 +2,24 @@
 
 The first results we show here is regarding of data parallelism by the adoption of distributed training. As described in section \ref{sec:distributedtraining}, in RL training we used a master-worker model with \textbf{108 agents} collecting data in parallel.
 
-We used Intel AI DevCloud \cite{inteldevcloud}. It is a cluster of Intel Xeon Scalable Processors that assists with machine learning and deep learning research, with several optimizations for this domain. We had available 9 computation nodes, each of them with 24 cores for processing. Therefore, we trained using 8 nodes for workers (each of them with 4 agents) and one node for master computation. All the scripts used for training configuration are available in github repository\footnote{\label{scripts} https://github.com/luckeciano/deep-rl-humanoid-kick} of this work. 
+We used Intel AI DevCloud \cite{inteldevcloud}. It is a cluster of Intel Xeon Scalable Processors that assists with machine learning and deep learning research, with several optimizations for this domain. We had available 10 computation nodes, each of them with 24 cores for processing. Therefore, we trained using 9 nodes for workers (each of them with 12 agents) and one node for master computation. All the scripts used for training configuration are available in github repository\footnote{\label{scripts} https://github.com/luckeciano/deep-rl-humanoid-kick} of this work. 
 
-In Figure \ref{fig:parallelism}, we see how the data collection had improved by using distributed training in AI DevCloud. In this graph, we have the number of samples collected by learning update in a training using the distributed configuration and other in a local training with a single agent. If we consider the same instant at each experimentation (i.e, after the same period of time), we can quantify the speedup:
+In Figure \ref{fig:speeduptest}, we see how the data collection had improved by using distributed training in AI DevCloud. In this graph, we have the number of samples collected by learning update in a training using the distributed configuration and other in a local training with a single agent. 
+
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[width=1\textwidth]{Cap6/speeduptest}
+	\caption{Speedup Test}
+	\label{fig:speeduptest}
+\end{figure}
+
+If we consider the same instant at each experimentation (i.e, after the same period of time), we can quantify the speedup:
 
 \begin{equation}
-	SpeedUp \approx \frac{4.58 * 10^{8}}{4.59 * 10^{6}} \approx \textbf{100}
+	SpeedUp \approx \frac{5.81 * 10^{8}}{5.27 * 10^{6}} \approx \textbf{110}
 \end{equation}
 
-In this comparison, we have a speedup of 100. It worth mentioning that this number can vary depending on the training itself, because the computation will change over time. For example, if during training the episode length tends to grow, the time simulating agents have the same behavior.
+In this comparison, we have a speedup of 110. It worth mentioning that this number can vary depending on the training itself, because the computation will change over time. For example, if during training the episode length tends to grow, the time simulating agents have the same behavior.
 
 
 In Figure \ref{fig:absdatacollection}, we consider the best scenario for data collection from those experimented. In the graph, there is the number of samples collect by the time.
@@ -48,7 +57,7 @@ Figure \ref{fig:rnr_kick_sequence} shows RNR resultant motion. It is possible to
 
 \begin{figure}[!htbp]
 	\centering
-	\includegraphics[width=0.8\textwidth]{Cap6/rnr_kick_sequence.eps}
+	\includegraphics[width=1.0\textwidth]{Cap6/rnr_kick_sequence.eps}
 	\caption{RNR kick motion sequence.}
 	\label{fig:rnr_kick_sequence}
 \end{figure}
@@ -85,7 +94,7 @@ One fact that is interesting to mention: in RNR motion (without reference), the 
 
 \begin{figure}[!htbp]
 	\centering
-	\includegraphics[width=0.8\textwidth]{Cap6/rnrrrrreward.eps}
+	\includegraphics[width=1.0\textwidth]{Cap6/rnrrrrreward.eps}
 	\caption{RNR+RRR Motion Sequence. In this model, the agent learns to kick with the left leg, as in reference.}
 	\label{fig:rnrrrrreward}
 \end{figure}
@@ -96,7 +105,7 @@ The big challenge of this model is to tune the weight parameter for each reward.
 
 \begin{figure}[!htbp]
 	\centering
-	\includegraphics[width=0.8\textwidth]{Cap6/rnrrrrtradeoff.eps}
+	\includegraphics[width=1.0\textwidth]{Cap6/rnrrrrtradeoff.eps}
 	\caption{Tradeoff between RNR and RRR models: when RRR is much greater, the models collpases to its model.}
 	\label{fig:rnrrrrtradeoff}
 \end{figure}
@@ -111,7 +120,7 @@ Using the RISD model, we can train the whole motion "in parallel". We show the t
 
 \begin{figure}[!htbp]
 	\centering
-	\includegraphics[width=0.8\textwidth]{Cap6/rnrrrrrisdcurve.eps}
+	\includegraphics[width=1.0\textwidth]{Cap6/rnrrrrrisdcurve.eps}
 	\caption{RNR+RRR+RISD learning curve in two sessions of training. The blue curve was the first session and the red one was the second.}
 	\label{fig:rnrrrrrisdcurve}
 \end{figure}
@@ -127,7 +136,7 @@ Figure \ref{fig:risdmotionsequence} shows the motion sequence from RNR+RRR+RISD 
 
 \begin{figure}[!htbp]
 	\centering
-	\includegraphics[width=0.8\textwidth]{Cap6/risdmotionsequence.eps}
+	\includegraphics[width=1.0\textwidth]{Cap6/risdmotionsequence.eps}
 	\caption{RNR+RRR+RISD motion sequence.}
 	\label{fig:risdmotionsequence}
 \end{figure}
@@ -137,6 +146,14 @@ Figure \ref{fig:risdmotionsequence} shows the motion sequence from RNR+RRR+RISD 
 
 This final experiment using pure RL techniques tries to improve last model by using Early Termination. As we saw in Figure \ref{fig:rnrrrrrisdcurve}, the training curve is unstable and depends by the right situation of exploration to achieve a reasonable baseline. Considering the model, there is cases where the agent falls but we keep collecting data until the end of a fixed number of samples. Therefore, we collect a lot of wrong data that can harm learning.
 
+Figure \ref{fig:finalpurereward} shows RNR+RRR+RISD+RET model. 
+
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[width=1.0\textwidth]{Cap6/finalpurereward}
+	\caption{RNR+RRR+RISD+RET reward curve.}
+	\label{fig:finalpurereward}
+\end{figure}
 
 \subsection{Reinforcement ``supervised"}\label{sec:suprl}
 
@@ -151,7 +168,7 @@ Figure \ref{fig:rlsupcurves} shows the first of six training sessions for a rein
 
 \begin{figure}[!htbp]
 	\centering
-	\includegraphics[scale=1.5]{Cap6/rlsuprewardcurves.eps}
+	\includegraphics[width=1.0\textwidth]{Cap6/rlsuprewardcurves.eps}
 	\caption{First session of training for reinforcement supervised model.}
 	\label{fig:rlsupcurves}
 \end{figure}
@@ -160,7 +177,7 @@ Although the learned motion mimics the reference, it accumulates error at the en
 
 \begin{figure}[!htbp]
 	\centering
-	\includegraphics[scale=1.5]{Cap6/rlsupmotionsequence.eps}
+	\includegraphics[width=1.0\textwidth]{Cap6/rlsupmotionsequence.eps}
 	\caption{Motion sequence from reinforcement supervised learning agent.}
 	\label{fig:rlsupmotionsequence}
 \end{figure}
@@ -306,6 +323,24 @@ As an example, we have collected data from UT Austin Villa kick, which was origi
 
 \subsection{HLM+RNR}
 
+Figure \ref{fig:hlmrewardcurve} shows the reward curve for HLM+RNR model. 
+
+ \begin{figure}[!htbp]
+	\centering
+	\includegraphics[ width=1\textwidth]{Cap6/hlmreward}
+	\caption{HLM+RNR reward curve.}
+	\label{fig:hlmrewardcurve}
+\end{figure}
+
+Figure \ref{fig:hlmrnrmotionsequence} shows the motion sequence for HLM+RNR model.
+
+
+ \begin{figure}[!htbp]
+	\centering
+	\includegraphics[ width=1\textwidth]{Cap6/hlmmotionsequence}
+	\caption{Motion sequence of HLM+RNR model.}
+	\label{fig:hlmrnrmotionsequence}
+\end{figure}
 
 \subsection{Final Model: HLM+RNR+RET}\label{sec:hlmrnrret}
 As final model to explore, we addressed HLM+RNR with Early Termination technique. As described earlier in this work, without it, we collect data that potentially harm training.
@@ -346,14 +381,14 @@ Figure \ref{fig:hlmretsess1motseq} shows the motion sequence after this first se
   
  \begin{figure}[!htbp]
  	\centering
- 	\includegraphics[ width=1\textwidth]{Cap6/hlmretsess2}
+ 	\includegraphics[ width=1.1\textwidth]{Cap6/hlmretsess2}
  	\caption{The reward curve from the second session of HLM+RNR+RET model.}
  	\label{fig:hlmretsess2}
  \end{figure}
  
  \begin{figure}[!htbp]
  	\centering
- 	\includegraphics[ scale=0.8]{Cap6/hlmretsess2motseq}
+ 	\includegraphics[ scale=1.0]{Cap6/hlmretsess2motseq}
  	\caption{HLM+RNR+RET motion sequence after second training session.}
  	\label{fig:hlmretsess2motseq}
  \end{figure}

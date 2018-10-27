@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2018.8.13)  24 OCT 2018 22:05
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2018.8.13)  26 OCT 2018 23:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -735,6 +735,15 @@ Writing glossary file tese.glo
 
 LaTeX Warning: Label `footnote_walk' multiply defined.
 
+
+LaTeX Warning: Label `tab:finaltest' multiply defined.
+
+
+LaTeX Warning: Label `tab:finaltest' multiply defined.
+
+
+LaTeX Warning: Label `tab:finaltest' multiply defined.
+
 )
 \openout1 = `tese.aux'.
 
@@ -853,7 +862,7 @@ e
 
 \c@butlastpage=\count151
 Package hyperref Info: Anchor `cover.0' on input line 126.
-<Cap0/ita_logo.jpg, id=462, 612.3678pt x 234.8775pt>
+<Cap0/ita_logo.jpg, id=466, 612.3678pt x 234.8775pt>
 File: Cap0/ita_logo.jpg Graphic file (type jpg)
  <use Cap0/ita_logo.jpg>
 Package pdftex.def Info: Cap0/ita_logo.jpg used on input line 126.
@@ -1101,22 +1110,22 @@ Package hyperref Info: Reference (link) `figure.caption.51' on input line 50.
 Package hyperref Info: Reference (link) `figure.caption.52' on input line 51.
 Package hyperref Info: Reference (link) `figure.caption.53' on input line 52.
 Package hyperref Info: Reference (link) `figure.caption.54' on input line 53.
+Package hyperref Info: Reference (link) `figure.caption.55' on input line 54.
 
-Overfull \hbox (3.07089pt too wide) in paragraph at lines 53--53
+Overfull \hbox (3.07089pt too wide) in paragraph at lines 54--54
  [][] [][][]\T1/aer/m/n/12 Tradeoff be-tween RNR and RRR mod-els: when RRR is m
 uch greater, 
  []
 
-Package hyperref Info: Reference (link) `figure.caption.55' on input line 54.
 Package hyperref Info: Reference (link) `figure.caption.56' on input line 55.
 Package hyperref Info: Reference (link) `figure.caption.57' on input line 56.
 Package hyperref Info: Reference (link) `figure.caption.58' on input line 57.
 Package hyperref Info: Reference (link) `figure.caption.59' on input line 58.
 Package hyperref Info: Reference (link) `figure.caption.60' on input line 59.
 Package hyperref Info: Reference (link) `figure.caption.61' on input line 60.
-Package hyperref Info: Reference (link) `figure.caption.63' on input line 61.
-Package hyperref Info: Reference (link) `figure.caption.65' on input line 62.
-Package hyperref Info: Reference (link) `figure.caption.66' on input line 63.
+Package hyperref Info: Reference (link) `figure.caption.62' on input line 61.
+Package hyperref Info: Reference (link) `figure.caption.63' on input line 62.
+Package hyperref Info: Reference (link) `figure.caption.65' on input line 63.
 Package hyperref Info: Reference (link) `figure.caption.67' on input line 64.
 Package hyperref Info: Anchor `page.vii' on input line 65.
 [7
@@ -1136,12 +1145,16 @@ Package `hyperref' Info: End of reference (link) `figure.caption.58', line 57.
 Package `hyperref' Info: End of reference (link) `figure.caption.59', line 58.
 Package `hyperref' Info: End of reference (link) `figure.caption.60', line 59.
 Package `hyperref' Info: End of reference (link) `figure.caption.61', line 60.
-Package `hyperref' Info: End of reference (link) `figure.caption.63', line 61.
-Package `hyperref' Info: End of reference (link) `figure.caption.65', line 62.
-Package `hyperref' Info: End of reference (link) `figure.caption.66', line 63.
+Package `hyperref' Info: End of reference (link) `figure.caption.62', line 61.
+Package `hyperref' Info: End of reference (link) `figure.caption.63', line 62.
+Package `hyperref' Info: End of reference (link) `figure.caption.65', line 63.
 ]
 Package hyperref Info: Reference (link) `figure.caption.68' on input line 65.
 Package hyperref Info: Reference (link) `figure.caption.69' on input line 66.
+Package hyperref Info: Reference (link) `figure.caption.70' on input line 67.
+Package hyperref Info: Reference (link) `figure.caption.71' on input line 68.
+Package hyperref Info: Reference (link) `figure.caption.72' on input line 69.
+Package hyperref Info: Reference (link) `figure.caption.73' on input line 70.
 )
 \tf@lof=\write5
 \openout5 = `tese.lof'.
@@ -1151,16 +1164,23 @@ Package hyperref Info: Anchor `page.viii' on input line 173.
 Package `hyperref' Info: End of reference (link) `figure.caption.67', line 64.
 Package `hyperref' Info: End of reference (link) `figure.caption.68', line 65.
 Package `hyperref' Info: End of reference (link) `figure.caption.69', line 66.
+Package `hyperref' Info: End of reference (link) `figure.caption.70', line 67.
+Package `hyperref' Info: End of reference (link) `figure.caption.71', line 68.
+Package `hyperref' Info: End of reference (link) `figure.caption.72', line 69.
+Package `hyperref' Info: End of reference (link) `figure.caption.73', line 70.
 ]
 Package hyperref Info: Anchor `chapter*.3' on input line 173.
 Package hyperref Info: Anchor `listatabelas.0' on input line 173.
  (./tese.lot
 Package hyperref Info: Reference (link) `table.caption.34' on input line 7.
 Package hyperref Info: Reference (link) `table.caption.37' on input line 8.
-Package hyperref Info: Reference (link) `table.caption.62' on input line 10.
-Package hyperref Info: Reference (link) `table.caption.64' on input line 11.
-Package hyperref Info: Reference (link) `table.caption.70' on input line 12.
-Package hyperref Info: Reference (link) `table.caption.71' on input line 13.
+Package hyperref Info: Reference (link) `table.caption.64' on input line 10.
+Package hyperref Info: Reference (link) `table.caption.66' on input line 11.
+Package hyperref Info: Reference (link) `table.caption.74' on input line 12.
+Package hyperref Info: Reference (link) `table.caption.75' on input line 13.
+Package hyperref Info: Reference (link) `table.caption.77' on input line 16.
+Package hyperref Info: Reference (link) `table.caption.78' on input line 17.
+Package hyperref Info: Reference (link) `table.caption.79' on input line 18.
 )
 \tf@lot=\write6
 \openout6 = `tese.lot'.
@@ -1170,10 +1190,13 @@ Package hyperref Info: Anchor `page.ix' on input line 176.
 
 Package `hyperref' Info: End of reference (link) `table.caption.34', line 7.
 Package `hyperref' Info: End of reference (link) `table.caption.37', line 8.
-Package `hyperref' Info: End of reference (link) `table.caption.62', line 10.
-Package `hyperref' Info: End of reference (link) `table.caption.64', line 11.
-Package `hyperref' Info: End of reference (link) `table.caption.70', line 12.
-Package `hyperref' Info: End of reference (link) `table.caption.71', line 13.
+Package `hyperref' Info: End of reference (link) `table.caption.64', line 10.
+Package `hyperref' Info: End of reference (link) `table.caption.66', line 11.
+Package `hyperref' Info: End of reference (link) `table.caption.74', line 12.
+Package `hyperref' Info: End of reference (link) `table.caption.75', line 13.
+Package `hyperref' Info: End of reference (link) `table.caption.77', line 16.
+Package `hyperref' Info: End of reference (link) `table.caption.78', line 17.
+Package `hyperref' Info: End of reference (link) `table.caption.79', line 18.
 ]
 Package hyperref Info: Anchor `chapter*.4' on input line 176.
 Package hyperref Info: Anchor `listaabreviaturas.0' on input line 176.
@@ -1459,6 +1482,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 123--123
  []
 
 Package hyperref Info: Reference (link) `chapter.8' on input line 123.
+
+Underfull \hbox (badness 10000) in paragraph at lines 125--125
+ []  
+ []
+
+Package hyperref Info: Reference (link) `appendix.A' on input line 125.
 )
 \tf@toc=\write9
 \openout9 = `tese.toc'.
@@ -1488,6 +1517,7 @@ Package `hyperref' Info: End of reference (link) `chapter.7', line 120.
 Package `hyperref' Info: End of reference (link) `section.7.1', line 121.
 Package `hyperref' Info: End of reference (link) `section.7.2', line 122.
 Package `hyperref' Info: End of reference (link) `chapter.8', line 123.
+Package `hyperref' Info: End of reference (link) `appendix.A', line 125.
 ]
 Package hyperref Info: Anchor `chapter.1' on input line 189.
 
@@ -1527,7 +1557,7 @@ Package epstopdf Info: Source file: <Cap1/AlphaZero.eps>
 ed-to.pdf Cap1/AlphaZero.eps>
 (epstopdf)             \includegraphics on input line 12.
 Package epstopdf Info: Output file is already uptodate.
-<Cap1/AlphaZero-eps-converted-to.pdf, id=895, 226.8475pt x 127.47626pt>
+<Cap1/AlphaZero-eps-converted-to.pdf, id=913, 226.8475pt x 127.47626pt>
 File: Cap1/AlphaZero-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Cap1/AlphaZero-eps-converted-to.pdf>
@@ -1558,7 +1588,7 @@ Package epstopdf Info: Source file: <Cap1/Locomotion.eps>
 ted-to.pdf Cap1/Locomotion.eps>
 (epstopdf)             \includegraphics on input line 21.
 Package epstopdf Info: Output file is already uptodate.
-<Cap1/Locomotion-eps-converted-to.pdf, id=900, 226.8475pt x 127.47626pt>
+<Cap1/Locomotion-eps-converted-to.pdf, id=918, 226.8475pt x 127.47626pt>
 File: Cap1/Locomotion-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Cap1/Locomotion-eps-converted-to.pdf>
@@ -1625,7 +1655,7 @@ Package epstopdf Info: Source file: <Cap1/Soccer3D.eps>
 d-to.pdf Cap1/Soccer3D.eps>
 (epstopdf)             \includegraphics on input line 35.
 Package epstopdf Info: Output file is already uptodate.
- <Cap1/Soccer3D-eps-converted-to.pdf, id=917, 254.9525pt x 112.42pt>
+ <Cap1/Soccer3D-eps-converted-to.pdf, id=935, 254.9525pt x 112.42pt>
 File: Cap1/Soccer3D-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Cap1/Soccer3D-eps-converted-to.pdf>
@@ -1793,7 +1823,7 @@ Package epstopdf Info: Source file: <Cap2/CMAES.eps>
 o.pdf Cap2/CMAES.eps>
 (epstopdf)             \includegraphics on input line 44.
 Package epstopdf Info: Output file is already uptodate.
-<Cap2/CMAES-eps-converted-to.pdf, id=996, 576.1525pt x 419.5675pt>
+<Cap2/CMAES-eps-converted-to.pdf, id=1015, 576.1525pt x 419.5675pt>
 File: Cap2/CMAES-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Cap2/CMAES-eps-converted-to.pdf>
@@ -1864,7 +1894,7 @@ Package epstopdf Info: Source file: <Cap2/dqn.eps>
 pdf Cap2/dqn.eps>
 (epstopdf)             \includegraphics on input line 68.
 Package epstopdf Info: Output file is already uptodate.
- <Cap2/dqn-eps-converted-to.pdf, id=1024, 586.19pt x 331.2375pt>
+ <Cap2/dqn-eps-converted-to.pdf, id=1043, 586.19pt x 331.2375pt>
 File: Cap2/dqn-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Cap2/dqn-eps-converted-to.pdf>
@@ -1943,7 +1973,7 @@ ted-to.pdf Cap2/openaifive.eps>
 (epstopdf)             \includegraphics on input line 86.
 Package epstopdf Info: Output file is already uptodate.
 
-<Cap2/openaifive-eps-converted-to.pdf, id=1067, 582.175pt x 798.985pt>
+<Cap2/openaifive-eps-converted-to.pdf, id=1086, 582.175pt x 798.985pt>
 File: Cap2/openaifive-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Cap2/openaifive-eps-converted-to.pdf>
@@ -2007,7 +2037,7 @@ pdftex: bookmark at 1: {3.1} {\numberline{3.1}Neural Networks} {section.3.1}{1}
 {toc}
 Package hyperref Info: Reference (link) `figure.caption.13' on input line 3.
 Package hyperref Info: Anchor `figure.caption.13' on input line 5.
-<Cap3/ann.png, id=1101, 866.23625pt x 479.7925pt>
+<Cap3/ann.png, id=1120, 866.23625pt x 479.7925pt>
 File: Cap3/ann.png Graphic file (type png)
  <use Cap3/ann.png>
 Package pdftex.def Info: Cap3/ann.png used on input line 7.
@@ -2047,7 +2077,7 @@ Package epstopdf Info: Source file: <Cap3/neurondetail.eps>
 erted-to.pdf Cap3/neurondetail.eps>
 (epstopdf)             \includegraphics on input line 22.
 Package epstopdf Info: Output file is already uptodate.
-<Cap3/neurondetail-eps-converted-to.pdf, id=1116, 568.1225pt x 276.03125pt>
+<Cap3/neurondetail-eps-converted-to.pdf, id=1135, 568.1225pt x 276.03125pt>
 File: Cap3/neurondetail-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Cap3/neurondetail-eps-converted-to.pdf>
@@ -2071,7 +2101,7 @@ Package epstopdf Info: Source file: <Cap3/bias.eps>
 .pdf Cap3/bias.eps>
 (epstopdf)             \includegraphics on input line 41.
 Package epstopdf Info: Output file is already uptodate.
-<Cap3/bias-eps-converted-to.pdf, id=1119, 581.17125pt x 331.2375pt>
+<Cap3/bias-eps-converted-to.pdf, id=1138, 581.17125pt x 331.2375pt>
 File: Cap3/bias-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Cap3/bias-eps-converted-to.pdf>
@@ -2114,7 +2144,7 @@ tation-eps-converted-to.pdf Cap3/neuralnetworkrepresentation.eps>
 (epstopdf)             \includegraphics on input line 60.
 Package epstopdf Info: Output file is already uptodate.
 
-<Cap3/neuralnetworkrepresentation-eps-converted-to.pdf, id=1135, 510.90875pt x 
+<Cap3/neuralnetworkrepresentation-eps-converted-to.pdf, id=1154, 510.90875pt x 
 291.0875pt>
 File: Cap3/neuralnetworkrepresentation-eps-converted-to.pdf Graphic file (type 
 pdf)
@@ -2182,7 +2212,7 @@ Package epstopdf Info: Source file: <Cap3/sigmoid.eps>
 -to.pdf Cap3/sigmoid.eps>
 (epstopdf)             \includegraphics on input line 136.
 Package epstopdf Info: Output file is already uptodate.
-<Cap3/sigmoid-eps-converted-to.pdf, id=1173, 462.72874pt x 253.94875pt>
+<Cap3/sigmoid-eps-converted-to.pdf, id=1192, 462.72874pt x 253.94875pt>
 File: Cap3/sigmoid-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Cap3/sigmoid-eps-converted-to.pdf>
@@ -2222,7 +2252,7 @@ Package epstopdf Info: Source file: <Cap3/tanh.eps>
 .pdf Cap3/tanh.eps>
 (epstopdf)             \includegraphics on input line 164.
 Package epstopdf Info: Output file is already uptodate.
- <Cap3/tanh-eps-converted-to.pdf, id=1184, 466.74374pt x 295.1025pt>
+ <Cap3/tanh-eps-converted-to.pdf, id=1203, 466.74374pt x 295.1025pt>
 File: Cap3/tanh-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Cap3/tanh-eps-converted-to.pdf>
@@ -2259,7 +2289,7 @@ Package epstopdf Info: Source file: <Cap3/relu.eps>
 (epstopdf)             \includegraphics on input line 190.
 Package epstopdf Info: Output file is already uptodate.
 
-<Cap3/relu-eps-converted-to.pdf, id=1200, 502.87875pt x 325.215pt>
+<Cap3/relu-eps-converted-to.pdf, id=1220, 502.87875pt x 325.215pt>
 File: Cap3/relu-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Cap3/relu-eps-converted-to.pdf>
@@ -2311,7 +2341,7 @@ ed-to.pdf Cap3/leakyrelu.eps>
 (epstopdf)             \includegraphics on input line 227.
 Package epstopdf Info: Output file is already uptodate.
 
-<Cap3/leakyrelu-eps-converted-to.pdf, id=1218, 544.0325pt x 319.1925pt>
+<Cap3/leakyrelu-eps-converted-to.pdf, id=1237, 544.0325pt x 319.1925pt>
 File: Cap3/leakyrelu-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Cap3/leakyrelu-eps-converted-to.pdf>
@@ -2362,7 +2392,7 @@ onverted-to.pdf Cap3/gradientdescent.eps>
 (epstopdf)             \includegraphics on input line 276.
 Package epstopdf Info: Output file is already uptodate.
 
-<Cap3/gradientdescent-eps-converted-to.pdf, id=1238, 596.2275pt x 420.57124pt>
+<Cap3/gradientdescent-eps-converted-to.pdf, id=1257, 596.2275pt x 420.57124pt>
 File: Cap3/gradientdescent-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Cap3/gradientdescent-eps-converted-to.pdf>
@@ -2458,7 +2488,7 @@ f>
 (epstopdf)             \includegraphics on input line 372.
 Package epstopdf Info: Output file is already uptodate.
 
-<Cap3/batchvsstochastic-eps-converted-to.pdf, id=1280, 583.17876pt x 503.8825pt
+<Cap3/batchvsstochastic-eps-converted-to.pdf, id=1299, 583.17876pt x 503.8825pt
 >
 File: Cap3/batchvsstochastic-eps-converted-to.pdf Graphic file (type pdf)
  <use Cap3/batchvsstochastic-eps-converted-to.pdf>
@@ -2483,7 +2513,7 @@ s-eps-converted-to.pdf Cap3/lossfunctiongdvariants.eps>
 (epstopdf)             \includegraphics on input line 383.
 Package epstopdf Info: Output file is already uptodate.
 
-<Cap3/lossfunctiongdvariants-eps-converted-to.pdf, id=1282, 590.205pt x 269.005
+<Cap3/lossfunctiongdvariants-eps-converted-to.pdf, id=1301, 590.205pt x 269.005
 pt>
 File: Cap3/lossfunctiongdvariants-eps-converted-to.pdf Graphic file (type pdf)
  <use Cap3/lossfunctiongdvariants-eps-converted-to.pdf>
@@ -2547,7 +2577,7 @@ Package epstopdf Info: Source file: <Cap3/momentum.eps>
 d-to.pdf Cap3/momentum.eps>
 (epstopdf)             \includegraphics on input line 427.
 Package epstopdf Info: Output file is already uptodate.
-<Cap3/momentum-eps-converted-to.pdf, id=1326, 594.22pt x 554.07pt>
+<Cap3/momentum-eps-converted-to.pdf, id=1346, 594.22pt x 554.07pt>
 File: Cap3/momentum-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Cap3/momentum-eps-converted-to.pdf>
@@ -2732,7 +2762,7 @@ erted-to.pdf Cap3/gddivergence.eps>
 (epstopdf)             \includegraphics on input line 582.
 Package epstopdf Info: Output file is already uptodate.
 
-<Cap3/gddivergence-eps-converted-to.pdf, id=1444, 591.20876pt x 382.42876pt>
+<Cap3/gddivergence-eps-converted-to.pdf, id=1463, 591.20876pt x 382.42876pt>
 File: Cap3/gddivergence-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Cap3/gddivergence-eps-converted-to.pdf>
@@ -2809,7 +2839,7 @@ Package epstopdf Info: Source file: <Cap4/rlsystem.eps>
 d-to.pdf Cap4/rlsystem.eps>
 (epstopdf)             \includegraphics on input line 39.
 Package epstopdf Info: Output file is already uptodate.
-<Cap4/rlsystem-eps-converted-to.pdf, id=1478, 449.68pt x 552.0625pt>
+<Cap4/rlsystem-eps-converted-to.pdf, id=1497, 449.68pt x 552.0625pt>
 File: Cap4/rlsystem-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Cap4/rlsystem-eps-converted-to.pdf>
@@ -2941,7 +2971,7 @@ rted-to.pdf Cap4/mdprlsystem.eps>
 (epstopdf)             \includegraphics on input line 215.
 Package epstopdf Info: Output file is already uptodate.
 
-<Cap4/mdprlsystem-eps-converted-to.pdf, id=1533, 575.14874pt x 237.88875pt>
+<Cap4/mdprlsystem-eps-converted-to.pdf, id=1552, 575.14874pt x 237.88875pt>
 File: Cap4/mdprlsystem-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Cap4/mdprlsystem-eps-converted-to.pdf>
@@ -3018,7 +3048,7 @@ verted-to.pdf Cap4/bellmaneqtree.eps>
 (epstopdf)             \includegraphics on input line 271.
 Package epstopdf Info: Output file is already uptodate.
 
-<Cap4/bellmaneqtree-eps-converted-to.pdf, id=1564, 565.11125pt x 461.725pt>
+<Cap4/bellmaneqtree-eps-converted-to.pdf, id=1583, 565.11125pt x 461.725pt>
 File: Cap4/bellmaneqtree-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Cap4/bellmaneqtree-eps-converted-to.pdf>
@@ -3104,7 +3134,7 @@ f>
 (epstopdf)             \includegraphics on input line 350.
 Package epstopdf Info: Output file is already uptodate.
 
-<Cap4/bellmanoptimality-eps-converted-to.pdf, id=1599, 598.235pt x 218.8175pt>
+<Cap4/bellmanoptimality-eps-converted-to.pdf, id=1618, 598.235pt x 218.8175pt>
 File: Cap4/bellmanoptimality-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Cap4/bellmanoptimality-eps-converted-to.pdf>
@@ -3158,7 +3188,7 @@ Package epstopdf Info: Source file: <Cap4/policyiteration.eps>
 onverted-to.pdf Cap4/policyiteration.eps>
 (epstopdf)             \includegraphics on input line 371.
 Package epstopdf Info: Output file is already uptodate.
-<Cap4/policyiteration-eps-converted-to.pdf, id=1623, 598.235pt x 403.5075pt>
+<Cap4/policyiteration-eps-converted-to.pdf, id=1642, 598.235pt x 403.5075pt>
 File: Cap4/policyiteration-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Cap4/policyiteration-eps-converted-to.pdf>
@@ -3397,7 +3427,7 @@ rted-to.pdf Cap4/actorcritic.eps>
 (epstopdf)             \includegraphics on input line 618.
 Package epstopdf Info: Output file is already uptodate.
 
-<Cap4/actorcritic-eps-converted-to.pdf, id=1745, 597.23125pt x 359.3425pt>
+<Cap4/actorcritic-eps-converted-to.pdf, id=1764, 597.23125pt x 359.3425pt>
 File: Cap4/actorcritic-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Cap4/actorcritic-eps-converted-to.pdf>
@@ -3688,7 +3718,7 @@ s-converted-to.pdf Cap5/optimization_final.eps>
 (epstopdf)             \includegraphics on input line 62.
 Package epstopdf Info: Output file is already uptodate.
 
-<Cap5/optimization_final-eps-converted-to.pdf, id=1880, 564.1075pt x 423.5825pt
+<Cap5/optimization_final-eps-converted-to.pdf, id=1899, 564.1075pt x 423.5825pt
 >
 File: Cap5/optimization_final-eps-converted-to.pdf Graphic file (type pdf)
  <use Cap5/optimization_final-eps-converted-to.pdf>
@@ -3753,7 +3783,7 @@ erted-to.pdf Cap5/architecture.eps>
 (epstopdf)             \includegraphics on input line 93.
 Package epstopdf Info: Output file is already uptodate.
 
-<Cap5/architecture-eps-converted-to.pdf, id=1905, 768.8725pt x 417.56pt>
+<Cap5/architecture-eps-converted-to.pdf, id=1924, 768.8725pt x 417.56pt>
 File: Cap5/architecture-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Cap5/architecture-eps-converted-to.pdf>
@@ -3837,7 +3867,7 @@ Package epstopdf Info: Source file: <Cap5/inputnorm.eps>
 ed-to.pdf Cap5/inputnorm.eps>
 (epstopdf)             \includegraphics on input line 149.
 Package epstopdf Info: Output file is already uptodate.
- <Cap5/inputnorm-eps-converted-to.pdf, id=1935, 721.69624pt x 303.1325pt>
+ <Cap5/inputnorm-eps-converted-to.pdf, id=1954, 721.69624pt x 303.1325pt>
 File: Cap5/inputnorm-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Cap5/inputnorm-eps-converted-to.pdf>
@@ -3865,7 +3895,7 @@ Package epstopdf Info: Source file: <Cap5/rlnetwork.eps>
 ed-to.pdf Cap5/rlnetwork.eps>
 (epstopdf)             \includegraphics on input line 159.
 Package epstopdf Info: Output file is already uptodate.
-<Cap5/rlnetwork-eps-converted-to.pdf, id=1939, 1509.64pt x 657.45625pt>
+<Cap5/rlnetwork-eps-converted-to.pdf, id=1958, 1509.64pt x 657.45625pt>
 File: Cap5/rlnetwork-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Cap5/rlnetwork-eps-converted-to.pdf>
@@ -3907,7 +3937,7 @@ verted-to.pdf Cap5/gaussiannoise.eps>
 (epstopdf)             \includegraphics on input line 197.
 Package epstopdf Info: Output file is already uptodate.
 
-<Cap5/gaussiannoise-eps-converted-to.pdf, id=1955, 238.8925pt x 373.395pt>
+<Cap5/gaussiannoise-eps-converted-to.pdf, id=1974, 238.8925pt x 373.395pt>
 File: Cap5/gaussiannoise-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Cap5/gaussiannoise-eps-converted-to.pdf>
@@ -3958,7 +3988,7 @@ onverted-to.pdf Cap5/taskdescription.eps>
 (epstopdf)             \includegraphics on input line 218.
 Package epstopdf Info: Output file is already uptodate.
 
-<Cap5/taskdescription-eps-converted-to.pdf, id=1969, 654.445pt x 580.1675pt>
+<Cap5/taskdescription-eps-converted-to.pdf, id=1989, 654.445pt x 580.1675pt>
 File: Cap5/taskdescription-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Cap5/taskdescription-eps-converted-to.pdf>
@@ -3986,7 +4016,7 @@ Package epstopdf Info: Source file: <Cap5/rlserver.eps>
 d-to.pdf Cap5/rlserver.eps>
 (epstopdf)             \includegraphics on input line 230.
 Package epstopdf Info: Output file is already uptodate.
-<Cap5/rlserver-eps-converted-to.pdf, id=1971, 585.18625pt x 422.57875pt>
+<Cap5/rlserver-eps-converted-to.pdf, id=1991, 585.18625pt x 422.57875pt>
 File: Cap5/rlserver-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Cap5/rlserver-eps-converted-to.pdf>
@@ -4095,7 +4125,7 @@ Package epstopdf Info: Source file: <Cap5/dataflowgraph.eps>
 verted-to.pdf Cap5/dataflowgraph.eps>
 (epstopdf)             \includegraphics on input line 295.
 Package epstopdf Info: Output file is already uptodate.
-<Cap5/dataflowgraph-eps-converted-to.pdf, id=2023, 1050.92625pt x 409.53pt>
+<Cap5/dataflowgraph-eps-converted-to.pdf, id=2042, 1050.92625pt x 409.53pt>
 File: Cap5/dataflowgraph-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Cap5/dataflowgraph-eps-converted-to.pdf>
@@ -4122,7 +4152,7 @@ Package epstopdf Info: Source file: <Cap5/pigraph.eps>
 -to.pdf Cap5/pigraph.eps>
 (epstopdf)             \includegraphics on input line 305.
 Package epstopdf Info: Output file is already uptodate.
-<Cap5/pigraph-eps-converted-to.pdf, id=2026, 1074.0125pt x 409.53pt>
+<Cap5/pigraph-eps-converted-to.pdf, id=2045, 1074.0125pt x 409.53pt>
 File: Cap5/pigraph-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Cap5/pigraph-eps-converted-to.pdf>
@@ -4151,7 +4181,7 @@ Package epstopdf Info: Source file: <Cap5/policygraph1.eps>
 erted-to.pdf Cap5/policygraph1.eps>
 (epstopdf)             \includegraphics on input line 317.
 Package epstopdf Info: Output file is already uptodate.
-<Cap5/policygraph1-eps-converted-to.pdf, id=2031, 978.65625pt x 395.4775pt>
+<Cap5/policygraph1-eps-converted-to.pdf, id=2050, 978.65625pt x 395.4775pt>
 File: Cap5/policygraph1-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Cap5/policygraph1-eps-converted-to.pdf>
@@ -4178,7 +4208,7 @@ Package epstopdf Info: Source file: <Cap5/policygraph2.eps>
 erted-to.pdf Cap5/policygraph2.eps>
 (epstopdf)             \includegraphics on input line 325.
 Package epstopdf Info: Output file is already uptodate.
-<Cap5/policygraph2-eps-converted-to.pdf, id=2034, 900.36375pt x 574.145pt>
+<Cap5/policygraph2-eps-converted-to.pdf, id=2053, 900.36375pt x 574.145pt>
 File: Cap5/policygraph2-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Cap5/policygraph2-eps-converted-to.pdf>
@@ -4249,7 +4279,7 @@ verted-to.pdf Cap5/master-worker.eps>
 (epstopdf)             \includegraphics on input line 345.
 Package epstopdf Info: Output file is already uptodate.
 
-<Cap5/master-worker-eps-converted-to.pdf, id=2065, 593.21625pt x 251.94125pt>
+<Cap5/master-worker-eps-converted-to.pdf, id=2084, 593.21625pt x 251.94125pt>
 File: Cap5/master-worker-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Cap5/master-worker-eps-converted-to.pdf>
@@ -4282,7 +4312,7 @@ ps-converted-to.pdf Cap5/distributedtraining.eps>
 (epstopdf)             \includegraphics on input line 363.
 Package epstopdf Info: Output file is already uptodate.
 
-<Cap5/distributedtraining-eps-converted-to.pdf, id=2069, 580.1675pt x 494.84875
+<Cap5/distributedtraining-eps-converted-to.pdf, id=2088, 580.1675pt x 494.84875
 pt>
 File: Cap5/distributedtraining-eps-converted-to.pdf Graphic file (type pdf)
  <use Cap5/distributedtraining-eps-converted-to.pdf>
@@ -4328,7 +4358,7 @@ rted-to.pdf Cap5/tensorboard.eps>
 (epstopdf)             \includegraphics on input line 385.
 Package epstopdf Info: Output file is already uptodate.
 
-<Cap5/tensorboard-eps-converted-to.pdf, id=2091, 587.19376pt x 250.9375pt>
+<Cap5/tensorboard-eps-converted-to.pdf, id=2111, 587.19376pt x 250.9375pt>
 File: Cap5/tensorboard-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Cap5/tensorboard-eps-converted-to.pdf>
@@ -4361,23 +4391,42 @@ Package hyperref Info: Reference (cite) `cite.inteldevcloud' on input line 5.
 Package hyperref Info: Reference (cite) `cite.inteldevcloud' on input line 5.
 Package hyperref Info: Reference (link) `Hfootnote.1' on input line 5.
 Package hyperref Info: Anchor `Hfootnote.1' on input line 5.
+Package hyperref Info: Reference (link) `figure.caption.48' on input line 7.
+Package hyperref Info: Anchor `figure.caption.48' on input line 9.
+Package epstopdf Info: Source file: <Cap6/speeduptest.eps>
+(epstopdf)                    date: 2018-10-26 08:41:21
+(epstopdf)                    size: 32299 bytes
+(epstopdf)             Output file: <Cap6/speeduptest-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-10-26 08:43:31
+(epstopdf)                    size: 29030 bytes
+(epstopdf)             Command: <repstopdf --outfile=Cap6/speeduptest-eps-conve
+rted-to.pdf Cap6/speeduptest.eps>
+(epstopdf)             \includegraphics on input line 11.
+Package epstopdf Info: Output file is already uptodate.
+<Cap6/speeduptest-eps-converted-to.pdf, id=2125, 594.22pt x 373.395pt>
+File: Cap6/speeduptest-eps-converted-to.pdf Graphic file (type pdf)
 
-LaTeX Warning: Reference `fig:parallelism' on page 92 undefined on input line 7
-.
+<use Cap6/speeduptest-eps-converted-to.pdf>
+Package pdftex.def Info: Cap6/speeduptest-eps-converted-to.pdf used on input li
+ne 11.
+(pdftex.def)             Requested size: 455.24411pt x 286.07925pt.
 
-Package hyperref Info: Anchor `equation.6.1.1' on input line 9.
-Package hyperref Info: Reference (link) `figure.caption.48' on input line 16.
-Package hyperref Info: Reference (link) `figure.caption.48' on input line 17.
-Package hyperref Info: Anchor `page.92' on input line 18.
+pdftex: bookmark at 12: {6.1} {\numberline{6.1}{\ignorespaces Speedup Test\rela
+x }} {figure.caption.48}{0}{lof}
+Package hyperref Info: Anchor `equation.6.1.1' on input line 18.
+Package hyperref Info: Reference (link) `figure.caption.49' on input line 25.
+Package hyperref Info: Reference (link) `figure.caption.49' on input line 26.
+Package hyperref Info: Anchor `page.92' on input line 27.
 [92
 
 Package `hyperref' Info: End of reference (link) `subsection.5.5.3', line 3.
 Package `hyperref' Info: End of reference (cite) `cite.inteldevcloud', line 5.
 Package `hyperref' Info: End of reference (cite) `cite.inteldevcloud', line 5.
 Package `hyperref' Info: End of reference (link) `Hfootnote.1', line 5.
-Package `hyperref' Info: End of reference (link) `figure.caption.48', line 16.
+Package `hyperref' Info: End of reference (link) `figure.caption.48', line 7.
+Package `hyperref' Info: End of reference (link) `figure.caption.49', line 25.
 ]
-Package hyperref Info: Anchor `figure.caption.48' on input line 19.
+Package hyperref Info: Anchor `figure.caption.49' on input line 28.
 Package epstopdf Info: Source file: <Cap6/absolutedatacollection.eps>
 (epstopdf)                    date: 2018-10-20 09:37:38
 (epstopdf)                    size: 27879 bytes
@@ -4387,32 +4436,32 @@ to.pdf>
 (epstopdf)                    size: 26428 bytes
 (epstopdf)             Command: <repstopdf --outfile=Cap6/absolutedatacollectio
 n-eps-converted-to.pdf Cap6/absolutedatacollection.eps>
-(epstopdf)             \includegraphics on input line 21.
+(epstopdf)             \includegraphics on input line 30.
 Package epstopdf Info: Output file is already uptodate.
 
-<Cap6/absolutedatacollection-eps-converted-to.pdf, id=2115, 568.1225pt x 406.51
+<Cap6/absolutedatacollection-eps-converted-to.pdf, id=2136, 568.1225pt x 406.51
 875pt>
 File: Cap6/absolutedatacollection-eps-converted-to.pdf Graphic file (type pdf)
  <use Cap6/absolutedatacollection-eps-converted-to.pdf>
 Package pdftex.def Info: Cap6/absolutedatacollection-eps-converted-to.pdf used 
-on input line 21.
+on input line 30.
 (pdftex.def)             Requested size: 455.24411pt x 325.76129pt.
 
-pdftex: bookmark at 22: {6.1} {\numberline{6.1}{\ignorespaces Data collection i
-n best scenario\relax }} {figure.caption.48}{0}{lof}
-Package hyperref Info: Anchor `section.6.2' on input line 28.
-pdftex: bookmark at 28: {6.2} {\numberline{6.2}Pure Reinforcement Learning meth
+pdftex: bookmark at 31: {6.2} {\numberline{6.2}{\ignorespaces Data collection i
+n best scenario\relax }} {figure.caption.49}{0}{lof}
+Package hyperref Info: Anchor `section.6.2' on input line 37.
+pdftex: bookmark at 37: {6.2} {\numberline{6.2}Pure Reinforcement Learning meth
 ods results} {section.6.2}{1}{toc}
-Package hyperref Info: Reference (link) `section.5.2' on input line 30.
+Package hyperref Info: Reference (link) `section.5.2' on input line 39.
 
 LaTeX Warning: Reference `app:hyperparameters' on page 93 undefined on input li
-ne 30.
+ne 39.
 
-Package hyperref Info: Anchor `subsection.6.2.1' on input line 32.
-pdftex: bookmark at 32: {6.2.1} {\numberline{6.2.1}RNR} {subsection.6.2.1}{2}{t
+Package hyperref Info: Anchor `subsection.6.2.1' on input line 41.
+pdftex: bookmark at 41: {6.2.1} {\numberline{6.2.1}RNR} {subsection.6.2.1}{2}{t
 oc}
-Package hyperref Info: Reference (link) `figure.caption.49' on input line 34.
-Package hyperref Info: Anchor `figure.caption.49' on input line 36.
+Package hyperref Info: Reference (link) `figure.caption.50' on input line 43.
+Package hyperref Info: Anchor `figure.caption.50' on input line 45.
 Package epstopdf Info: Source file: <Cap6/rnrreward.eps>
 (epstopdf)                    date: 2018-10-20 09:59:59
 (epstopdf)                    size: 32635 bytes
@@ -4421,27 +4470,31 @@ Package epstopdf Info: Source file: <Cap6/rnrreward.eps>
 (epstopdf)                    size: 38372 bytes
 (epstopdf)             Command: <repstopdf --outfile=Cap6/rnrreward-eps-convert
 ed-to.pdf Cap6/rnrreward.eps>
-(epstopdf)             \includegraphics on input line 38.
+(epstopdf)             \includegraphics on input line 47.
 Package epstopdf Info: Output file is already uptodate.
-<Cap6/rnrreward-eps-converted-to.pdf, id=2118, 583.17876pt x 398.48875pt>
+<Cap6/rnrreward-eps-converted-to.pdf, id=2139, 583.17876pt x 398.48875pt>
 File: Cap6/rnrreward-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Cap6/rnrreward-eps-converted-to.pdf>
 Package pdftex.def Info: Cap6/rnrreward-eps-converted-to.pdf used on input line
- 38.
+ 47.
 (pdftex.def)             Requested size: 364.19667pt x 248.86028pt.
 
-pdftex: bookmark at 39: {6.2} {\numberline{6.2}{\ignorespaces RNR Reward Curve 
-by learning update\relax }} {figure.caption.49}{0}{lof}
-Package hyperref Info: Reference (link) `figure.caption.49' on input line 43.
-Package hyperref Info: Anchor `page.93' on input line 45.
+pdftex: bookmark at 48: {6.3} {\numberline{6.3}{\ignorespaces RNR Reward Curve 
+by learning update\relax }} {figure.caption.50}{0}{lof}
+Package hyperref Info: Reference (link) `figure.caption.50' on input line 52.
+Package hyperref Info: Anchor `page.93' on input line 55.
 [93
-Package `hyperref' Info: End of reference (link) `figure.caption.48', line 17.
-Package `hyperref' Info: End of reference (link) `section.5.2', line 30.
-Package `hyperref' Info: End of reference (link) `figure.caption.49', line 34.
- <./Cap6/absolutedatacollection-eps-converted-to.pdf>]
-Package hyperref Info: Reference (link) `figure.caption.50' on input line 47.
-Package hyperref Info: Anchor `figure.caption.50' on input line 49.
+Package `hyperref' Info: End of reference (link) `figure.caption.49', line 26.
+Package `hyperref' Info: End of reference (link) `section.5.2', line 39.
+Package `hyperref' Info: End of reference (link) `figure.caption.50', line 43.
+Package `hyperref' Info: End of reference (link) `figure.caption.50', line 52.
+ <./Cap6/speeduptest-eps-converted-to.pdf>]
+Package hyperref Info: Anchor `page.94' on input line 55.
+ [94 <./Cap6/absolutedatacollection-eps-converted-to.pdf> <./Cap6/rnrreward-eps
+-converted-to.pdf>]
+Package hyperref Info: Reference (link) `figure.caption.51' on input line 56.
+Package hyperref Info: Anchor `figure.caption.51' on input line 58.
 Package epstopdf Info: Source file: <Cap6/rnr_kick_sequence.eps>
 (epstopdf)                    date: 2018-10-20 10:35:13
 (epstopdf)                    size: 729776 bytes
@@ -4451,30 +4504,24 @@ f>
 (epstopdf)                    size: 134345 bytes
 (epstopdf)             Command: <repstopdf --outfile=Cap6/rnr_kick_sequence-eps
 -converted-to.pdf Cap6/rnr_kick_sequence.eps>
-(epstopdf)             \includegraphics on input line 51.
+(epstopdf)             \includegraphics on input line 60.
 Package epstopdf Info: Output file is already uptodate.
 
-<Cap6/rnr_kick_sequence-eps-converted-to.pdf, id=2129, 255.95625pt x 51.19125pt
+<Cap6/rnr_kick_sequence-eps-converted-to.pdf, id=2161, 255.95625pt x 51.19125pt
 >
 File: Cap6/rnr_kick_sequence-eps-converted-to.pdf Graphic file (type pdf)
  <use Cap6/rnr_kick_sequence-eps-converted-to.pdf>
 Package pdftex.def Info: Cap6/rnr_kick_sequence-eps-converted-to.pdf used on in
-put line 51.
-(pdftex.def)             Requested size: 364.19667pt x 72.84438pt.
+put line 60.
+(pdftex.def)             Requested size: 455.24411pt x 91.0545pt.
 
-pdftex: bookmark at 52: {6.3} {\numberline{6.3}{\ignorespaces RNR kick motion s
-equence.\relax }} {figure.caption.50}{0}{lof}
-Package hyperref Info: Anchor `subsection.6.2.2' on input line 56.
-pdftex: bookmark at 56: {6.2.2} {\numberline{6.2.2}RRR} {subsection.6.2.2}{2}{t
+pdftex: bookmark at 61: {6.4} {\numberline{6.4}{\ignorespaces RNR kick motion s
+equence.\relax }} {figure.caption.51}{0}{lof}
+Package hyperref Info: Anchor `subsection.6.2.2' on input line 65.
+pdftex: bookmark at 65: {6.2.2} {\numberline{6.2.2}RRR} {subsection.6.2.2}{2}{t
 oc}
-Package hyperref Info: Anchor `page.94' on input line 60.
-[94
-Package `hyperref' Info: End of reference (link) `figure.caption.49', line 43.
-Package `hyperref' Info: End of reference (link) `figure.caption.50', line 47.
- <./Cap6/rnrreward-eps-converted-to.pdf> <./Cap6/rnr_kick_sequence-eps-converte
-d-to.pdf>]
-Package hyperref Info: Reference (link) `figure.caption.51' on input line 60.
-Package hyperref Info: Anchor `figure.caption.51' on input line 62.
+Package hyperref Info: Reference (link) `figure.caption.52' on input line 69.
+Package hyperref Info: Anchor `figure.caption.52' on input line 71.
 Package epstopdf Info: Source file: <Cap6/rrrreward.eps>
 (epstopdf)                    date: 2018-10-20 11:08:38
 (epstopdf)                    size: 39488 bytes
@@ -4483,25 +4530,24 @@ Package epstopdf Info: Source file: <Cap6/rrrreward.eps>
 (epstopdf)                    size: 37927 bytes
 (epstopdf)             Command: <repstopdf --outfile=Cap6/rrrreward-eps-convert
 ed-to.pdf Cap6/rrrreward.eps>
-(epstopdf)             \includegraphics on input line 64.
+(epstopdf)             \includegraphics on input line 73.
 Package epstopdf Info: Output file is already uptodate.
-
-<Cap6/rrrreward-eps-converted-to.pdf, id=2146, 597.23125pt x 362.35374pt>
+<Cap6/rrrreward-eps-converted-to.pdf, id=2163, 597.23125pt x 362.35374pt>
 File: Cap6/rrrreward-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Cap6/rrrreward-eps-converted-to.pdf>
 Package pdftex.def Info: Cap6/rrrreward-eps-converted-to.pdf used on input line
- 64.
+ 73.
 (pdftex.def)             Requested size: 364.19667pt x 220.96912pt.
 
-pdftex: bookmark at 65: {6.4} {\numberline{6.4}{\ignorespaces RRR Reward Curve 
-by learning update\relax }} {figure.caption.51}{0}{lof}
-Package hyperref Info: Anchor `subsection.6.2.3' on input line 71.
-pdftex: bookmark at 71: {6.2.3} {\numberline{6.2.3}RNR+RRR} {subsection.6.2.3}{
+pdftex: bookmark at 74: {6.5} {\numberline{6.5}{\ignorespaces RRR Reward Curve 
+by learning update\relax }} {figure.caption.52}{0}{lof}
+Package hyperref Info: Anchor `subsection.6.2.3' on input line 80.
+pdftex: bookmark at 80: {6.2.3} {\numberline{6.2.3}RNR+RRR} {subsection.6.2.3}{
 2}{toc}
-Package hyperref Info: Reference (link) `figure.caption.52' on input line 75.
-Package hyperref Info: Reference (link) `figure.caption.53' on input line 75.
-Package hyperref Info: Anchor `figure.caption.52' on input line 77.
+Package hyperref Info: Reference (link) `figure.caption.53' on input line 84.
+Package hyperref Info: Reference (link) `figure.caption.54' on input line 84.
+Package hyperref Info: Anchor `figure.caption.53' on input line 86.
 Package epstopdf Info: Source file: <Cap6/rnrrrrrewardcurve.eps>
 (epstopdf)                    date: 2018-10-20 11:45:38
 (epstopdf)                    size: 84427 bytes
@@ -4511,22 +4557,32 @@ f>
 (epstopdf)                    size: 79117 bytes
 (epstopdf)             Command: <repstopdf --outfile=Cap6/rnrrrrrewardcurve-eps
 -converted-to.pdf Cap6/rnrrrrrewardcurve.eps>
-(epstopdf)             \includegraphics on input line 79.
+(epstopdf)             \includegraphics on input line 88.
 Package epstopdf Info: Output file is already uptodate.
 
-<Cap6/rnrrrrrewardcurve-eps-converted-to.pdf, id=2149, 589.20125pt x 308.15125p
+<Cap6/rnrrrrrewardcurve-eps-converted-to.pdf, id=2166, 589.20125pt x 308.15125p
 t>
 File: Cap6/rnrrrrrewardcurve-eps-converted-to.pdf Graphic file (type pdf)
  <use Cap6/rnrrrrrewardcurve-eps-converted-to.pdf>
 Package pdftex.def Info: Cap6/rnrrrrrewardcurve-eps-converted-to.pdf used on in
-put line 79.
+put line 88.
 (pdftex.def)             Requested size: 364.19667pt x 190.47815pt.
 
-pdftex: bookmark at 80: {6.5} {\numberline{6.5}{\ignorespaces RNR+RRR Reward Cu
+pdftex: bookmark at 89: {6.6} {\numberline{6.6}{\ignorespaces RNR+RRR Reward Cu
 rves by learning update. We trained in two sessions. The blue curve shows the f
-irst session and the gray one the second session.\relax }} {figure.caption.52}{
+irst session and the gray one the second session.\relax }} {figure.caption.53}{
 0}{lof}
-Package hyperref Info: Anchor `figure.caption.53' on input line 86.
+Package hyperref Info: Anchor `page.95' on input line 94.
+[95
+Package `hyperref' Info: End of reference (link) `figure.caption.51', line 56.
+Package `hyperref' Info: End of reference (link) `figure.caption.52', line 69.
+Package `hyperref' Info: End of reference (link) `figure.caption.53', line 84.
+Package `hyperref' Info: End of reference (link) `figure.caption.54', line 84.
+ <./Cap6/rnr_kick_sequence-eps-converted-to.pdf>]
+Package hyperref Info: Anchor `page.96' on input line 94.
+ [96 <./Cap6/rrrreward-eps-converted-to.pdf> <./Cap6/rnrrrrrewardcurve-eps-conv
+erted-to.pdf>]
+Package hyperref Info: Anchor `figure.caption.54' on input line 95.
 Package epstopdf Info: Source file: <Cap6/rnrrrrreward.eps>
 (epstopdf)                    date: 2018-10-20 11:43:00
 (epstopdf)                    size: 844677 bytes
@@ -4535,21 +4591,22 @@ Package epstopdf Info: Source file: <Cap6/rnrrrrreward.eps>
 (epstopdf)                    size: 155373 bytes
 (epstopdf)             Command: <repstopdf --outfile=Cap6/rnrrrrreward-eps-conv
 erted-to.pdf Cap6/rnrrrrreward.eps>
-(epstopdf)             \includegraphics on input line 88.
+(epstopdf)             \includegraphics on input line 97.
 Package epstopdf Info: Output file is already uptodate.
-<Cap6/rnrrrrreward-eps-converted-to.pdf, id=2150, 591.20876pt x 131.49126pt>
+
+<Cap6/rnrrrrreward-eps-converted-to.pdf, id=2190, 591.20876pt x 131.49126pt>
 File: Cap6/rnrrrrreward-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Cap6/rnrrrrreward-eps-converted-to.pdf>
 Package pdftex.def Info: Cap6/rnrrrrreward-eps-converted-to.pdf used on input l
-ine 88.
-(pdftex.def)             Requested size: 364.19667pt x 81.00206pt.
+ine 97.
+(pdftex.def)             Requested size: 455.24411pt x 101.25458pt.
 
-pdftex: bookmark at 89: {6.6} {\numberline{6.6}{\ignorespaces RNR+RRR Motion Se
+pdftex: bookmark at 98: {6.7} {\numberline{6.7}{\ignorespaces RNR+RRR Motion Se
 quence. In this model, the agent learns to kick with the left leg, as in refere
-nce.\relax }} {figure.caption.53}{0}{lof}
-Package hyperref Info: Reference (link) `figure.caption.54' on input line 94.
-Package hyperref Info: Anchor `figure.caption.54' on input line 97.
+nce.\relax }} {figure.caption.54}{0}{lof}
+Package hyperref Info: Reference (link) `figure.caption.55' on input line 103.
+Package hyperref Info: Anchor `figure.caption.55' on input line 106.
 Package epstopdf Info: Source file: <Cap6/rnrrrrtradeoff.eps>
 (epstopdf)                    date: 2018-10-20 12:57:43
 (epstopdf)                    size: 44073 bytes
@@ -4558,34 +4615,30 @@ Package epstopdf Info: Source file: <Cap6/rnrrrrtradeoff.eps>
 (epstopdf)                    size: 66045 bytes
 (epstopdf)             Command: <repstopdf --outfile=Cap6/rnrrrrtradeoff-eps-co
 nverted-to.pdf Cap6/rnrrrrtradeoff.eps>
-(epstopdf)             \includegraphics on input line 99.
+(epstopdf)             \includegraphics on input line 108.
 Package epstopdf Info: Output file is already uptodate.
-<Cap6/rnrrrrtradeoff-eps-converted-to.pdf, id=2152, 594.22pt x 321.2pt>
+<Cap6/rnrrrrtradeoff-eps-converted-to.pdf, id=2192, 594.22pt x 321.2pt>
 File: Cap6/rnrrrrtradeoff-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Cap6/rnrrrrtradeoff-eps-converted-to.pdf>
 Package pdftex.def Info: Cap6/rnrrrrtradeoff-eps-converted-to.pdf used on input
- line 99.
-(pdftex.def)             Requested size: 364.19667pt x 196.87273pt.
+ line 108.
+(pdftex.def)             Requested size: 455.24411pt x 246.08968pt.
 
-pdftex: bookmark at 100: {6.7} {\numberline{6.7}{\ignorespaces Tradeoff between
+pdftex: bookmark at 109: {6.8} {\numberline{6.8}{\ignorespaces Tradeoff between
  RNR and RRR models: when RRR is much greater, the models collpases to its mode
-l.\relax }} {figure.caption.54}{0}{lof}
-Package hyperref Info: Anchor `page.95' on input line 102.
-[95
-Package `hyperref' Info: End of reference (link) `figure.caption.51', line 60.
-Package `hyperref' Info: End of reference (link) `figure.caption.52', line 75.
-Package `hyperref' Info: End of reference (link) `figure.caption.53', line 75.
- <./Cap6/rrrreward-eps-converted-to.pdf>]
-Package hyperref Info: Anchor `page.96' on input line 102.
- [96 <./Cap6/rnrrrrrewardcurve-eps-converted-to.pdf> <./Cap6/rnrrrrreward-eps-c
-onverted-to.pdf>]
-Package hyperref Info: Anchor `subsection.6.2.4' on input line 104.
-
-pdftex: bookmark at 104: {6.2.4} {\numberline{6.2.4}RNR+RRR+RISD} {subsection.6
+l.\relax }} {figure.caption.55}{0}{lof}
+Package hyperref Info: Anchor `subsection.6.2.4' on input line 113.
+pdftex: bookmark at 113: {6.2.4} {\numberline{6.2.4}RNR+RRR+RISD} {subsection.6
 .2.4}{2}{toc}
-Package hyperref Info: Reference (link) `figure.caption.55' on input line 110.
-Package hyperref Info: Anchor `figure.caption.55' on input line 112.
+Package hyperref Info: Anchor `page.97' on input line 117.
+[97
+Package `hyperref' Info: End of reference (link) `figure.caption.55', line 103.
+
+ <./Cap6/rnrrrrreward-eps-converted-to.pdf> <./Cap6/rnrrrrtradeoff-eps-converte
+d-to.pdf>]
+Package hyperref Info: Reference (link) `figure.caption.56' on input line 119.
+Package hyperref Info: Anchor `figure.caption.56' on input line 121.
 Package epstopdf Info: Source file: <Cap6/rnrrrrrisdcurve.eps>
 (epstopdf)                    date: 2018-10-20 14:40:55
 (epstopdf)                    size: 97768 bytes
@@ -4595,27 +4648,22 @@ Package epstopdf Info: Source file: <Cap6/rnrrrrrisdcurve.eps>
 (epstopdf)                    size: 108229 bytes
 (epstopdf)             Command: <repstopdf --outfile=Cap6/rnrrrrrisdcurve-eps-c
 onverted-to.pdf Cap6/rnrrrrrisdcurve.eps>
-(epstopdf)             \includegraphics on input line 114.
+(epstopdf)             \includegraphics on input line 123.
 Package epstopdf Info: Output file is already uptodate.
-<Cap6/rnrrrrrisdcurve-eps-converted-to.pdf, id=2177, 590.205pt x 299.1175pt>
+
+<Cap6/rnrrrrrisdcurve-eps-converted-to.pdf, id=2209, 590.205pt x 299.1175pt>
 File: Cap6/rnrrrrrisdcurve-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Cap6/rnrrrrrisdcurve-eps-converted-to.pdf>
 Package pdftex.def Info: Cap6/rnrrrrrisdcurve-eps-converted-to.pdf used on inpu
-t line 114.
-(pdftex.def)             Requested size: 364.19667pt x 184.57916pt.
+t line 123.
+(pdftex.def)             Requested size: 455.24411pt x 230.72282pt.
 
-pdftex: bookmark at 115: {6.8} {\numberline{6.8}{\ignorespaces RNR+RRR+RISD lea
+pdftex: bookmark at 124: {6.9} {\numberline{6.9}{\ignorespaces RNR+RRR+RISD lea
 rning curve in two sessions of training. The blue curve was the first session a
-nd the red one was the second.\relax }} {figure.caption.55}{0}{lof}
-Package hyperref Info: Reference (link) `figure.caption.56' on input line 126.
-Package hyperref Info: Anchor `page.97' on input line 127.
-[97
-Package `hyperref' Info: End of reference (link) `figure.caption.54', line 94.
-Package `hyperref' Info: End of reference (link) `figure.caption.55', line 110.
-
- <./Cap6/rnrrrrtradeoff-eps-converted-to.pdf>]
-Package hyperref Info: Anchor `figure.caption.56' on input line 128.
+nd the red one was the second.\relax }} {figure.caption.56}{0}{lof}
+Package hyperref Info: Reference (link) `figure.caption.57' on input line 135.
+Package hyperref Info: Anchor `figure.caption.57' on input line 137.
 Package epstopdf Info: Source file: <Cap6/risdmotionsequence.eps>
 (epstopdf)                    date: 2018-10-20 14:58:29
 (epstopdf)                    size: 2103545 bytes
@@ -4625,37 +4673,68 @@ df>
 (epstopdf)                    size: 396717 bytes
 (epstopdf)             Command: <repstopdf --outfile=Cap6/risdmotionsequence-ep
 s-converted-to.pdf Cap6/risdmotionsequence.eps>
-(epstopdf)             \includegraphics on input line 130.
+(epstopdf)             \includegraphics on input line 139.
 Package epstopdf Info: Output file is already uptodate.
 
-<Cap6/risdmotionsequence-eps-converted-to.pdf, id=2186, 596.2275pt x 194.7275pt
+<Cap6/risdmotionsequence-eps-converted-to.pdf, id=2211, 596.2275pt x 194.7275pt
 >
 File: Cap6/risdmotionsequence-eps-converted-to.pdf Graphic file (type pdf)
  <use Cap6/risdmotionsequence-eps-converted-to.pdf>
 Package pdftex.def Info: Cap6/risdmotionsequence-eps-converted-to.pdf used on i
-nput line 130.
-(pdftex.def)             Requested size: 364.19667pt x 118.947pt.
+nput line 139.
+(pdftex.def)             Requested size: 455.24411pt x 148.68376pt.
 
-pdftex: bookmark at 131: {6.9} {\numberline{6.9}{\ignorespaces RNR+RRR+RISD mot
-ion sequence.\relax }} {figure.caption.56}{0}{lof}
-Package hyperref Info: Anchor `subsection.6.2.5' on input line 136.
-pdftex: bookmark at 136: {6.2.5} {\numberline{6.2.5}RNR+RRR+RISD+RET} {subsecti
+pdftex: bookmark at 140: {6.10} {\numberline{6.10}{\ignorespaces RNR+RRR+RISD m
+otion sequence.\relax }} {figure.caption.57}{0}{lof}
+Package hyperref Info: Anchor `subsection.6.2.5' on input line 145.
+pdftex: bookmark at 145: {6.2.5} {\numberline{6.2.5}RNR+RRR+RISD+RET} {subsecti
 on.6.2.5}{2}{toc}
-Package hyperref Info: Reference (link) `figure.caption.55' on input line 138.
-Package hyperref Info: Anchor `subsection.6.2.6' on input line 141.
-pdftex: bookmark at 141: {6.2.6} {\numberline{6.2.6}Reinforcement ``supervised"
-} {subsection.6.2.6}{2}{toc}
-Package hyperref Info: Anchor `equation.6.2.2' on input line 144.
-Package hyperref Info: Anchor `page.98' on input line 144.
+Package hyperref Info: Reference (link) `figure.caption.56' on input line 147.
+Package hyperref Info: Anchor `page.98' on input line 148.
 [98
-Package `hyperref' Info: End of reference (link) `figure.caption.56', line 126.
+Package `hyperref' Info: End of reference (link) `figure.caption.56', line 119.
 
-Package `hyperref' Info: End of reference (link) `figure.caption.55', line 138.
+Package `hyperref' Info: End of reference (link) `figure.caption.57', line 135.
 
- <./Cap6/rnrrrrrisdcurve-eps-converted-to.pdf> <./Cap6/risdmotionsequence-eps-c
+ <./Cap6/rnrrrrrisdcurve-eps-converted-to.pdf>]
+Package hyperref Info: Reference (link) `figure.caption.58' on input line 149.
+Package hyperref Info: Anchor `figure.caption.58' on input line 151.
+Package epstopdf Info: Source file: <Cap6/finalpurereward.eps>
+(epstopdf)                    date: 2018-10-26 09:03:42
+(epstopdf)                    size: 77997 bytes
+(epstopdf)             Output file: <Cap6/finalpurereward-eps-converted-to.pdf>
+
+(epstopdf)                    date: 2018-10-26 09:06:02
+(epstopdf)                    size: 92819 bytes
+(epstopdf)             Command: <repstopdf --outfile=Cap6/finalpurereward-eps-c
+onverted-to.pdf Cap6/finalpurereward.eps>
+(epstopdf)             \includegraphics on input line 153.
+Package epstopdf Info: Output file is already uptodate.
+
+<Cap6/finalpurereward-eps-converted-to.pdf, id=2221, 596.2275pt x 343.2825pt>
+File: Cap6/finalpurereward-eps-converted-to.pdf Graphic file (type pdf)
+
+<use Cap6/finalpurereward-eps-converted-to.pdf>
+Package pdftex.def Info: Cap6/finalpurereward-eps-converted-to.pdf used on inpu
+t line 153.
+(pdftex.def)             Requested size: 455.24411pt x 262.11263pt.
+
+pdftex: bookmark at 154: {6.11} {\numberline{6.11}{\ignorespaces RNR+RRR+RISD+R
+ET reward curve.\relax }} {figure.caption.58}{0}{lof}
+Package hyperref Info: Anchor `subsection.6.2.6' on input line 158.
+pdftex: bookmark at 158: {6.2.6} {\numberline{6.2.6}Reinforcement ``supervised"
+} {subsection.6.2.6}{2}{toc}
+Package hyperref Info: Anchor `equation.6.2.2' on input line 161.
+Package hyperref Info: Anchor `page.99' on input line 161.
+[99
+Package `hyperref' Info: End of reference (link) `figure.caption.56', line 147.
+
+Package `hyperref' Info: End of reference (link) `figure.caption.58', line 149.
+
+ <./Cap6/risdmotionsequence-eps-converted-to.pdf> <./Cap6/finalpurereward-eps-c
 onverted-to.pdf>]
-Package hyperref Info: Reference (link) `figure.caption.57' on input line 150.
-Package hyperref Info: Anchor `figure.caption.57' on input line 152.
+Package hyperref Info: Reference (link) `figure.caption.59' on input line 167.
+Package hyperref Info: Anchor `figure.caption.59' on input line 169.
 Package epstopdf Info: Source file: <Cap6/rlsuprewardcurves.eps>
 (epstopdf)                    date: 2018-10-20 16:36:05
 (epstopdf)                    size: 29633 bytes
@@ -4665,22 +4744,22 @@ f>
 (epstopdf)                    size: 28587 bytes
 (epstopdf)             Command: <repstopdf --outfile=Cap6/rlsuprewardcurves-eps
 -converted-to.pdf Cap6/rlsuprewardcurves.eps>
-(epstopdf)             \includegraphics on input line 154.
+(epstopdf)             \includegraphics on input line 171.
 Package epstopdf Info: Output file is already uptodate.
 
-<Cap6/rlsuprewardcurves-eps-converted-to.pdf, id=2208, 257.96375pt x 153.57375p
+<Cap6/rlsuprewardcurves-eps-converted-to.pdf, id=2242, 257.96375pt x 153.57375p
 t>
 File: Cap6/rlsuprewardcurves-eps-converted-to.pdf Graphic file (type pdf)
  <use Cap6/rlsuprewardcurves-eps-converted-to.pdf>
 Package pdftex.def Info: Cap6/rlsuprewardcurves-eps-converted-to.pdf used on in
-put line 154.
-(pdftex.def)             Requested size: 386.94466pt x 230.36005pt.
+put line 171.
+(pdftex.def)             Requested size: 455.24411pt x 271.04752pt.
 
-pdftex: bookmark at 155: {6.10} {\numberline{6.10}{\ignorespaces First session 
-of training for reinforcement supervised model.\relax }} {figure.caption.57}{0}
+pdftex: bookmark at 172: {6.12} {\numberline{6.12}{\ignorespaces First session 
+of training for reinforcement supervised model.\relax }} {figure.caption.59}{0}
 {lof}
-Package hyperref Info: Reference (link) `figure.caption.58' on input line 159.
-Package hyperref Info: Anchor `figure.caption.58' on input line 161.
+Package hyperref Info: Reference (link) `figure.caption.60' on input line 176.
+Package hyperref Info: Anchor `figure.caption.60' on input line 178.
 Package epstopdf Info: Source file: <Cap6/rlsupmotionsequence.eps>
 (epstopdf)                    date: 2018-10-20 17:05:56
 (epstopdf)                    size: 1102246 bytes
@@ -4690,43 +4769,43 @@ pdf>
 (epstopdf)                    size: 69080 bytes
 (epstopdf)             Command: <repstopdf --outfile=Cap6/rlsupmotionsequence-e
 ps-converted-to.pdf Cap6/rlsupmotionsequence.eps>
-(epstopdf)             \includegraphics on input line 163.
+(epstopdf)             \includegraphics on input line 180.
 Package epstopdf Info: Output file is already uptodate.
 
-<Cap6/rlsupmotionsequence-eps-converted-to.pdf, id=2210, 260.975pt x 50.1875pt>
+<Cap6/rlsupmotionsequence-eps-converted-to.pdf, id=2244, 260.975pt x 50.1875pt>
 File: Cap6/rlsupmotionsequence-eps-converted-to.pdf Graphic file (type pdf)
 <use Cap6/rlsupmotionsequence-eps-converted-to.pdf>
 Package pdftex.def Info: Cap6/rlsupmotionsequence-eps-converted-to.pdf used on 
-input line 163.
-(pdftex.def)             Requested size: 391.46155pt x 75.28104pt.
+input line 180.
+(pdftex.def)             Requested size: 455.24411pt x 87.54836pt.
 
-pdftex: bookmark at 164: {6.11} {\numberline{6.11}{\ignorespaces Motion sequenc
-e from reinforcement supervised learning agent.\relax }} {figure.caption.58}{0}
+pdftex: bookmark at 181: {6.13} {\numberline{6.13}{\ignorespaces Motion sequenc
+e from reinforcement supervised learning agent.\relax }} {figure.caption.60}{0}
 {lof}
-Package hyperref Info: Anchor `subsection.6.2.7' on input line 168.
-pdftex: bookmark at 168: {6.2.7} {\numberline{6.2.7}Other ideas for pure RL tec
+Package hyperref Info: Anchor `subsection.6.2.7' on input line 185.
+pdftex: bookmark at 185: {6.2.7} {\numberline{6.2.7}Other ideas for pure RL tec
 hniques} {subsection.6.2.7}{2}{toc}
-Package hyperref Info: Anchor `page.99' on input line 171.
-[99
-Package `hyperref' Info: End of reference (link) `figure.caption.57', line 150.
+Package hyperref Info: Anchor `page.100' on input line 188.
+[100
+Package `hyperref' Info: End of reference (link) `figure.caption.59', line 167.
 
-Package `hyperref' Info: End of reference (link) `figure.caption.58', line 159.
+Package `hyperref' Info: End of reference (link) `figure.caption.60', line 176.
 
  <./Cap6/rlsuprewardcurves-eps-converted-to.pdf>]
-Package hyperref Info: Anchor `section.6.3' on input line 189.
+Package hyperref Info: Anchor `section.6.3' on input line 206.
 
-pdftex: bookmark at 189: {6.3} {\numberline{6.3}Hybrid Learning Models} {sectio
+pdftex: bookmark at 206: {6.3} {\numberline{6.3}Hybrid Learning Models} {sectio
 n.6.3}{1}{toc}
-Package hyperref Info: Anchor `page.100' on input line 192.
-[100 <./Cap6/rlsupmotionsequence-eps-converted-to.pdf>]
-Package hyperref Info: Anchor `subsection.6.3.1' on input line 192.
+Package hyperref Info: Anchor `page.101' on input line 208.
+[101 <./Cap6/rlsupmotionsequence-eps-converted-to.pdf>]
+Package hyperref Info: Anchor `subsection.6.3.1' on input line 209.
 
-pdftex: bookmark at 192: {6.3.1} {\numberline{6.3.1}Supervised Learning Results
+pdftex: bookmark at 209: {6.3.1} {\numberline{6.3.1}Supervised Learning Results
 } {subsection.6.3.1}{2}{toc}
-Package hyperref Info: Anchor `subsubsection.6.3.1.1' on input line 193.
-pdftex: bookmark at 193: {6.3.1.1} {\numberline{6.3.1.1}Training Results} {subs
+Package hyperref Info: Anchor `subsubsection.6.3.1.1' on input line 210.
+pdftex: bookmark at 210: {6.3.1.1} {\numberline{6.3.1.1}Training Results} {subs
 ubsection.6.3.1.1}{3}{toc}
-Package hyperref Info: Anchor `figure.caption.59' on input line 195.
+Package hyperref Info: Anchor `figure.caption.61' on input line 212.
 Package epstopdf Info: Source file: <Cap6/errors.eps>
 (epstopdf)                    date: 2018-08-15 12:35:54
 (epstopdf)                    size: 235423 bytes
@@ -4735,34 +4814,34 @@ Package epstopdf Info: Source file: <Cap6/errors.eps>
 (epstopdf)                    size: 72898 bytes
 (epstopdf)             Command: <repstopdf --outfile=Cap6/errors-eps-converted-
 to.pdf Cap6/errors.eps>
-(epstopdf)             \includegraphics on input line 197.
+(epstopdf)             \includegraphics on input line 214.
 Package epstopdf Info: Output file is already uptodate.
-<Cap6/errors-eps-converted-to.pdf, id=2232, 462.72874pt x 346.29375pt>
+<Cap6/errors-eps-converted-to.pdf, id=2267, 462.72874pt x 346.29375pt>
 File: Cap6/errors-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Cap6/errors-eps-converted-to.pdf>
-Package pdftex.def Info: Cap6/errors-eps-converted-to.pdf used on input line 19
-7.
+Package pdftex.def Info: Cap6/errors-eps-converted-to.pdf used on input line 21
+4.
 (pdftex.def)             Requested size: 455.24411pt x 340.69711pt.
 
-pdftex: bookmark at 198: {6.12} {\numberline{6.12}{\ignorespaces Plots of mean 
+pdftex: bookmark at 215: {6.14} {\numberline{6.14}{\ignorespaces Plots of mean 
 squared error and mean absolute error, during training.\relax }} {figure.captio
-n.59}{0}{lof}
-Package hyperref Info: Reference (link) `figure.caption.59' on input line 202.
-Package hyperref Info: Anchor `page.101' on input line 204.
-[101
-Package `hyperref' Info: End of reference (link) `figure.caption.59', line 202.
+n.61}{0}{lof}
+Package hyperref Info: Reference (link) `figure.caption.61' on input line 219.
+Package hyperref Info: Anchor `page.102' on input line 221.
+[102
+Package `hyperref' Info: End of reference (link) `figure.caption.61', line 219.
 
  <./Cap6/errors-eps-converted-to.pdf>]
-Package hyperref Info: Anchor `subsubsection.6.3.1.2' on input line 204.
+Package hyperref Info: Anchor `subsubsection.6.3.1.2' on input line 221.
 
-pdftex: bookmark at 204: {6.3.1.2} {\numberline{6.3.1.2}The Learned Kick Motion
+pdftex: bookmark at 221: {6.3.1.2} {\numberline{6.3.1.2}The Learned Kick Motion
 } {subsubsection.6.3.1.2}{3}{toc}
-Package hyperref Info: Reference (link) `figure.caption.60' on input line 206.
-Package hyperref Info: Reference (link) `figure.caption.61' on input line 206.
-Package hyperref Info: Reference (link) `Hfootnote.2' on input line 206.
-Package hyperref Info: Anchor `Hfootnote.2' on input line 206.
-Package hyperref Info: Anchor `figure.caption.60' on input line 208.
+Package hyperref Info: Reference (link) `figure.caption.62' on input line 223.
+Package hyperref Info: Reference (link) `figure.caption.63' on input line 223.
+Package hyperref Info: Reference (link) `Hfootnote.2' on input line 223.
+Package hyperref Info: Anchor `Hfootnote.2' on input line 223.
+Package hyperref Info: Anchor `figure.caption.62' on input line 225.
 Package epstopdf Info: Source file: <Cap6/motions.eps>
 (epstopdf)                    date: 2018-08-15 12:35:54
 (epstopdf)                    size: 4885404 bytes
@@ -4771,22 +4850,22 @@ Package epstopdf Info: Source file: <Cap6/motions.eps>
 (epstopdf)                    size: 568608 bytes
 (epstopdf)             Command: <repstopdf --outfile=Cap6/motions-eps-converted
 -to.pdf Cap6/motions.eps>
-(epstopdf)             \includegraphics on input line 210.
+(epstopdf)             \includegraphics on input line 227.
 Package epstopdf Info: Output file is already uptodate.
-<Cap6/motions-eps-converted-to.pdf, id=2277, 452.69125pt x 834.11626pt>
+<Cap6/motions-eps-converted-to.pdf, id=2312, 452.69125pt x 834.11626pt>
 File: Cap6/motions-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Cap6/motions-eps-converted-to.pdf>
 Package pdftex.def Info: Cap6/motions-eps-converted-to.pdf used on input line 2
-10.
+27.
 (pdftex.def)             Requested size: 452.69014pt x 834.11423pt.
 
-pdftex: bookmark at 211: {6.13} {\numberline{6.13}{\ignorespaces The kick motio
+pdftex: bookmark at 228: {6.15} {\numberline{6.15}{\ignorespaces The kick motio
 n. The first row of figures shows the original kick motion. The second row show
 s the learned kick motion. Both motions are visually indistinguishable.\relax }
-} {figure.caption.60}{0}{lof}
-Package hyperref Info: Reference (link) `table.caption.62' on input line 215.
-Package hyperref Info: Anchor `figure.caption.61' on input line 218.
+} {figure.caption.62}{0}{lof}
+Package hyperref Info: Reference (link) `table.caption.64' on input line 232.
+Package hyperref Info: Anchor `figure.caption.63' on input line 235.
 Package epstopdf Info: Source file: <Cap6/kick_joints_curve.eps>
 (epstopdf)                    date: 2018-08-15 12:35:54
 (epstopdf)                    size: 118690 bytes
@@ -4796,51 +4875,51 @@ f>
 (epstopdf)                    size: 28990 bytes
 (epstopdf)             Command: <repstopdf --outfile=Cap6/kick_joints_curve-eps
 -converted-to.pdf Cap6/kick_joints_curve.eps>
-(epstopdf)             \includegraphics on input line 220.
+(epstopdf)             \includegraphics on input line 237.
 Package epstopdf Info: Output file is already uptodate.
 
-<Cap6/kick_joints_curve-eps-converted-to.pdf, id=2279, 592.2125pt x 824.07875pt
+<Cap6/kick_joints_curve-eps-converted-to.pdf, id=2314, 592.2125pt x 824.07875pt
 >
 File: Cap6/kick_joints_curve-eps-converted-to.pdf Graphic file (type pdf)
  <use Cap6/kick_joints_curve-eps-converted-to.pdf>
 Package pdftex.def Info: Cap6/kick_joints_curve-eps-converted-to.pdf used on in
-put line 220.
+put line 237.
 (pdftex.def)             Requested size: 592.21104pt x 824.07674pt.
 
-pdftex: bookmark at 221: {6.14} {\numberline{6.14}{\ignorespaces Joint values f
+pdftex: bookmark at 238: {6.16} {\numberline{6.16}{\ignorespaces Joint values f
 or comparing original and learned kicks. The neural network was able to fit the
- joint trajectories with small errors.\relax }} {figure.caption.61}{0}{lof}
-Package hyperref Info: Anchor `table.caption.62' on input line 226.
-pdftex: bookmark at 227: {6.1} {\numberline{6.1}{\ignorespaces The Kick Compari
-son\relax }} {table.caption.62}{0}{lot}
-Package hyperref Info: Reference (link) `figure.caption.61' on input line 246.
-Package hyperref Info: Anchor `page.102' on input line 247.
-[102
-Package `hyperref' Info: End of reference (link) `figure.caption.60', line 206.
+ joint trajectories with small errors.\relax }} {figure.caption.63}{0}{lof}
+Package hyperref Info: Anchor `table.caption.64' on input line 243.
+pdftex: bookmark at 244: {6.1} {\numberline{6.1}{\ignorespaces The Kick Compari
+son\relax }} {table.caption.64}{0}{lot}
+Package hyperref Info: Reference (link) `figure.caption.63' on input line 263.
+Package hyperref Info: Anchor `page.103' on input line 264.
+[103
+Package `hyperref' Info: End of reference (link) `figure.caption.62', line 223.
 
-Package `hyperref' Info: End of reference (link) `figure.caption.61', line 206.
+Package `hyperref' Info: End of reference (link) `figure.caption.63', line 223.
 
-Package `hyperref' Info: End of reference (link) `Hfootnote.2', line 206.
-Package `hyperref' Info: End of reference (link) `table.caption.62', line 215.
+Package `hyperref' Info: End of reference (link) `Hfootnote.2', line 223.
+Package `hyperref' Info: End of reference (link) `table.caption.64', line 232.
  <./Cap6/motions-eps-converted-to.pdf>]
-Package hyperref Info: Anchor `page.103' on input line 247.
- [103 <./Cap6/kick_joints_curve-eps-converted-to.pdf>]
-Package hyperref Info: Anchor `subsubsection.6.3.1.3' on input line 248.
+Package hyperref Info: Anchor `page.104' on input line 264.
+ [104 <./Cap6/kick_joints_curve-eps-converted-to.pdf>]
+Package hyperref Info: Anchor `subsubsection.6.3.1.3' on input line 265.
 
-pdftex: bookmark at 248: {6.3.1.3} {\numberline{6.3.1.3}The Learned Walk Motion
+pdftex: bookmark at 265: {6.3.1.3} {\numberline{6.3.1.3}The Learned Walk Motion
 } {subsubsection.6.3.1.3}{3}{toc}
-Package hyperref Info: Reference (link) `subsection.5.3.1' on input line 249.
-Package hyperref Info: Reference (cite) `cite.macalpine2013' on input line 249.
+Package hyperref Info: Reference (link) `subsection.5.3.1' on input line 266.
+Package hyperref Info: Reference (cite) `cite.macalpine2013' on input line 266.
 
-Package hyperref Info: Reference (cite) `cite.macalpine2013' on input line 249.
+Package hyperref Info: Reference (cite) `cite.macalpine2013' on input line 266.
 
-Package hyperref Info: Reference (cite) `cite.macalpine2017' on input line 249.
+Package hyperref Info: Reference (cite) `cite.macalpine2017' on input line 266.
 
-Package hyperref Info: Reference (cite) `cite.macalpine2017' on input line 249.
+Package hyperref Info: Reference (cite) `cite.macalpine2017' on input line 266.
 
-Package hyperref Info: Reference (link) `figure.caption.63' on input line 253.
-Package hyperref Info: Reference (link) `figure.caption.61' on input line 253.
-Package hyperref Info: Anchor `figure.caption.63' on input line 255.
+Package hyperref Info: Reference (link) `figure.caption.65' on input line 270.
+Package hyperref Info: Reference (link) `figure.caption.63' on input line 270.
+Package hyperref Info: Anchor `figure.caption.65' on input line 272.
 Package epstopdf Info: Source file: <Cap6/walk_joints_curves.eps>
 (epstopdf)                    date: 2018-08-15 12:35:54
 (epstopdf)                    size: 87595 bytes
@@ -4850,48 +4929,48 @@ df>
 (epstopdf)                    size: 20974 bytes
 (epstopdf)             Command: <repstopdf --outfile=Cap6/walk_joints_curves-ep
 s-converted-to.pdf Cap6/walk_joints_curves.eps>
-(epstopdf)             \includegraphics on input line 257.
+(epstopdf)             \includegraphics on input line 274.
 Package epstopdf Info: Output file is already uptodate.
 
-<Cap6/walk_joints_curves-eps-converted-to.pdf, id=2322, 463.7325pt x 811.03pt>
+<Cap6/walk_joints_curves-eps-converted-to.pdf, id=2356, 463.7325pt x 811.03pt>
 File: Cap6/walk_joints_curves-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Cap6/walk_joints_curves-eps-converted-to.pdf>
 Package pdftex.def Info: Cap6/walk_joints_curves-eps-converted-to.pdf used on i
-nput line 257.
+nput line 274.
 (pdftex.def)             Requested size: 463.73135pt x 811.02802pt.
 
-pdftex: bookmark at 258: {6.15} {\numberline{6.15}{\ignorespaces Joints positio
+pdftex: bookmark at 275: {6.17} {\numberline{6.17}{\ignorespaces Joints positio
 ns, during a period of the walking motion for the original walk, and the learne
 d walk and the joints positions effectively attained, during the learned walkin
-g motion.\relax }} {figure.caption.63}{0}{lof}
-Package hyperref Info: Anchor `page.104' on input line 263.
-[104
-Package `hyperref' Info: End of reference (link) `figure.caption.61', line 246.
+g motion.\relax }} {figure.caption.65}{0}{lof}
+Package hyperref Info: Anchor `page.105' on input line 280.
+[105
+Package `hyperref' Info: End of reference (link) `figure.caption.63', line 263.
 
-Package `hyperref' Info: End of reference (link) `subsection.5.3.1', line 249.
-Package `hyperref' Info: End of reference (cite) `cite.macalpine2013', line 249
+Package `hyperref' Info: End of reference (link) `subsection.5.3.1', line 266.
+Package `hyperref' Info: End of reference (cite) `cite.macalpine2013', line 266
 .
-Package `hyperref' Info: End of reference (cite) `cite.macalpine2013', line 249
+Package `hyperref' Info: End of reference (cite) `cite.macalpine2013', line 266
 .
-Package `hyperref' Info: End of reference (cite) `cite.macalpine2017', line 249
+Package `hyperref' Info: End of reference (cite) `cite.macalpine2017', line 266
 .
-Package `hyperref' Info: End of reference (cite) `cite.macalpine2017', line 249
+Package `hyperref' Info: End of reference (cite) `cite.macalpine2017', line 266
 .
-Package `hyperref' Info: End of reference (link) `figure.caption.63', line 253.
+Package `hyperref' Info: End of reference (link) `figure.caption.65', line 270.
 
-Package `hyperref' Info: End of reference (link) `figure.caption.61', line 253.
+Package `hyperref' Info: End of reference (link) `figure.caption.63', line 270.
 
  <./Cap6/walk_joints_curves-eps-converted-to.pdf>]
-Package hyperref Info: Reference (link) `Hfootnote.3' on input line 264.
-Package hyperref Info: Anchor `Hfootnote.3' on input line 264.
-Package hyperref Info: Reference (link) `table.caption.64' on input line 264.
-Package hyperref Info: Reference (link) `figure.caption.65' on input line 264.
-Package hyperref Info: Anchor `table.caption.64' on input line 266.
+Package hyperref Info: Reference (link) `Hfootnote.3' on input line 281.
+Package hyperref Info: Anchor `Hfootnote.3' on input line 281.
+Package hyperref Info: Reference (link) `table.caption.66' on input line 281.
+Package hyperref Info: Reference (link) `figure.caption.67' on input line 281.
+Package hyperref Info: Anchor `table.caption.66' on input line 283.
 
-pdftex: bookmark at 267: {6.2} {\numberline{6.2}{\ignorespaces Walk Comparison 
-- Forward Walk\relax }} {table.caption.64}{0}{lot}
-Package hyperref Info: Anchor `figure.caption.65' on input line 291.
+pdftex: bookmark at 284: {6.2} {\numberline{6.2}{\ignorespaces Walk Comparison 
+- Forward Walk\relax }} {table.caption.66}{0}{lot}
+Package hyperref Info: Anchor `figure.caption.67' on input line 308.
 Package epstopdf Info: Source file: <Cap6/walkings.eps>
 (epstopdf)                    date: 2018-08-15 12:35:54
 (epstopdf)                    size: 650842 bytes
@@ -4900,47 +4979,103 @@ Package epstopdf Info: Source file: <Cap6/walkings.eps>
 (epstopdf)                    size: 84015 bytes
 (epstopdf)             Command: <repstopdf --outfile=Cap6/walkings-eps-converte
 d-to.pdf Cap6/walkings.eps>
-(epstopdf)             \includegraphics on input line 293.
+(epstopdf)             \includegraphics on input line 310.
 Package epstopdf Info: Output file is already uptodate.
-<Cap6/walkings-eps-converted-to.pdf, id=2338, 373.395pt x 839.135pt>
+<Cap6/walkings-eps-converted-to.pdf, id=2372, 373.395pt x 839.135pt>
 File: Cap6/walkings-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Cap6/walkings-eps-converted-to.pdf>
 Package pdftex.def Info: Cap6/walkings-eps-converted-to.pdf used on input line 
-293.
+310.
 (pdftex.def)             Requested size: 373.39409pt x 839.13293pt.
 
-pdftex: bookmark at 294: {6.16} {\numberline{6.16}{\ignorespaces The walking mo
+pdftex: bookmark at 311: {6.18} {\numberline{6.18}{\ignorespaces The walking mo
 tions comparison. Figure (a) shows our agent in its regular walk, Figure (b) sh
 ows the same agent mimicking UT Austin Villa walk, and Figure (c) shows the UT 
 Austin Villa agent itself performing his own walking motion.\relax }} {figure.c
-aption.65}{0}{lof}
-Package hyperref Info: Anchor `subsubsection.6.3.1.4' on input line 298.
-pdftex: bookmark at 298: {6.3.1.4} {\numberline{6.3.1.4}Other motions} {subsubs
+aption.67}{0}{lof}
+Package hyperref Info: Anchor `subsubsection.6.3.1.4' on input line 315.
+pdftex: bookmark at 315: {6.3.1.4} {\numberline{6.3.1.4}Other motions} {subsubs
 ection.6.3.1.4}{3}{toc}
-Package hyperref Info: Anchor `page.105' on input line 302.
-[105
-Package `hyperref' Info: End of reference (link) `Hfootnote.3', line 264.
-Package `hyperref' Info: End of reference (link) `table.caption.64', line 264.
-Package `hyperref' Info: End of reference (link) `figure.caption.65', line 264.
+Package hyperref Info: Anchor `page.106' on input line 319.
+[106
+Package `hyperref' Info: End of reference (link) `Hfootnote.3', line 281.
+Package `hyperref' Info: End of reference (link) `table.caption.66', line 281.
+Package `hyperref' Info: End of reference (link) `figure.caption.67', line 281.
 
  <./Cap6/walkings-eps-converted-to.pdf>]
-Package hyperref Info: Reference (cite) `cite.mcalpine2017' on input line 304.
-Package hyperref Info: Reference (cite) `cite.mcalpine2017' on input line 304.
-Package hyperref Info: Anchor `subsection.6.3.2' on input line 307.
+Package hyperref Info: Reference (cite) `cite.mcalpine2017' on input line 321.
+Package hyperref Info: Reference (cite) `cite.mcalpine2017' on input line 321.
+Package hyperref Info: Anchor `subsection.6.3.2' on input line 324.
 
-pdftex: bookmark at 307: {6.3.2} {\numberline{6.3.2}HLM+RNR} {subsection.6.3.2}
+pdftex: bookmark at 324: {6.3.2} {\numberline{6.3.2}HLM+RNR} {subsection.6.3.2}
 {2}{toc}
-Package hyperref Info: Anchor `subsection.6.3.3' on input line 310.
-pdftex: bookmark at 310: {6.3.3} {\numberline{6.3.3}Final Model: HLM+RNR+RET} {
+Package hyperref Info: Reference (link) `figure.caption.68' on input line 326.
+Package hyperref Info: Anchor `figure.caption.68' on input line 328.
+Package epstopdf Info: Source file: <Cap6/hlmreward.eps>
+(epstopdf)                    date: 2018-10-26 09:25:19
+(epstopdf)                    size: 76379 bytes
+(epstopdf)             Output file: <Cap6/hlmreward-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-10-26 09:41:59
+(epstopdf)                    size: 86006 bytes
+(epstopdf)             Command: <repstopdf --outfile=Cap6/hlmreward-eps-convert
+ed-to.pdf Cap6/hlmreward.eps>
+(epstopdf)             \includegraphics on input line 330.
+Package epstopdf Info: Output file is already uptodate.
+<Cap6/hlmreward-eps-converted-to.pdf, id=2391, 595.22375pt x 300.12125pt>
+File: Cap6/hlmreward-eps-converted-to.pdf Graphic file (type pdf)
+
+<use Cap6/hlmreward-eps-converted-to.pdf>
+Package pdftex.def Info: Cap6/hlmreward-eps-converted-to.pdf used on input line
+ 330.
+(pdftex.def)             Requested size: 455.24411pt x 229.54163pt.
+
+pdftex: bookmark at 331: {6.19} {\numberline{6.19}{\ignorespaces HLM+RNR reward
+ curve.\relax }} {figure.caption.68}{0}{lof}
+Package hyperref Info: Reference (link) `figure.caption.69' on input line 335.
+Package hyperref Info: Anchor `figure.caption.69' on input line 338.
+Package epstopdf Info: Source file: <Cap6/hlmmotionsequence.eps>
+(epstopdf)                    date: 2018-10-26 09:36:05
+(epstopdf)                    size: 2452143 bytes
+(epstopdf)             Output file: <Cap6/hlmmotionsequence-eps-converted-to.pd
+f>
+(epstopdf)                    date: 2018-10-26 09:41:09
+(epstopdf)                    size: 446913 bytes
+(epstopdf)             Command: <repstopdf --outfile=Cap6/hlmmotionsequence-eps
+-converted-to.pdf Cap6/hlmmotionsequence.eps>
+(epstopdf)             \includegraphics on input line 340.
+Package epstopdf Info: Output file is already uptodate.
+
+<Cap6/hlmmotionsequence-eps-converted-to.pdf, id=2393, 598.235pt x 272.01625pt>
+File: Cap6/hlmmotionsequence-eps-converted-to.pdf Graphic file (type pdf)
+<use Cap6/hlmmotionsequence-eps-converted-to.pdf>
+Package pdftex.def Info: Cap6/hlmmotionsequence-eps-converted-to.pdf used on in
+put line 340.
+(pdftex.def)             Requested size: 455.24411pt x 207.00012pt.
+
+pdftex: bookmark at 341: {6.20} {\numberline{6.20}{\ignorespaces Motion sequenc
+e of HLM+RNR model.\relax }} {figure.caption.69}{0}{lof}
+Package hyperref Info: Anchor `subsection.6.3.3' on input line 345.
+pdftex: bookmark at 345: {6.3.3} {\numberline{6.3.3}Final Model: HLM+RNR+RET} {
 subsection.6.3.3}{2}{toc}
+Package hyperref Info: Anchor `page.107' on input line 353.
+[107
+Package `hyperref' Info: End of reference (cite) `cite.mcalpine2017', line 321.
 
-LaTeX Warning: Reference `ap:hyperparameters' on page 106 undefined on input li
-ne 322.
+Package `hyperref' Info: End of reference (cite) `cite.mcalpine2017', line 321.
 
-Package hyperref Info: Reference (link) `figure.caption.66' on input line 322.
-Package hyperref Info: Reference (link) `table.caption.62' on input line 322.
-Package hyperref Info: Anchor `figure.caption.66' on input line 326.
+Package `hyperref' Info: End of reference (link) `figure.caption.68', line 326.
+
+Package `hyperref' Info: End of reference (link) `figure.caption.69', line 335.
+
+ <./Cap6/hlmreward-eps-converted-to.pdf>]
+
+LaTeX Warning: Reference `ap:hyperparameters' on page 108 undefined on input li
+ne 357.
+
+Package hyperref Info: Reference (link) `figure.caption.70' on input line 357.
+Package hyperref Info: Reference (link) `table.caption.64' on input line 357.
+Package hyperref Info: Anchor `figure.caption.70' on input line 361.
 Package epstopdf Info: Source file: <Cap6/hlmretsess1.eps>
 (epstopdf)                    date: 2018-10-21 10:28:28
 (epstopdf)                    size: 71196 bytes
@@ -4949,21 +5084,28 @@ Package epstopdf Info: Source file: <Cap6/hlmretsess1.eps>
 (epstopdf)                    size: 91113 bytes
 (epstopdf)             Command: <repstopdf --outfile=Cap6/hlmretsess1-eps-conve
 rted-to.pdf Cap6/hlmretsess1.eps>
-(epstopdf)             \includegraphics on input line 328.
+(epstopdf)             \includegraphics on input line 363.
 Package epstopdf Info: Output file is already uptodate.
-<Cap6/hlmretsess1-eps-converted-to.pdf, id=2358, 598.235pt x 269.005pt>
+<Cap6/hlmretsess1-eps-converted-to.pdf, id=2403, 598.235pt x 269.005pt>
 File: Cap6/hlmretsess1-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Cap6/hlmretsess1-eps-converted-to.pdf>
 Package pdftex.def Info: Cap6/hlmretsess1-eps-converted-to.pdf used on input li
-ne 328.
+ne 363.
 (pdftex.def)             Requested size: 455.24411pt x 204.70862pt.
 
-pdftex: bookmark at 329: {6.17} {\numberline{6.17}{\ignorespaces The reward cur
-ve from the first session of HLM+RNR+RET model.\relax }} {figure.caption.66}{0}
+pdftex: bookmark at 364: {6.21} {\numberline{6.21}{\ignorespaces The reward cur
+ve from the first session of HLM+RNR+RET model.\relax }} {figure.caption.70}{0}
 {lof}
-Package hyperref Info: Reference (link) `figure.caption.67' on input line 333.
-Package hyperref Info: Anchor `figure.caption.67' on input line 337.
+Package hyperref Info: Reference (link) `figure.caption.71' on input line 368.
+Package hyperref Info: Anchor `page.108' on input line 369.
+[108
+Package `hyperref' Info: End of reference (link) `figure.caption.70', line 357.
+
+Package `hyperref' Info: End of reference (link) `table.caption.64', line 357.
+ <./Cap6/hlmmotionsequence-eps-converted-to.pdf> <./Cap6/hlmretsess1-eps-conver
+ted-to.pdf>]
+Package hyperref Info: Anchor `figure.caption.71' on input line 372.
 Package epstopdf Info: Source file: <Cap6/hlmretsess1motseq.eps>
 (epstopdf)                    date: 2018-10-21 19:55:15
 (epstopdf)                    size: 2206571 bytes
@@ -4973,44 +5115,25 @@ f>
 (epstopdf)                    size: 390473 bytes
 (epstopdf)             Command: <repstopdf --outfile=Cap6/hlmretsess1motseq-eps
 -converted-to.pdf Cap6/hlmretsess1motseq.eps>
-(epstopdf)             \includegraphics on input line 339.
+(epstopdf)             \includegraphics on input line 374.
 Package epstopdf Info: Output file is already uptodate.
 
-<Cap6/hlmretsess1motseq-eps-converted-to.pdf, id=2360, 597.23125pt x 280.04625p
+<Cap6/hlmretsess1motseq-eps-converted-to.pdf, id=2426, 597.23125pt x 280.04625p
 t>
 File: Cap6/hlmretsess1motseq-eps-converted-to.pdf Graphic file (type pdf)
  <use Cap6/hlmretsess1motseq-eps-converted-to.pdf>
 Package pdftex.def Info: Cap6/hlmretsess1motseq-eps-converted-to.pdf used on in
-put line 339.
+put line 374.
 (pdftex.def)             Requested size: 455.24411pt x 213.46977pt.
 
-pdftex: bookmark at 340: {6.18} {\numberline{6.18}{\ignorespaces HLM+RNR+RET mo
-tion sequence after first session of training.\relax }} {figure.caption.67}{0}{
+pdftex: bookmark at 375: {6.22} {\numberline{6.22}{\ignorespaces HLM+RNR+RET mo
+tion sequence after first session of training.\relax }} {figure.caption.71}{0}{
 lof}
-Package hyperref Info: Reference (link) `figure.caption.68' on input line 344.
-Package hyperref Info: Reference (link) `figure.caption.69' on input line 344.
-Package hyperref Info: Reference (link) `figure.caption.67' on input line 344.
-Package hyperref Info: Reference (link) `figure.caption.69' on input line 344.
-Package hyperref Info: Anchor `page.106' on input line 345.
-[106
-Package `hyperref' Info: End of reference (cite) `cite.mcalpine2017', line 304.
-
-Package `hyperref' Info: End of reference (cite) `cite.mcalpine2017', line 304.
-
-Package `hyperref' Info: End of reference (link) `figure.caption.66', line 322.
-
-Package `hyperref' Info: End of reference (link) `table.caption.62', line 322.
-Package `hyperref' Info: End of reference (link) `figure.caption.67', line 333.
-
-Package `hyperref' Info: End of reference (link) `figure.caption.68', line 344.
-
-Package `hyperref' Info: End of reference (link) `figure.caption.69', line 344.
-
-]
-Package hyperref Info: Anchor `page.107' on input line 345.
- [107 <./Cap6/hlmretsess1-eps-converted-to.pdf> <./Cap6/hlmretsess1motseq-eps-c
-onverted-to.pdf>]
-Package hyperref Info: Anchor `figure.caption.68' on input line 347.
+Package hyperref Info: Reference (link) `figure.caption.72' on input line 379.
+Package hyperref Info: Reference (link) `figure.caption.73' on input line 379.
+Package hyperref Info: Reference (link) `figure.caption.71' on input line 379.
+Package hyperref Info: Reference (link) `figure.caption.73' on input line 379.
+Package hyperref Info: Anchor `figure.caption.72' on input line 382.
 Package epstopdf Info: Source file: <Cap6/hlmretsess2.eps>
 (epstopdf)                    date: 2018-10-21 10:29:30
 (epstopdf)                    size: 69074 bytes
@@ -5019,21 +5142,24 @@ Package epstopdf Info: Source file: <Cap6/hlmretsess2.eps>
 (epstopdf)                    size: 85168 bytes
 (epstopdf)             Command: <repstopdf --outfile=Cap6/hlmretsess2-eps-conve
 rted-to.pdf Cap6/hlmretsess2.eps>
-(epstopdf)             \includegraphics on input line 349.
+(epstopdf)             \includegraphics on input line 384.
 Package epstopdf Info: Output file is already uptodate.
-
-<Cap6/hlmretsess2-eps-converted-to.pdf, id=2388, 598.235pt x 261.97874pt>
+<Cap6/hlmretsess2-eps-converted-to.pdf, id=2431, 598.235pt x 261.97874pt>
 File: Cap6/hlmretsess2-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Cap6/hlmretsess2-eps-converted-to.pdf>
 Package pdftex.def Info: Cap6/hlmretsess2-eps-converted-to.pdf used on input li
-ne 349.
-(pdftex.def)             Requested size: 455.24411pt x 199.36174pt.
+ne 384.
+(pdftex.def)             Requested size: 500.77129pt x 219.30112pt.
 
-pdftex: bookmark at 350: {6.19} {\numberline{6.19}{\ignorespaces The reward cur
-ve from the second session of HLM+RNR+RET model.\relax }} {figure.caption.68}{0
+Overfull \hbox (45.52718pt too wide) in paragraph at lines 384--385
+ [][] 
+ []
+
+pdftex: bookmark at 385: {6.23} {\numberline{6.23}{\ignorespaces The reward cur
+ve from the second session of HLM+RNR+RET model.\relax }} {figure.caption.72}{0
 }{lof}
-Package hyperref Info: Anchor `figure.caption.69' on input line 354.
+Package hyperref Info: Anchor `figure.caption.73' on input line 389.
 Package epstopdf Info: Source file: <Cap6/hlmretsess2motseq.eps>
 (epstopdf)                    date: 2018-10-21 19:55:54
 (epstopdf)                    size: 1762769 bytes
@@ -5043,56 +5169,66 @@ f>
 (epstopdf)                    size: 321805 bytes
 (epstopdf)             Command: <repstopdf --outfile=Cap6/hlmretsess2motseq-eps
 -converted-to.pdf Cap6/hlmretsess2motseq.eps>
-(epstopdf)             \includegraphics on input line 356.
+(epstopdf)             \includegraphics on input line 391.
 Package epstopdf Info: Output file is already uptodate.
-<Cap6/hlmretsess2motseq-eps-converted-to.pdf, id=2389, 598.235pt x 104.39pt>
+<Cap6/hlmretsess2motseq-eps-converted-to.pdf, id=2432, 598.235pt x 104.39pt>
 File: Cap6/hlmretsess2motseq-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Cap6/hlmretsess2motseq-eps-converted-to.pdf>
 Package pdftex.def Info: Cap6/hlmretsess2motseq-eps-converted-to.pdf used on in
-put line 356.
-(pdftex.def)             Requested size: 478.58865pt x 83.51208pt.
+put line 391.
+(pdftex.def)             Requested size: 598.23354pt x 104.38972pt.
 
-Overfull \hbox (23.34454pt too wide) in paragraph at lines 356--357
+Overfull \hbox (142.98943pt too wide) in paragraph at lines 391--392
  [][] 
  []
 
-pdftex: bookmark at 357: {6.20} {\numberline{6.20}{\ignorespaces HLM+RNR+RET mo
-tion sequence after second training session.\relax }} {figure.caption.69}{0}{lo
+pdftex: bookmark at 392: {6.24} {\numberline{6.24}{\ignorespaces HLM+RNR+RET mo
+tion sequence after second training session.\relax }} {figure.caption.73}{0}{lo
 f}
-Package hyperref Info: Anchor `subsection.6.3.4' on input line 361.
-pdftex: bookmark at 361: {6.3.4} {\numberline{6.3.4}Kick Behavior: Numerical Re
+Package hyperref Info: Anchor `subsection.6.3.4' on input line 396.
+pdftex: bookmark at 396: {6.3.4} {\numberline{6.3.4}Kick Behavior: Numerical Re
 sults} {subsection.6.3.4}{2}{toc}
-Package hyperref Info: Reference (link) `table.caption.62' on input line 363.
-Package hyperref Info: Reference (link) `table.caption.70' on input line 367.
-Package hyperref Info: Anchor `page.108' on input line 371.
-[108
-Package `hyperref' Info: End of reference (link) `figure.caption.67', line 344.
+Package hyperref Info: Reference (link) `table.caption.64' on input line 398.
+Package hyperref Info: Anchor `page.109' on input line 399.
+[109
+Package `hyperref' Info: End of reference (link) `figure.caption.71', line 368.
 
-Package `hyperref' Info: End of reference (link) `figure.caption.69', line 344.
+Package `hyperref' Info: End of reference (link) `figure.caption.72', line 379.
 
-Package `hyperref' Info: End of reference (link) `table.caption.62', line 363.
-Package `hyperref' Info: End of reference (link) `table.caption.70', line 367.
- <./Cap6/hlmretsess2-eps-converted-to.pdf> <./Cap6/hlmretsess2motseq-eps-conver
+Package `hyperref' Info: End of reference (link) `figure.caption.73', line 379.
+
+Package `hyperref' Info: End of reference (link) `figure.caption.71', line 379.
+
+Package `hyperref' Info: End of reference (link) `figure.caption.73', line 379.
+
+ <./Cap6/hlmretsess1motseq-eps-converted-to.pdf> <./Cap6/hlmretsess2-eps-conver
 ted-to.pdf>]
-Package hyperref Info: Reference (link) `subsection.6.3.3' on input line 372.
-Package hyperref Info: Anchor `table.caption.70' on input line 375.
+Package hyperref Info: Reference (link) `table.caption.79' on input line 402.
+Package hyperref Info: Reference (link) `subsection.6.3.3' on input line 407.
+Package hyperref Info: Anchor `table.caption.74' on input line 410.
 
-pdftex: bookmark at 376: {6.3} {\numberline{6.3}{\ignorespaces Kick Comparison 
-- General Evaluation\relax }} {table.caption.70}{0}{lot}
-Package hyperref Info: Reference (link) `table.caption.70' on input line 399.
-Package hyperref Info: Reference (link) `table.caption.71' on input line 401.
-Package hyperref Info: Anchor `table.caption.71' on input line 403.
-pdftex: bookmark at 404: {6.4} {\numberline{6.4}{\ignorespaces Kick Comparison 
-- Effective Evaluation\relax }} {table.caption.71}{0}{lot}
-Package hyperref Info: Reference (link) `table.caption.71' on input line 427.
+pdftex: bookmark at 411: {6.3} {\numberline{6.3}{\ignorespaces Kick Comparison 
+- General Evaluation\relax }} {table.caption.74}{0}{lot}
+Package hyperref Info: Reference (link) `table.caption.79' on input line 434.
+Package hyperref Info: Anchor `page.110' on input line 435.
+[110
+Package `hyperref' Info: End of reference (link) `table.caption.64', line 398.
+Package `hyperref' Info: End of reference (link) `table.caption.79', line 402.
+Package `hyperref' Info: End of reference (link) `subsection.6.3.3', line 407.
+ <./Cap6/hlmretsess2motseq-eps-converted-to.pdf>]
+Package hyperref Info: Reference (link) `table.caption.75' on input line 436.
+Package hyperref Info: Anchor `table.caption.75' on input line 438.
+
+pdftex: bookmark at 439: {6.4} {\numberline{6.4}{\ignorespaces Kick Comparison 
+- Effective Evaluation\relax }} {table.caption.75}{0}{lot}
+Package hyperref Info: Reference (link) `table.caption.75' on input line 462.
 )
-Package hyperref Info: Anchor `page.109' on input line 207.
- [109
-Package `hyperref' Info: End of reference (link) `subsection.6.3.3', line 372.
-Package `hyperref' Info: End of reference (link) `table.caption.70', line 399.
-Package `hyperref' Info: End of reference (link) `table.caption.71', line 401.
-Package `hyperref' Info: End of reference (link) `table.caption.71', line 427.
+Package hyperref Info: Anchor `page.111' on input line 207.
+ [111
+Package `hyperref' Info: End of reference (link) `table.caption.79', line 434.
+Package `hyperref' Info: End of reference (link) `table.caption.75', line 436.
+Package `hyperref' Info: End of reference (link) `table.caption.75', line 462.
 ]
 Package hyperref Info: Anchor `chapter.7' on input line 207.
 
@@ -5107,8 +5243,8 @@ pdftex: bookmark at 1: {7.1} {\numberline{7.1}Conclusions} {section.7.1}{1}{toc
 Package hyperref Info: Anchor `section.7.2' on input line 16.
 pdftex: bookmark at 16: {7.2} {\numberline{7.2}Future Work} {section.7.2}{1}{to
 c}
-Package hyperref Info: Anchor `page.110' on input line 20.
-[110
+Package hyperref Info: Anchor `page.112' on input line 20.
+[112
 
 ]
 Package hyperref Info: Reference (link) `subsection.6.2.6' on input line 26.
@@ -5118,13 +5254,13 @@ Package hyperref Info: Reference (cite) `cite.metalearning' on input line 31.
 \tf@brf=\write10
 \openout10 = `tese.brf'.
 
-Package hyperref Info: Anchor `page.111' on input line 3.
- [111
+Package hyperref Info: Anchor `page.113' on input line 3.
+ [113
 Package `hyperref' Info: End of reference (link) `subsection.6.2.6', line 26.
 Package `hyperref' Info: End of reference (cite) `cite.metalearning', line 31.
 Package `hyperref' Info: End of reference (cite) `cite.metalearning', line 31.
 ]
-Package hyperref Info: Anchor `chapter*.72' on input line 3.
+Package hyperref Info: Anchor `chapter*.76' on input line 3.
 Package hyperref Info: Anchor `chapter.8' on input line 3.
 
 pdftex: bookmark at 3: {8} {Bibliography} {chapter.8}{0}{toc}
@@ -5137,8 +5273,8 @@ Package hyperref Info: Anchor `cite.openaifive' on input line 53.
 Package hyperref Info: Anchor `cite.brownlee2017' on input line 61.
 Package hyperref Info: Anchor `cite.chollet2015keras' on input line 66.
 Package hyperref Info: Anchor `cite.collins2005' on input line 72.
-Package hyperref Info: Anchor `page.112' on input line 79.
-[112
+Package hyperref Info: Anchor `page.114' on input line 79.
+[114
 
 Package `hyperref' Info: End of reference (link) `subsection.6.2.6', line 26.
 ]
@@ -5160,8 +5296,8 @@ Package hyperref Info: Anchor `cite.DBLP:journals/corr/HeessTSLMWTEWER17' on in
 put line 150.
 Package hyperref Info: Anchor `cite.Hestenes&Stiefel:1952' on input line 157.
 Package hyperref Info: Anchor `cite.hinton2012' on input line 165.
-Package hyperref Info: Anchor `page.113' on input line 165.
- [113
+Package hyperref Info: Anchor `page.115' on input line 165.
+ [115
 Package `hyperref' Info: End of reference (link) `subsection.6.2.6', line 26.
 Package `hyperref' Info: End of reference (link) `subsection.6.2.6', line 26.
 Package `hyperref' Info: End of reference (link) `subsection.6.2.6', line 26.
@@ -5183,8 +5319,8 @@ Package hyperref Info: Anchor `cite.ddpg' on input line 231.
 Package hyperref Info: Anchor `cite.DBLP:journals/corr/LuT14' on input line 239
 .
 Package hyperref Info: Anchor `cite.AAAI12-MacAlpine' on input line 247.
-Package hyperref Info: Anchor `page.114' on input line 255.
- [114
+Package hyperref Info: Anchor `page.116' on input line 255.
+ [116
 Package `hyperref' Info: End of reference (link) `subsection.6.2.6', line 26.
 Package `hyperref' Info: End of reference (link) `subsection.6.2.6', line 26.
 Package `hyperref' Info: End of reference (link) `subsection.6.2.6', line 26.
@@ -5203,9 +5339,9 @@ Package hyperref Info: Anchor `cite.mnih2015humanlevel' on input line 316.
 Package hyperref Info: Anchor `cite.muniz2016' on input line 324.
 Package hyperref Info: Anchor `cite.tgmuzio' on input line 330.
 Package hyperref Info: Anchor `cite.simspark2005' on input line 336.
-Package hyperref Info: Anchor `page.115' on input line 343.
+Package hyperref Info: Anchor `page.117' on input line 343.
 
-[115
+[117
 Package `hyperref' Info: End of reference (link) `subsection.6.2.6', line 26.
 Package `hyperref' Info: End of reference (link) `subsection.6.2.6', line 26.
 ]
@@ -5226,8 +5362,8 @@ Package hyperref Info: Anchor `cite.davidsilverlec2' on input line 417.
 Package hyperref Info: Anchor `cite.davidsilverlec3' on input line 425.
 Package hyperref Info: Anchor `cite.davidsilverlec7' on input line 433.
 Package hyperref Info: Anchor `cite.davidsilverlec6' on input line 441.
-Package hyperref Info: Anchor `page.116' on input line 441.
- [116
+Package hyperref Info: Anchor `page.118' on input line 441.
+ [118
 Package `hyperref' Info: End of reference (link) `subsection.6.2.6', line 26.
 Package `hyperref' Info: End of reference (link) `subsection.6.2.6', line 26.
 Package `hyperref' Info: End of reference (link) `subsection.6.2.6', line 26.
@@ -5248,8 +5384,8 @@ Package hyperref Info: Anchor `cite.Thorndike173' on input line 509.
 Package hyperref Info: Anchor `cite.tibshirani2013' on input line 516.
 Package hyperref Info: Anchor `cite.mujoco' on input line 522.
 Package hyperref Info: Anchor `cite.AAMAS11-urieli' on input line 531.
-Package hyperref Info: Anchor `page.117' on input line 531.
- [117
+Package hyperref Info: Anchor `page.119' on input line 531.
+ [119
 Package `hyperref' Info: End of reference (link) `subsection.6.2.6', line 26.
 Package `hyperref' Info: End of reference (link) `subsection.6.2.6', line 26.
 Package `hyperref' Info: End of reference (link) `subsection.6.2.6', line 26.
@@ -5269,27 +5405,51 @@ Package hyperref Info: Anchor `cite.leakyrelu' on input line 576.
 Package hyperref Info: Anchor `cite.actorcritic' on input line 582.
 Package hyperref Info: Anchor `cite.simspark' on input line 590.
 )
-Package hyperref Info: Anchor `page.118' on input line 245.
- [118
+Package hyperref Info: Anchor `page.120' on input line 215.
+ [120
 Package `hyperref' Info: End of reference (link) `subsection.6.2.6', line 26.
 Package `hyperref' Info: End of reference (link) `subsection.6.2.6', line 26.
 Package `hyperref' Info: End of reference (link) `subsection.6.2.6', line 26.
 Package `hyperref' Info: End of reference (link) `subsection.6.2.6', line 26.
 Package `hyperref' Info: End of reference (link) `subsection.6.2.6', line 26.
 ]
+Package hyperref Info: Anchor `appendix.A' on input line 216.
+
+Appendix A.
+pdftex: bookmark at 216: {A} {\numberline{A}Hyperparameters} {appendix.A}{0}{to
+c}
+(./ApeA/apendiceA.tex
+Package hyperref Info: Anchor `table.caption.77' on input line 2.
+
+pdftex: bookmark at 3: {A.1} {\numberline{A.1}{\ignorespaces Hyperparameters - 
+RNR, RRR, RNR+RRR, RNR+RRR+RISD\relax }} {table.caption.77}{0}{lot}
+Package hyperref Info: Anchor `table.caption.78' on input line 32.
+pdftex: bookmark at 33: {A.2} {\numberline{A.2}{\ignorespaces Hyperparameters -
+ Reinforcement ``supervised" - First Session\relax }} {table.caption.78}{0}{lot
+}
+Package hyperref Info: Anchor `table.caption.79' on input line 55.
+pdftex: bookmark at 56: {A.3} {\numberline{A.3}{\ignorespaces Hyperparameters -
+ HLM+RNR, HLM+RNR+RET - First Session\relax }} {table.caption.79}{0}{lot}
+)
+Package hyperref Info: Anchor `page.121' on input line 245.
+ [121
+
+
+]
+Package hyperref Info: Anchor `page.122' on input line 245.
+ [122]
 \bottommargin=\skip77
 \rightmarginn=\skip78
 Package hyperref Info: Anchor `bla.0' on input line 245.
- (./Cap0/resumo.tex) (./Cap0/resumo.tex)
-(./Cap0/resumo.tex)
+ (./Cap0/resumo.tex) (./Cap0/resumo.tex) (./Cap0/resumo.tex)
 Overfull \hbox (74.53033pt too wide) in paragraph at lines 245--245
 [][] 
  []
 
 
 AED: lastpage setting LastPage
-Package hyperref Info: Anchor `page.119' on input line 247.
-[119
+Package hyperref Info: Anchor `page.123' on input line 247.
+[123
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 247.
@@ -5298,7 +5458,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 247.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 247.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 247.
 Package rerunfilecheck Info: File `tese.out' has not changed.
-(rerunfilecheck)             Checksum: 49DD4DB5865FDF702155245E587EFF5B;8504.
+(rerunfilecheck)             Checksum: DFD278993FE4D4A6AEEFB0871718AD3D;8558.
 Package rerunfilecheck Info: File `tese.brf' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
@@ -5311,13 +5471,13 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 247.
  ) 
 Here is how much of TeX's memory you used:
- 12656 strings out of 493304
- 192702 string characters out of 6139871
- 298617 words of memory out of 5000000
- 15027 multiletter control sequences out of 15000+600000
+ 12690 strings out of 493304
+ 193694 string characters out of 6139871
+ 298855 words of memory out of 5000000
+ 15042 multiletter control sequences out of 15000+600000
  68891 words of font info for 139 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 43i,16n,45p,857b,634s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 43i,16n,45p,875b,634s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx6.pfb></usr/share/texli
@@ -5344,10 +5504,10 @@ cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmt
 i12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pf
 b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb
 >
-Output written on tese.pdf (120 pages, 6258906 bytes).
+Output written on tese.pdf (124 pages, 6905354 bytes).
 PDF statistics:
- 2724 PDF objects out of 2984 (max. 8388607)
- 2303 compressed objects within 24 object streams
- 641 named destinations out of 1000 (max. 500000)
- 1213 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2794 PDF objects out of 2984 (max. 8388607)
+ 2351 compressed objects within 24 object streams
+ 653 named destinations out of 1000 (max. 500000)
+ 1241 words of extra memory for PDF output out of 10000 (max. 10000000)
 

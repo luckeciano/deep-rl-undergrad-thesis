@@ -44,24 +44,29 @@
 \contentsline {figure}{\numberline {5.13}{\ignorespaces Synchronous and Asynchornous Distributed Training. \relax }}{90}{figure.caption.46}
 \contentsline {figure}{\numberline {5.14}{\ignorespaces Monitoring training metrics with Tensorboard. \relax }}{91}{figure.caption.47}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Data collection in best scenario\relax }}{93}{figure.caption.48}
-\contentsline {figure}{\numberline {6.2}{\ignorespaces RNR Reward Curve by learning update\relax }}{94}{figure.caption.49}
-\contentsline {figure}{\numberline {6.3}{\ignorespaces RNR kick motion sequence.\relax }}{94}{figure.caption.50}
-\contentsline {figure}{\numberline {6.4}{\ignorespaces RRR Reward Curve by learning update\relax }}{95}{figure.caption.51}
-\contentsline {figure}{\numberline {6.5}{\ignorespaces RNR+RRR Reward Curves by learning update. We trained in two sessions. The blue curve shows the first session and the gray one the second session.\relax }}{96}{figure.caption.52}
-\contentsline {figure}{\numberline {6.6}{\ignorespaces RNR+RRR Motion Sequence. In this model, the agent learns to kick with the left leg, as in reference.\relax }}{96}{figure.caption.53}
-\contentsline {figure}{\numberline {6.7}{\ignorespaces Tradeoff between RNR and RRR models: when RRR is much greater, the models collpases to its model.\relax }}{97}{figure.caption.54}
-\contentsline {figure}{\numberline {6.8}{\ignorespaces RNR+RRR+RISD learning curve in two sessions of training. The blue curve was the first session and the red one was the second.\relax }}{98}{figure.caption.55}
-\contentsline {figure}{\numberline {6.9}{\ignorespaces RNR+RRR+RISD motion sequence.\relax }}{98}{figure.caption.56}
-\contentsline {figure}{\numberline {6.10}{\ignorespaces First session of training for reinforcement supervised model.\relax }}{99}{figure.caption.57}
-\contentsline {figure}{\numberline {6.11}{\ignorespaces Motion sequence from reinforcement supervised learning agent.\relax }}{100}{figure.caption.58}
-\contentsline {figure}{\numberline {6.12}{\ignorespaces Plots of mean squared error and mean absolute error, during training.\relax }}{101}{figure.caption.59}
-\contentsline {figure}{\numberline {6.13}{\ignorespaces The kick motion. The first row of figures shows the original kick motion. The second row shows the learned kick motion. Both motions are visually indistinguishable.\relax }}{102}{figure.caption.60}
-\contentsline {figure}{\numberline {6.14}{\ignorespaces Joint values for comparing original and learned kicks. The neural network was able to fit the joint trajectories with small errors.\relax }}{103}{figure.caption.61}
-\contentsline {figure}{\numberline {6.15}{\ignorespaces Joints positions, during a period of the walking motion for the original walk, and the learned walk and the joints positions effectively attained, during the learned walking motion.\relax }}{104}{figure.caption.63}
-\contentsline {figure}{\numberline {6.16}{\ignorespaces The walking motions comparison. Figure (a) shows our agent in its regular walk, Figure (b) shows the same agent mimicking UT Austin Villa walk, and Figure (c) shows the UT Austin Villa agent itself performing his own walking motion.\relax }}{105}{figure.caption.65}
-\contentsline {figure}{\numberline {6.17}{\ignorespaces The reward curve from the first session of HLM+RNR+RET model.\relax }}{107}{figure.caption.66}
-\contentsline {figure}{\numberline {6.18}{\ignorespaces HLM+RNR+RET motion sequence after first session of training.\relax }}{107}{figure.caption.67}
-\contentsline {figure}{\numberline {6.19}{\ignorespaces The reward curve from the second session of HLM+RNR+RET model.\relax }}{108}{figure.caption.68}
-\contentsline {figure}{\numberline {6.20}{\ignorespaces HLM+RNR+RET motion sequence after second training session.\relax }}{108}{figure.caption.69}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Speedup Test\relax }}{93}{figure.caption.48}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Data collection in best scenario\relax }}{94}{figure.caption.49}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces RNR Reward Curve by learning update\relax }}{94}{figure.caption.50}
+\contentsline {figure}{\numberline {6.4}{\ignorespaces RNR kick motion sequence.\relax }}{95}{figure.caption.51}
+\contentsline {figure}{\numberline {6.5}{\ignorespaces RRR Reward Curve by learning update\relax }}{96}{figure.caption.52}
+\contentsline {figure}{\numberline {6.6}{\ignorespaces RNR+RRR Reward Curves by learning update. We trained in two sessions. The blue curve shows the first session and the gray one the second session.\relax }}{96}{figure.caption.53}
+\contentsline {figure}{\numberline {6.7}{\ignorespaces RNR+RRR Motion Sequence. In this model, the agent learns to kick with the left leg, as in reference.\relax }}{97}{figure.caption.54}
+\contentsline {figure}{\numberline {6.8}{\ignorespaces Tradeoff between RNR and RRR models: when RRR is much greater, the models collpases to its model.\relax }}{97}{figure.caption.55}
+\contentsline {figure}{\numberline {6.9}{\ignorespaces RNR+RRR+RISD learning curve in two sessions of training. The blue curve was the first session and the red one was the second.\relax }}{98}{figure.caption.56}
+\contentsline {figure}{\numberline {6.10}{\ignorespaces RNR+RRR+RISD motion sequence.\relax }}{99}{figure.caption.57}
+\contentsline {figure}{\numberline {6.11}{\ignorespaces RNR+RRR+RISD+RET reward curve.\relax }}{99}{figure.caption.58}
+\contentsline {figure}{\numberline {6.12}{\ignorespaces First session of training for reinforcement supervised model.\relax }}{100}{figure.caption.59}
+\contentsline {figure}{\numberline {6.13}{\ignorespaces Motion sequence from reinforcement supervised learning agent.\relax }}{101}{figure.caption.60}
+\contentsline {figure}{\numberline {6.14}{\ignorespaces Plots of mean squared error and mean absolute error, during training.\relax }}{102}{figure.caption.61}
+\contentsline {figure}{\numberline {6.15}{\ignorespaces The kick motion. The first row of figures shows the original kick motion. The second row shows the learned kick motion. Both motions are visually indistinguishable.\relax }}{103}{figure.caption.62}
+\contentsline {figure}{\numberline {6.16}{\ignorespaces Joint values for comparing original and learned kicks. The neural network was able to fit the joint trajectories with small errors.\relax }}{104}{figure.caption.63}
+\contentsline {figure}{\numberline {6.17}{\ignorespaces Joints positions, during a period of the walking motion for the original walk, and the learned walk and the joints positions effectively attained, during the learned walking motion.\relax }}{105}{figure.caption.65}
+\contentsline {figure}{\numberline {6.18}{\ignorespaces The walking motions comparison. Figure (a) shows our agent in its regular walk, Figure (b) shows the same agent mimicking UT Austin Villa walk, and Figure (c) shows the UT Austin Villa agent itself performing his own walking motion.\relax }}{106}{figure.caption.67}
+\contentsline {figure}{\numberline {6.19}{\ignorespaces HLM+RNR reward curve.\relax }}{107}{figure.caption.68}
+\contentsline {figure}{\numberline {6.20}{\ignorespaces Motion sequence of HLM+RNR model.\relax }}{108}{figure.caption.69}
+\contentsline {figure}{\numberline {6.21}{\ignorespaces The reward curve from the first session of HLM+RNR+RET model.\relax }}{108}{figure.caption.70}
+\contentsline {figure}{\numberline {6.22}{\ignorespaces HLM+RNR+RET motion sequence after first session of training.\relax }}{109}{figure.caption.71}
+\contentsline {figure}{\numberline {6.23}{\ignorespaces The reward curve from the second session of HLM+RNR+RET model.\relax }}{109}{figure.caption.72}
+\contentsline {figure}{\numberline {6.24}{\ignorespaces HLM+RNR+RET motion sequence after second training session.\relax }}{110}{figure.caption.73}
+\addvspace {10\p@ }
 \addvspace {10\p@ }

@@ -1,13 +1,79 @@
-\section{Uma Primeira Seção para o Apêndice}
 
-A matriz de Dilema Linear $M$ e o vetor de torques inerciais $b$,
-utilizados na simulação são calculados segundo a formulação 
-abaixo:
-\begin{equation}
-M=\left[ \begin{array}{ccc}
-M_{11} & M_{12} & M_{13} \\
-M_{21} & M_{22} & M_{23} \\
-M_{31} & M_{32} & M_{33}
-\end{array} \right]
-\end{equation}
+\begin{table}[!htbp]
+	\caption{Hyperparameters - RNR, RRR, RNR+RRR, RNR+RRR+RISD}
+	\begin{center} 
+		\begin{tabular}{|c|c|c|c|c|c|}
+			\hline
+			Hyperparameter & Value   \\
+			\hline
+			Learning Rate &    $10^{-3}$    \\
+			Timesteps per Actorbatch & 4096    \\
+			Batch Size &   256     \\
+			Epochs &  10\\
+			$\gamma$ & 0.99 \\
+			$\lambda$ & 0.95 \\
+			Timesteps (Total) & $8 \times 10^{8}$ \\
+			Clip Parameter & 0.2\\
+			Entropy Coefficient & 0.0 \\
+			RNR Parameters Vector  & $\begin{bmatrix}
+				1.0 & -0.3 & 2.0
+			\end{bmatrix}$\\
+			RRR Parameters Vector  & $\begin{bmatrix}
+			1.0 & 1.0 & 2.0 & 2.0 & 2.0 & 1.0 & 2.0 & 2.0 & 2.0 & \\ 1.0 & 5.0 & 5.0 & 5.0 & 5.0 & 5.0 & 5.0 & 3.0 &\\ 3.0 & 3.0 & 3.0 & 3.0 & 3.0 
+			\end{bmatrix}$\\
+			\hline
+		\end{tabular}
+	
+		\label{tab:finaltest}
+	\end{center}
+\end{table}
 
+
+\begin{table}[!htbp]
+	\caption{Hyperparameters - Reinforcement ``supervised" - First Session}
+	\begin{center} 
+		\begin{tabular}{|c|c|c|c|c|c|}
+			\hline
+			Hyperparameter & Value   \\
+			\hline
+			Learning Rate &    $10^{-4}$    \\
+			Timesteps per Actorbatch & 4096    \\
+			Batch Size &   256     \\
+			Epochs &  10\\
+			$\gamma$ & 0.99 \\
+			$\lambda$ & 0.95 \\
+			Timesteps (Total) & $10^{6}$ \\
+			Clip Parameter & 0.2\\
+			Entropy Coefficient & 0.0 \\
+			\hline
+		\end{tabular}
+		
+		\label{tab:finaltest}
+	\end{center}
+\end{table}
+
+\begin{table}[!htbp]
+	\caption{Hyperparameters - HLM+RNR, HLM+RNR+RET - First Session}
+	\begin{center} 
+		\begin{tabular}{|c|c|c|c|c|c|}
+			\hline
+			Hyperparameter & Value   \\
+			\hline
+			Learning Rate &    $10^{-6}$    \\
+			Timesteps per Actorbatch & 4096    \\
+			Batch Size &   2048     \\
+			Epochs &  10\\
+			$\gamma$ & 0.99 \\
+			$\lambda$ & 0.95 \\
+			Timesteps (Total) & $4 \times 10^{6}$ \\
+			Clip Parameter & 0.2\\
+			Entropy Coefficient & 0.0 \\
+			RNR Parameters Vector  & $\begin{bmatrix}
+			1.0 & -0.3 & 2.0
+			\end{bmatrix}$\\
+			\hline
+		\end{tabular}
+		
+		\label{tab:finaltest}
+	\end{center}
+\end{table}

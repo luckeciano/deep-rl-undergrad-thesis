@@ -13,6 +13,9 @@ For mimicking motions, we presented pure RL techniques -- starting from randomly
 
 We also presented a Hybrid Learning Model, which initially trains a neural network policy using supervised learning from the reference motion and optimizes it towards a task using Deep RL techniques. \textbf{It proved to work well and achieved the objective of improve policy performance, which was, in this case, to gain accuracy}. The supervised learning step provided high initial reward and a good point to start exploration and the RL algorithm could absorb such benefits and find a better policy than the original motion.
 
+Therefore, we conclude that pure RL techniques have a greater difficulty due to the fact that, starting from an initially randomized parametrized policy, we have a much more complicated optimization problem, where it should be considered
+several aspects for modeling the reward to at least mimic the reference motion. On the other hand, when using a supervised pre training, it is possible to obtain an initial policy that replicates well the reference motion and is able to be optimized using RL and, finally, outperforms this reference when we consider a performance task.
+
 \section{Future Work}
 
 We propose several research lines from this work.

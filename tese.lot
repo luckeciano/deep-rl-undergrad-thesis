@@ -7,12 +7,12 @@
 \contentsline {table}{\numberline {5.1}{\ignorespaces The Network Summary\relax }}{79}{table.caption.34}
 \contentsline {table}{\numberline {5.2}{\ignorespaces The Reinforcement Learning Network Summary\relax }}{81}{table.caption.37}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {6.1}{\ignorespaces The Kick Comparison\relax }}{104}{table.caption.64}
-\contentsline {table}{\numberline {6.2}{\ignorespaces Walk Comparison - Forward Walk\relax }}{106}{table.caption.66}
-\contentsline {table}{\numberline {6.3}{\ignorespaces Kick Comparison - General Evaluation\relax }}{110}{table.caption.74}
-\contentsline {table}{\numberline {6.4}{\ignorespaces Kick Comparison - Effective Evaluation\relax }}{111}{table.caption.75}
+\contentsline {table}{\numberline {6.1}{\ignorespaces The Kick Comparison\relax }}{104}{table.caption.63}
+\contentsline {table}{\numberline {6.2}{\ignorespaces Walk Comparison - Forward Walk\relax }}{106}{table.caption.65}
+\contentsline {table}{\numberline {6.3}{\ignorespaces Kick Comparison - General Evaluation\relax }}{111}{table.caption.73}
+\contentsline {table}{\numberline {6.4}{\ignorespaces Kick Comparison - Effective Evaluation\relax }}{111}{table.caption.74}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {A.1}{\ignorespaces Hyperparameters - RNR, RRR, RNR+RRR, RNR+RRR+RISD\relax }}{121}{table.caption.77}
-\contentsline {table}{\numberline {A.2}{\ignorespaces Hyperparameters - Reinforcement ``supervised" - First Session\relax }}{121}{table.caption.78}
-\contentsline {table}{\numberline {A.3}{\ignorespaces Hyperparameters - HLM+RNR, HLM+RNR+RET - First Session\relax }}{122}{table.caption.79}
+\contentsline {table}{\numberline {A.1}{\ignorespaces Hyperparameters - RNR, RRR, RNR+RRR, RNR+RRR+RISD\relax }}{121}{table.caption.76}
+\contentsline {table}{\numberline {A.2}{\ignorespaces Hyperparameters - Reinforcement ``supervised" - First Session\relax }}{121}{table.caption.77}
+\contentsline {table}{\numberline {A.3}{\ignorespaces Hyperparameters - HLM+RNR, HLM+RNR+RET - First Session\relax }}{122}{table.caption.78}

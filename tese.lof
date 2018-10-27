@@ -2,7 +2,7 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {1.1}{\ignorespaces AlphaGo Zero, learning model that beat the best players of Go, Chess and Shogi, learning to play without previous human knowledge \cite {DBLP:journals/corr/abs-1712-01815}.\relax }}{20}{figure.caption.7}
 \contentsline {figure}{\numberline {1.2}{\ignorespaces Locomotion of Agent via Deep Reinforcement Learning \cite {DBLP:journals/corr/HeessTSLMWTEWER17}.\relax }}{20}{figure.caption.8}
-\contentsline {figure}{\numberline {1.3}{\ignorespaces A Snapshot from the RoboCup Soccer 3D Simulation League.\relax }}{20}{figure.caption.9}
+\contentsline {figure}{\numberline {1.3}{\ignorespaces A Snapshot from the RoboCup Soccer 3D Simulation League.\relax }}{21}{figure.caption.9}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Illustration of an actual optimization run with covariance matrix adaptation on a simple two-dimensional problem \cite {cmaesfig}.\relax }}{26}{figure.caption.10}
 \contentsline {figure}{\numberline {2.2}{\ignorespaces Human level control through deep reinforcement learning in atari games \cite {mnih2015humanlevel}.\relax }}{27}{figure.caption.11}
@@ -32,7 +32,7 @@
 \contentsline {figure}{\numberline {5.1}{\ignorespaces In the hybrid model, we can ensure the starting point is near of the optimal solution (orange arrow); otherwise, the starting point can be bad and harder to optimize (red arrow).\relax }}{78}{figure.caption.32}
 \contentsline {figure}{\numberline {5.2}{\ignorespaces The architecture of a neural network designed to learn motions.\relax }}{79}{figure.caption.33}
 \contentsline {figure}{\numberline {5.3}{\ignorespaces Intuition behind input normalization\relax }}{81}{figure.caption.35}
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Architecture used by pure Reinforcement Learning models.\relax }}{81}{figure.caption.36}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Architecture used by pure Reinforcement Learning models.\relax }}{82}{figure.caption.36}
 \contentsline {figure}{\numberline {5.5}{\ignorespaces Gaussian noise applied to action space to ensure better exploration in continuous environments. \cite {parameternoiseblog} \relax }}{82}{figure.caption.38}
 \contentsline {figure}{\numberline {5.6}{\ignorespaces Task used to learning kick motion.\relax }}{83}{figure.caption.39}
 \contentsline {figure}{\numberline {5.7}{\ignorespaces Reinforcement Learning Server Architecture. \cite {tgmuzio} \relax }}{84}{figure.caption.40}
@@ -54,19 +54,18 @@
 \contentsline {figure}{\numberline {6.8}{\ignorespaces Tradeoff between RNR and RRR models: when RRR is much greater, the models collpases to its model.\relax }}{97}{figure.caption.55}
 \contentsline {figure}{\numberline {6.9}{\ignorespaces RNR+RRR+RISD learning curve in two sessions of training. The blue curve was the first session and the red one was the second.\relax }}{98}{figure.caption.56}
 \contentsline {figure}{\numberline {6.10}{\ignorespaces RNR+RRR+RISD motion sequence.\relax }}{99}{figure.caption.57}
-\contentsline {figure}{\numberline {6.11}{\ignorespaces RNR+RRR+RISD+RET reward curve.\relax }}{99}{figure.caption.58}
-\contentsline {figure}{\numberline {6.12}{\ignorespaces First session of training for reinforcement supervised model.\relax }}{100}{figure.caption.59}
-\contentsline {figure}{\numberline {6.13}{\ignorespaces Motion sequence from reinforcement supervised learning agent.\relax }}{101}{figure.caption.60}
-\contentsline {figure}{\numberline {6.14}{\ignorespaces Plots of mean squared error and mean absolute error, during training.\relax }}{102}{figure.caption.61}
-\contentsline {figure}{\numberline {6.15}{\ignorespaces The kick motion. The first row of figures shows the original kick motion. The second row shows the learned kick motion. Both motions are visually indistinguishable.\relax }}{103}{figure.caption.62}
-\contentsline {figure}{\numberline {6.16}{\ignorespaces Joint values for comparing original and learned kicks. The neural network was able to fit the joint trajectories with small errors.\relax }}{104}{figure.caption.63}
-\contentsline {figure}{\numberline {6.17}{\ignorespaces Joints positions, during a period of the walking motion for the original walk, and the learned walk and the joints positions effectively attained, during the learned walking motion.\relax }}{105}{figure.caption.65}
-\contentsline {figure}{\numberline {6.18}{\ignorespaces The walking motions comparison. Figure (a) shows our agent in its regular walk, Figure (b) shows the same agent mimicking UT Austin Villa walk, and Figure (c) shows the UT Austin Villa agent itself performing his own walking motion.\relax }}{106}{figure.caption.67}
-\contentsline {figure}{\numberline {6.19}{\ignorespaces HLM+RNR reward curve.\relax }}{107}{figure.caption.68}
-\contentsline {figure}{\numberline {6.20}{\ignorespaces Motion sequence of HLM+RNR model.\relax }}{108}{figure.caption.69}
-\contentsline {figure}{\numberline {6.21}{\ignorespaces The reward curve from the first session of HLM+RNR+RET model.\relax }}{108}{figure.caption.70}
-\contentsline {figure}{\numberline {6.22}{\ignorespaces HLM+RNR+RET motion sequence after first session of training.\relax }}{109}{figure.caption.71}
-\contentsline {figure}{\numberline {6.23}{\ignorespaces The reward curve from the second session of HLM+RNR+RET model.\relax }}{109}{figure.caption.72}
-\contentsline {figure}{\numberline {6.24}{\ignorespaces HLM+RNR+RET motion sequence after second training session.\relax }}{110}{figure.caption.73}
+\contentsline {figure}{\numberline {6.11}{\ignorespaces First session of training for reinforcement supervised model.\relax }}{100}{figure.caption.58}
+\contentsline {figure}{\numberline {6.12}{\ignorespaces Motion sequence from reinforcement supervised learning agent.\relax }}{100}{figure.caption.59}
+\contentsline {figure}{\numberline {6.13}{\ignorespaces Plots of mean squared error and mean absolute error, during training.\relax }}{102}{figure.caption.60}
+\contentsline {figure}{\numberline {6.14}{\ignorespaces The kick motion. The first row of figures shows the original kick motion. The second row shows the learned kick motion. Both motions are visually indistinguishable.\relax }}{103}{figure.caption.61}
+\contentsline {figure}{\numberline {6.15}{\ignorespaces Joint values for comparing original and learned kicks. The neural network was able to fit the joint trajectories with small errors.\relax }}{104}{figure.caption.62}
+\contentsline {figure}{\numberline {6.16}{\ignorespaces Joints positions, during a period of the walking motion for the original walk, and the learned walk and the joints positions effectively attained, during the learned walking motion.\relax }}{105}{figure.caption.64}
+\contentsline {figure}{\numberline {6.17}{\ignorespaces The walking motions comparison. Figure (a) shows our agent in its regular walk, Figure (b) shows the same agent mimicking UT Austin Villa walk, and Figure (c) shows the UT Austin Villa agent itself performing his own walking motion.\relax }}{106}{figure.caption.66}
+\contentsline {figure}{\numberline {6.18}{\ignorespaces HLM+RNR reward curve.\relax }}{107}{figure.caption.67}
+\contentsline {figure}{\numberline {6.19}{\ignorespaces Motion sequence of HLM+RNR model.\relax }}{108}{figure.caption.68}
+\contentsline {figure}{\numberline {6.20}{\ignorespaces The reward curve from the first session of HLM+RNR+RET model.\relax }}{109}{figure.caption.69}
+\contentsline {figure}{\numberline {6.21}{\ignorespaces HLM+RNR+RET motion sequence after first session of training.\relax }}{109}{figure.caption.70}
+\contentsline {figure}{\numberline {6.22}{\ignorespaces The reward curve from the second session of HLM+RNR+RET model.\relax }}{110}{figure.caption.71}
+\contentsline {figure}{\numberline {6.23}{\ignorespaces HLM+RNR+RET motion sequence after second training session.\relax }}{110}{figure.caption.72}
 \addvspace {10\p@ }
 \addvspace {10\p@ }

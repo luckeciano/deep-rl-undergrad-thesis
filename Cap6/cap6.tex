@@ -142,18 +142,18 @@ Figure \ref{fig:risdmotionsequence} shows the motion sequence from RNR+RRR+RISD 
 \end{figure}
 
 
-\subsection{RNR+RRR+RISD+RET}
+%\subsection{RNR+RRR+RISD+RET}
 
-This final experiment using pure RL techniques tries to improve last model by using Early Termination. As we saw in Figure \ref{fig:rnrrrrrisdcurve}, the training curve is unstable and depends by the right situation of exploration to achieve a reasonable baseline. Considering the model, there is cases where the agent falls but we keep collecting data until the end of a fixed number of samples. Therefore, we collect a lot of wrong data that can harm learning.
+%This final experiment using pure RL techniques tries to improve last model by using Early Termination. As we saw in Figure \ref{fig:rnrrrrrisdcurve}, the training curve is unstable and depends by the right situation of exploration to achieve a reasonable baseline. Considering the model, there is cases where the agent falls but we keep collecting data until the end of a fixed number of samples. Therefore, we collect a lot of wrong data that can harm learning.
 
-Figure \ref{fig:finalpurereward} shows RNR+RRR+RISD+RET model. 
+%Figure \ref{fig:finalpurereward} shows RNR+RRR+RISD+RET model. 
 
-\begin{figure}[!htbp]
-	\centering
-	\includegraphics[width=1.0\textwidth]{Cap6/finalpurereward}
-	\caption{RNR+RRR+RISD+RET reward curve.}
-	\label{fig:finalpurereward}
-\end{figure}
+%\begin{figure}[!htbp]
+%	\centering
+%	\includegraphics[width=1.0\textwidth]{Cap6/finalpurereward}
+%	\caption{RNR+RRR+RISD+RET reward curve.}
+%	\label{fig:finalpurereward}
+%\end{figure}
 
 \subsection{Reinforcement ``supervised"}\label{sec:suprl}
 
@@ -321,9 +321,11 @@ However, the huge improvement of this method was about mimicking other teams mot
 As an example, we have collected data from UT Austin Villa kick, which was originally optimized by using Deep Reinforcement Learning techniques \cite{mcalpine2017}. Our agent has learned this kick without any additional optimization strategy: we just have used samples collected from the modified server.
 
 
-\subsection{HLM+RNR}
+\subsection{HLM+RNR}\label{sec:hlmrnr}
 
-Figure \ref{fig:hlmrewardcurve} shows the reward curve for HLM+RNR model. 
+In this model, we used the supervised learning model obtained and optimized it towards the task of kicking the ball using RL. The idea is fine-tune the imitated motion to outperform the performance of original one.
+
+Figure \ref{fig:hlmrewardcurve} shows the reward curve for HLM+RNR model. We can see that the reward double during the course of training.
 
  \begin{figure}[!htbp]
 	\centering
@@ -332,7 +334,9 @@ Figure \ref{fig:hlmrewardcurve} shows the reward curve for HLM+RNR model.
 	\label{fig:hlmrewardcurve}
 \end{figure}
 
-Figure \ref{fig:hlmrnrmotionsequence} shows the motion sequence for HLM+RNR model.
+Figure \ref{fig:hlmrnrmotionsequence} shows the motion sequence for HLM+RNR model. We see that this this motion is very similar to those ones represented in Figure \ref{fig:motions}, even the performance being so different.
+
+The only problem of this training is the integration with the kick behavior of agent. Here, we optimize just the kick motion. However, the behavior also includes walk to the ball and stops in the right place with the right initial joint values (what we call ball approaching). Then, the performance in optimization environment is a bit different from game situation.
 
 
  \begin{figure}[!htbp]
@@ -381,14 +385,14 @@ Figure \ref{fig:hlmretsess1motseq} shows the motion sequence after this first se
   
  \begin{figure}[!htbp]
  	\centering
- 	\includegraphics[ width=1.1\textwidth]{Cap6/hlmretsess2}
+ 	\includegraphics[ width=1.0\textwidth]{Cap6/hlmretsess2}
  	\caption{The reward curve from the second session of HLM+RNR+RET model.}
  	\label{fig:hlmretsess2}
  \end{figure}
  
  \begin{figure}[!htbp]
  	\centering
- 	\includegraphics[ scale=1.0]{Cap6/hlmretsess2motseq}
+ 	\includegraphics[width=1.0 \textwidth]{Cap6/hlmretsess2motseq}
  	\caption{HLM+RNR+RET motion sequence after second training session.}
  	\label{fig:hlmretsess2motseq}
  \end{figure}
@@ -404,6 +408,7 @@ In Table \ref{tab:finaltest}, we compare four different kicks:
 \begin{itemize}
 	\item \textbf{Original Kick}: The keyframe kick used as reference motion;
 	\item \textbf{Learned Kick}: The neural network we learned by supervised learning and using as dataset Original Kick;
+	\item \textbf{HLM+RNR Kick}: The Hybrid Learning Model proposed in subsection \ref{sec:hlmrnr}; and
 	\item \textbf{HLM+RNR+RET Kick}: The Hybrid Learning Model proposed in subsection \ref{sec:hlmrnrret}.
 \end{itemize}
 
@@ -424,6 +429,8 @@ In Table \ref{tab:finaltest}, we compare four different kicks:
 			\hline
 			Learned Kick & 63.0 & 3.06 & 4.22 & 0.09 & 0.17 \\
 			\hline
+			HLM+RNR Kick  & 92.0 & 6.52 & 3.89 & 0.33 & 0.55  \\
+			\hline
 			\textbf{HLM+RNR+RET Kick}  & \textbf{92.0} & \textbf{7.60} & \textbf{3.71} & \textbf{0.45} & \textbf{0.49}  \\
 			\hline
 		\end{tabular}
@@ -431,7 +438,9 @@ In Table \ref{tab:finaltest}, we compare four different kicks:
 	\end{center}
 \end{table}
 
-As Table \ref{tab:finaltest} shows, HLM+RNR+RET kick outperforms both original and learned ones, in this test scenario. General Evaluation means considering the distance traveled by all kicks, even the ones considered ``wrong".
+First, we can see that the usage of Early Termination improved the performance results in this test scenario, even the motion being very similar.
+
+As Table \ref{tab:finaltest} shows, Hybrid Learning Models outperform both original and learned ones, in this test scenario. General Evaluation means considering the distance traveled by all kicks, even the ones considered ``wrong".
 
 However, it worth mentioning the Effective Evaluation: consider the distance just from ``right" kicks. We show this evaluation in Table \ref{tab:finaltesteff}.
 
@@ -451,6 +460,8 @@ However, it worth mentioning the Effective Evaluation: consider the distance jus
 			Original Kick  & \textbf{9.05} & \textbf{3.44} & 0.21 & 0.49 \\
 			\hline
 			Learned Kick  & 4.82 & 4.46 & 0.12 & 0.21 \\
+			\hline
+			HLM+RNR Kick & 7.07 & 3.55 & 0.36 & 0.57  \\
 			\hline
 			\textbf{HLM+RNR+RET Kick} & \textbf{8.26} & \textbf{3.09} & \textbf{0.48} & \textbf{0.49}  \\
 			\hline

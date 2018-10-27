@@ -4,7 +4,7 @@
 \contentsline {section}{\numberline {1.2}Contextualization}{19}{section.1.2}
 \contentsline {section}{\numberline {1.3}Objective}{21}{section.1.3}
 \contentsline {section}{\numberline {1.4}Scope}{21}{section.1.4}
-\contentsline {section}{\numberline {1.5}Organization of this work}{21}{section.1.5}
+\contentsline {section}{\numberline {1.5}Organization of this work}{22}{section.1.5}
 \contentsline {chapter}{\numberline {2}Literature Review}{23}{chapter.2}
 \contentsline {section}{\numberline {2.1}The RoboCup Soccer3D Simulation League}{23}{section.2.1}
 \contentsline {subsection}{\numberline {2.1.1}Domain Description}{23}{subsection.2.1.1}
@@ -76,20 +76,20 @@
 \contentsline {subsection}{\numberline {5.2.5}Hybrid Learning Model -- HLM}{77}{subsection.5.2.5}
 \contentsline {section}{\numberline {5.3}Supervised Learning Setup}{78}{section.5.3}
 \contentsline {subsection}{\numberline {5.3.1}The Dataset}{78}{subsection.5.3.1}
-\contentsline {subsection}{\numberline {5.3.2}Neural Network Architecture and Hyperparameters}{78}{subsection.5.3.2}
-\contentsline {subsection}{\numberline {5.3.3}The Training Procedure}{79}{subsection.5.3.3}
+\contentsline {subsection}{\numberline {5.3.2}Neural Network Architecture and Hyperparameters}{79}{subsection.5.3.2}
+\contentsline {subsection}{\numberline {5.3.3}The Training Procedure}{80}{subsection.5.3.3}
 \contentsline {subsection}{\numberline {5.3.4}The Deployment in the Soccer 3D Environment}{80}{subsection.5.3.4}
 \contentsline {section}{\numberline {5.4}Reinforcement Learning Setup}{80}{section.5.4}
 \contentsline {subsection}{\numberline {5.4.1}Policy Representation}{80}{subsection.5.4.1}
-\contentsline {subsubsection}{\numberline {5.4.1.1}Input Normalization Filter}{80}{subsubsection.5.4.1.1}
+\contentsline {subsubsection}{\numberline {5.4.1.1}Input Normalization Filter}{81}{subsubsection.5.4.1.1}
 \contentsline {subsubsection}{\numberline {5.4.1.2}Neural Network}{81}{subsubsection.5.4.1.2}
 \contentsline {subsubsection}{\numberline {5.4.1.3}Gaussian Action Space Noise}{82}{subsubsection.5.4.1.3}
 \contentsline {subsection}{\numberline {5.4.2}Task Description}{82}{subsection.5.4.2}
-\contentsline {section}{\numberline {5.5}Infrastructure}{83}{section.5.5}
-\contentsline {subsection}{\numberline {5.5.1}Reinforcement Learning Server}{83}{subsection.5.5.1}
-\contentsline {subsubsection}{\numberline {5.5.1.1}Simulation Server}{83}{subsubsection.5.5.1.1}
+\contentsline {section}{\numberline {5.5}Infrastructure}{84}{section.5.5}
+\contentsline {subsection}{\numberline {5.5.1}Reinforcement Learning Server}{84}{subsection.5.5.1}
+\contentsline {subsubsection}{\numberline {5.5.1.1}Simulation Server}{84}{subsubsection.5.5.1.1}
 \contentsline {subsubsection}{\numberline {5.5.1.2}Soccer Agent}{84}{subsubsection.5.5.1.2}
-\contentsline {subsubsection}{\numberline {5.5.1.3}Learning Agent}{84}{subsubsection.5.5.1.3}
+\contentsline {subsubsection}{\numberline {5.5.1.3}Learning Agent}{85}{subsubsection.5.5.1.3}
 \contentsline {subsection}{\numberline {5.5.2}Neural Network Deployment}{85}{subsection.5.5.2}
 \contentsline {subsubsection}{\numberline {5.5.2.1}Import Supervised Model into OpenAI Baselines}{85}{subsubsection.5.5.2.1}
 \contentsline {subsubsection}{\numberline {5.5.2.2}Export OpenAI Baselines onto Soccer Agent}{86}{subsubsection.5.5.2.2}
@@ -105,17 +105,16 @@
 \contentsline {subsection}{\numberline {6.2.2}RRR}{95}{subsection.6.2.2}
 \contentsline {subsection}{\numberline {6.2.3}RNR+RRR}{95}{subsection.6.2.3}
 \contentsline {subsection}{\numberline {6.2.4}RNR+RRR+RISD}{97}{subsection.6.2.4}
-\contentsline {subsection}{\numberline {6.2.5}RNR+RRR+RISD+RET}{99}{subsection.6.2.5}
-\contentsline {subsection}{\numberline {6.2.6}Reinforcement ``supervised"}{100}{subsection.6.2.6}
-\contentsline {subsection}{\numberline {6.2.7}Other ideas for pure RL techniques}{101}{subsection.6.2.7}
-\contentsline {section}{\numberline {6.3}Hybrid Learning Models}{102}{section.6.3}
-\contentsline {subsection}{\numberline {6.3.1}Supervised Learning Results}{102}{subsection.6.3.1}
-\contentsline {subsubsection}{\numberline {6.3.1.1}Training Results}{102}{subsubsection.6.3.1.1}
+\contentsline {subsection}{\numberline {6.2.5}Reinforcement ``supervised"}{99}{subsection.6.2.5}
+\contentsline {subsection}{\numberline {6.2.6}Other ideas for pure RL techniques}{99}{subsection.6.2.6}
+\contentsline {section}{\numberline {6.3}Hybrid Learning Models}{101}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}Supervised Learning Results}{101}{subsection.6.3.1}
+\contentsline {subsubsection}{\numberline {6.3.1.1}Training Results}{101}{subsubsection.6.3.1.1}
 \contentsline {subsubsection}{\numberline {6.3.1.2}The Learned Kick Motion}{103}{subsubsection.6.3.1.2}
 \contentsline {subsubsection}{\numberline {6.3.1.3}The Learned Walk Motion}{105}{subsubsection.6.3.1.3}
 \contentsline {subsubsection}{\numberline {6.3.1.4}Other motions}{106}{subsubsection.6.3.1.4}
 \contentsline {subsection}{\numberline {6.3.2}HLM+RNR}{107}{subsection.6.3.2}
-\contentsline {subsection}{\numberline {6.3.3}Final Model: HLM+RNR+RET}{107}{subsection.6.3.3}
+\contentsline {subsection}{\numberline {6.3.3}Final Model: HLM+RNR+RET}{108}{subsection.6.3.3}
 \contentsline {subsection}{\numberline {6.3.4}Kick Behavior: Numerical Results}{110}{subsection.6.3.4}
 \contentsline {chapter}{\numberline {7}Conclusions, Recommendations, and Future Works}{112}{chapter.7}
 \contentsline {section}{\numberline {7.1}Conclusions}{112}{section.7.1}

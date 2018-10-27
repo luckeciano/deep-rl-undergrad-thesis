@@ -26,7 +26,7 @@ R(s) = u^{T}v
 In this learning model we add a term that compares the actual performance with a reference motion, as shown in \ref{complete_reward}:
 
 \begin{equation}
-R(s) = w_{ref}^{T}r
+R(s) = w_{ref}^{T}(\pi - r)
 \label{complete_reward}
 \end{equation}
 
@@ -59,7 +59,7 @@ In the Hybrid Learning Model (HLM), the training process occurs in two phases. T
 
 \begin{figure}[!htbp]
 	\centering
-	\includegraphics[width=0.5\textwidth]{Cap5/optimization_final.eps}
+	\includegraphics[width=0.7\textwidth]{Cap5/optimization_final.eps}
 	\caption{In the hybrid model, we can ensure the starting point is near of the optimal solution (orange arrow); otherwise, the starting point can be bad and harder to optimize (red arrow).}
 	\label{optimization_intuition}
 \end{figure}
@@ -90,7 +90,7 @@ where $\alpha$ is a small constant. This activation function was used to improve
 
 \begin{figure}[!htbp]
 \centering
-\includegraphics[width=0.5\textwidth]{Cap5/architecture}
+\includegraphics[width=0.7\textwidth]{Cap5/architecture}
 \caption{The architecture of a neural network designed to learn motions.}
 \label{fig:model_plot}
 \end{figure}
@@ -146,7 +146,7 @@ The input normalization filter, also know as feature scaling, has the objective 
 
 \begin{figure}[!htbp]
 	\centering
-	\includegraphics[width=0.5\textwidth]{Cap5/inputnorm.eps}
+	\includegraphics[width=0.8\textwidth]{Cap5/inputnorm.eps}
 	\caption{Intuition behind input normalization}
 	\label{inputnormfig}
 \end{figure}
@@ -156,7 +156,7 @@ As an actor-critic model, we have two networks: one for the value function and o
 
 \begin{figure}[!htbp]
 	\centering
-	\includegraphics[width=0.5\textwidth]{Cap5/rlnetwork.eps}
+	\includegraphics[width=0.7\textwidth]{Cap5/rlnetwork.eps}
 	\caption{Architecture used by pure Reinforcement Learning models.}
 	\label{rlnetwork}
 \end{figure}
@@ -227,7 +227,7 @@ Figure \ref{rlserver} shows the architecture used to integrate the learning algo
 
 \begin{figure}[!htbp]
 	\centering
-	\includegraphics[width=0.3\textwidth]{Cap5/rlserver.eps}
+	\includegraphics[width=0.5\textwidth]{Cap5/rlserver.eps}
 	\caption{Reinforcement Learning Server Architecture.
 		\cite{tgmuzio}
 	}

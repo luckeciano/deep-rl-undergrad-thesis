@@ -111,6 +111,14 @@ Dispon{\'\i}vel em:
 {GOODFELLOW, I.; BENGIO, Y.; COURVILLE, A. \textbf{Deep Learning}.
   \url{http://www.deeplearningbook.org}: MIT Press, 2016.}
 
+\bibitem[Goodfellow e Vinyals 2014]{DBLP:journals/corr/GoodfellowV14}
+\abntrefinfo{Goodfellow e Vinyals}{GOODFELLOW; VINYALS}{2014}
+{GOODFELLOW, I.~J.; VINYALS, O. Qualitatively characterizing neural network
+  optimization problems.
+\textbf{CoRR}, abs/1412.6544, 2014.
+Dispon{\'\i}vel em:
+  \htmladdnormallink{$<$http:\-/\-/arxiv\-.org\-/abs\-/1412\-.6544$>$}{http://arxiv.org/abs/1412.6544}.}
+
 \bibitem[Gouaillier \textit{et al.} 2009]{gouaillier2009}
 \abntrefinfo{Gouaillier \textit{et al.}}{GOUAILLIER \textit{et al.}}{2009}
 {GOUAILLIER, D.; HUGEL, V.; BLAZEVIC, P.; KILNER, C.; MONCEAUX, J.; LAFOURCADE,
@@ -185,6 +193,14 @@ Dispon{\'\i}vel em:
   1000--1008.
 Dispon{\'\i}vel em:
   \htmladdnormallink{$<$http:\-/\-/papers\-.nips\-.cc\-/paper\-/3922-on-a-connection-between-importance-sampling-and-the-likelihood-ratio-policy-gradient\-.pdf$>$}{http://papers.nips.cc/paper/3922-on-a-connection-between-importance-sampling-and-the-likelihood-ratio-policy-gradient.pdf}.}
+
+\bibitem[Jordan 2018]{inputnormalization}
+\abntrefinfo{Jordan}{JORDAN}{2018}
+{JORDAN, J.
+Blog, \textbf{Normalizing your data (specifically, input and batch
+  normalization).} 2018.
+Dispon{\'\i}vel em:
+  $<$https:\-/\-/www\-.jeremyjordan\-.me\-/batch-normalization\-/$>$.}
 
 \bibitem[Kajita \textit{et al.} 2001]{kajita2001}
 \abntrefinfo{Kajita \textit{et al.}}{KAJITA \textit{et al.}}{2001}
@@ -291,6 +307,12 @@ Bachelor's Thesis --- ITA, 2017.}
 {MAXIMO, M. R.~O. de A.
 \textbf{Otimizacao de Caminhada de Robos Humanoides}.
 Bachelor's Thesis --- ITA, 2012.}
+
+\bibitem[Maximo 2017]{phdmanga}
+\abntrefinfo{Maximo}{MAXIMO}{2017}
+{MAXIMO, M. R.~O. de A.
+\textbf{Automatic walking step duration through model predictive control}.
+Tese (Doutorado) --- Aeronautics Institute of Technology, 2017.}
 
 \bibitem[Mnih \textit{et al.} 2016]{a2c}
 \abntrefinfo{Mnih \textit{et al.}}{MNIH \textit{et al.}}{2016}

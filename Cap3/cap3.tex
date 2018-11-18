@@ -1,6 +1,8 @@
+In the last chapter, we saw that the most recent Reinforcement Learning algorithms use neural networks as learning representation. In this chapter, we will describe in detail the neural network structure and its components. Additionally, we describe its learning process mathematically as a optimization problem.
+
 \section{Neural Networks}
 \label{sec:neural_networks}
-Neural Networks are a learning representation which the goal is to approximate some function \( f^* \). Data collected from an environment encodes an underlying function \( \mathrm{\mathbf{y}} = f^*(\mathrm{\mathbf{x}}) \) that maps an input \( \textbf{x} \) to an output \( \mathrm{\mathbf{y}} \), which may be a category from a classifier or a continue value in regression problems. The neural network defines an approximate mapping \( \mathrm{\mathbf{y}} = f(\mathrm{\mathbf{x}};\boldsymbol{\theta}) \), by learning the values of the parameters \(\boldsymbol{\theta}\), which result in the best function approximation. Figure \ref{fig:ann} shows a neural network and an artificial neuron in detail.
+Neural Networks are a learning representation which goal is to approximate some function \( f^* \). Data collected from an environment encodes an underlying function \( \mathrm{\mathbf{y}} = f^*(\mathrm{\mathbf{x}}) \) that maps an input \( \textbf{x} \) to an output \( \mathrm{\mathbf{y}} \), which may be a category from a classifier or a continue value in regression problems. The neural network defines an approximate mapping \( \mathrm{\mathbf{y}} = f(\mathrm{\mathbf{x}};\boldsymbol{\theta}) \), by learning the values of the parameters \(\boldsymbol{\theta}\), which result in the best function approximation. Figure \ref{fig:ann} shows a neural network and an artificial neuron in detail.
 
 \begin{figure}[!htbp]
 \centering
@@ -24,13 +26,13 @@ The idea of a neural network starts in the concept of a neuron. Figure \ref{fig:
 	\label{fig:neurondetail}
 \end{figure}
 
-In a neuron, the first operation is the product between inputs and the respective weights, which represents how much each input signal will influence the computation of that neuron. The core idea of a neural network is calculate the value of those weights in order to generate a better representation of the data generator distribution.
+In a neuron, the first operation is the product between inputs and the respective weights, which represents how much each input signal will influence the computation of that neuron. The core idea of a neural network is to calculate the value of those weights in order to generate a better representation of the data generator distribution.
 
-To this linear combination, it's added a bias value, which purpose is to add the capacity of neuron representation by translation, due to the fact this value doesn't rely on the inputs. Figure \ref{fig:bias} shows how weights and bias affect the function representation, described by equation \ref{eq:neuronequation}.
+To this linear combination, it is added a bias value, which purpose is to add the capacity of neuron representation by translation, due to the fact this value does not rely on the inputs. Figure \ref{fig:bias} shows how weights and bias affect the function representation, described by Equation \ref{eq:neuronequation}.
 
 
 \begin{equation}
-z = w^{T}x + b
+z = w^{T}x + b.
 \label{eq:neuronequation}
 \end{equation}
 
@@ -38,22 +40,22 @@ z = w^{T}x + b
 
 \begin{figure}[!htbp]
 	\centering
-	\includegraphics[width=0.9\textwidth]{Cap3/bias.eps}
+	\includegraphics[width=1.0\textwidth]{Cap3/bias.eps}
 	\caption{Function representation: in (a), we have a sigmoid function where weights vary. In (b), the same sigmoid but only bias varies.}
 	\label{fig:bias}
 \end{figure}
 
-The final operation from a neural is the activation function computed using the linear combination as input. In the context of neural networks, this is a non-linear function whose purpose is add the neuron's capacity of representation. Without this idea, the network would be only able to learn linear functions, which will result in poor representation of complex data distributions. Equation \ref{eq:neuronactivation} shows the neuron activation. These functions will be described deeper in section \ref{sec:activationfunction}.
+The final operation from a neural is the activation function computed using the linear combination as input. In the context of neural networks, this is a non-linear function whose purpose is to add the neuron's capacity of representation. Without this idea, the network would be able to only learn linear functions, which would result in poor representation of complex data distributions. Equation \ref{eq:neuronactivation} shows the neuron activation. These functions will be described deeper in Section \ref{sec:activationfunction}.
 
 \begin{equation}
-a = \sigma({z})
+a = \sigma({z}).
 \label{eq:neuronactivation}
 \end{equation}
 
 
 \subsection{Neural Network Representation}
 
-A neural network is a combination of neurons in several layers. It's basically a directed acyclic graph (DAG) where each node performs the operations described in subsection \ref{sec:neuron}. Figure \ref{fig:neuralnetworkrepresentation} shows the representation of a neuron.
+A neural network is a combination of neurons in several layers. It is basically a directed acyclic graph (DAG) where each node performs the operations described in Subsection \ref{sec:neuron}. Figure \ref{fig:neuralnetworkrepresentation} shows the representation of a neuron.
 
 \begin{figure}[!htbp]
 	\centering
@@ -62,35 +64,35 @@ A neural network is a combination of neurons in several layers. It's basically a
 	\label{fig:neuralnetworkrepresentation}
 \end{figure}
 
-It is worth to mention the math notation used in this work. The neuron $a^{j}_{i}$ represents the $i^{th}$ neuron in the $j^{th}$ layer of network.
+We need to mention the math notation used in this work. The neuron $a^{j}_{i}$ represents the $i^{th}$ neuron in the $j^{th}$ layer of network.
 
-The flow of a input tensor in a neural network occurs in the following manner: first, neurons from the same layer performs its calculations. Then, the output of them will serve as input of the next layer. This sequence will keep going until reach the output layer. Equations \ref{eq:nn_begin} to \ref{eq:nn_final} represent the flow from Figure \ref{fig:neuralnetworkrepresentation}.
+The flow of a input tensor in a neural network occurs in the following manner: first, neurons from the same layer performs its computations, which is a liner combinations from features and weights and posteriorly the application of activation function. Then, the output of them will serve as input of the next layer. This sequence will keep going until reaching the output layer. Equations \ref{eq:nn_begin} to \ref{eq:nn_final} represent the flow from Figure \ref{fig:neuralnetworkrepresentation}.
 
 
 \begin{align}\label{eq:nn_begin}
-z^{[1]} = W^{[1]}x + b^{[1]}\\
-a^{[1]} = \sigma(z^{[1]})\\
-z^{[2]} = W^{[2]}a^{[1]} + b^{[2]}\\
-a^{[2]} = \sigma(z^{[2]})
+z^{[1]} = W^{[1]}x + b^{[1]}.\\
+a^{[1]} = \sigma(z^{[1]}).\\
+z^{[2]} = W^{[2]}a^{[1]} + b^{[2]}.\\
+a^{[2]} = \sigma(z^{[2]}).
 \label{eq:nn_final}
 \end{align}
 
-$W^{i}$ and $b^{i}$ are defined, respectively, as:
+$W^{[i]}$ and $b^{[i]}$ are defined, respectively, as:
 
 \begin{align}
 W^{[i]} = \begin{bmatrix}
 w^{T[i]}_1 & w^{T[i]}_2 & \dots & w^{T[i]}_n
-\end{bmatrix} \\
+\end{bmatrix} ^{T}. \\
 b^{[i]} = \begin{bmatrix}
-b^{[i]}_1 & b^{[i]}_2 & \dots & b^{[i]}_n
-\end{bmatrix}
+b^{[i]}_1 & b^{[i]}_2 & \dots & b^{[i]}_n 
+\end{bmatrix} ^{T}.
 \end{align}
 
 In general, we can represent a layer $i$ recursively as:
 
 \begin{align}
-z^{[i]} = W^{[i]}a^{[i-1]} + b^{[i]}\\
-a^{[i]} = \sigma(z^{[i]})
+z^{[i]} = W^{[i]}a^{[i-1]} + b^{[i]}.\\
+a^{[i]} = \sigma(z^{[i]}).
 \end{align}
 
 
@@ -102,21 +104,21 @@ Vectorization is a technique where a network calculates the output of several ex
 
 \begin{align}
 X = \begin{bmatrix}
-x^{T}_1 & x^{T}_2 & \dots & x^{T}_n
-\end{bmatrix}
+x_1 & x_2 & \dots & x_n
+\end{bmatrix}.
 \end{align}
 
 Therefore, the network layers' equations change to:
 
 \begin{align}
-Z^{[i]} = W^{[i]}A^{[i-1]} + b^{[i]}\\
-A^{[i]} = \sigma(Z^{[i]})
+Z^{[i]} = W^{[i]}A^{[i-1]} + b^{[i]}.\\
+A^{[i]} = \sigma(Z^{[i]}).
 \end{align}
 
 Using vectorized implementations the network can explore better Single Instruction Multiple Data (SIMD) architectures and then speedup learning.
 
 \section{Activation Functions}\label{sec:activationfunction}
-As described in subsection \ref{sec:neuron}, an activation function uses the linear combination as input to give a non-linear representation and the improve network learning capacity. Without this, it only is able to represent linear functions.
+As described in subsection \ref{sec:neuron}, an activation function uses the linear combination as input to give a non-linear representation and improve network learning capacity. Without this, it only is able to represent linear functions.
 
 There are several activation functions. We will describe the most common used in deep learning research.
 
@@ -125,7 +127,7 @@ There are several activation functions. We will describe the most common used in
 Equation \ref{eq:sigmoid} shows the logistic sigmoid function.
 
 \begin{equation}
-\sigma(z) = \frac{1}{1 + e^{-z}}
+\sigma(z) = \frac{1}{1 + e^{-z}}.
 \label{eq:sigmoid}
 \end{equation}
 
@@ -144,20 +146,20 @@ Equation \ref{eq:tanh} shows hyperbolic tangent ($tanh$).
 
 
 \begin{equation}
-tanh(z) = \frac{e^{z} - e^{-z}}{e^{z} + e^{-z}}
+tanh(z) = \frac{e^{z} - e^{-z}}{e^{z} + e^{-z}}.
 \label{eq:tanh}
 \end{equation}
 
 It is close related to logistic function, because:
 
 \begin{equation}
-tanh(z) = 2\sigma(2z) - 1
+tanh(z) = 2\sigma(2z) - 1.
 \label{eq:tanhsigmoid}
 \end{equation}
 
-Hyperbolic tangent is considered a sigmoidal activation function as well, but typically performs better than sigmoid. It resembles the identity function more closely due to its symmetry in $x$ axis. Train a neural network with this activation function resembles a linear model when the input can be kept small, which makes training easier.
+Hyperbolic tangent is considered a sigmoidal activation function as well, but typically performs better than sigmoid. It resembles the identity function more closely due to its symmetry in $x$ axis. Training a neural network with this activation function resembles a linear model when the input can be kept small, which makes training easier.
 
-Figure \ref{fig:tanh} illustrates hyperbolic tangent.
+Figure \ref{fig:tanh} illustrates the hyperbolic tangent.
 
 \begin{figure}[!htbp]
 	\centering
@@ -169,21 +171,21 @@ Figure \ref{fig:tanh} illustrates hyperbolic tangent.
 
 \subsection{Rectified Linear Unit - ReLU}
 
-Rectified Linear Unit is a activation function very similar with a linear unit. It is described by equation \ref{eq:relu}:
+Rectified Linear Unit is a activation function very similar to a linear unit. It is described by Equation \ref{eq:relu}:
 
 \begin{equation}
-g(z) = max(0,z)
+g(z) = max(0,z).
 \label{eq:relu}
 \end{equation}
 
 The only difference between a linear unit and a rectified linear unit is
-that a rectified linear unit outputs zero across half its domain. This makes the
+that the latter outputs zero when the input is negative. This makes the
 derivatives through a rectified linear unit remain large whenever the unit is active.
 The gradients are not only large but also consistent. The second derivative of the
 rectifying operation is 0 almost everywhere, and the derivative of the rectifying
 operation is 1 everywhere that the unit is active. This means that the gradient
 direction is far more useful for learning than it would be with activation functions
-that introduce second-order effects \cite{Goodfellow-et-al-2016}. Figure \ref{fig:relu} illustrates this activation function.
+that introduce second-order effects \cite{Goodfellow-et-al-2016}, such as sigmoidal activations. Figure \ref{fig:relu} illustrates this activation function.
 
 \begin{figure}[!htbp]
 	\centering
@@ -192,7 +194,7 @@ that introduce second-order effects \cite{Goodfellow-et-al-2016}. Figure \ref{fi
 	\label{fig:relu}
 \end{figure}
 
-\cite{glorot2011a} motivate rectified linear units from
+\citeauthor{glorot2011a} takes the motivation for rectified linear units from
 biological considerations. The half-rectifying nonlinearity was intended to capture
 these properties of biological neurons: 
 \begin{itemize}
@@ -207,14 +209,14 @@ they are inactive (i.e., they should have sparse activations).
 \subsection{Leaky ReLU}
 
 One drawback to rectified linear units is that they cannot learn via gradient-based methods on examples for which their activation is zero. Leaky ReLU \cite{leakyrelu} is a
-generalization of rectified linear units guarantee that they receive gradient everywhere.
+generalization of rectified linear units guaranteeing that the gradient is nonzero everywhere.
 
 Equation \ref{eq:leakyrelu} represents the Leaky ReLU activation.
 
 
 \begin{equation}
 g(z) = max(\alpha z,z) 
-\text{, where } \alpha \in (0,1)
+\text{, where parameter } \alpha \in (0,1).
 \label{eq:leakyrelu}
 \end{equation}
 
@@ -225,7 +227,7 @@ principle that models are easier to optimize if their behavior is closer to line
 \begin{figure}[!htbp]
 	\centering
 	\includegraphics[width=0.7\textwidth]{Cap3/leakyrelu.eps}
-	\caption{Illustration of leaky ReLU function.}
+	\caption{Illustration of the leaky ReLU function.}
 	\label{fig:leakyrelu}
 \end{figure}
 
@@ -235,37 +237,37 @@ principle that models are easier to optimize if their behavior is closer to line
 In the context of neural networks, gradient-based algorithms are broadly used, especially those based on the backpropagation idea \cite{hinton88}. The purpose of these algorithms are to propagate the gradient of a cost function through the whole network, in order to minimize the cost function. Most modern neural networks perform this optimization strategy, by using maximum likelihood, i.e. the cross-entropy between the training data and the model distribution:
 
 \begin{equation}
-J(\boldsymbol{\theta}) = -\mathbb{E}_{\mathrm{\mathbf{x}},\mathrm{\mathbf{y}}\sim \hat{p}_{data}}\log{p_{model}(\mathrm{\mathbf{y}} | \mathrm{\mathbf{x}})}
+J(\boldsymbol{\theta}) = -\mathbb{E}_{\mathrm{\mathbf{x}},\mathrm{\mathbf{y}}\sim \hat{p}_{data}}\log{p_{model}(\mathrm{\mathbf{y}} | \mathrm{\mathbf{x}})}.
 \label{eq:cost_function_ml}
 \end{equation}
 
 In this work, we used the mean squared error loss function, in order to fit data distributions. Indeed, we may show that both cost functions are closely related. Let us consider normally distributed errors:
 
 \begin{equation}
-{p_{model}(\bvec{y} | \bvec{x})} = \mathcal{N}( \bvec{y}; f (\bvec{x}; \boldsymbol{\theta}), \sigma^{2}\bvec{I})
+{p_{model}(\bvec{y} | \bvec{x})} = \mathcal{N}( \bvec{y}; f (\bvec{x}; \boldsymbol{\theta}), \sigma^{2}\bvec{I}).
 \label{eq:errors}
 \end{equation}
-where \(f (\bvec{x}; \boldsymbol{\theta})\) and \(\sigma^{2}\bvec{I}\)  are the mean and covariance of this distribution. By substituting Eq. \eqref{eq:errors} in Eq. \eqref{eq:cost_function_ml}:
+where \(f (\bvec{x}; \boldsymbol{\theta})\) and \(\sigma^{2}\bvec{I}\)  are the mean and covariance of this distribution. By substituting Equation \eqref{eq:errors} in Eq. \eqref{eq:cost_function_ml}:
 
 \begin{equation}
-J(\boldsymbol{\theta}) = \frac{1}{2}\mathbb{E}_{\bvec{x},\bvec{y}\sim \hat{p}_{data}} \lVert \bvec{y} - f (\bvec{x}; \boldsymbol{\theta}) \rVert ^{2} + const
+J(\boldsymbol{\theta}) = \frac{1}{2}\mathbb{E}_{\bvec{x},\bvec{y}\sim \hat{p}_{data}} \lVert \bvec{y} - f (\bvec{x}; \boldsymbol{\theta}) \rVert ^{2} + const.
 \label{eq:cost_function_expectation}
 \end{equation} 
 
-The constant term does not depend on \( \boldsymbol{\theta} \) and may be dropped. By explicitly evaluating the expectation in Eq. \eqref{eq:cost_function_expectation}, we arrive at the mean squared error cost function:
+The constant term does not depend on \( \boldsymbol{\theta} \) and may be dropped. By explicitly evaluating the expectation in Equation \eqref{eq:cost_function_expectation}, we arrive at the mean squared error cost function:
 
 \begin{equation}
-J(\boldsymbol{\theta}) = \frac{1}{2m} \sum^{m}_{i} \lVert y_{i} - f (\bvec{x}; \boldsymbol{\theta}) \rVert ^{2}
+J(\boldsymbol{\theta}) = \frac{1}{2m} \sum^{m}_{i} \lVert y_{i} - f (\bvec{x}; \boldsymbol{\theta}) \rVert ^{2}.
 \end{equation}
 
 It can be shown that maximum likelihood estimator is the best estimator asymptotically, when the number of samples $m$ tends to infinity, in terms of its rates of convergence as $m$ increases. Furthermore, this estimator has the property of consistency, under certain conditions that must be satisfied by the data distribution, and efficiency, in terms of achieve lower generalization errors.	
 
 \section{Gradient Descent}\label{gradientdescent}
 
-The objective of a neural network training is find the parameters $W$ and $b$ that approximates the function represented by itself and the data generator distribution, by minimizing the cost function established. In math terms, it means:
+The objective of a neural network training is to find the parameters $W$ and $b$ that approximates the function represented by itself and the data generator distribution, by minimizing the cost function established. In mathematical terms, it means:
 
 \begin{equation}
-(W^{*},b^{*}) = \argmin_{W,b}J(W, b, x)
+(W^{*},b^{*}) = \argmin_{W,b}J(W, b, x).
 \end{equation}
 
 
@@ -284,63 +286,63 @@ The Gradient Descent technique is a iterative method that calculates the derivat
 As an example, given the following cost function (where $m$ is the number of samples, $\hat{y}$ is the prediction of the network and $y$ is the ground-truth):
 
 \begin{equation}
-J(W,b) = \frac{1}{m}\sum^{n}_{i = 1}\mathcal{L}(\hat{y}, y)
+J(W,b) = \frac{1}{m}\sum^{n}_{i = 1}\mathcal{L}(\hat{y}, y).
 \end{equation}
 
 
 The gradient with respect of the parameters $W$ and $b$ can be given by:
 
 \begin{align}
-\frac{\partial{J(W,b)}}{\partial{W}} = \frac{1}{m}\sum^{n}_{i = 1}\frac{\partial{\mathcal{L}(\hat{y}, y)}}{\partial{W}}\\
-\frac{\partial{J(W,b)}}{\partial{b}} = \frac{1}{m}\sum^{n}_{i = 1}\frac{\partial{\mathcal{L}(\hat{y}, y)}}{\partial{b}}
+\frac{\partial{J(W,b)}}{\partial{W}} = \frac{1}{m}\sum^{n}_{i = 1}\frac{\partial{\mathcal{L}(\hat{y}, y)}}{\partial{W}}.\\
+\frac{\partial{J(W,b)}}{\partial{b}} = \frac{1}{m}\sum^{n}_{i = 1}\frac{\partial{\mathcal{L}(\hat{y}, y)}}{\partial{b}}.
 \end{align}
 
 After these calculations, we are able to apply these gradients using the learning update rule:
 
 
 \begin{align}
-W = W - \alpha\frac{\partial{J(W,b)}}{\partial{W}}\\
-b = b - \alpha\frac{\partial{J(W,b)}}{\partial{b}}
+W = W - \alpha\frac{\partial{J(W,b)}}{\partial{W}}.\\
+b = b - \alpha\frac{\partial{J(W,b)}}{\partial{b}}.
 \end{align}
 
-These steps are applied iteratively until the function converges to a optimal value. It's important to mention that there are no guarantees the optimization will converge to a global optima, i.e, it is possible to get stuck in local optima. However, in practical applications, this is not a huge problem.
+These steps are applied iteratively until the function converges to a optimal value. It is important to mention that there are no guarantees the optimization will converge to a global optimum, i.e, it is possible to get stuck in local optimum. However, in practical applications, this is not a huge problem  \cite{DBLP:journals/corr/GoodfellowV14}, especially when considering some artifacts we will see later that improves the performance of gradient descent.
 
 \section{Backpropagation}
-In the case described in section \ref{gradientdescent} we computed the gradient directly with respect to parameters $W$ and $b$. However, in neural networks, we have to compute the gradients that correspond to all and layers and not just to the output layer. For this, we need to use the chain rule of calculus.
+In the case described in Section \ref{gradientdescent} we computed the gradient directly with respect to parameters $W$ and $b$. However, in neural networks, we have to compute the gradients that correspond to all layers and not just to the output layer. For this, we need to use the chain rule of calculus.
 
-Let $x$ be a real number, and let $f$ and $g$ both be functions mapping from a real
+Let $x$ be a real number, and let $f$ and $g$ be both functions mapping from a real
 number to a real number. Suppose that $y = g(x)$ and $z = f (g(x)) = f (y)$. Then
 the chain rule states that
 
 
 \begin{equation}
-\frac{dz}{dx} = \frac{dz}{dy}\frac{dy}{dx}
+\frac{dz}{dx} = \frac{dz}{dy}\frac{dy}{dx}.
 \end{equation}
 
 We can generalizes to vectorial case. Suppose that $\boldsymbol{x} \in \mathbb{R}^{m} , \boldsymbol{y} \in \mathbb{R}^{n}$, $g$ maps from $\mathbb{R}^{m}$ to $\mathbb{R}^{n}$ , and $f$ maps from $\mathbb{R}^{m}$ to $\mathbb{R}^{n}$. If $\boldsymbol{y} = g(\boldsymbol{x})$ and $\boldsymbol{z} = f( \boldsymbol{y})$, then
 
 \begin{equation}
-\frac{\partial{z}}{\partial{x_i}} = \sum_{j} \frac{\partial{z}}{\partial{y_{j}}}\frac{\partial{y_{j}}}{\partial{x_{i}}}
+\frac{\partial{z}}{\partial{x_i}} = \sum_{j} \frac{\partial{z}}{\partial{y_{j}}}\frac{\partial{y_{j}}}{\partial{x_{i}}}.
 \end{equation}
  
 It can be generalized more generic in a way that can be applied to tensors:
 
 \begin{equation}
-\nabla_{\textbf{X}}z = \sum_{j}(\nabla_\textbf{X}Y_{j})  \frac{\partial{z}}{\partial{Y_{j}}}
+\nabla_{\textbf{X}}z = \sum_{j}(\nabla_\textbf{X}Y_{j})  \frac{\partial{z}}{\partial{Y_{j}}}.
 \label{eq:backprop}
 \end{equation}
 
-The backpropagation takes equation \ref{eq:backprop} recursively, until the gradient is propagated to all layers of the neural network. Algorithm \ref{alg:backprop} \cite{Goodfellow-et-al-2016} shows in a simple way how to apply backpropagation to a deep neural network.
+The backpropagation takes Equation \ref{eq:backprop} recursively, until the gradient is propagated to all layers of the neural network. Algorithm \ref{alg:backprop} \cite{Goodfellow-et-al-2016} shows in a simple way how to apply backpropagation to a deep neural network.
 
 \begin{algorithm}[!htbp]
 	\caption{Backward computation for a deep neural network}
 	\begin{algorithmic} 
-		\STATE After the forward computation, compute the gradient on the output layer:
+		\STATE After the forward computation, compute the gradient of output layer:
 		\STATE $\boldsymbol{g} \leftarrow \nabla_{\boldsymbol{\hat{y}}}J = \nabla_{\boldsymbol{\hat{y}}}\mathcal{L}(\boldsymbol{\hat{y}},y)$
 		\STATE \textbf{for} $k = l, l - 1,
 		 \dots, 1$ \textbf{do}
 		
-		\STATE \hspace{5mm} Convert the gradient on the layer’s output into a gradient into the pre-nonlinearity activation (element-wise multiplication if f is element-wise):
+		\STATE \hspace{5mm} Convert the gradient on the layer’s output into a gradient into the pre-nonlinearity activation (element-wise multiplication if $f$ is element-wise):
 		\STATE \hspace{5mm} $\boldsymbol{g} \leftarrow \nabla_{\boldsymbol{a^{(k)}}}J = \boldsymbol{g} \odot f'(\boldsymbol{a}^{(k)})$
 		\STATE \hspace{5mm} Compute gradients on weights and biases:
 		\STATE \hspace{5mm} $\nabla_{\boldsymbol{b}^{(k)}}J = \boldsymbol{g}$
@@ -353,28 +355,32 @@ The backpropagation takes equation \ref{eq:backprop} recursively, until the grad
 \end{algorithm}
 
 \section{Optimization Algorithms}
-In Deep Learning community, gradient-based optimization is well established. However, in state-of-art research the backpropagation idea had several improvements to make learning better. In this section, we will explore some of these improvements and present the optimizer used in experimentation.
+In Deep Learning community, gradient-based optimization is well established. However, in the state-of-art research the backpropagation idea had several improvements to make learning better. In this section, we will explore some of these improvements and present the optimizer used in experimentation.
 
 \subsection{Batch, Mini-batch and Stochastic Gradient Descent}
-There are ways to use the data in order to apply learning updates. Accordingly to section \ref{sec:vectorization}, using vectorization makes possible to calculate several losses at the same time. However, sometimes the dataset is very large in a way it is costly to apply a single batch several times. On the other side, apply updates using one sample at a time can result in a biased gradient and also can be costly due to the fact we need to apply an update for each sample. Therefore, the batch size can change a lot the learning process.
+There different ways to use the data in order to apply learning updates. Accordingly to Section \ref{sec:vectorization}, vectorization makes possible to calculate several losses at the same time. However, sometimes the dataset is very large in a way it is costly to apply a single batch several times. On the other side, applying updates using one sample at a time can result in a biased gradient and also can be costly due to the fact we need to apply an update for each sample. Therefore, the batch size may strongly influence the learning process.
 
-The Batch Gradient Descent calculates the cost function for each sample in the dataset and only updates the model after all samples have been evaluated. In this way, there are fewer updates and the gradient is more precise, due to the fact we consider several samples to regularize it. So, the training and convergence are more stable. However, this variation of gradient descent can result in local optima convergence and turns to be very slow with large datasets.
+The Batch Gradient Descent (BGD) computes the cost function for each sample in the dataset and only updates the model after all samples have been evaluated. In this way, there are fewer updates and the gradient is more precise, due to the fact that we consider several samples to regularize it. So, the training and convergence are more stable. However, this variation of gradient descent can result in local optima convergence and turns to be very slow with large datasets.
 
-The Stochastic Gradient Descent calculates the cost function and updates the model for each samples in dataset. Using this variation, there are more frequent updates which can give feedback about the model fast and result in faster learning to some problems. Furthermore, the noisy update allows exploration in function optimization, avoiding local optima (Figure \ref{fig:batchvsstochastic}). However, there is a high computational cost of applying updates so frequently and the same noise can make hard for the last optimization steps. Equation \ref{eq:sgd} shows the learning update rule for Stochastic Gradient Descent:
+The Stochastic Gradient Descent (SGD) calculates the cost function and updates the model for each samples in dataset. Using this variation, there are more frequent updates which can give feedback about the model fast and result in faster learning to some problems. Furthermore, the noisy update allows exploration in function optimization, avoiding local optima (Figure \ref{fig:batchvsstochastic}). However, there is a high computational cost of applying updates so frequently and the same noise can make hard for the last optimization steps. Equation \ref{eq:sgd} shows the learning update rule for Stochastic Gradient Descent:
 
 \begin{equation}
-W = W - \alpha\frac{\partial{J(W,b, x^{(i)})}}{\partial{W}}
+W = W - \alpha\frac{\partial{J(W,b, x^{(i)})}}{\partial{W}}.
 \label{eq:sgd}
 \end{equation}
 
 \begin{figure}[!htbp]
 	\centering
 	\includegraphics[width=0.8\textwidth]{Cap3/batchvsstochastic.eps}
-	\caption{Illustration of 	Stochastic Gradient Descent optimization.
+	\caption{Illustration of 	Stochastic Gradient Descent optimization \cite{soni2018}.
 	}
 	\label{fig:batchvsstochastic}
 \end{figure}
 
+
+There is a third variant. The Mini-batch Gradient Descent is something in between batch and stochastic variants, where the algorithm splits dataset into small batches and each of them is used in a learning update. This version seeks to find a balance between the robustness of SGD and the efficiency of BGD. It is the most common implementation used in Deep Learning \cite{brownlee2017}. 
+
+The downside of Mini-batch Gradient Descent is the fact we need to set the mini-batch size, a new hyperparameter: a parameter that is not trained by the optimization algorithm and therefore need to be manually tunned.
 
 Figure \ref{fig:lossfunctiongdvariants} shows how cost function commonly behaves in each variation of Gradient Descent described.
 
@@ -382,44 +388,38 @@ Figure \ref{fig:lossfunctiongdvariants} shows how cost function commonly behaves
 	\centering
 	\includegraphics[width=0.8\textwidth]{Cap3/lossfunctiongdvariants.eps}
 	\caption{Illustration of how each variation of Gradient Descent commonly behaves.
-	\cite{dabbura2017}.
+		\cite{dabbura2017}.
 	}
 	\label{fig:lossfunctiongdvariants}
 \end{figure}
 
-
-
-There is a third variant. The Mini-batch Gradient Descent is something in between batch and stochastic variants, where the algorithm splits dataset into small batches and each of them will apply learning updates. This version seeks to find a balance between the robustness of SGD and the efficiency of BGD. It is the most common implementation used in Deep Learning \cite{brownlee2017}. However, the downside of this variation is the fact we need to set a new hyperparameter and tune it manually.
-
-
-
 \subsection{Momentum}
 
-Momentum is a technique for accelerating gradient descent that accumulates a velocity vector in directions of persistent reduction in the objective across iterations \cite{Sutskever:2013:IIM:3042817.3043064}. It uses the idea of exponentially weighted moving averages, accumulating gradients for each mini-batch accordingly to a hyperparameter $\beta$. This term will manage how much the last gradient will affect in the final velocity, following Equations \ref{eq:momentum} and \ref{eq:momentum_b}. Momentum aims primarily to solve two problems: poor conditioning of the
+Momentum is a technique for accelerating gradient descent that accumulates a velocity vector in directions of persistent reduction in the objective across iterations \cite{Sutskever:2013:IIM:3042817.3043064}. It uses the idea of exponentially weighted moving averages, accumulating gradients for each mini-batch accordingly to a hyperparameter $\beta$. This term will manage how much the last gradient will affect in the final velocity, following equations \ref{eq:momentum} and \ref{eq:momentum_b}. Momentum aims primarily to solve two problems: poor conditioning of the
 Hessian matrix and variance in the stochastic gradient \cite{Goodfellow-et-al-2016}.
 
 
 \begin{align}\label{eq:momentum}
-v_{dW} = \beta v_{dW} + (1 - \beta)dW\\
-v_{db} = \beta v_{db} + (1 - \beta)db
+v_{dW} = \beta v_{dW} + (1 - \beta)dW.\\
+v_{db} = \beta v_{db} + (1 - \beta)db.
 \label{eq:momentum_b}
 \end{align}
 
 Where $dW$ and $db$ are, respectively:
 
 \begin{align}
-dW = \frac{\partial{J(W,b)}}{\partial{W}}\\
-db = \frac{\partial{J(W,b)}}{\partial{b}}
+dW = \frac{\partial{J(W,b)}}{\partial{W}}.\\
+db = \frac{\partial{J(W,b)}}{\partial{b}}.
 \end{align}
 
 Therefore, using Momentum, the learning update is:
 
 \begin{align}\label{eq:momentumupdate}
-W = W - \alpha v_{dW}\\
-b = b - \alpha v_{db}
+W = W - \alpha v_{dW}.\\
+b = b - \alpha v_{db}.
 \end{align}
 
-The intuition behind Momentum is to filter the gradient, "reinforcing" it in the effective directions and removing the noisy ones. Then, it makes harder to apply learning updates in the wrong direction caused by noise samples. Figure \ref{fig:momentum} shows how Momentum changes Gradient Descent updates.
+The intuition behind Momentum is to filter the gradient, ``reinforcing" it in the effective directions and removing the noisy ones. Then, it makes harder to apply learning updates in the wrong direction caused by noise samples. Figure \ref{fig:momentum} shows how Momentum changes Gradient Descent updates.
 
 
 \begin{figure}[!htbp]
@@ -437,16 +437,16 @@ RMSProp \cite{hinton2012} uses the idea of exponentially weighted moving average
 
 
 \begin{align}\label{eq:rmsprop}
-v_{dW} = \beta v_{dW} + (1 - \beta)dW^2\\
-v_{db} = \beta v_{db} + (1 - \beta)db^2
+v_{dW} = \beta v_{dW} + (1 - \beta)dW^2.\\
+v_{db} = \beta v_{db} + (1 - \beta)db^2.
 \label{eq:rmsprop_b}
 \end{align}
 
 And the learning update changes to normalize the gradient:
 
 \begin{align}\label{eq:rmspropupdate}
-W = W - \alpha \frac{dW}{\sqrt{v_{dW}}}\\
-b = b - \alpha \frac{db}{\sqrt{v_{db}}}\\
+W = W - \alpha \frac{dW}{\sqrt{v_{dW}}}.\\
+b = b - \alpha \frac{db}{\sqrt{v_{db}}}.\\
 \label{eq:rmspropupdate_b}
 \end{align}
 
@@ -476,26 +476,26 @@ This normalization improves the learning stability -- all gradient terms will af
 
 \subsection{Adam}
 
-The last optimization algorithm idea explored here - and used in experimentations - is Adam \cite{adam2014}. It means ``Adaptive Moments" and combines the idea from Momentum and RMSProp in the following way: it computes the first order momentum of the gradient and rescale with the second order momentum, as shown in Equations \ref{eq:adam_1} and \ref{eq:adam_2}. The use of momentum in combination with rescaling does not have a clear theoretical motivation. 
+The last optimization algorithm idea explored here -- and used in experimentations -- is Adam \cite{adam2014}. It means ``Adaptive Moments" and combines the idea from Momentum and RMSProp in the following way: it computes the first order momentum of the gradient and rescale with the second order momentum, as shown in Equations \ref{eq:adam_1} and \ref{eq:adam_2}. The use of momentum in combination with rescaling does not have a clear theoretical motivation. 
 
 \begin{align}\label{eq:adam_1}
-v_{dW} = \beta_{1} v_{dW} + (1 - \beta_{1})dW\\
-u_{dW} = \beta_{2} u_{dW} + (1 - \beta_{2})dW^2
+v_{dW} = \beta_{1} v_{dW} + (1 - \beta_{1})dW.\\
+u_{dW} = \beta_{2} u_{dW} + (1 - \beta_{2})dW^2.
 \label{eq:adam_2}
 \end{align}
 
 Adam also incorporates a bias correction for both momentum estimates, resulting in lower bias early in training when compared to RMSProp:
 
 \begin{align}
-v_{dW} = \frac{v_{dW}}{(1 - \beta_{1}^{t})}\\
-u_{dW} = \frac{u_{dW}}{(1 - \beta_{2}^{t})}
+v_{dW} = \frac{v_{dW}}{(1 - \beta_{1}^{t})}.\\
+u_{dW} = \frac{u_{dW}}{(1 - \beta_{2}^{t})}.
 \end{align}
 
 Finally, the learning update changes as well:
 
 \begin{align}
-W = W - \alpha  \frac{v_{dW}}{\sqrt{u_{dW} + \epsilon}} \\
-b = b - \alpha \frac{v_{db}}{\sqrt{u_{db} + \epsilon}}
+W = W - \alpha  \frac{v_{dW}}{\sqrt{u_{dW} + \epsilon}}. \\
+b = b - \alpha \frac{v_{db}}{\sqrt{u_{db} + \epsilon}}.
 \end{align}
 
 Therefore, Adam is generally regarded as being fairly robust to the choice of hyperparameters, though sometimes learning rate needs to be changed from the suggested default.  Algorithm \ref{alg:adam} shows Adam idea \cite{Goodfellow-et-al-2016}.
@@ -508,7 +508,7 @@ Therefore, Adam is generally regarded as being fairly robust to the choice of hy
 		\REQUIRE Exponential decay rates for moment estimates, $\beta_{1}$ and $\beta_{2}$
 		\REQUIRE Parameters $W$, $b$
 		\REQUIRE $\epsilon$ correction for numeric stabilization 
-		\STATE Initialize $v_{dW}$ = $v_{db}$ = $u_{dW}$ = $u_{db}$
+		\STATE Initialize $v_{dW}$ = $v_{db}$ = $u_{dW}$ = $u_{db}$ = 0
 		\STATE Initialize time step $t$ = 0
 		\STATE \textbf{while} stopping criteria not met \textbf{do}
 		\STATE \hspace{5mm} Sample a mini-batch of $m$ examples from training set \{$\boldsymbol{x}^{(1)}, \dots, \boldsymbol{x}^{(m)} \}$ with corresponding targets $\boldsymbol{y}^{(i)}$
@@ -519,8 +519,8 @@ Therefore, Adam is generally regarded as being fairly robust to the choice of hy
 		\STATE \hspace{10mm} $v_{dW} = \beta_{1} v_{dW} + (1-\beta_{1}) g$ 
 		\STATE \hspace{10mm} $v_{db} = \beta_{1} v_{db} + (1-\beta_{1}) g$
 		\STATE \hspace{5mm} Update biased second momentum estimate:
-		\STATE \hspace{10mm} $v_{dW} = \beta_{2} v_{dW} + (1-\beta_{2}) g \odot g$
-		\STATE \hspace{10mm} $v_{db} = \beta_{2} v_{db} + (1-\beta_{2}) g \odot g$
+		\STATE \hspace{10mm} $u_{dW} = \beta_{2} u_{dW} + (1-\beta_{2}) g \odot g$
+		\STATE \hspace{10mm} $u_{db} = \beta_{2} u_{db} + (1-\beta_{2}) g \odot g$
 		\STATE \hspace{5mm} Correct bias in first moment:
 		\STATE \hspace{10mm} $v_{dW} = \frac{v_{dW}}{1-\beta_{1}^{t}} $
 		\STATE \hspace{10mm} $v_{db} = \frac{v_{db}}{1-\beta_{1}^{t}} $
@@ -536,10 +536,10 @@ Therefore, Adam is generally regarded as being fairly robust to the choice of hy
 \end{algorithm}
 
 \section{Weights Random Initialization}
-In order to start the learning, it is needed a way to initialize weight parameters. The way these are initialized can affect the convergence and even make it inviable.
+In order to start the learning, we need a way to initialize weight parameters. The way these are initialized can affect the convergence and even make it inviable.
 Suppose weights are all initialized by zero. No matter what was the input, if all weights are the same, all units in the same hidden layer will receive the same signal, either from the input in forward propagation or from the gradient in backpropagation. 
 
-Therefore, it needs a way for breaking the symmetry. For that, the rule is initialize all weights randomly. It will also break symmetry and increase the entropy in system in way it can gather more information to find local or global minimums.
+Therefore, it needs a way for breaking the symmetry. For that, the rule is to initialize all weights randomly. It will also break symmetry and increase entropy in the system so it can gather more information to find local or global minima.
 
 There are several ways to initialize weights randomly. In this work, we will explore and use Xavier Initialization.
 
@@ -556,7 +556,7 @@ Xavier Initialization makes sure weights are started in a reasonable range by us
 	\sigma^{2}(W) = \frac{2}{n_{in} + n_{out}}
 \end{equation}
 
-Where $n_{in}$ and $n_{out}$ are the number of neurons feeding into it and the result is fed to, respectively. \cite{Glorot10} shows the mathematical development for this equation.
+Where $n_{in}$ and $n_{out}$ are the number of neurons feeding into it and the result is fed to, respectively. \citeauthor{Glorot10} shows the mathematical development for this equation.
 
 \section{Gradient Descent convergence and learning rate decay}
 
@@ -588,7 +588,7 @@ The proof of this theorem can be found in \cite{tibshirani2013}. Therefore, usin
 
 In practice, learning works well even when some of these requirements are not met. In the context of Deep Learning, it is difficult to analyze if a function is convex because it depends on thousands or millions of parameters. Furthermore, there are activation functions themselves that are not differentiable in the whole interval it acts. Finally, the learning rate that the theorem guarantee convergence is too small. Therefore, it is common to search for a learning rate that converges faster. 
 
-Adaptive learning rate is another technique used for make convergence faster.
+Adaptive learning rate is another technique used to make convergence faster.
 
 
 \begin{gdconv}
@@ -602,6 +602,4 @@ Adaptive learning rate is another technique used for make convergence faster.
 \end{gdconv}
 
 
-Intuitively, using an adaptive learning rate, we can use larger initial values and then speedup learning. The most common method is learning rate decay, which could be linear, exponential.
-
-In this work, we will use linear learning rate decay.
+Intuitively, using an adaptive learning rate, we can use larger initial values and then speedup learning. The most common method is learning rate decay, which could be linear or exponential. In this work, we will use linear learning rate decay.

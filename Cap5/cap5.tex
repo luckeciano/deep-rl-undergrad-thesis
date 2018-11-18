@@ -1,11 +1,13 @@
+In previous chapters, we presented the motivation of this work, the domain description and the review from literature of Reinforcement Learning algorithms for control tasks. Posteriorly, we described in detail the concepts of Deep Learning and Reinforcement Learning, which culminates in the algorithm used for control the kick motion in this work: Proximal Policy Optimization. In this chapter, we will describe the problem, the whole experimentation setup and the computational infrastructure used.
+
 \section{The Kick Motion Problem}
 
-First of all, we need to understand why kick motion is a hard task for learning models, which justifies the usage of scalable techniques such as Deep Reinforcement Learning.
+First of all, we need to understand why the kick motion is a hard task for learning models, which justifies the use of scalable techniques such as Deep Reinforcement Learning.
 
 \begin{itemize}
-	\item \textbf{Long Time Horizons}: The simulation server runs 50 cycles per second. Each action has minor impact individually, but can collapse the motion in future. Furthermore, the final objective is inject velocity in the ball and it happens only after the whole motion. So, the real reward is very delayed.
+	\item \textbf{Long Time Horizons}: The simulation server runs 50 cycles per second. Each action has minor impact individually, but can collapse the motion in the future. Furthermore, the final objective is to inject velocity in the ball and it happens only after the whole motion. So, the real reward is very delayed.
 	
-	\item \textbf{Partially-observed state}: The agent doesn't have full information from the environment and perception data is noisy. Therefore, all information used in training is liable to have errors that can make learning harder.
+	\item \textbf{Partially-observed state}: The agent doesn't have full information from the environment and the perception data is noisy. Therefore, all information used in training is liable to have errors that can make learning harder.
 	
 	\item \textbf{High-dimensional, continuous action space}: In the kick motion, at each timestep, the agent have to act in each of 22 joints. Each joint can assume any possible angle. If we consider the agent could assume only two possible actions for each joint, then it has $2^{22} = 4.194.304$ possible combinations of actions. Just to compare: the average number of actions in chess is 35; in Go, 250.
 \end{itemize}
@@ -13,46 +15,46 @@ First of all, we need to understand why kick motion is a hard task for learning 
 In order to find the best method for learn the Kick Motion, we tested several techniques to compare them and find out that one which converges faster and results in the better and more robust kick. In the next subsections, we will describe each of the methods evaluated in this work.
 
 \subsection{Reinforcement with Naive Reward - RNR }
-In this learning model, we just use reinforcement learning with a simple and directly reward. As our task is related to kick the ball, the ``naive" reward is composed by its velocities after the kick motion, as shown in \ref{naive_reward}, where $s$, $v$ and $u$ are actual state, the vector of velocity and weight parameters, respectively. We call it naive because we don't pass to the learning model any idea of how the motion have to be performed - just what we expect to have as final objective. 
+In this learning model, we just use reinforcement learning with a simple and directly reward. As our task is related to kicking the ball, the ``naive" reward is composed by its velocities after the kick motion, as shown in Equation \eqref{naive_reward}, where $s$, $v$ and $u$ are the actual state, the vector of velocity and weight parameters, respectively. We call it naive because we don't pass to the learning model any idea of how the motion have to be performed - just what we expect to have as final objective. 
 
-It is important to highlight that the techniques described could be used jointly as building blocks of a more labored model.
+It is important to highlight that the techniques described in the Section \ref{sec:experimentation_setup} could be used jointly as building blocks of a more labored model.
 
 \begin{equation}
-R(s) = u^{T}v
+R(s) = u^{T}v.
 \label{naive_reward}
 \end{equation}
 
 \subsection{Reinforcement with Reference Reward - RRR }
-In this learning model we add a term that compares the actual performance with a reference motion, as shown in \ref{complete_reward}:
+In this learning model we add a term that compares the actual performance with a reference motion, as shown in Equation \eqref{complete_reward}:
 
 \begin{equation}
 R(s) = w_{ref}^{T}(\pi - r)
 \label{complete_reward}
 \end{equation}
 
-In this equation, $w_{ref}$ are weight parameters for each joint and $r$ is the absolute value of the difference between joint values in that state and the reference (equation \ref{diffjoints}).
+In this equation, $w_{ref}$ are weight parameters for each joint and $r$ is the vector of absolute values regarding of the difference between joint values in that state and the reference (Equation \eqref{diffjoints}).
 
 \begin{equation}
-r(\theta, \theta_{0}) = \lVert\theta - \theta_{0}\rVert
+r(\theta, \theta_{0}) = \lvert\theta - \theta_{0}\rvert.
 \label{diffjoints}
 \end{equation}
 
-The intuition behind this weight parameters is because we have some joints more important than others. For example, some joints from the leg that kicks the ball themselves could collapse the whole motion if the error is high. On the other hand, joints from the neck are not so important to the kick. Therefore, it's natural to penalize differently in each case.
+The intuition behind this weight parameters is because some joints are more important than others for kicking. For example, some joints from the leg that kicks the ball themselves could collapse the whole motion if the error is high. On the other hand, joints from the neck are not so important for the kick. Therefore, it is natural to penalize differently in each case.
 
-Lastly, the reference motion used was the keyframe kick previously mentioned and also used in HLM.
+Lastly, the reference motion used was the keyframe kick we have access from ITAndroids code, previously mentioned in Subsection \ref{sec:keyframe-movements} and also used in HLM.
 
 
 \subsection{Reinforcement with Initial State Distribution - RISD}\label{risd}
 
 The Initial State Distribution is a technique related to where the episode starts to collect data to use in the learning. Without this technique, all episodes start in the beginning of the motion. However, the problem of this strategy is because the policy is forced to learn the motion in a sequential manner, first learning the early phases of the motion, and then incrementally progressing towards the later phases. This can be problematic for the kick motion. Another disadvantage of a fixed initial state is the resulting exploration challenge. The policy only receives reward retrospectively, once it has visited a state. Therefore, until a high-reward state has been visited, the policy has no way of learning that this state is favorable \cite{peng2018}.
 
-To implement Initial State Distribution, we used a uniformly random variable that could assume any value in the set of states from the reference motion previously described. Suppose we pick the value $s$. Then, we start the episode running reference motion, from its first state until $s$. Finally, we start to collect data and perform the actions from the running policy.
+To implement Initial State Distribution, we used a uniformly random variable that could assume any value in the set of states from the reference motion previously described. Suppose we pick the value $s$. Then, we start the episode running the reference motion, from its first state until $s$. Finally, we start to collect data and perform the actions from the running policy.
 
 \subsection{Reinforcement with Early Termination - RET}
 
 The Early Termination technique is related to where the episode ends. Without early termination, all motions stops in the same state, which means that the episode length is fixed. The problem of this is because if the motion fails somehow during its execution, all the data collected after the failure will harm learning and evaluation of later stages.
 
-In the kick motion task, the early termination will be triggered when the robot falls during the motion. This behavior will ensure two things: first, that we don't collect wrong data, as mentioned before; and second, to gain more reward and have longer episodes, the agent will be forced to learn a kick motion that doesn't fall -- which will be very good in game situation.
+In the kick motion task, the early termination will be triggered when the robot falls during the motion. This behavior will ensure two things: first, that we don not collect wrong data, as mentioned before; and second, to gain more reward and have longer episodes, the agent will be forced to learn a kick motion that does not fall -- which will be very good in game situation.
 
 \subsection{Hybrid Learning Model -- HLM}
 In the Hybrid Learning Model (HLM), the training process occurs in two phases. The first one, a supervised learning phase, we learn the keyframe used by using a neural network, reproducing almost the same motion that we already had previously. The intuition behind this is if the agent starts from a good initial point in the optimization problem, it could be easier to get better results applying the gradient in the neighborhood of that point. The reward starts with a good value and the starting motion is well defined. Otherwise, if the optimization starts in a random point, it could be impossible to reach a good motion and probably the agent will get stuck in a local optima. This idea is shown in Figure \ref{optimization_intuition}.
@@ -95,10 +97,10 @@ where $\alpha$ is a small constant. This activation function was used to improve
 \label{fig:model_plot}
 \end{figure}
 
-This architecture resulted in thousand of parameters to optimize, as exposed in Table \ref{tab:network_summary}. A very high number, when compared to more traditional optimization approaches \cite{AAAI12-MacAlpine}. Notice that, by increasing the number of parameters usually allows representing better movements.
+This architecture resulted in thousand of parameters to optimize, as exposed in Table \ref{tab:network_summary}. A very high number, when compared to more traditional optimization approaches \cite{AAAI12-MacAlpine}. Notice that increasing the number of parameters usually allows representing better movements.
 
 \begin{table}[htbp]
-\caption{The Network Summary}
+\caption{The Network Summary.}
 \begin{center}
 \begin{tabular}{|c|c|c|c|}
 \hline
@@ -122,14 +124,14 @@ Dense & 23 & Linear & 1173 \\
 
 
 \subsection{The Training Procedure}
-Since keyframe motions are executed in an open-loop fashion, the sequence of joint positions are always the same for different repetitions, independently of robot's state. Therefore, by adding samples of multiple executions of the same motion would not make our dataset richer. So, we decided to use only one repetition for each movement for faster training. In the case of the walking motion, we collected samples within one walking period.
+Since keyframe motions are executed in an open-loop fashion, the sequence of joint positions are always the same for different repetitions, independently of the robot's state. Therefore, by adding samples of multiple executions of the same motion would not make our dataset richer. So, we decided to use only one repetition for each movement for faster training. In the case of the walking motion, we collected samples within one walking period.
 
 During the training, we used 50 thousands epochs divided into 5 training phases, where the learning rate was decreased between phases, in order to achieve better performance. First, we executed 30000 epochs, by using the learning rate of 0.001. The other phases had 5000 epochs each, and we decreased the learning rate by 0.0002 in each phase.
 
-Furthermore, we used Adam optimization \cite{adam2014}, during the whole training. The loss function used was the mean squared error, as explained in Subsec. \ref{sec:neural_networks}. We decided this loss function is adequate for this problem, mainly because it strongly penalizes large errors, which can collapse the whole motion.
+Furthermore, we used Adam optimization \cite{adam2014}, during the whole training. The loss function used was the mean squared error, as explained in Subsection \ref{sec:neural_networks}. We decided this loss function is adequate for this problem, mainly because it strongly penalizes large errors, which can collapse the whole motion.
 
 \subsection{The Deployment in the Soccer 3D Environment}
-In order to perform the network design and the training procedure, we used the Keras \cite{chollet2015keras} framework coupled with Tensorflow \cite{tensorflow2015-whitepaper} as backend. After training, the weights were frozen and converted to a specific format, which was readable, by using the Tensorflow C++ API integrated within agent's code. Hence, the training was performed outside the environment, but the agent actually has computed network inferences, during the simulation execution.
+In order to perform the network design and the training procedure, we used the Keras \cite{chollet2015keras} framework coupled with Tensorflow \cite{tensorflow2015-whitepaper} as backend. After training, the weights were frozen and converted to a specific format, which was readable, by using the Tensorflow C++ API integrated within our agent's code. Hence, the training was performed outside the environment, but the agent actually computes network inferences, during the simulation execution.
 
 \section{Reinforcement Learning Setup}
 
@@ -137,17 +139,17 @@ To use a Reinforcement Learning model, we need to define a policy representation
 
 \subsection{Policy Representation}
 
-The policy is represented by a neural network similar to the supervised learning model. A state is described as the stage of kick motion. An action is a set of joint values that has to be applied by the agent in that state.
+The policy is represented by a neural network similar to the supervised learning model. A state is described as the stage of kick motion. An action is a set of joint values that has to be applied by the agent in the state of the kicking motion.
 
-In the Supervised Learning stage of HLM, the architecture from both value function and policy networks is that described by section \ref{supervised_learning_setup}. In the Reinforcement Learning stage we add a Gaussian action space noise. On the other cases, we also add an input normalization Filter.
+In the Supervised Learning stage of HLM, the architecture from both value function and policy networks is that described by Section \ref{supervised_learning_setup}. In the Reinforcement Learning stage we add a Gaussian action space noise. On the other cases, we also add an input normalization filter.
 
 \subsubsection{Input Normalization Filter}\label{sec:inputnorm}
-The input normalization filter, also know as feature scaling, has the objective of normalize the input to avoid the problem of vanishing and exploding gradients by applying updates through all dimensions in equal proportions, as illustrated in Figure \ref{inputnormfig}. This normalization happens at each pass in the network, re-calculating mean and standard deviation using the new examples. Hence, this method helps during the convergence.
+The input normalization filter, also know as feature scaling, has the objective of normalize the input to avoid the problem of vanishing or exploding gradients by applying updates through all dimensions in equal proportions, as illustrated in Figure \ref{inputnormfig}. This normalization happens at each pass of the network, re-calculating mean and standard deviation using the new examples. Hence, this method helps during the convergence.
 
 \begin{figure}[!htbp]
 	\centering
 	\includegraphics[width=0.8\textwidth]{Cap5/inputnorm.eps}
-	\caption{Intuition behind input normalization}
+	\caption{Intuition behind input normalization \cite{inputnormalization}}.
 	\label{inputnormfig}
 \end{figure}
 
@@ -162,7 +164,7 @@ As an actor-critic model, we have two networks: one for the value function and o
 \end{figure}
 
 \begin{table}[htbp]
-	\caption{The Reinforcement Learning Network Summary}
+	\caption{The Reinforcement Learning Network Summary.}
 	\begin{center}
 		\begin{tabular}{|c|c|c|c|}
 			\hline
@@ -202,20 +204,18 @@ The last idea explored in this policy representation is the Gaussian action spac
 \end{figure}
 
 \subsection{Task Description}
-The learning task consists in the activity the agent will execute in order to achieve the expected behavior through the policy. In this experimentation, we would like to learn the kick motion. Therefore, is straightforward that the scenario is based on kick the ball.
+The learning task consists in the activity the agent will execute in order to achieve the expected behavior through the policy. In this experimentation, we would like to learn the kick motion. Therefore, it is straightforward that the scenario is based on kicking the ball.
 
 The agent is started in a fixed position of the soccer field. The ball, on the other hand, starts in a position $\alpha_{ball}$ meters from the agent, in front of him. The parameter $\alpha_{ball}$ can be optimized in order to decide the best position the agent have to stop to kick the ball better. However, for this experimentation, we fixed its value.
 
-We repeat the following flow: in the beginning of the episode, all the joints are initialized in a certain value that correspond to the joints the robot assume when it stops to walk and will start the kick motion. Then, we start the learning steps, applying the joints from the neural network to the robot. When we use RISD, there's a intermediate phase executing the reference motion, as described in \ref{risd}.
+We repeat the following flow: in the beginning of the episode, all the joints are initialized in a certain value that correspond to the joints the robot assume when it stops to walk and will start the kick motion. Then, we start the learning steps, applying the joints from the neural network to the robot. When we use RISD, there is a intermediate phase executing the reference motion, as described in Subsection \ref{risd}.
 
-After the execution of those steps, we finalize the episode turning all the joints to zero. When there's no Early Termination, this happens after a fixed number of steps that we can ensure the motion has over. Otherwise, this occurs when the early termination condition is reached.
-
-Figure \ref{taskdescription} shows the tasking running.
+After the execution of those steps, we finalize the episode turning all the joints to zero. When there is no Early Termination, this happens after a fixed number of steps that we can ensure the motion is over. Otherwise, this occurs when the early termination condition is reached. Figure \ref{taskdescription} shows the tasking running.
 
 
-\begin{figure}[!htbp]
+\begin{figure}[H]
 	\centering
-	\includegraphics[width=0.7\textwidth]{Cap5/taskdescription.eps}
+	\includegraphics[width=0.5\textwidth]{Cap5/taskdescription.eps}
 	\caption{Task used to learning kick motion.}
 	\label{taskdescription}
 \end{figure}
@@ -223,29 +223,29 @@ Figure \ref{taskdescription} shows the tasking running.
 \section{Infrastructure}
 \subsection{Reinforcement Learning Server}\label{rlarchitecture}
 
-Figure \ref{rlserver} shows the architecture used to integrate the learning algorithm, agent and simulation environment. The simulation server exposes a state to the soccer agent, which model this information and passes to the learning algorithm that chooses a action accordingly and returns to the agent. Then, it applies this action in the environment, modifying its state, completing the cycle.
+Figure \ref{rlserver} shows the architecture used to integrate the learning algorithm, agent and simulation environment. The simulation server exposes a state to the soccer agent, which model this information and passes to the learning algorithm that chooses an action accordingly and returns to the agent. Then, it applies this action in the environment, modifying its state, completing the cycle.
 
 \begin{figure}[!htbp]
 	\centering
 	\includegraphics[width=0.5\textwidth]{Cap5/rlserver.eps}
-	\caption{Reinforcement Learning Server Architecture.
-		\cite{tgmuzio}
+	\caption{Reinforcement Learning Server Architecture
+		\cite{tgmuzio}.
 	}
 	\label{rlserver}
 \end{figure}
 
 \subsubsection{Simulation Server}
 
-The simulation environment used, as mentioned before, is Simpark. It uses a TCP Socket to communicate with the agent and exposes a interface for querying the ground truth state for many features from the agent - which can be helpful to state evaluation and avoids to use agent's perceived data that has noise. 
+The simulation environment used, as mentioned before, is the Simpark. It uses a TCP Socket to communicate with the agent and exposes a interface for querying the ground truth state for many features from the agent -- which can be helpful to state evaluation and avoids to use agent's perceived data that has noise. 
 
 \subsubsection{Soccer Agent}
-The agent used is from ITAndroids Soccer 3D team and it leads with the perception information sent from the server, model the world with this information and make decisions accordingly. Additionally, there's a entity, called Wizard, whose purpose is query the ground truth state. All this code is written in C++ and the task described in \ref{taskdescription} was implemented in the agent itself.
+The agent used is from ITAndroids Soccer 3D team and it leads with the perception information sent from the server, model the world with this information and make decisions accordingly. Additionally, there is a entity, called Wizard, whose purpose is querying the ground truth state. All this code is written in C++ and the task described in Section \ref{taskdescription} was implemented in the agent itself.
 
 Other tool that worth mention is RoboViz, a publicly available visualization tool that allows a few improvements over the default visualization tool. We used it to verify if the task was implemented successfully.
 
 \subsubsection{Learning Agent}\label{learningagent}
 
-We created another interface to integrate the Soccer Agent with the algorithms used in this experimentation. These were implemented by OpenAI Baselines \cite{baselines}, a repository of high-quality implementations of reinforcement learning algorithms whose purpose is make easier for the research community to replicate, refine, and identify new ideas, and create good baselines to build research on top of. The community developed those algorithms using Python language with the Tensorflow \cite{tensorflow2015-whitepaper} framework.
+We created another interface to integrate the Soccer Agent with the algorithms used in this experimentation. These were implemented by OpenAI Baselines \cite{baselines}, a repository of high-quality implementations of reinforcement learning algorithms whose purpose is to make easier for the research community to replicate, refine, and identify new ideas, and create good baselines to build research on top of it. The community developed those algorithms using Python language with the Tensorflow \cite{tensorflow2015-whitepaper} framework.
 
 This integration was done using gRPC \cite{grpc}, an open source remote procedure call (RPC) system that generates cross-platform client and server bindings. It uses HTTP/2 for transport and Protocol Buffers \cite{protocolbuffers} as the interface description language, serializing structured data.
 
@@ -254,21 +254,21 @@ This integration was done using gRPC \cite{grpc}, an open source remote procedur
 
 \subsection{Neural Network Deployment}
 
-When we use the architecture from \ref{rlarchitecture}, two problems related to the neural network deployment arise.
+When we use the architecture from Subsection \ref{rlarchitecture}, two problems related to the neural network deployment arise.
 
-The first one is related to the HLM. We have a supervised learning model trained using the framework Keras outside the environment and with no relation to OpenAI Baselines. Therefore, we need a way to import this model from Keras model into the learning algorithms.
+The first one is related to the HLM. We have a supervised learning model trained using the framework Keras outside the environment and with no relation to OpenAI Baselines. Therefore, we need a way to import this model from Keras into the learning algorithms.
 
-The second problem is to deploy the network from learning algorithm to the soccer agent. When the network is trained using OpenAI Baselines, there's no contact between the soccer agent and the model. As described in \ref{learningagent}, there's a interface to communicate the actions between them. All calculations happens in only one side. However, during a game, it's not possible to maintain this dependency, so we need a way to run the network inside soccer agent and without the whole training structure.
+The second problem is to deploy the network from the learning algorithm to the soccer agent. When the network is trained using OpenAI Baselines, there's no contact between the soccer agent and the model. As described in Subsubsection \ref{learningagent}, there is a interface to communicate the actions between them. All calculations happens in only one side. However, during a game, it is not possible to maintain this dependency, so we need a way to run the network inside the soccer agent and without the whole training structure.
 
-\subsubsection{Import Supervised Model into OpenAI Baselines}
+\subsubsection{Importing Supervised Model into OpenAI Baselines}
 
-To solve this problem, it's important to understand how Keras works and what's the challenge behind this import. 
+To solve this problem, it is important to understand how Keras works and which is the challenge behind this import. 
 
-Keras works on top of lower level machine learning frameworks. Its purpose is make easier to prototype and train models with few lines of code. With Keras, developers don't need to understand in deep how computational graphs works and some math behind the models. Actually, this framework wraps code from the lower level ones. Therefore, even being easier to use, all the computation and data structures remains the same.
+Keras works on top of lower level machine learning frameworks. Its purpose is to facilitate model prototyping and training using few lines of code. With Keras, developers don not need to understand in deep how computational graphs works and some math behind the models. Actually, this framework wraps code from the lower level ones. Therefore, even being easier to use, all the computation and data structures remains the same.
 
-As back-end framework that Keras runs on top of, we used Tensorflow. As described previously, it creates a computational graph with math tensors as inputs that ``flow" inside and returns the expected result.
+As the back-end framework that Keras runs on top of, we used Tensorflow. As described previously, it creates a computational graph with math tensors as inputs that ``flow" inside and returns the expected result.
 
-Given that context, the idea is straightforward: we create a `    ``Kick Policy" class, that creates the model using Keras, load its weights, gets the output tensor and injects in the rest of Tensorflow's computational graph related to the learning algorithm. The Algorithm \ref{importnetworkpseudocode} explains sequentially this idea.
+Given that context, the idea is straightforward: we create a     ``Kick Policy" class, that creates the model using Keras, load its weights, gets the output tensor and injects in the rest of Tensorflow's computational graph related to the learning algorithm. The Algorithm \ref{importnetworkpseudocode} explains sequentially this idea.
 
 \begin{algorithm}
 	\caption{Import Keras model into Tensorflow}
@@ -282,17 +282,17 @@ Given that context, the idea is straightforward: we create a `    ``Kick Policy"
 	\label{importnetworkpseudocode}
 \end{algorithm}
 
-It's important to mention that the $load\_weights$ operation already initializes the graph variables and if we initialize them again, we lose the pre-trained weights.
+It is important to mention that the $load\_weights$ operation already initializes the graph variables and if we initialize them again, we lose the pre-trained weights.
 
-The biggest problem of this integration is we can't use Input Normalization Filter and Gaussian Action Space Noise, described in \ref{sec:inputnorm} and \ref{gasp}, respectively. Therefore, we can face gradient and exploration problems during learning.
+The biggest problem of this integration is we can't use Input Normalization Filter and Gaussian Action Space Noise, described in Subsubsections \ref{sec:inputnorm} and \ref{gasp}, respectively. Therefore, we can face gradient and exploration problems during learning.
 
-\subsubsection{Export OpenAI Baselines onto Soccer Agent}
+\subsubsection{Exporting OpenAI Baselines onto Soccer Agent}
 
 As mentioned earlier, Tensorflow creates a data flow graph with all operations executed during the algorithm. Figure \ref{fig:dataflowgraph} shows the whole graph for PPO used in this experimentation. However, we need to export only the policy network itself.
 
 \begin{figure}[!htbp]
 	\centering
-	\includegraphics[width=1.1\textwidth]{Cap5/dataflowgraph.eps}
+	\includegraphics[width=0.8\textwidth]{Cap5/dataflowgraph.eps}
 	\caption{Data flow graph for PPO algorithm.
 	}
 	\label{fig:dataflowgraph}
@@ -302,19 +302,19 @@ It is important to mention that ``policy network" mean only the neural network t
 
 \begin{figure}[!htbp]
 	\centering
-	\includegraphics[width=1.1\textwidth]{Cap5/pigraph.eps}
+	\includegraphics[width=0.9\textwidth]{Cap5/pigraph.eps}
 	\caption{ ``Pi" data flow node from PPO.
 	}
 	\label{fig:pigraph}
 \end{figure}
 
-Therefore, to export this policy network, we need to add a new ``identity" node in the output from that. This node has the same resultant tensor, but it is possible to label it and we can freeze the subgraph whose output is the labeled node itself. Internally, Tensorflow will start freezing the output node and its dependencies, recursing until input nodes. Then, we save this data structure in a proto file that we read using the C++ API in the soccer agent. Figure \ref{fig:policygraph1} and \ref{fig:policygraph2} show the policy data flow graphs from Figures \ref{rlnetwork} and \ref{fig:model_plot}, respectively.
+Therefore, to export this policy network, we need to add a new ``identity" node in the output from that. This node has the same resultant tensor, but it is possible to label it and we can freeze the subgraph whose output is the labeled node itself. Internally, Tensorflow will start freezing the output node and its dependencies, and consecutively	 until input nodes. Then, we save this data structure in a proto file -- an method of serializing structured data -- that we read using the C++ API in the soccer agent. Figure \ref{fig:policygraph1} and \ref{fig:policygraph2} show the policy data flow graphs from Figures \ref{rlnetwork} and \ref{fig:model_plot}, respectively.
 
 
 
 \begin{figure}[!htbp]
 	\centering
-	\includegraphics[width=1.1\textwidth]{Cap5/policygraph1.eps}
+	\includegraphics[width=0.9\textwidth]{Cap5/policygraph1.eps}
 	\caption{ Policy data flow graph from Figure \ref{rlnetwork}
 	}
 	\label{fig:policygraph1}
@@ -322,7 +322,7 @@ Therefore, to export this policy network, we need to add a new ``identity" node 
 
 \begin{figure}[!htbp]
 	\centering
-	\includegraphics[width=1.1\textwidth]{Cap5/policygraph2.eps}
+	\includegraphics[width=0.9\textwidth]{Cap5/policygraph2.eps}
 	\caption{ Policy data flow graph from Figure \ref{fig:model_plot}
 	}
 	\label{fig:policygraph2}
@@ -330,19 +330,19 @@ Therefore, to export this policy network, we need to add a new ``identity" node 
 
 
 \subsection{Distributed Training}\label{sec:distributedtraining}
-Reinforcement Learning training is much more costly computationally when compared to the supervised one described in \ref{supervised_learning_setup}. Additionally to the costs of applying gradients in the network, we need to gather all the data from agent simulations. Furthermore, since the data distribution changes during the learning, it's harder to converge, se it is needed a large amount of data.
+Reinforcement Learning training is much more costly computationally when compared to the supervised one described in Section \ref{supervised_learning_setup}. Additionally to the costs of applying gradients in the network, we need to gather all the data from agent simulations. Furthermore, since the data distribution changes during the learning, it is harder to converge, so it needs large amounts of data.
 
-In this context, use a single agent to get all the data and train the algorithm takes too long time to converge and, depending of the problem, it is not viable. We need a way to get more data faster and accelerate the training.
+In this context, using a single agent for gathering the data and training the algorithm takes too long to converge and, depending of the problem, it is not viable. We need a way to get more data faster and accelerate the training.
 
 \subsubsection{Data Parallelism}
 
-The solution for this challenge is distribute the training using several agents. Each agent interacts with its own environment, but the results are applied to the same network. This technique is called Data Parallelism, because the parallelization happens in data gathering. It opposes the idea of Model Parallelism, where the learning model itself is distributed, but this technique is not interesting in reinforcement learning training.
+The solution for this challenge is to distribute the training using several agents. Each agent interacts with its own environment, but the results are applied to the same network. This technique is called Data Parallelism, because the parallelization happens in data gathering. It opposes the idea of Model Parallelism, where the learning model itself is distributed, but this technique is not interesting in reinforcement learning training.
 
-In Data Parallelism, we applied a master-workers architecture, as shown in Figure \ref{fig:master-worker}. It has several worker nodes, whose job is gather data by simulating the agent, and a master node, which controls the learning algorithm. This architecture works very well in this experiment because the computation from workers are very similar so we can conduct several independent processes in those. It can also be fault tolerant: if one worker dies, the learning process can keep running.
+In Data Parallelism, we applied a master-workers architecture, as shown in Figure \ref{fig:master-worker}. It has several worker nodes, whose job is to gather data by simulating the agent, and a master node, which controls the learning algorithm. This architecture works very well in this experiment because the computation from workers are very similar so we can conduct several independent processes in those. It can also be fault tolerant: if one worker fails, the learning process can keep running.
 
-\begin{figure}[!htbp]
+\begin{figure}[H]
 	\centering
-	\includegraphics[width=1.1\textwidth]{Cap5/master-worker.eps}
+	\includegraphics[width=0.9\textwidth]{Cap5/master-worker.eps}
 	\caption{ Master-workers architecture for data parallelism.
 	}
 	\label{fig:master-worker}
@@ -356,25 +356,25 @@ In asynchronous training, each worker executes the task, gathers data, calculate
 
 On the other side, in the synchronous training, each worker executes the same job as the asynchronous one. However, the master node collects the gradients and applies an average from them. In this way, the updates occurs in the same frequency, but they are much more precise (and therefore we can use large learning rates). 
 
-\cite{heess2017} implemented a variation of PPO called Distributed PPO (DPPO) and their experiments shows that synchronous updates worked better in practice. Hence, in this experimentation we also used this type of distributed training.
+\citeauthor{heess2017} implemented a variation of PPO called Distributed PPO (DPPO) and their experiments shows that synchronous updates worked better in practice. Hence, in this experimentation we also used this type of distributed training.
 
-\begin{figure}[!htbp]
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=0.8\textwidth]{Cap5/distributedtraining.eps}
-	\caption{ Synchronous and Asynchornous Distributed Training.
+	\caption{ Synchronous and Asynchornous Distributed Training \cite{tensorflow2015-whitepaper}.
 	}
 	\label{fig:distributedtraining}
 \end{figure}
 
 \subsection{Metrics}
 
-We need evaluation metrics to compare the techniques in section \ref{sec:experimentation_setup}. Several of them were collected and described below:
+We need evaluation metrics to compare the techniques in Section \ref{sec:experimentation_setup}. Several of them were collected and described below:
 
 \begin{itemize}
-	\item \textbf{Episode Reward Mean}: This metric is the mean of cumulate reward during the whole episode. It's directly related to the motion performance. Then, it's the main metric in the comparison.
-	\item \textbf{Value Function Loss}: Says how good is the prediction of value function by the network.
-	\item \textbf{Timesteps So Far}: It means how many cycles (observation-action-reward) have been executed. This metric was used to compare the speedup from distributed training.
-	\item \textbf{Episode Length Mean}: In the case of models with no fixed length, this metric will allow us to understand how the learning worked.
+	\item \textbf{Episode Reward Mean}: this metric is the mean of cumulate reward during the whole episode. It is directly related to the motion performance. Then, it is the main metric in the comparison.
+	\item \textbf{Value Function Loss}: says how good is the prediction of value function by the network.
+	\item \textbf{Timesteps So Far}: it means how many cycles (observation-action-reward) have been executed. This metric was used to compare the speedup from distributed training.
+	\item \textbf{Episode Length Mean}: in the case of models with no fixed length, this metric will allow us to understand how the learning worked.
 \end{itemize} 
 
 \subsection{Monitoring via Tensorboard}

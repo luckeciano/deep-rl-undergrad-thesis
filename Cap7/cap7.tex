@@ -1,12 +1,12 @@
 \section{Conclusions}
-In this work, we presented several techniques for mimic humanoid kick motion and, finally, presented a framework that is able to mimic a reference motion and optimize it towards a task.
+In this work, we presented several techniques for mimicking humanoid kick motion and, finally, presented a framework that is able to mimic a reference motion and optimize it towards a task.
 
 For mimicking motions, we presented pure RL techniques -- starting from randomly policies until well defined kick movements -- that are agnostic to the task itself and hence could be applied in other motions, such as walk. However, these techniques has some problems:
 
 \begin{itemize}
-	\item If we do not expose a reference motion, agent will learn a sub-optimal policy that distances itself from human behavior;
+	\item If we do not expose a reference motion, agent will learn a sub-optimal policy which is very different from human behavior;
 	\item If we just pass a reference motion, agent prefers to stand still because exploration leads to higher penalizations; and
-	\item Even if we have a reference motion and several techniques to reduce sample bad data, the agent was not able to conduct the mimicked motion properly -- the residual error collapsed motion.
+	\item Even if we have a reference motion and several techniques for reducing sampling bad data, the agent was not able to conduct the mimicked motion properly -- the residual error collapsed the motion.
 \end{itemize}
 
 
@@ -20,7 +20,7 @@ several aspects for modeling the reward to at least mimic the reference motion. 
 
 We propose several research lines from this work.
 
-First of all, we consider the replication of this methodology in other reference motions or even in different types of motion. As described in last section, we've used a reference kick without much stability - what compromises the pure RL techniques presented here. With more stable kicks, not just pure RL algorithms could be able to learn motions perfectly, but it could also allow greater exploration and learning rate hyperparameters in optimization steps, even when using Hybrid Learning Models. It could start from a simpler motion but achieves better policies than those from our experimentations.
+First of all, we consider the replication of this methodology in other reference motions or even in different types of motion. As described in previous section, we've used a reference kick without much stability - which compromises the pure RL techniques presented here. With more stable kicks, not just pure RL algorithms could be able to learn motions perfectly, but it could also allow greater exploration and learning rate hyperparameters in optimization steps, even when using Hybrid Learning Models. It could start from a simpler motion but achieves better policies than those from our experimentations.
 
 A second line of research is to apply these methods in harder motions than keyframed ones. For example, apply the methods described here in order to learn a closed-loop walking engine based on model-free Reinforcement Learning.
 
@@ -28,9 +28,9 @@ A third idea is to try policy optimization by reference motion improvement. It i
 
 Other interesting idea to follow is to theoretically derive the relation between supervised leaning and the usage of RL algorithms for supervised tasks as used in section \ref{sec:suprl} and analyze the convergence in this case.
 
-In terms of distributed training, we aim to analyze better the situations of parallelism and how the number of agents affect a specific training. Furthermore, we think in explore better the available hardware from Intel DevCloud.
+In terms of distributed training, we aim to better analyze the situations of parallelism and how the number of agents affect a specific training. Furthermore, we think in exploring better the available hardware from Intel DevCloud.
 
 
-Other future work proposed is related to Policy Gradients algorithms. It is known that these kind of algorithms has poor data efficiency and are very sensible to some hyperparameters. Hence, we propose the study of data sampling techniques in the context of these algorithms and the study of Meta-Learning techniques \cite{metalearning} to adaptively improve there hyperparameters.
+Other future line of work proposed here is related to Policy Gradients algorithms. It is known that these kind of algorithms has poor data efficiency and are very sensible to some hyperparameters. Hence, we propose the study of data sampling techniques in the context of these algorithms and the study of Meta-Learning techniques \cite{metalearning} to adaptively improve the hyperparameters.
 
 

@@ -17,17 +17,12 @@ Repeated entry---line 1698 of file Referencias/referencias.bib
  : @techreport{AI1110-macalpine
  :                             ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 2250 of file Referencias/referencias.bib
- : @misc{hinton2012
- :                 ,
-I'm skipping whatever remains of this entry
 Warning--entry type for "inteldevcloud" isn't style-file defined
---line 2436 of file Referencias/referencias.bib
+--line 2435 of file Referencias/referencias.bib
 A bad cross reference---entry "mujoco"
 refers to entry "conf/iros/2012", which doesn't exist
 A bad cross reference---entry "glorot2011a"
 refers to entry "conf/aistats/2011", which doesn't exist
-Warning--I didn't find a database entry for "soni2018"
 Warning--I didn't find a database entry for "conf/iros/2012"
 Warning--I didn't find a database entry for "conf/aistats/2011"
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
@@ -40,45 +35,45 @@ Reallocated glb_str_end (elt_size=4) to 20 items from 10.
 | Em caso de dúvidas ou problemas com este estilo procure |
 | http://abntex.codigolivre.org.br                        |
 +---------------------------------------------------------+
-You've used 85 entries,
+You've used 86 entries,
             6480 wiz_defined-function locations,
-            1642 strings with 27429 characters,
-and the built_in function-call counts, 158897 in all, are:
-= -- 19497
-> -- 3667
-< -- 3637
-+ -- 5146
-- -- 1043
-* -- 9814
-:= -- 17255
-add.period$ -- 339
-call.type$ -- 87
-change.case$ -- 1176
-chr.to.int$ -- 170
-cite$ -- 80
-duplicate$ -- 17478
-empty$ -- 5212
-format.name$ -- 5690
-if$ -- 32391
+            1645 strings with 27551 characters,
+and the built_in function-call counts, 161933 in all, are:
+= -- 20017
+> -- 3682
+< -- 3716
++ -- 5230
+- -- 1048
+* -- 9929
+:= -- 17501
+add.period$ -- 343
+call.type$ -- 88
+change.case$ -- 1182
+chr.to.int$ -- 171
+cite$ -- 81
+duplicate$ -- 17972
+empty$ -- 5270
+format.name$ -- 5713
+if$ -- 33009
 int.to.chr$ -- 11
 int.to.str$ -- 3
-missing$ -- 1680
-newline$ -- 433
-num.names$ -- 403
-pop$ -- 2389
+missing$ -- 1695
+newline$ -- 439
+num.names$ -- 408
+pop$ -- 2411
 preamble$ -- 1
-purify$ -- 354
+purify$ -- 357
 quote$ -- 0
-skip$ -- 18100
+skip$ -- 18604
 stack$ -- 1
-substring$ -- 5544
-swap$ -- 5273
-text.length$ -- 107
+substring$ -- 5644
+swap$ -- 5361
+text.length$ -- 108
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 42
 warning$ -- 0
-while$ -- 601
+while$ -- 608
 width$ -- 0
-write$ -- 1273
-(There were 4 error messages)
+write$ -- 1288
+(There were 3 error messages)

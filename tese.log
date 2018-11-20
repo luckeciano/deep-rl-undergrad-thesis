@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2018.8.13)  18 NOV 2018 22:39
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2018.8.13)  20 NOV 2018 19:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -984,14 +984,15 @@ Package hyperref Info: Reference (link) `figure.caption.23' on input line 19.
 Package hyperref Info: Reference (cite) `cite.tgilharco' on input line 19.
 Package hyperref Info: Reference (cite) `cite.tgilharco' on input line 19.
 Package hyperref Info: Reference (link) `figure.caption.24' on input line 20.
+Package hyperref Info: Reference (cite) `cite.soni2018' on input line 20.
+Package hyperref Info: Reference (cite) `cite.soni2018' on input line 20.
 
+Overfull \hbox (4.86032pt too wide) in paragraph at lines 20--20
+ [][] [][][]\T1/aer/m/n/12 Illustration of Stochas-tic Gra-di-ent De-scent op-t
+i-miza-tion ([][]\T1/aer/m/n/10 SONI[][][]\T1/aer/m/n/12 , [][]2018[][][]). 
+ []
 
-LaTeX Warning: Citation `soni2018' on page ix undefined on input line 20.
-
-Package hyperref Info: Reference (link) `figure.caption.25' on input line 21.
-Package hyperref Info: Reference (cite) `cite.dabbura2017' on input line 21.
-Package hyperref Info: Reference (cite) `cite.dabbura2017' on input line 21.
-Package hyperref Info: Anchor `page.ix' on input line 22.
+Package hyperref Info: Anchor `page.ix' on input line 21.
 [9
 
 Package `hyperref' Info: End of reference (cite) `cite.DBLP:journals/corr/abs-1
@@ -1029,8 +1030,10 @@ Package `hyperref' Info: End of reference (link) `figure.caption.22', line 18.
 Package `hyperref' Info: End of reference (cite) `cite.tgilharco', line 19.
 Package `hyperref' Info: End of reference (cite) `cite.tgilharco', line 19.
 Package `hyperref' Info: End of reference (link) `figure.caption.23', line 19.
-Package `hyperref' Info: End of reference (link) `figure.caption.24', line 20.
 ]
+Package hyperref Info: Reference (link) `figure.caption.25' on input line 21.
+Package hyperref Info: Reference (cite) `cite.dabbura2017' on input line 21.
+Package hyperref Info: Reference (cite) `cite.dabbura2017' on input line 21.
 Package hyperref Info: Reference (link) `figure.caption.26' on input line 22.
 Package hyperref Info: Reference (cite) `cite.tgilharco' on input line 22.
 Package hyperref Info: Reference (cite) `cite.tgilharco' on input line 22.
@@ -1078,14 +1081,11 @@ Package hyperref Info: Reference (link) `figure.caption.45' on input line 41.
 Package hyperref Info: Reference (link) `figure.caption.38' on input line 41.
 Package hyperref Info: Reference (link) `figure.caption.46' on input line 42.
 Package hyperref Info: Reference (link) `figure.caption.35' on input line 42.
-Package hyperref Info: Reference (link) `figure.caption.47' on input line 43.
-Package hyperref Info: Reference (link) `figure.caption.48' on input line 44.
-Package hyperref Info: Reference (cite) `cite.tensorflow2015-whitepaper' on inp
-ut line 44.
-Package hyperref Info: Reference (cite) `cite.tensorflow2015-whitepaper' on inp
-ut line 44.
-Package hyperref Info: Anchor `page.x' on input line 45.
+Package hyperref Info: Anchor `page.x' on input line 43.
  [10
+Package `hyperref' Info: End of reference (cite) `cite.soni2018', line 20.
+Package `hyperref' Info: End of reference (cite) `cite.soni2018', line 20.
+Package `hyperref' Info: End of reference (link) `figure.caption.24', line 20.
 Package `hyperref' Info: End of reference (cite) `cite.dabbura2017', line 21.
 Package `hyperref' Info: End of reference (cite) `cite.dabbura2017', line 21.
 Package `hyperref' Info: End of reference (link) `figure.caption.25', line 21.
@@ -1140,10 +1140,13 @@ Package `hyperref' Info: End of reference (link) `figure.caption.43', line 39.
 Package `hyperref' Info: End of reference (link) `figure.caption.44', line 40.
 Package `hyperref' Info: End of reference (link) `figure.caption.38', line 41.
 Package `hyperref' Info: End of reference (link) `figure.caption.45', line 41.
-Package `hyperref' Info: End of reference (link) `figure.caption.35', line 42.
-Package `hyperref' Info: End of reference (link) `figure.caption.46', line 42.
-Package `hyperref' Info: End of reference (link) `figure.caption.47', line 43.
 ]
+Package hyperref Info: Reference (link) `figure.caption.47' on input line 43.
+Package hyperref Info: Reference (link) `figure.caption.48' on input line 44.
+Package hyperref Info: Reference (cite) `cite.tensorflow2015-whitepaper' on inp
+ut line 44.
+Package hyperref Info: Reference (cite) `cite.tensorflow2015-whitepaper' on inp
+ut line 44.
 Package hyperref Info: Reference (link) `figure.caption.49' on input line 45.
 Package hyperref Info: Reference (link) `figure.caption.50' on input line 47.
 Package hyperref Info: Reference (link) `figure.caption.51' on input line 48.
@@ -1164,6 +1167,9 @@ Package hyperref Info: Reference (link) `figure.caption.66' on input line 62.
 Package hyperref Info: Reference (link) `figure.caption.68' on input line 63.
 Package hyperref Info: Anchor `page.xi' on input line 64.
  [11
+Package `hyperref' Info: End of reference (link) `figure.caption.35', line 42.
+Package `hyperref' Info: End of reference (link) `figure.caption.46', line 42.
+Package `hyperref' Info: End of reference (link) `figure.caption.47', line 43.
 Package `hyperref' Info: End of reference (cite) `cite.tensorflow2015-whitepape
 r', line 44.
 Package `hyperref' Info: End of reference (cite) `cite.tensorflow2015-whitepape
@@ -1258,18 +1264,18 @@ Package hyperref Info: Anchor `listasimbolos.0' on input line 178.
 \openout8 = `tese.lof'.
 
  (./Cap0/listasimbolos.tex
-Overfull \hbox (84.70847pt too wide) in alignment at lines 1--25
+Overfull \hbox (56.30959pt too wide) in alignment at lines 1--25
  [] [] 
  []
 
 Package hyperref Info: Anchor `table.0.2' on input line 25.
 
-Overfull \hbox (84.70847pt too wide) in alignment at lines 25--51
+Overfull \hbox (56.30959pt too wide) in alignment at lines 25--51
  [] [] 
  []
 
 
-Overfull \hbox (84.70847pt too wide) in alignment at lines 51--77
+Overfull \hbox (56.30959pt too wide) in alignment at lines 51--77
  [] [] 
  []
 
@@ -1277,7 +1283,7 @@ Package hyperref Info: Anchor `page.xvi' on input line 77.
 [16
 
 ]
-Overfull \hbox (84.70847pt too wide) in alignment at lines 77--113
+Overfull \hbox (56.30959pt too wide) in alignment at lines 77--113
  [] [] 
  []
 
@@ -1593,7 +1599,7 @@ Package epstopdf Info: Source file: <Cap1/AlphaZero.eps>
 ed-to.pdf Cap1/AlphaZero.eps>
 (epstopdf)             \includegraphics on input line 12.
 Package epstopdf Info: Output file is already uptodate.
-<Cap1/AlphaZero-eps-converted-to.pdf, id=949, 226.8475pt x 127.47626pt>
+<Cap1/AlphaZero-eps-converted-to.pdf, id=953, 226.8475pt x 127.47626pt>
 File: Cap1/AlphaZero-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Cap1/AlphaZero-eps-converted-to.pdf>
@@ -1624,7 +1630,7 @@ Package epstopdf Info: Source file: <Cap1/Locomotion.eps>
 ted-to.pdf Cap1/Locomotion.eps>
 (epstopdf)             \includegraphics on input line 21.
 Package epstopdf Info: Output file is already uptodate.
-<Cap1/Locomotion-eps-converted-to.pdf, id=954, 226.8475pt x 127.47626pt>
+<Cap1/Locomotion-eps-converted-to.pdf, id=958, 226.8475pt x 127.47626pt>
 File: Cap1/Locomotion-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Cap1/Locomotion-eps-converted-to.pdf>
@@ -1691,7 +1697,7 @@ Package epstopdf Info: Source file: <Cap1/Soccer3D.eps>
 d-to.pdf Cap1/Soccer3D.eps>
 (epstopdf)             \includegraphics on input line 35.
 Package epstopdf Info: Output file is already uptodate.
- <Cap1/Soccer3D-eps-converted-to.pdf, id=971, 254.9525pt x 112.42pt>
+ <Cap1/Soccer3D-eps-converted-to.pdf, id=975, 254.9525pt x 112.42pt>
 File: Cap1/Soccer3D-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Cap1/Soccer3D-eps-converted-to.pdf>
@@ -1859,7 +1865,7 @@ Package epstopdf Info: Source file: <Cap2/CMAES.eps>
 o.pdf Cap2/CMAES.eps>
 (epstopdf)             \includegraphics on input line 46.
 Package epstopdf Info: Output file is already uptodate.
-<Cap2/CMAES-eps-converted-to.pdf, id=1053, 576.1525pt x 419.5675pt>
+<Cap2/CMAES-eps-converted-to.pdf, id=1057, 576.1525pt x 419.5675pt>
 File: Cap2/CMAES-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Cap2/CMAES-eps-converted-to.pdf>
@@ -1950,7 +1956,7 @@ pdf Cap2/dqn.eps>
 (epstopdf)             \includegraphics on input line 70.
 Package epstopdf Info: Output file is already uptodate.
 
-<Cap2/dqn-eps-converted-to.pdf, id=1090, 586.19pt x 331.2375pt>
+<Cap2/dqn-eps-converted-to.pdf, id=1094, 586.19pt x 331.2375pt>
 File: Cap2/dqn-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Cap2/dqn-eps-converted-to.pdf>
@@ -2028,7 +2034,7 @@ ted-to.pdf Cap2/openaifive.eps>
 (epstopdf)             \includegraphics on input line 88.
 Package epstopdf Info: Output file is already uptodate.
 
-<Cap2/openaifive-eps-converted-to.pdf, id=1133, 582.175pt x 798.985pt>
+<Cap2/openaifive-eps-converted-to.pdf, id=1137, 582.175pt x 798.985pt>
 File: Cap2/openaifive-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Cap2/openaifive-eps-converted-to.pdf>
@@ -2085,7 +2091,7 @@ pdftex: bookmark at 3: {3.1} {\numberline{3.1}Neural Networks} {section.3.1}{1}
 {toc}
 Package hyperref Info: Reference (link) `figure.caption.15' on input line 5.
 Package hyperref Info: Anchor `figure.caption.15' on input line 7.
-<Cap3/ann.png, id=1157, 866.23625pt x 479.7925pt>
+<Cap3/ann.png, id=1161, 866.23625pt x 479.7925pt>
 File: Cap3/ann.png Graphic file (type png)
  <use Cap3/ann.png>
 Package pdftex.def Info: Cap3/ann.png used on input line 9.
@@ -2125,7 +2131,7 @@ Package epstopdf Info: Source file: <Cap3/neurondetail.eps>
 erted-to.pdf Cap3/neurondetail.eps>
 (epstopdf)             \includegraphics on input line 24.
 Package epstopdf Info: Output file is already uptodate.
-<Cap3/neurondetail-eps-converted-to.pdf, id=1172, 406.51875pt x 191.71625pt>
+<Cap3/neurondetail-eps-converted-to.pdf, id=1176, 406.51875pt x 191.71625pt>
 File: Cap3/neurondetail-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Cap3/neurondetail-eps-converted-to.pdf>
@@ -2149,7 +2155,7 @@ Package epstopdf Info: Source file: <Cap3/bias.eps>
 .pdf Cap3/bias.eps>
 (epstopdf)             \includegraphics on input line 43.
 Package epstopdf Info: Output file is already uptodate.
-<Cap3/bias-eps-converted-to.pdf, id=1175, 396.48125pt x 169.63374pt>
+<Cap3/bias-eps-converted-to.pdf, id=1179, 396.48125pt x 169.63374pt>
 File: Cap3/bias-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Cap3/bias-eps-converted-to.pdf>
@@ -2191,7 +2197,7 @@ tation-eps-converted-to.pdf Cap3/neuralnetworkrepresentation.eps>
 (epstopdf)             \includegraphics on input line 62.
 Package epstopdf Info: Output file is already uptodate.
 
-<Cap3/neuralnetworkrepresentation-eps-converted-to.pdf, id=1189, 581.17125pt x 
+<Cap3/neuralnetworkrepresentation-eps-converted-to.pdf, id=1193, 581.17125pt x 
 339.2675pt>
 File: Cap3/neuralnetworkrepresentation-eps-converted-to.pdf Graphic file (type 
 pdf)
@@ -2258,7 +2264,7 @@ Package epstopdf Info: Source file: <Cap3/sigmoid.eps>
 -to.pdf Cap3/sigmoid.eps>
 (epstopdf)             \includegraphics on input line 138.
 Package epstopdf Info: Output file is already uptodate.
-<Cap3/sigmoid-eps-converted-to.pdf, id=1228, 462.72874pt x 348.30125pt>
+<Cap3/sigmoid-eps-converted-to.pdf, id=1233, 462.72874pt x 348.30125pt>
 File: Cap3/sigmoid-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Cap3/sigmoid-eps-converted-to.pdf>
@@ -2297,7 +2303,7 @@ Package epstopdf Info: Source file: <Cap3/tanh.eps>
 .pdf Cap3/tanh.eps>
 (epstopdf)             \includegraphics on input line 166.
 Package epstopdf Info: Output file is already uptodate.
- <Cap3/tanh-eps-converted-to.pdf, id=1240, 462.72874pt x 348.30125pt>
+ <Cap3/tanh-eps-converted-to.pdf, id=1244, 462.72874pt x 348.30125pt>
 File: Cap3/tanh-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Cap3/tanh-eps-converted-to.pdf>
@@ -2336,7 +2342,7 @@ Package epstopdf Info: Source file: <Cap3/relu.eps>
 (epstopdf)             \includegraphics on input line 192.
 Package epstopdf Info: Output file is already uptodate.
 
-<Cap3/relu-eps-converted-to.pdf, id=1255, 462.72874pt x 348.30125pt>
+<Cap3/relu-eps-converted-to.pdf, id=1259, 462.72874pt x 348.30125pt>
 File: Cap3/relu-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Cap3/relu-eps-converted-to.pdf>
@@ -2387,7 +2393,7 @@ ed-to.pdf Cap3/leakyrelu.eps>
 (epstopdf)             \includegraphics on input line 229.
 Package epstopdf Info: Output file is already uptodate.
 
-<Cap3/leakyrelu-eps-converted-to.pdf, id=1270, 462.72874pt x 348.30125pt>
+<Cap3/leakyrelu-eps-converted-to.pdf, id=1274, 462.72874pt x 348.30125pt>
 File: Cap3/leakyrelu-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Cap3/leakyrelu-eps-converted-to.pdf>
@@ -2442,7 +2448,7 @@ onverted-to.pdf Cap3/gradientdescent.eps>
 (epstopdf)             \includegraphics on input line 278.
 Package epstopdf Info: Output file is already uptodate.
 
-<Cap3/gradientdescent-eps-converted-to.pdf, id=1299, 596.2275pt x 420.57124pt>
+<Cap3/gradientdescent-eps-converted-to.pdf, id=1303, 596.2275pt x 420.57124pt>
 File: Cap3/gradientdescent-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Cap3/gradientdescent-eps-converted-to.pdf>
@@ -2545,7 +2551,7 @@ f>
 (epstopdf)             \includegraphics on input line 374.
 Package epstopdf Info: Output file is already uptodate.
 
-<Cap3/batchvsstochastic-eps-converted-to.pdf, id=1357, 583.17876pt x 503.8825pt
+<Cap3/batchvsstochastic-eps-converted-to.pdf, id=1361, 583.17876pt x 503.8825pt
 >
 File: Cap3/batchvsstochastic-eps-converted-to.pdf Graphic file (type pdf)
  <use Cap3/batchvsstochastic-eps-converted-to.pdf>
@@ -2556,12 +2562,10 @@ put line 374.
 pdftex: bookmark at 376: {3.10} {\numberline{3.10}{\ignorespaces Illustration o
 f Stochastic Gradient Descent optimization \cite {soni2018}. \relax }} {figure.
 caption.24}{0}{lof}
-
-LaTeX Warning: Citation `soni2018' on page 46 undefined on input line 376.
-
-
-LaTeX Warning: Citation `soni2018' on page 46 undefined on input line 376.
-
+Package hyperref Info: Reference (cite) `cite.soni2018' on input line 376.
+Package hyperref Info: Reference (cite) `cite.soni2018' on input line 376.
+Package hyperref Info: Reference (cite) `cite.soni2018' on input line 376.
+Package hyperref Info: Reference (cite) `cite.soni2018' on input line 376.
 Package hyperref Info: Reference (cite) `cite.brownlee2017' on input line 381.
 Package hyperref Info: Reference (cite) `cite.brownlee2017' on input line 381.
 Package hyperref Info: Anchor `page.46' on input line 382.
@@ -2569,6 +2573,8 @@ Package hyperref Info: Anchor `page.46' on input line 382.
 Package `hyperref' Info: End of reference (link) `figure.caption.24', line 365.
 
 Package `hyperref' Info: End of reference (link) `equation.3.6.32', line 365.
+Package `hyperref' Info: End of reference (cite) `cite.soni2018', line 376.
+Package `hyperref' Info: End of reference (cite) `cite.soni2018', line 376.
  <./Cap3/batchvsstochastic-eps-converted-to.pdf>]
 Package hyperref Info: Reference (link) `figure.caption.25' on input line 385.
 Package hyperref Info: Anchor `figure.caption.25' on input line 387.
@@ -2584,7 +2590,7 @@ s-eps-converted-to.pdf Cap3/lossfunctiongdvariants.eps>
 (epstopdf)             \includegraphics on input line 389.
 Package epstopdf Info: Output file is already uptodate.
 
-<Cap3/lossfunctiongdvariants-eps-converted-to.pdf, id=1369, 590.205pt x 269.005
+<Cap3/lossfunctiongdvariants-eps-converted-to.pdf, id=1377, 590.205pt x 269.005
 pt>
 File: Cap3/lossfunctiongdvariants-eps-converted-to.pdf Graphic file (type pdf)
  <use Cap3/lossfunctiongdvariants-eps-converted-to.pdf>
@@ -2652,7 +2658,7 @@ d-to.pdf Cap3/momentum.eps>
 (epstopdf)             \includegraphics on input line 427.
 Package epstopdf Info: Output file is already uptodate.
 
-<Cap3/momentum-eps-converted-to.pdf, id=1393, 594.22pt x 554.07pt>
+<Cap3/momentum-eps-converted-to.pdf, id=1401, 594.22pt x 554.07pt>
 File: Cap3/momentum-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Cap3/momentum-eps-converted-to.pdf>
@@ -2818,7 +2824,7 @@ erted-to.pdf Cap3/gddivergence.eps>
 (epstopdf)             \includegraphics on input line 582.
 Package epstopdf Info: Output file is already uptodate.
 
-<Cap3/gddivergence-eps-converted-to.pdf, id=1500, 591.20876pt x 382.42876pt>
+<Cap3/gddivergence-eps-converted-to.pdf, id=1508, 591.20876pt x 382.42876pt>
 File: Cap3/gddivergence-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Cap3/gddivergence-eps-converted-to.pdf>
@@ -2896,7 +2902,7 @@ Package epstopdf Info: Source file: <Cap4/rlsystem.eps>
 d-to.pdf Cap4/rlsystem.eps>
 (epstopdf)             \includegraphics on input line 41.
 Package epstopdf Info: Output file is already uptodate.
-<Cap4/rlsystem-eps-converted-to.pdf, id=1535, 449.68pt x 552.0625pt>
+<Cap4/rlsystem-eps-converted-to.pdf, id=1543, 449.68pt x 552.0625pt>
 File: Cap4/rlsystem-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Cap4/rlsystem-eps-converted-to.pdf>
@@ -3040,7 +3046,7 @@ rted-to.pdf Cap4/mdprlsystem.eps>
 (epstopdf)             \includegraphics on input line 217.
 Package epstopdf Info: Output file is already uptodate.
 
-<Cap4/mdprlsystem-eps-converted-to.pdf, id=1599, 575.14874pt x 237.88875pt>
+<Cap4/mdprlsystem-eps-converted-to.pdf, id=1607, 575.14874pt x 237.88875pt>
 File: Cap4/mdprlsystem-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Cap4/mdprlsystem-eps-converted-to.pdf>
@@ -3106,7 +3112,7 @@ Package epstopdf Info: Source file: <Cap4/bellmaneqtree.eps>
 verted-to.pdf Cap4/bellmaneqtree.eps>
 (epstopdf)             \includegraphics on input line 271.
 Package epstopdf Info: Output file is already uptodate.
-<Cap4/bellmaneqtree-eps-converted-to.pdf, id=1622, 565.11125pt x 461.725pt>
+<Cap4/bellmaneqtree-eps-converted-to.pdf, id=1630, 565.11125pt x 461.725pt>
 File: Cap4/bellmaneqtree-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Cap4/bellmaneqtree-eps-converted-to.pdf>
@@ -3191,7 +3197,7 @@ f>
 (epstopdf)             \includegraphics on input line 350.
 Package epstopdf Info: Output file is already uptodate.
 
-<Cap4/bellmanoptimality-eps-converted-to.pdf, id=1656, 598.235pt x 218.8175pt>
+<Cap4/bellmanoptimality-eps-converted-to.pdf, id=1664, 598.235pt x 218.8175pt>
 File: Cap4/bellmanoptimality-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Cap4/bellmanoptimality-eps-converted-to.pdf>
@@ -3241,7 +3247,7 @@ Package epstopdf Info: Source file: <Cap4/policyiteration.eps>
 onverted-to.pdf Cap4/policyiteration.eps>
 (epstopdf)             \includegraphics on input line 371.
 Package epstopdf Info: Output file is already uptodate.
-<Cap4/policyiteration-eps-converted-to.pdf, id=1677, 755.82375pt x 433.62pt>
+<Cap4/policyiteration-eps-converted-to.pdf, id=1686, 755.82375pt x 433.62pt>
 File: Cap4/policyiteration-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Cap4/policyiteration-eps-converted-to.pdf>
@@ -3488,7 +3494,7 @@ rted-to.pdf Cap4/actorcritic.eps>
 (epstopdf)             \includegraphics on input line 614.
 Package epstopdf Info: Output file is already uptodate.
 
-<Cap4/actorcritic-eps-converted-to.pdf, id=1806, 597.23125pt x 359.3425pt>
+<Cap4/actorcritic-eps-converted-to.pdf, id=1814, 597.23125pt x 359.3425pt>
 File: Cap4/actorcritic-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Cap4/actorcritic-eps-converted-to.pdf>
@@ -3781,7 +3787,7 @@ s-converted-to.pdf Cap5/optimization_final.eps>
 (epstopdf)             \includegraphics on input line 64.
 Package epstopdf Info: Output file is already uptodate.
 
-<Cap5/optimization_final-eps-converted-to.pdf, id=1944, 564.1075pt x 423.5825pt
+<Cap5/optimization_final-eps-converted-to.pdf, id=1952, 564.1075pt x 423.5825pt
 >
 File: Cap5/optimization_final-eps-converted-to.pdf Graphic file (type pdf)
  <use Cap5/optimization_final-eps-converted-to.pdf>
@@ -3831,7 +3837,7 @@ Package epstopdf Info: Source file: <Cap5/architecture.eps>
 erted-to.pdf Cap5/architecture.eps>
 (epstopdf)             \includegraphics on input line 95.
 Package epstopdf Info: Output file is already uptodate.
-<Cap5/architecture-eps-converted-to.pdf, id=1963, 768.8725pt x 417.56pt>
+<Cap5/architecture-eps-converted-to.pdf, id=1971, 768.8725pt x 417.56pt>
 File: Cap5/architecture-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Cap5/architecture-eps-converted-to.pdf>
@@ -3924,7 +3930,7 @@ Package epstopdf Info: Source file: <Cap5/inputnorm.eps>
 ed-to.pdf Cap5/inputnorm.eps>
 (epstopdf)             \includegraphics on input line 151.
 Package epstopdf Info: Output file is already uptodate.
-<Cap5/inputnorm-eps-converted-to.pdf, id=1996, 721.69624pt x 303.1325pt>
+<Cap5/inputnorm-eps-converted-to.pdf, id=2004, 721.69624pt x 303.1325pt>
 File: Cap5/inputnorm-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Cap5/inputnorm-eps-converted-to.pdf>
@@ -3961,7 +3967,7 @@ Package epstopdf Info: Source file: <Cap5/rlnetwork.eps>
 ed-to.pdf Cap5/rlnetwork.eps>
 (epstopdf)             \includegraphics on input line 161.
 Package epstopdf Info: Output file is already uptodate.
-<Cap5/rlnetwork-eps-converted-to.pdf, id=2004, 1509.64pt x 657.45625pt>
+<Cap5/rlnetwork-eps-converted-to.pdf, id=2012, 1509.64pt x 657.45625pt>
 File: Cap5/rlnetwork-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Cap5/rlnetwork-eps-converted-to.pdf>
@@ -4007,7 +4013,7 @@ verted-to.pdf Cap5/gaussiannoise.eps>
 (epstopdf)             \includegraphics on input line 199.
 Package epstopdf Info: Output file is already uptodate.
 
-<Cap5/gaussiannoise-eps-converted-to.pdf, id=2018, 238.8925pt x 373.395pt>
+<Cap5/gaussiannoise-eps-converted-to.pdf, id=2026, 238.8925pt x 373.395pt>
 File: Cap5/gaussiannoise-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Cap5/gaussiannoise-eps-converted-to.pdf>
@@ -4053,7 +4059,7 @@ onverted-to.pdf Cap5/taskdescription.eps>
 (epstopdf)             \includegraphics on input line 218.
 Package epstopdf Info: Output file is already uptodate.
 
-<Cap5/taskdescription-eps-converted-to.pdf, id=2032, 654.445pt x 580.1675pt>
+<Cap5/taskdescription-eps-converted-to.pdf, id=2040, 654.445pt x 580.1675pt>
 File: Cap5/taskdescription-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Cap5/taskdescription-eps-converted-to.pdf>
@@ -4093,7 +4099,7 @@ d-to.pdf Cap5/rlserver.eps>
 (epstopdf)             \includegraphics on input line 230.
 Package epstopdf Info: Output file is already uptodate.
 
-<Cap5/rlserver-eps-converted-to.pdf, id=2044, 585.18625pt x 422.57875pt>
+<Cap5/rlserver-eps-converted-to.pdf, id=2052, 585.18625pt x 422.57875pt>
 File: Cap5/rlserver-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Cap5/rlserver-eps-converted-to.pdf>
@@ -4195,7 +4201,7 @@ Package epstopdf Info: Source file: <Cap5/dataflowgraph.eps>
 verted-to.pdf Cap5/dataflowgraph.eps>
 (epstopdf)             \includegraphics on input line 295.
 Package epstopdf Info: Output file is already uptodate.
-<Cap5/dataflowgraph-eps-converted-to.pdf, id=2083, 1050.92625pt x 409.53pt>
+<Cap5/dataflowgraph-eps-converted-to.pdf, id=2091, 1050.92625pt x 409.53pt>
 File: Cap5/dataflowgraph-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Cap5/dataflowgraph-eps-converted-to.pdf>
@@ -4218,7 +4224,7 @@ Package epstopdf Info: Source file: <Cap5/pigraph.eps>
 -to.pdf Cap5/pigraph.eps>
 (epstopdf)             \includegraphics on input line 305.
 Package epstopdf Info: Output file is already uptodate.
-<Cap5/pigraph-eps-converted-to.pdf, id=2086, 1074.0125pt x 409.53pt>
+<Cap5/pigraph-eps-converted-to.pdf, id=2094, 1074.0125pt x 409.53pt>
 File: Cap5/pigraph-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Cap5/pigraph-eps-converted-to.pdf>
@@ -4258,7 +4264,7 @@ erted-to.pdf Cap5/policygraph1.eps>
 (epstopdf)             \includegraphics on input line 317.
 Package epstopdf Info: Output file is already uptodate.
 
-<Cap5/policygraph1-eps-converted-to.pdf, id=2104, 978.65625pt x 395.4775pt>
+<Cap5/policygraph1-eps-converted-to.pdf, id=2112, 978.65625pt x 395.4775pt>
 File: Cap5/policygraph1-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Cap5/policygraph1-eps-converted-to.pdf>
@@ -4281,7 +4287,7 @@ Package epstopdf Info: Source file: <Cap5/policygraph2.eps>
 erted-to.pdf Cap5/policygraph2.eps>
 (epstopdf)             \includegraphics on input line 325.
 Package epstopdf Info: Output file is already uptodate.
-<Cap5/policygraph2-eps-converted-to.pdf, id=2107, 900.36375pt x 574.145pt>
+<Cap5/policygraph2-eps-converted-to.pdf, id=2115, 900.36375pt x 574.145pt>
 File: Cap5/policygraph2-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Cap5/policygraph2-eps-converted-to.pdf>
@@ -4329,7 +4335,7 @@ Package epstopdf Info: Source file: <Cap5/master-worker.eps>
 verted-to.pdf Cap5/master-worker.eps>
 (epstopdf)             \includegraphics on input line 345.
 Package epstopdf Info: Output file is already uptodate.
-<Cap5/master-worker-eps-converted-to.pdf, id=2123, 593.21625pt x 251.94125pt>
+<Cap5/master-worker-eps-converted-to.pdf, id=2131, 593.21625pt x 251.94125pt>
 File: Cap5/master-worker-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Cap5/master-worker-eps-converted-to.pdf>
@@ -4365,7 +4371,7 @@ ps-converted-to.pdf Cap5/distributedtraining.eps>
 (epstopdf)             \includegraphics on input line 363.
 Package epstopdf Info: Output file is already uptodate.
 
-<Cap5/distributedtraining-eps-converted-to.pdf, id=2134, 580.1675pt x 494.84875
+<Cap5/distributedtraining-eps-converted-to.pdf, id=2142, 580.1675pt x 494.84875
 pt>
 File: Cap5/distributedtraining-eps-converted-to.pdf Graphic file (type pdf)
  <use Cap5/distributedtraining-eps-converted-to.pdf>
@@ -4421,7 +4427,7 @@ rted-to.pdf Cap5/tensorboard.eps>
 (epstopdf)             \includegraphics on input line 385.
 Package epstopdf Info: Output file is already uptodate.
 
-<Cap5/tensorboard-eps-converted-to.pdf, id=2159, 587.19376pt x 250.9375pt>
+<Cap5/tensorboard-eps-converted-to.pdf, id=2167, 587.19376pt x 250.9375pt>
 File: Cap5/tensorboard-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Cap5/tensorboard-eps-converted-to.pdf>
@@ -4466,7 +4472,7 @@ Package epstopdf Info: Source file: <Cap6/speeduptest.eps>
 rted-to.pdf Cap6/speeduptest.eps>
 (epstopdf)             \includegraphics on input line 13.
 Package epstopdf Info: Output file is already uptodate.
-<Cap6/speeduptest-eps-converted-to.pdf, id=2174, 594.22pt x 373.395pt>
+<Cap6/speeduptest-eps-converted-to.pdf, id=2182, 594.22pt x 373.395pt>
 File: Cap6/speeduptest-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Cap6/speeduptest-eps-converted-to.pdf>
@@ -4501,7 +4507,7 @@ n-eps-converted-to.pdf Cap6/absolutedatacollection.eps>
 (epstopdf)             \includegraphics on input line 32.
 Package epstopdf Info: Output file is already uptodate.
 
-<Cap6/absolutedatacollection-eps-converted-to.pdf, id=2185, 568.1225pt x 406.51
+<Cap6/absolutedatacollection-eps-converted-to.pdf, id=2193, 568.1225pt x 406.51
 875pt>
 File: Cap6/absolutedatacollection-eps-converted-to.pdf Graphic file (type pdf)
  <use Cap6/absolutedatacollection-eps-converted-to.pdf>
@@ -4539,7 +4545,7 @@ ed-to.pdf Cap6/rnrreward.eps>
 (epstopdf)             \includegraphics on input line 49.
 Package epstopdf Info: Output file is already uptodate.
 
-<Cap6/rnrreward-eps-converted-to.pdf, id=2197, 583.17876pt x 398.48875pt>
+<Cap6/rnrreward-eps-converted-to.pdf, id=2205, 583.17876pt x 398.48875pt>
 File: Cap6/rnrreward-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Cap6/rnrreward-eps-converted-to.pdf>
@@ -4564,7 +4570,7 @@ f>
 (epstopdf)             \includegraphics on input line 62.
 Package epstopdf Info: Output file is already uptodate.
 
-<Cap6/rnr_kick_sequence-eps-converted-to.pdf, id=2200, 255.95625pt x 51.19125pt
+<Cap6/rnr_kick_sequence-eps-converted-to.pdf, id=2208, 255.95625pt x 51.19125pt
 >
 File: Cap6/rnr_kick_sequence-eps-converted-to.pdf Graphic file (type pdf)
  <use Cap6/rnr_kick_sequence-eps-converted-to.pdf>
@@ -4599,7 +4605,7 @@ ed-to.pdf Cap6/rrrreward.eps>
 (epstopdf)             \includegraphics on input line 75.
 Package epstopdf Info: Output file is already uptodate.
 
-<Cap6/rrrreward-eps-converted-to.pdf, id=2225, 597.23125pt x 362.35374pt>
+<Cap6/rrrreward-eps-converted-to.pdf, id=2233, 597.23125pt x 362.35374pt>
 File: Cap6/rrrreward-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Cap6/rrrreward-eps-converted-to.pdf>
@@ -4627,7 +4633,7 @@ f>
 (epstopdf)             \includegraphics on input line 90.
 Package epstopdf Info: Output file is already uptodate.
 
-<Cap6/rnrrrrrewardcurve-eps-converted-to.pdf, id=2228, 589.20125pt x 308.15125p
+<Cap6/rnrrrrrewardcurve-eps-converted-to.pdf, id=2236, 589.20125pt x 308.15125p
 t>
 File: Cap6/rnrrrrrewardcurve-eps-converted-to.pdf Graphic file (type pdf)
  <use Cap6/rnrrrrrewardcurve-eps-converted-to.pdf>
@@ -4650,7 +4656,7 @@ Package epstopdf Info: Source file: <Cap6/rnrrrrreward.eps>
 erted-to.pdf Cap6/rnrrrrreward.eps>
 (epstopdf)             \includegraphics on input line 99.
 Package epstopdf Info: Output file is already uptodate.
-<Cap6/rnrrrrreward-eps-converted-to.pdf, id=2229, 591.20876pt x 131.49126pt>
+<Cap6/rnrrrrreward-eps-converted-to.pdf, id=2237, 591.20876pt x 131.49126pt>
 File: Cap6/rnrrrrreward-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Cap6/rnrrrrreward-eps-converted-to.pdf>
@@ -4683,7 +4689,7 @@ nverted-to.pdf Cap6/rnrrrrtradeoff.eps>
 (epstopdf)             \includegraphics on input line 110.
 Package epstopdf Info: Output file is already uptodate.
 
-<Cap6/rnrrrrtradeoff-eps-converted-to.pdf, id=2255, 594.22pt x 321.2pt>
+<Cap6/rnrrrrtradeoff-eps-converted-to.pdf, id=2263, 594.22pt x 321.2pt>
 File: Cap6/rnrrrrtradeoff-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Cap6/rnrrrrtradeoff-eps-converted-to.pdf>
@@ -4710,7 +4716,7 @@ Package epstopdf Info: Source file: <Cap6/rnrrrrrisdcurve.eps>
 onverted-to.pdf Cap6/rnrrrrrisdcurve.eps>
 (epstopdf)             \includegraphics on input line 125.
 Package epstopdf Info: Output file is already uptodate.
-<Cap6/rnrrrrrisdcurve-eps-converted-to.pdf, id=2257, 590.205pt x 299.1175pt>
+<Cap6/rnrrrrrisdcurve-eps-converted-to.pdf, id=2265, 590.205pt x 299.1175pt>
 File: Cap6/rnrrrrrisdcurve-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Cap6/rnrrrrrisdcurve-eps-converted-to.pdf>
@@ -4742,7 +4748,7 @@ s-converted-to.pdf Cap6/risdmotionsequence.eps>
 (epstopdf)             \includegraphics on input line 141.
 Package epstopdf Info: Output file is already uptodate.
 
-<Cap6/risdmotionsequence-eps-converted-to.pdf, id=2266, 596.2275pt x 194.7275pt
+<Cap6/risdmotionsequence-eps-converted-to.pdf, id=2274, 596.2275pt x 194.7275pt
 >
 File: Cap6/risdmotionsequence-eps-converted-to.pdf Graphic file (type pdf)
  <use Cap6/risdmotionsequence-eps-converted-to.pdf>
@@ -4776,7 +4782,7 @@ f>
 (epstopdf)             \includegraphics on input line 173.
 Package epstopdf Info: Output file is already uptodate.
 
-<Cap6/rlsuprewardcurves-eps-converted-to.pdf, id=2287, 257.96375pt x 153.57375p
+<Cap6/rlsuprewardcurves-eps-converted-to.pdf, id=2295, 257.96375pt x 153.57375p
 t>
 File: Cap6/rlsuprewardcurves-eps-converted-to.pdf Graphic file (type pdf)
  <use Cap6/rlsuprewardcurves-eps-converted-to.pdf>
@@ -4801,7 +4807,7 @@ ps-converted-to.pdf Cap6/rlsupmotionsequence.eps>
 (epstopdf)             \includegraphics on input line 182.
 Package epstopdf Info: Output file is already uptodate.
 
-<Cap6/rlsupmotionsequence-eps-converted-to.pdf, id=2289, 260.975pt x 50.1875pt>
+<Cap6/rlsupmotionsequence-eps-converted-to.pdf, id=2297, 260.975pt x 50.1875pt>
 File: Cap6/rlsupmotionsequence-eps-converted-to.pdf Graphic file (type pdf)
 <use Cap6/rlsupmotionsequence-eps-converted-to.pdf>
 Package pdftex.def Info: Cap6/rlsupmotionsequence-eps-converted-to.pdf used on 
@@ -4854,7 +4860,7 @@ Package epstopdf Info: Source file: <Cap6/errors.eps>
 to.pdf Cap6/errors.eps>
 (epstopdf)             \includegraphics on input line 216.
 Package epstopdf Info: Output file is already uptodate.
-<Cap6/errors-eps-converted-to.pdf, id=2316, 462.72874pt x 346.29375pt>
+<Cap6/errors-eps-converted-to.pdf, id=2324, 462.72874pt x 346.29375pt>
 File: Cap6/errors-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Cap6/errors-eps-converted-to.pdf>
@@ -4890,7 +4896,7 @@ Package epstopdf Info: Source file: <Cap6/motions.eps>
 -to.pdf Cap6/motions.eps>
 (epstopdf)             \includegraphics on input line 229.
 Package epstopdf Info: Output file is already uptodate.
-<Cap6/motions-eps-converted-to.pdf, id=2360, 452.69125pt x 834.11626pt>
+<Cap6/motions-eps-converted-to.pdf, id=2368, 452.69125pt x 834.11626pt>
 File: Cap6/motions-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Cap6/motions-eps-converted-to.pdf>
@@ -4916,7 +4922,7 @@ f>
 (epstopdf)             \includegraphics on input line 239.
 Package epstopdf Info: Output file is already uptodate.
 
-<Cap6/kick_joints_curve-eps-converted-to.pdf, id=2362, 592.2125pt x 824.07875pt
+<Cap6/kick_joints_curve-eps-converted-to.pdf, id=2370, 592.2125pt x 824.07875pt
 >
 File: Cap6/kick_joints_curve-eps-converted-to.pdf Graphic file (type pdf)
  <use Cap6/kick_joints_curve-eps-converted-to.pdf>
@@ -4970,7 +4976,7 @@ s-converted-to.pdf Cap6/walk_joints_curves.eps>
 (epstopdf)             \includegraphics on input line 276.
 Package epstopdf Info: Output file is already uptodate.
 
-<Cap6/walk_joints_curves-eps-converted-to.pdf, id=2405, 463.7325pt x 811.03pt>
+<Cap6/walk_joints_curves-eps-converted-to.pdf, id=2413, 463.7325pt x 811.03pt>
 File: Cap6/walk_joints_curves-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Cap6/walk_joints_curves-eps-converted-to.pdf>
@@ -5019,7 +5025,7 @@ Package epstopdf Info: Source file: <Cap6/walkings.eps>
 d-to.pdf Cap6/walkings.eps>
 (epstopdf)             \includegraphics on input line 312.
 Package epstopdf Info: Output file is already uptodate.
-<Cap6/walkings-eps-converted-to.pdf, id=2421, 373.395pt x 839.135pt>
+<Cap6/walkings-eps-converted-to.pdf, id=2430, 373.395pt x 839.135pt>
 File: Cap6/walkings-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Cap6/walkings-eps-converted-to.pdf>
@@ -5060,7 +5066,7 @@ Package epstopdf Info: Source file: <Cap6/hlmreward.eps>
 ed-to.pdf Cap6/hlmreward.eps>
 (epstopdf)             \includegraphics on input line 334.
 Package epstopdf Info: Output file is already uptodate.
-<Cap6/hlmreward-eps-converted-to.pdf, id=2441, 595.22375pt x 300.12125pt>
+<Cap6/hlmreward-eps-converted-to.pdf, id=2449, 595.22375pt x 300.12125pt>
 File: Cap6/hlmreward-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Cap6/hlmreward-eps-converted-to.pdf>
@@ -5098,7 +5104,7 @@ f>
 (epstopdf)             \includegraphics on input line 346.
 Package epstopdf Info: Output file is already uptodate.
 
-<Cap6/hlmmotionsequence-eps-converted-to.pdf, id=2451, 598.235pt x 272.01625pt>
+<Cap6/hlmmotionsequence-eps-converted-to.pdf, id=2459, 598.235pt x 272.01625pt>
 File: Cap6/hlmmotionsequence-eps-converted-to.pdf Graphic file (type pdf)
 <use Cap6/hlmmotionsequence-eps-converted-to.pdf>
 Package pdftex.def Info: Cap6/hlmmotionsequence-eps-converted-to.pdf used on in
@@ -5124,7 +5130,7 @@ Package epstopdf Info: Source file: <Cap6/hlmretsess1.eps>
 rted-to.pdf Cap6/hlmretsess1.eps>
 (epstopdf)             \includegraphics on input line 367.
 Package epstopdf Info: Output file is already uptodate.
-<Cap6/hlmretsess1-eps-converted-to.pdf, id=2455, 598.235pt x 269.005pt>
+<Cap6/hlmretsess1-eps-converted-to.pdf, id=2463, 598.235pt x 269.005pt>
 File: Cap6/hlmretsess1-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Cap6/hlmretsess1-eps-converted-to.pdf>
@@ -5156,7 +5162,7 @@ f>
 (epstopdf)             \includegraphics on input line 378.
 Package epstopdf Info: Output file is already uptodate.
 
-<Cap6/hlmretsess1motseq-eps-converted-to.pdf, id=2473, 597.23125pt x 280.04625p
+<Cap6/hlmretsess1motseq-eps-converted-to.pdf, id=2481, 597.23125pt x 280.04625p
 t>
 File: Cap6/hlmretsess1motseq-eps-converted-to.pdf Graphic file (type pdf)
  <use Cap6/hlmretsess1motseq-eps-converted-to.pdf>
@@ -5182,7 +5188,7 @@ Package epstopdf Info: Source file: <Cap6/hlmretsess2.eps>
 rted-to.pdf Cap6/hlmretsess2.eps>
 (epstopdf)             \includegraphics on input line 388.
 Package epstopdf Info: Output file is already uptodate.
-<Cap6/hlmretsess2-eps-converted-to.pdf, id=2478, 598.235pt x 261.97874pt>
+<Cap6/hlmretsess2-eps-converted-to.pdf, id=2486, 598.235pt x 261.97874pt>
 File: Cap6/hlmretsess2-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Cap6/hlmretsess2-eps-converted-to.pdf>
@@ -5205,7 +5211,7 @@ f>
 -converted-to.pdf Cap6/hlmretsess2motseq.eps>
 (epstopdf)             \includegraphics on input line 395.
 Package epstopdf Info: Output file is already uptodate.
-<Cap6/hlmretsess2motseq-eps-converted-to.pdf, id=2479, 598.235pt x 104.39pt>
+<Cap6/hlmretsess2motseq-eps-converted-to.pdf, id=2487, 598.235pt x 104.39pt>
 File: Cap6/hlmretsess2motseq-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Cap6/hlmretsess2motseq-eps-converted-to.pdf>
@@ -5411,12 +5417,12 @@ Package hyperref Info: Anchor `cite.DBLP:journals/corr/abs-1712-01815' on input
 Package hyperref Info: Anchor `cite.alphazero' on input line 483.
 Package hyperref Info: Anchor `cite.alphago' on input line 494.
 Package hyperref Info: Anchor `cite.skinner1953science' on input line 501.
+Package hyperref Info: Anchor `cite.soni2018' on input line 508.
 Package hyperref Info: Anchor `cite.Sutskever:2013:IIM:3042817.3043064' on inpu
-t line 510.
-Package hyperref Info: Anchor `cite.sutton1998rli' on input line 516.
-Package hyperref Info: Anchor `cite.dejan12' on input line 522.
-Package hyperref Info: Anchor `cite.Thorndike173' on input line 531.
-Package hyperref Info: Anchor `page.124' on input line 531.
+t line 517.
+Package hyperref Info: Anchor `cite.sutton1998rli' on input line 523.
+Package hyperref Info: Anchor `cite.dejan12' on input line 529.
+Package hyperref Info: Anchor `page.124' on input line 538.
  [124
 Package `hyperref' Info: End of reference (link) `subsection.6.2.5', line 29.
 Package `hyperref' Info: End of reference (link) `subsection.6.2.5', line 29.
@@ -5428,18 +5434,19 @@ Package `hyperref' Info: End of reference (link) `subsection.6.2.5', line 29.
 Package `hyperref' Info: End of reference (link) `subsection.6.2.5', line 29.
 Package `hyperref' Info: End of reference (link) `subsection.6.2.5', line 29.
 ]
-Package hyperref Info: Anchor `cite.tibshirani2013' on input line 538.
-Package hyperref Info: Anchor `cite.mujoco' on input line 544.
-Package hyperref Info: Anchor `cite.AAMAS11-urieli' on input line 553.
-Package hyperref Info: Anchor `cite.protocolbuffers' on input line 559.
-Package hyperref Info: Anchor `cite.acer' on input line 567.
-Package hyperref Info: Anchor `cite.Watkins:1989' on input line 576.
-Package hyperref Info: Anchor `cite.tensorboard' on input line 584.
+Package hyperref Info: Anchor `cite.Thorndike173' on input line 538.
+Package hyperref Info: Anchor `cite.tibshirani2013' on input line 545.
+Package hyperref Info: Anchor `cite.mujoco' on input line 551.
+Package hyperref Info: Anchor `cite.AAMAS11-urieli' on input line 560.
+Package hyperref Info: Anchor `cite.protocolbuffers' on input line 566.
+Package hyperref Info: Anchor `cite.acer' on input line 574.
+Package hyperref Info: Anchor `cite.Watkins:1989' on input line 583.
+Package hyperref Info: Anchor `cite.tensorboard' on input line 591.
 Package hyperref Info: Anchor `cite.DBLP:journals/corr/XiongDHSSSYZ16a' on inpu
-t line 592.
-Package hyperref Info: Anchor `cite.leakyrelu' on input line 598.
-Package hyperref Info: Anchor `cite.actorcritic' on input line 604.
-Package hyperref Info: Anchor `cite.simspark' on input line 612.
+t line 599.
+Package hyperref Info: Anchor `cite.leakyrelu' on input line 605.
+Package hyperref Info: Anchor `cite.actorcritic' on input line 611.
+Package hyperref Info: Anchor `cite.simspark' on input line 619.
 )
 Package hyperref Info: Anchor `page.125' on input line 213.
  [125
@@ -5501,18 +5508,15 @@ Package rerunfilecheck Info: File `tese.brf' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
 
-LaTeX Warning: There were undefined references.
-
-
 LaTeX Warning: There were multiply-defined labels.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 245.
  ) 
 Here is how much of TeX's memory you used:
- 12765 strings out of 493304
- 194979 string characters out of 6139871
- 299719 words of memory out of 5000000
- 15092 multiletter control sequences out of 15000+600000
+ 12772 strings out of 493304
+ 195073 string characters out of 6139871
+ 300855 words of memory out of 5000000
+ 15098 multiletter control sequences out of 15000+600000
  73047 words of font info for 145 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  43i,16n,45p,1029b,634s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -5542,10 +5546,10 @@ s/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
 ti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.p
 fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></u
 sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on tese.pdf (129 pages, 6856932 bytes).
+Output written on tese.pdf (129 pages, 6857220 bytes).
 PDF statistics:
- 2853 PDF objects out of 2984 (max. 8388607)
- 2401 compressed objects within 25 object streams
- 665 named destinations out of 1000 (max. 500000)
+ 2861 PDF objects out of 2984 (max. 8388607)
+ 2407 compressed objects within 25 object streams
+ 666 named destinations out of 1000 (max. 500000)
  1260 words of extra memory for PDF output out of 10000 (max. 10000000)
 

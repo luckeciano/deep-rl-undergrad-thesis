@@ -1,20 +1,43 @@
+In this final chapter, we wrap up this work sharing conclusions and some research lines that emerge from it. 
+
 \section{Conclusions}
 In this work, we presented several techniques for mimicking humanoid kick motion and, finally, presented a framework that is able to mimic a reference motion and optimize it towards a task.
+
+Our hypothesis is that by representing the kick motion by a neural network with thousands of parameters and following a 2-step training procedure where:
+
+\begin{itemize}
+	\item The first step is a Supervised Learning train, where we transfer the knowledge from a keyframe representation to a neural network; and
+	\item The second step is a Reinforcement Learning train, where we optimize the motion from the neural network using rewards related to a specific performance task,
+\end{itemize}
+thus, we are able to develop better policies for kick motion that the initial ones.
+
+In the chapter \ref{ch:intro}, we show a brief introduction, presenting the motivation and objective of this work. The chapter \ref{ch:soccer3d} described the RoboCup Soccer 3D Simulation League domain and reviewed the literature of RL to control tasks.
+
+The chapter \ref{ch:deeplearning} described mathematically the Deep Learning techniques and the underlying optimization problem, presenting the state-of-art methods of this domain. Chapter \ref{ch:reinforcementlearning}, on the other hand, described a Reinforcement Learning system, its representation as a MDP and the algorithms used in this domain, culminating in those ones used in this work.
+
+Chapter \ref{ch:methodology} described the whole methodology used to conduct the experiments in this work, describing them and the whole computational infrastructure built for them. Finally, chapter \ref{ch:results} described all results that sustain our hypothesis defended in this work.
 
 For mimicking motions, we presented pure RL techniques -- starting from randomly policies until well defined kick movements -- that are agnostic to the task itself and hence could be applied in other motions, such as walk. However, these techniques has some problems:
 
 \begin{itemize}
-	\item If we do not expose a reference motion, agent will learn a sub-optimal policy which is very different from human behavior;
-	\item If we just pass a reference motion, agent prefers to stand still because exploration leads to higher penalizations; and
-	\item Even if we have a reference motion and several techniques for reducing sampling bad data, the agent was not able to conduct the mimicked motion properly -- the residual error collapsed the motion.
+	\item If we do not expose a reference motion, agent will learn a sub-optimal policy which is very different from human behavior, as shown in subsection \ref{sec:rnr};
+	\item If we just pass a reference motion, agent prefers to stand still because exploration leads to higher penalizations, as shown in subsection \ref{sec:rrr}; and
+	\item Even if we have a reference motion and several techniques for reducing sampling bad data, the agent was not able to conduct the mimicked motion properly -- the residual error collapsed the motion, as show in subsections \ref{sec:rnrrrrrisd} and \ref{sec:suprl}.
 \end{itemize}
 
+Therefore, \textbf{pure RL techniques by themselves will lead to suboptimal policies and will not achieve high performance motions}.
 
+We also presented a Hybrid Learning Model, which initially trains a neural network policy using supervised learning from the reference motion and optimizes it towards a task using Deep RL techniques. In this model:
 
-We also presented a Hybrid Learning Model, which initially trains a neural network policy using supervised learning from the reference motion and optimizes it towards a task using Deep RL techniques. \textbf{It proved to work well and achieved the objective of improve policy performance, which was, in this case, to gain accuracy}. The supervised learning step provided high initial reward and a good point to start exploration and the RL algorithm could absorb such benefits and find a better policy than the original motion.
+\begin{itemize}
+	\item The Supervised Learning model is able to mimic the reference motion with a residual error. However, by itself, it is not able to generate better policies, as shown in subsection \ref{sec:slresults};
+	\item When we inject this pre-trained model in the RL algorithm and the optimizes it towards a performance task, \textbf{it proved to work well and achieved the objective of improve policy performance, which was, in this case, to gain accuracy}, as presented in subsections \ref{sec:hlmrnr}, \ref{sec:hlmrnrret} and \ref{sec:kicknumresults}.
+\end{itemize}
+
+ The supervised learning step provided high initial reward and a good point to start exploration and the RL algorithm could absorb such benefits and find a better policy than the original motion.
 
 Therefore, we conclude that pure RL techniques have a greater difficulty due to the fact that, starting from an initially randomized parametrized policy, we have a much more complicated optimization problem, where it should be considered
-several aspects for modeling the reward to at least mimic the reference motion. On the other hand, when using a supervised pre training, it is possible to obtain an initial policy that replicates well the reference motion and is able to be optimized using RL and, finally, outperforms this reference when we consider a performance task.
+several aspects for modeling the reward to at least mimic the reference motion. On the other hand, when using a supervised pre-train, it is possible to obtain an initial policy that replicates well the reference motion and is able to be optimized using RL and, finally, outperforms this reference when we consider a performance task.
 
 \section{Future Work}
 

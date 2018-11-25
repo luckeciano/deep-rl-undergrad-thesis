@@ -68,6 +68,9 @@ In the Hybrid Learning Model (HLM), the training process occurs in two phases. T
 
 
 \section{Supervised Learning Setup}\label{supervised_learning_setup}
+
+In this section, we describe the methodology used in Supervised Learning experiments, which includes the dataset description and collection, the neural network architecture and hyperparameters, the training procedure and the model deployment in Soccer 3D environment.
+
 \subsection{The Dataset}\label{AA}
 In order to use supervised learning for learning keyframe motions using neural networks in the HLM model, we first need to construct a dataset. A dataset consists of samples of keyframe steps. Samples were collected within the Soccer 3D environment with a frequency of 50 Hz. We acquired these samples in two different ways.
 
@@ -221,6 +224,8 @@ After the execution of those steps, we finalize the episode turning all the join
 \end{figure}
 
 \section{Infrastructure}
+In this section, we describe in detail the whole infrastructure in which the experiments are conducted. It includes the RL server description, the deployment of models (from supervised learning to RL algorithm and from RL algorithm to soccer agent), the distributed training setup, the evaluation metrics definition and the tool for monitoring.
+
 \subsection{Reinforcement Learning Server}\label{rlarchitecture}
 
 Figure \ref{rlserver} shows the architecture used to integrate the learning algorithm, agent and simulation environment. The simulation server exposes a state to the soccer agent, which model this information and passes to the learning algorithm that chooses an action accordingly and returns to the agent. Then, it applies this action in the environment, modifying its state, completing the cycle.

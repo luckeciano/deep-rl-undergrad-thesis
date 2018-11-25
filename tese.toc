@@ -1,9 +1,9 @@
 \select@language {english}
 \contentsline {chapter}{\numberline {1}Introduction}{23}{chapter.1}
 \contentsline {section}{\numberline {1.1}Motivation}{23}{section.1.1}
-\contentsline {section}{\numberline {1.2}Contextualization}{23}{section.1.2}
-\contentsline {section}{\numberline {1.3}Objective}{25}{section.1.3}
-\contentsline {section}{\numberline {1.4}Scope}{25}{section.1.4}
+\contentsline {section}{\numberline {1.2}Contextualization}{24}{section.1.2}
+\contentsline {section}{\numberline {1.3}Objective and Hypothesis}{25}{section.1.3}
+\contentsline {section}{\numberline {1.4}Scope}{26}{section.1.4}
 \contentsline {section}{\numberline {1.5}Organization of this work}{26}{section.1.5}
 \contentsline {chapter}{\numberline {2}Background and Literature Review}{27}{chapter.2}
 \contentsline {section}{\numberline {2.1}The RoboCup Soccer 3D Simulation League}{27}{section.2.1}
@@ -79,7 +79,7 @@
 \contentsline {subsection}{\numberline {5.3.2}Neural Network Architecture and Hyperparameters}{84}{subsection.5.3.2}
 \contentsline {subsection}{\numberline {5.3.3}The Training Procedure}{85}{subsection.5.3.3}
 \contentsline {subsection}{\numberline {5.3.4}The Deployment in the Soccer 3D Environment}{85}{subsection.5.3.4}
-\contentsline {section}{\numberline {5.4}Reinforcement Learning Setup}{85}{section.5.4}
+\contentsline {section}{\numberline {5.4}Reinforcement Learning Setup}{86}{section.5.4}
 \contentsline {subsection}{\numberline {5.4.1}Policy Representation}{86}{subsection.5.4.1}
 \contentsline {subsubsection}{\numberline {5.4.1.1}Input Normalization Filter}{86}{subsubsection.5.4.1.1}
 \contentsline {subsubsection}{\numberline {5.4.1.2}Neural Network}{86}{subsubsection.5.4.1.2}
@@ -88,13 +88,13 @@
 \contentsline {section}{\numberline {5.5}Infrastructure}{89}{section.5.5}
 \contentsline {subsection}{\numberline {5.5.1}Reinforcement Learning Server}{89}{subsection.5.5.1}
 \contentsline {subsubsection}{\numberline {5.5.1.1}Simulation Server}{89}{subsubsection.5.5.1.1}
-\contentsline {subsubsection}{\numberline {5.5.1.2}Soccer Agent}{89}{subsubsection.5.5.1.2}
+\contentsline {subsubsection}{\numberline {5.5.1.2}Soccer Agent}{90}{subsubsection.5.5.1.2}
 \contentsline {subsubsection}{\numberline {5.5.1.3}Learning Agent}{90}{subsubsection.5.5.1.3}
-\contentsline {subsection}{\numberline {5.5.2}Neural Network Deployment}{90}{subsection.5.5.2}
-\contentsline {subsubsection}{\numberline {5.5.2.1}Importing Supervised Model into OpenAI Baselines}{90}{subsubsection.5.5.2.1}
-\contentsline {subsubsection}{\numberline {5.5.2.2}Exporting OpenAI Baselines onto Soccer Agent}{91}{subsubsection.5.5.2.2}
-\contentsline {subsection}{\numberline {5.5.3}Distributed Training}{92}{subsection.5.5.3}
-\contentsline {subsubsection}{\numberline {5.5.3.1}Data Parallelism}{93}{subsubsection.5.5.3.1}
+\contentsline {subsection}{\numberline {5.5.2}Neural Network Deployment}{91}{subsection.5.5.2}
+\contentsline {subsubsection}{\numberline {5.5.2.1}Importing Supervised Model into OpenAI Baselines}{91}{subsubsection.5.5.2.1}
+\contentsline {subsubsection}{\numberline {5.5.2.2}Exporting OpenAI Baselines onto Soccer Agent}{92}{subsubsection.5.5.2.2}
+\contentsline {subsection}{\numberline {5.5.3}Distributed Training}{93}{subsection.5.5.3}
+\contentsline {subsubsection}{\numberline {5.5.3.1}Data Parallelism}{94}{subsubsection.5.5.3.1}
 \contentsline {subsubsection}{\numberline {5.5.3.2}Synchronous vs. Asynchronous Distributed Training}{94}{subsubsection.5.5.3.2}
 \contentsline {subsection}{\numberline {5.5.4}Metrics}{95}{subsection.5.5.4}
 \contentsline {subsection}{\numberline {5.5.5}Monitoring via Tensorboard}{96}{subsection.5.5.5}
@@ -116,9 +116,9 @@
 \contentsline {subsection}{\numberline {6.3.2}HLM+RNR}{112}{subsection.6.3.2}
 \contentsline {subsection}{\numberline {6.3.3}Final Model: HLM+RNR+RET}{113}{subsection.6.3.3}
 \contentsline {subsection}{\numberline {6.3.4}Kick Behavior: Numerical Results}{115}{subsection.6.3.4}
-\contentsline {chapter}{\numberline {7}Conclusions, Recommendations, and Future Works}{117}{chapter.7}
-\contentsline {section}{\numberline {7.1}Conclusions}{117}{section.7.1}
-\contentsline {section}{\numberline {7.2}Future Work}{118}{section.7.2}
-\contentsline {chapter}{Bibliography}{119}{chapter.8}
+\contentsline {chapter}{\numberline {7}Conclusions, Recommendations, and Future Works}{118}{chapter.7}
+\contentsline {section}{\numberline {7.1}Conclusions}{118}{section.7.1}
+\contentsline {section}{\numberline {7.2}Future Work}{120}{section.7.2}
+\contentsline {chapter}{Bibliography}{121}{chapter.8}
 \SetAppendixTocName {Appendix}
-\contentsline {chapter}{\numberline {A}Hyperparameters}{126}{appendix.A}
+\contentsline {chapter}{\numberline {A}Hyperparameters}{128}{appendix.A}

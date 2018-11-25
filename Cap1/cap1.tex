@@ -1,6 +1,8 @@
+In this section, we present the motivation of this work and describe the context in which it is inserted. Additionally, we define the objective, scope and the organization of this work.
+
 \section{Motivation}
 
-Robotics is understood as an important area of research within Engineering and Computer Science, optimizing and automating various areas of industry. One of the ways in which research is developed in this area is in robot soccer, since it comprises challenges of machine perception, environment modeling, planning and reasoning, control, and multiagent strategy.
+Robotics is understood as an important area of research within Engineering and Computer Science, optimizing and automating various areas of industry. One of the ways in which research is developed in this area is in robot soccer, since it comprises challenges of machine perception, environment modeling, planning and reasoning, control, and multi-agent strategy.
 
 Over the years, several techniques have been developed to address each of the problems related to robot soccer, based on the theory of Signal Processing, Control, Trajectory Planning, and classical Artificial Intelligence. These techniques have proved to be functional for maturing the challenge. However, such techniques still perform worse as compared to humans in these activities.
 
@@ -39,13 +41,21 @@ In Robocup Soccer 3D Simulation League, as shown in Figure \ref{soccer3d}, there
 
 Over the last few years, team efforts have been seen in three different areas, layers, or strands. The first area is considered more basic, meaning the construction of the agent that can model the environment and interact with it -- involving both the construction of a solid software architecture and the application of traditional techniques of localization and control of the humanoid robot \cite{AI1110-macalpine}.
 
-The second layer, explored at the highest level, involves creating behaviors to perform actions within the game, given the modeled environment -- from the creation of models and heuristics for navigation to the creation of multiagent strategies for positioning and marking \cite{LNAI16-MacAlpine}.
+The second layer, explored at the highest level, involves creating behaviors to perform actions within the game, given the modeled environment -- from the creation of models and heuristics for navigation to the creation of multi-agent strategies for positioning and marking \cite{LNAI16-MacAlpine}.
 
 The third strand, to be approached in this work, is the creation and optimization of models based upon learning for activities such as robot walking and kicking. Simulated categories have great value for learning test, mainly because they provide a benchmark for comparison and do not involve physical robots. Historically, teams with the best performance in these two issues are usually the best positioned within category competitions, due to the fact that they are able to maintain greater possession of the ball and are more offensive to the opposing goal.
 
-\section{Objective}
+\section{Objective and Hypothesis}
 
-Inspired from the context of the RoboCup 3D Simulation League and based upon some results from the recent techniques of Deep and Reinforcement Learning, this work aims to develop and evaluate some new learning models, based on Deep Reinforcement Learning, for the task of making a humanoid robot to kick the soccer ball inside the RoboCup Soccer 	3D Simulation environment.
+Inspired from the context of the RoboCup 3D Simulation League and based upon some results from the recent techniques of Deep and Reinforcement Learning, this work aims to develop and evaluate some new learning models, based on Deep Reinforcement Learning, for the task of making a humanoid robot to kick the soccer ball inside the RoboCup Soccer 3D Simulation environment.
+
+In this work, we hypothesize that by representing the kick motion by a neural network with thousands of parameters and following a 2-step training procedure where:
+
+\begin{itemize}
+	\item The first step is a Supervised Learning train, where we transfer the knowledge from a keyframe representation to a neural network; and
+	\item The second step is a Reinforcement Learning train, where we optimize the motion from the neural network using rewards related to a specific performance task,
+\end{itemize}
+thus, we are able to develop better policies for kick motion that the initial ones.
 
 \section{Scope}
 

@@ -2,7 +2,7 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {1.1}{\ignorespaces AlphaGo Zero, learning model that beat the best players of Go, Chess and Shogi, learning to play without previous human knowledge \cite {DBLP:journals/corr/abs-1712-01815}.\relax }}{24}{figure.caption.9}
 \contentsline {figure}{\numberline {1.2}{\ignorespaces Locomotion of Agent via Deep Reinforcement Learning \cite {DBLP:journals/corr/HeessTSLMWTEWER17}.\relax }}{24}{figure.caption.10}
-\contentsline {figure}{\numberline {1.3}{\ignorespaces A Snapshot from the RoboCup Soccer 3D Simulation League.\relax }}{24}{figure.caption.11}
+\contentsline {figure}{\numberline {1.3}{\ignorespaces A Snapshot from the RoboCup Soccer 3D Simulation League.\relax }}{25}{figure.caption.11}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Illustration of an actual optimization run with covariance matrix adaptation on a simple two-dimensional problem \cite {cmaesfig}.\relax }}{30}{figure.caption.12}
 \contentsline {figure}{\numberline {2.2}{\ignorespaces Human level control through deep reinforcement learning in atari games \cite {mnih2015humanlevel}.\relax }}{31}{figure.caption.13}
@@ -34,11 +34,11 @@
 \contentsline {figure}{\numberline {5.3}{\ignorespaces Intuition behind input normalization \cite {inputnormalization}\relax }}{86}{figure.caption.37}
 \contentsline {figure}{\numberline {5.4}{\ignorespaces Architecture used by pure Reinforcement Learning models.\relax }}{87}{figure.caption.38}
 \contentsline {figure}{\numberline {5.5}{\ignorespaces Gaussian noise applied to action space to ensure better exploration in continuous environments. \cite {parameternoiseblog} \relax }}{88}{figure.caption.40}
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Task used to learning kick motion.\relax }}{88}{figure.caption.41}
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Reinforcement Learning Server Architecture \cite {tgmuzio}. \relax }}{89}{figure.caption.42}
-\contentsline {figure}{\numberline {5.8}{\ignorespaces Data flow graph for PPO algorithm. \relax }}{91}{figure.caption.43}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Task used to learning kick motion.\relax }}{89}{figure.caption.41}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Reinforcement Learning Server Architecture \cite {tgmuzio}. \relax }}{90}{figure.caption.42}
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Data flow graph for PPO algorithm. \relax }}{92}{figure.caption.43}
 \contentsline {figure}{\numberline {5.9}{\ignorespaces ``Pi" data flow node from PPO. \relax }}{92}{figure.caption.44}
-\contentsline {figure}{\numberline {5.10}{\ignorespaces Policy data flow graph from Figure \ref {rlnetwork} \relax }}{92}{figure.caption.45}
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Policy data flow graph from Figure \ref {rlnetwork} \relax }}{93}{figure.caption.45}
 \contentsline {figure}{\numberline {5.11}{\ignorespaces Policy data flow graph from Figure \ref {fig:model_plot} \relax }}{93}{figure.caption.46}
 \contentsline {figure}{\numberline {5.12}{\ignorespaces Master-workers architecture for data parallelism. \relax }}{94}{figure.caption.47}
 \contentsline {figure}{\numberline {5.13}{\ignorespaces Synchronous and Asynchornous Distributed Training \cite {tensorflow2015-whitepaper}. \relax }}{95}{figure.caption.48}

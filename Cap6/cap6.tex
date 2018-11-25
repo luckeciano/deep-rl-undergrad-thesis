@@ -40,7 +40,7 @@ In this example, we have collected approximately \textbf{740 millions of samples
 
 In this section, we show the results regarding of RL experiments. We tested several scenarios using the experimentation setup described in Section \ref{sec:experimentation_setup}. All the hyperparameters from each experiment can be found in the Appendix \ref{ap:hyperparameters}.
 
-\subsection{RNR}
+\subsection{RNR}\label{sec:rnr}
 
 The first model we experimented is the RNR. In this, we started from randomly distributed weights in a neural network and, by using RL, we achieved a motion that not follows a well-defined human kick behavior, but is able to inject some velocity to the ball. Figure \ref{fig:rnrreward} shows how the reward improves over the learning process.
 
@@ -64,7 +64,7 @@ Figure \ref{fig:rnr_kick_sequence} shows RNR resultant motion. It is possible to
 	\label{fig:rnr_kick_sequence}
 \end{figure}
 
-\subsection{RRR}
+\subsection{RRR}\label{sec:rrr}
 
 In the context of optimization it is difficult to the agent explore the whole action space and mimics a human behavior of kicking. To address this challenge, we used the reference motion also used in supervised learning section.
 
@@ -112,7 +112,7 @@ The big challenge of this model is to tune the weight parameter for each reward.
 	\label{fig:rnrrrrtradeoff}
 \end{figure}
 
-\subsection{RNR+RRR+RISD}
+\subsection{RNR+RRR+RISD}\label{sec:rnrrrrrisd}
 
 Even joining RNR and RRR, the agent is not able to learn the main patterns from the kick motion. It is difficult to learn, for example, that the leg should go back before making the move.
 
@@ -208,7 +208,9 @@ It is worth mentioning that the techniques explored until now worked well,even w
 \section{Hybrid Learning Models}
 In this section, we will explore an alternative for pure RL methods -- what we called Hybrid Learning Models. In this configuration, there is a pre-training step where we used supervised learning algorithms to fit the reference motion before using the PPO algorithm.
 
-\subsection{Supervised Learning Results}
+\subsection{Supervised Learning Results}\label{sec:slresults}
+The first results from Hybrid Learning Models are related to the supervised learning step where we copy the motion from keyframe representation to neural network one. We evaluate this model not just in kick motion, but also learning the walking engine and other keyframe motions, such as the get up motion.
+
 \subsubsection{Training Results}
 
 \begin{figure}[H]
@@ -397,7 +399,7 @@ Figure \ref{fig:hlmretsess1motseq} shows the motion sequence after this first se
  	\label{fig:hlmretsess2motseq}
  \end{figure}
 
-\subsection{Kick Behavior: Numerical Results}
+\subsection{Kick Behavior: Numerical Results}\label{sec:kicknumresults}
 
 We created a last test scenario, similar to that from Table \ref{tab_kicks_statistics}, where the agent started 2 meters from the ball, approaches to it and finally kick the ball. This process is conducted by the Kick Behavior, a high-level agent behavior that integrates the walk and kick motions. The idea behind this is to try to simulate better in-game situation and check if the model obtained by these optimizations generalizes well to high-level behaviors, given that we did not optimize any parameter regarding to ball approaching or waking motion.
 
@@ -471,3 +473,28 @@ However, it worth mentioning the Effective Evaluation: consider the distance jus
 \end{table}
 
 We can see from Table \ref{tab:finaltesteff} that when considering just successful kicks, the performance from Original Kick is slightly better. This can be explained by \textbf{performance-stability tradeoff}: the better the performance is, the worse stability should become. Therefore, the training sacrifices performance to gain accuracy -- which we hypothesize that should be better in terms of competition as well.
+
+As final experiment, we applied the HLM+RNR+RET model to a different kind of robot, the Nao with Toe. This one differs from the standard Nao used in the rest of the experiments by having an additional joint in the foot, making it larger. When using the keyframe motion, the Nao with Toe was not able to even kick the ball - very often it kicks the ground because of its large foot.
+
+
+\begin{table}[!htbp]
+	\caption{Kick Evaluation - Nao with Toe}
+	\begin{center} 
+		\begin{tabular}{|c|c|c|c|c|c|}
+			\hline
+			\textbf{Kick}&\multicolumn{5}{|c|}{\textbf{Statistics}} \\
+			\cline{2-6} 
+			\textbf{Type} & \textbf{\textit{Accuracy (\%)}}& \multicolumn{2}{|c|}{\textbf{Distance X(\(m\))}}& 
+			\multicolumn{2}{|c|}{\textbf{Distance Z (\(m\))}}\\
+			\cline {3-6} 
+			& & \textbf{\textit{Mean}}& \textbf{\textit{Std}}
+			& \textbf{\textit{Mean}}& \textbf{\textit{Std}}\\
+			\hline
+			\textbf{Nao with Toe Kick} & \textbf{95.0} & \textbf {9.47} & \textbf{3.43} & \textbf{0.66} & \textbf{0.63} \\ 
+			\hline
+		\end{tabular}
+		\label{tab:naotoe}
+	\end{center}
+\end{table}
+
+We then applied the framework proposed in this work, which resulted in the values presented in table \ref{tab:naotoe}. It effectively shows the strength of this framework. The RL algorithm, by exploration, was able to adjust the initial motion to this kind of robot, resulting in a even better motion than the original keyframe based on standard Nao. 
